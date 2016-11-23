@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket
+END
+Adapter1.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket/Adapter1.java
+END
+Recordset.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket/Recordset.java
+END
+Action.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket/Action.java
+END
+ProblemSummary.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket/ProblemSummary.java
+END
+ObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ticket/ObjectFactory.java
+END

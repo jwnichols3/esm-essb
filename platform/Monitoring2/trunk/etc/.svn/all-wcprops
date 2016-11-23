@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/498/trunk/Platform/Monitoring2/trunk/etc
+END
+jndi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/281/trunk/Platform/Monitoring2/trunk/etc/jndi.properties
+END
+AlarmpointJavaClient.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/282/trunk/Platform/Monitoring2/trunk/etc/AlarmpointJavaClient.properties
+END
+application.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/170/trunk/Platform/Monitoring2/trunk/etc/application.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/281/trunk/Platform/Monitoring2/trunk/etc/log4j.properties
+END
+weblogic-application.xml
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/etc/weblogic-application.xml
+END
+ldap.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/282/trunk/Platform/Monitoring2/trunk/etc/ldap.properties
+END
+ServiceCenter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/498/trunk/Platform/Monitoring2/trunk/etc/ServiceCenter.properties
+END
+wl_app_no_timer.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/etc/wl_app_no_timer.xml
+END

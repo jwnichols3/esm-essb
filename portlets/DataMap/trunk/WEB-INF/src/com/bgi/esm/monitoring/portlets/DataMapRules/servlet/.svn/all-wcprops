@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/servlet
+END
+BaseServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/servlet/BaseServlet.java
+END
+GenerateOpenviewDataMapServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/servlet/GenerateOpenviewDataMapServlet.java
+END
+GenerateServiceCenterDataMapServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/servlet/GenerateServiceCenterDataMapServlet.java
+END

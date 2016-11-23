@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TicketMap xmlns="http://www.bgi.com/ems/replatform/xml/TicketMap.xsd"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.bgi.com/ems/replatform/xml/TicketMap.xsd file:/home/gsc/bgi_ems/replatform/xml/TicketMap.xsd">
+    <group>accounts</group>
+    <method>ticket</method>
+    <support_group>support</support_group>
+    <support_script>BGI VPO</support_script>
+    <problem_category>SOFTWARE</problem_category>
+    <problem_subcategory>SOFTWARE</problem_subcategory>
+    <problem_product>ACCOUNTS</problem_product>
+    <problem>FAULT</problem>
+    <problem_assignment_group>5000</problem_assignment_group>
+    <problem_location>GLOBAL</problem_location>
+</TicketMap>
+

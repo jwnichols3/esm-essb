@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+
+      Maintenance History:
+        $Id$
+
+        $Log$
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Killer is a command line utility which writes a "kill" message to JMS.
+    Downstream buss modules will note the kill message, forward it to 
+    the next module and perform an orderly shutdown.
+  </body>
+</html>

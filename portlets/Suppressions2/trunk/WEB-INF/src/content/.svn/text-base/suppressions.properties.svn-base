@@ -1,0 +1,54 @@
+form.fields.description=Description
+form.fields.by_application=By Application
+form.fields.by_node=By Node
+form.fields.db_server=DB Server
+form.fields.with_db_server_and_message=With
+form.fields.db_message=Message Text
+
+form.suppression.time.month.01=January
+form.suppression.time.month.02=February
+form.suppression.time.month.03=March
+form.suppression.time.month.04=April
+form.suppression.time.month.05=May
+form.suppression.time.month.06=June
+form.suppression.time.month.07=July
+form.suppression.time.month.08=August
+form.suppression.time.month.09=September
+form.suppression.time.month.10=October
+form.suppression.time.month.11=November
+form.suppression.time.month.12=December
+form.suppression.time.unit.hours=hours
+form.suppression.time.unit.minutes=minutes
+form.suppression.time.unit.days=days
+form.suppression.time.date_time_preposition=at
+form.suppression.button.create_suppression=Create Suppression
+form.suppression.button.update_suppression=Update Suppression
+
+form.message.start_suppression=Please choose the start time for this suppression.  <b>NOTE: </b>These are local times, not UTC.
+form.fields.start_suppression.start_time=Start Time
+form.fields.start_suppression.now=Now
+
+form.message.end_suppression=Please choose the end time for this suppression.  <b>NOTE: </b>These are local times, not UTC.
+form.fields.end_suppression.end_time=End Time
+form.fields.end_suppression.specified=In
+
+form.message.remove_on_reboot=Please remove this suppression when this machine reboots
+
+form.message.notify_before_expire=Notify when this timeframe is about to expire
+form.fields.notify_num_min_prior=Minutes prior
+form.fields.notify_email=E-mail
+
+navigation.home=Home
+navigation.add_entry=Add Entry
+navigation.current_entries=All Current
+navigation.my_entries=My Current
+navigation.my_historical=My History
+navigation.search_my_historical=History Search (mine)
+navigation.search_all_historical=Search All Historical
+navigation.search_all_current=Search All Current
+navigation.search_current.app_contains=App contains
+navigation.search_historical.app_contains=App contains
+navigation.search_current.system_contains=System contains
+navigation.search_historical.system_contains=System contains
+navigation.search_current.advanced_search=Advanced Search
+navigation.search_historical.advanced_search=Advanced Search

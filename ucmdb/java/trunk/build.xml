@@ -1,0 +1,598 @@
+<?xml version="1.0"?>
+<!--
+    @author Dennis Lin (dennis.s.lin@barclaysglobal.com)
+ -->
+<project name="${app.name}" default="instructions" basedir=".">
+    <property environment="env"/>
+    <property name="env.HOSTNAME"                   value="${env.COMPUTERNAME}"                                 />
+    <property name="build_properties_file1"         value="props/build.${env.HOSTNAME}.${user.name}.properties" />
+    <property name="build_properties_file2"         value="props/build.${env.HOSTNAME}.properties"              />
+    <property name="build_properties_file_default"  value="props/build.properties"     />
+    <property file="${build_properties_file1}"        />
+    <property file="${build_properties_file2}"        />
+    <property file="${build_properties_file_default}" />
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Common Task Definitions
+        ************************************************************************
+        ************************************************************************
+     -->
+    <description>
+        The master build file for the '${app.name}' application
+    </description>
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Library directory settings
+        ************************************************************************
+        ************************************************************************
+     -->
+    <path id="project.classpath">    
+        <!--  Check for existence of directories -->
+        <pathelement path="${build.dir}/classes"/>
+
+        <!--  Include local jar files -->
+        <fileset dir="${lib.dir}"                                 includes="**/*.jar" />
+        <fileset dir="${webserver.home.dir}/${webserver.lib.dir}" includes="**/*.jar" />
+        <fileset dir="${appserver.home.dir}/${appserver.lib.dir}">
+            <include name="**/*.jar" />
+            <exclude name="**/ant.jar" />
+            <exclude name="**/ant-*.jar" />
+        </fileset>
+    </path>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Instructions - lists build targets
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="instructions">
+        <echo>Available build targets:</echo>
+        <echo>    compile</echo>
+        <echo>    test</echo>
+        <echo>    clean</echo>
+        <echo>    build-ejb-3.0-jar</echo>
+        <echo>    build-struts-1.2</echo>
+        <echo>    build-swing</echo>
+        <echo>    build-webservices-metro (requires JDk 1.6 or later)</echo>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Copy any resource or configuration files
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${build.dir}/classes" includeEmptyDirs="no">
+            <fileset dir="${src.dir}">
+                <patternset>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                    <!-- Image files -->
+                    <include name="**/*.jpg"/>
+                    <include name="**/*.png"/>
+                    <include name="**/*.gif"/>
+                    <include name="**/*.tif"/>
+                </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Compiles the project
+        ************************************************************************
+        ************************************************************************
+     -->
+   <target name="compile" description="Compiles all source files" depends="resources">
+        <echo>Compiling execution source files...</echo>
+        <echo>Loading build properties from: </echo>
+        <echo>    ${build_properties_file1}</echo>
+        <echo>    ${build_properties_file2}</echo>
+        <echo>    ${build_properties_file_default}</echo>
+        <mkdir dir="${build.dir}/classes"/>
+        <javac srcdir="${src.dir}" destdir="${build.dir}/classes" includes="**/*.java" debuglevel="lines,vars,source" source="1.5" target="1.5"
+             memoryInitialSize="64m" memoryMaximumSize="512m" fork="true"
+            debug="${javac.debug}" deprecation="${javac.deprecation}" optimize="${javac.optimize}" >
+            <compilerarg value="-Xlint:unchecked"/>
+            <compilerarg line="-Xmaxerrs 1000"/>
+            <!--
+            <compilerarg value="-Xlint:unchecked"/>
+            -->
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Build the jar
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="build-jar" description="Builds the deployable jar" depends="compile">
+        <echo>Unjar JExcelAPI library...</echo>
+        <unjar dest="${build.dir}/classes">
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar" />
+            </fileset>
+        </unjar>
+        <echo>Build library...</echo>
+        <jar jarfile="com-bgi-esm-ucmdb.jar" index="true">
+            <fileset dir="${build.dir}/classes">
+                <patternset>
+                    <include name="**/*.class"/>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                    <!-- Image files -->
+                    <include name="**/*.jpg"/>
+                    <include name="**/*.png"/>
+                    <include name="**/*.gif"/>
+                    <include name="**/*.tif"/>
+                </patternset>
+            </fileset>
+         </jar>
+    </target>
+
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Runs the entire test suite
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="test" depends="compile">
+        <echo>Runs the entire test suite for the '${app.name}' application</echo>
+        <mkdir dir="${test.results.dir}/xml"/>
+        <mkdir dir="${test.results.dir}/html"/>
+        <mkdir dir="${test.results.dir}/test-images"/>
+        <junit printsummary="yes" fork="true" maxmemory="1024M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="${test.results.dir}/xml">
+                <fileset dir="src">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <antcall target="junitreport" />
+    </target>
+
+    <target name="junitreport">
+        <junitreport todir="${test.results.dir}">
+            <fileset dir="${test.results.dir}/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="${test.results.dir}/html" />
+            <!--
+            -->
+            <!--
+            <report todir="${test.results.dir}/html"/>
+            <report todir="${test.results.dir}/html" format="noframes" />
+            -->
+        </junitreport>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Removes the output files from previous builds.
+
+            This includes all .class files and .swp files
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="clean" description="Removes the output files from previous builds">
+        <echo>Cleaning previous build...</echo>
+        <delete file="${app.name}-ejb-3.0.jar" failonerror="false" />
+        <delete file="${app.name}-swing.jar"   failonerror="false" />
+        <delete file="${app.name}.war"         failonerror="false" />
+        <delete dir="${docs.dir}"              failonerror="false" />
+        <delete dir="${build.dir}"             failonerror="false" />
+        <delete dir="${publish.dir}"           failonerror="false" />
+        <delete dir="${test.results.dir}"      failonerror="false" />
+        <delete failonerror="false">
+            <fileset dir="${src.dir}"  includes="**/*.swp"    />
+        </delete>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Build deployable EJB 3.0 .jar file
+
+            NOTE:  Make sure that the application server has the necessary
+                   database drivers in its root classpath
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="build-ejb-3.0-jar" depends="compile">
+        <echo>Packaging EJB ${app.name}-ejb-3.0.jar file...</echo>
+        <unjar dest="${unjar.dir}/logging">
+            <fileset dir="${lib.dir}/common/logging">
+                <include name="**/*.jar" />
+            </fileset>
+        </unjar>
+        <jar jarfile="${app.name}-ejb-3.0.jar" index="true">
+            <fileset dir="${unjar.dir}/logging">
+                <patternset>
+                    <include name="**/*.class"/>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                    <!-- Image files -->
+                    <include name="**/*.jpg"/>
+                    <include name="**/*.png"/>
+                    <include name="**/*.gif"/>
+                    <include name="**/*.tif"/>
+                </patternset>
+            </fileset>
+            <fileset dir="${build.dir}/classes">
+                <patternset>
+                    <include name="**/*.class"/>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                    <!-- Image files -->
+                    <include name="**/*.jpg"/>
+                    <include name="**/*.png"/>
+                    <include name="**/*.gif"/>
+                    <include name="**/*.tif"/>
+                </patternset>
+            </fileset>
+        </jar>
+        <delete dir="${unjar.dir}" failonerror="false" />
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Deploy EJB 3.0 .jar file
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="deploy-ejb-3.0" depends="build-ejb-3.0-jar">
+        <echo>Deploying Struts 1.2 file: ${app.name}.war...</echo>
+        <echo></echo>
+        <echo>NOTE:  Make sure that other application server implementations</echo>
+        <echo>       are not on the classpath other than the target app server</echo>
+        <echo>       (i.e. Weblogic jars should not be in the classpath for Glassfish, etc</echo>
+        <fail message="The property $${deploy.ejb.v03_00.dir} is undefined.">
+            <condition>
+                <not>
+                    <isset property="deploy.ejb.v03_00.dir" />
+                </not>
+            </condition>
+        </fail>
+        <echo>Copying ${app.name}-ejb-3.0.jar to ${deploy.ejb.v03_00.dir}</echo>
+        <copy file="${app.name}-ejb-3.0.jar" todir="${deploy.ejb.v03_00.dir}" />
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Build deployable Struts 1.2 .war file
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="build-struts-1.2" depends="build-ejb-3.0-jar">
+        <echo>Building deployable Struts 1.2 file: ${app.name}.war...</echo>
+        <jar jarfile="${app.name}.war">
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.class"      prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.MF"         prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.conf"       prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.properties" prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.xml"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.tld"        prefix="WEB-INF/classes" />
+            <!-- Protected HTML files -->
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.jpg"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.png"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.gif"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.tif"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.jsp"        prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.js"         prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.html"       prefix="WEB-INF/classes" />
+            <zipfileset dir="${build.dir}/classes"             includes="**/*.htm"        prefix="WEB-INF/classes" />
+
+            <zipfileset file="${app.name}-ejb-3.0.jar"                                          prefix="WEB-INF/lib" />
+            <zipfileset dir="${lib.dir}/xml/struts/v01_02"     includes="**/*.xml"        prefix="WEB-INF" />
+
+            <!-- Public HTML files -->
+            <zipfileset dir="html"                             includes="**/*.*"          prefix="html" />
+
+            <!-- Struts 1.2 libraries -->
+            <zipfileset dir="${lib.dir}/struts/v01_02_07"      includes="**/*.jar"        prefix="WEB-INF/lib" />
+            <zipfileset dir="${lib.dir}/struts/v01_02_07/tld"  includes="**/*.tld"        prefix="WEB-INF/tld" />
+            <zipfileset dir="${lib.dir}/struts/v01_02_07/dtd"  includes="**/*.dtd"        prefix="WEB-INF/dtd" />
+
+            <!-- Logging libraries -->
+            <zipfileset dir="${lib.dir}/common/logging"        includes="**/*.jar"        prefix="WEB-INF/lib" />
+        </jar>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Deploy Struts 1.2 .war file
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="deploy-struts-1.2" depends="build-struts-1.2">
+        <echo>Deploying Struts 1.2 file: ${app.name}.war...</echo>
+        <fail message="The property $${deploy.struts.v01_02.dir} is undefined.">
+            <condition>
+                <not>
+                    <isset property="deploy.struts.v01_02.dir" />
+                </not>
+            </condition>
+        </fail>
+        <echo>Copying ${app.name}.war to ${deploy.struts.v01_02.dir}</echo>
+        <copy file="${app.name}.war" todir="${deploy.struts.v01_02.dir}" />
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            Build web services (Metro) implementation
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="build-webservices-metro">
+        <!--
+            Requires Java 1.6 or later to build
+          -->
+        <taskdef name="wsgen" classname="com.sun.tools.ws.ant.WsGen">
+            <classpath refid="project.classpath"/>
+        </taskdef>      
+        <echo>Processing endpoint implementations...</echo>
+        <mkdir dir="${build.dir}/webservices" />
+        <mkdir dir="${build.dir}/classes"     />
+        <mkdir dir="${build.dir}/src"         />
+
+        <apt srcdir="${src.dir}"
+             destdir="${build.dir}/classes"
+             preprocessdir="${build.dir}/src"
+             debug="${webservices.metro.debug}"
+             fork="true"
+             includes="**/webservices/metro/*WebService.java" 
+             factorypathref="project.classpath"
+             debuglevel="lines,vars,source" 
+             source="1.5" 
+             target="1.5"
+             compile="false" />
+
+        <antcall target="compile" />
+
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.HttpAttributesWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.HttpCookiesWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.HttpHeadersWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.HttpParametersWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.HttpsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.QueuedWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScBufferRecordsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseIncidentsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseIncidentsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseInteractionsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseInteractionsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseTicketsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCloseTicketsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateIncidentsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateIncidentsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateInteractionsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateInteractionsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateTicketsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScCreateTicketsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScFilterRuleSetsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScRetrieveInteractionsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScRetrieveTicketsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScRetrieveTicketsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScStormStatesWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScThrottleRuleSetsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateIncidentsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateIncidentsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateInteractionsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateInteractionsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateTicketsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.ScUpdateTicketsHistWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+        <wsgen resourcedestdir="${build.dir}/webservices"
+               sei="test.app.gss_test.apps.webservices.metro.UserRecordsWebService"
+               destdir="${build.dir}/classes" sourcedestdir="${build.dir}/src" keep="true" verbose="${webservices.metro.verbose}" genwsdl="true" >
+            <classpath refid="project.classpath"/>
+        </wsgen>
+    </target>
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            General target for running arbitarary classes with a 'main' function
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="run-class" depends="compile" >
+        <echo>Executing class ${main.class}...</echo>
+        <java classname="${main.class}" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M" />
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+
+    <!--
+        ************************************************************************
+        ************************************************************************
+            General target for running arbitarary classes with a 'main' function
+        ************************************************************************
+        ************************************************************************
+     -->
+    <target name="test-class" depends="compile" >
+        <echo>Runs the '${test.class} test suite </echo>
+        <mkdir dir="${test.results.dir}/xml"/>
+        <mkdir dir="${test.results.dir}/html"/>
+        <mkdir dir="${test.results.dir}/test-images"/>
+        <junit>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <test name="${test.class}" todir="${test.results.dir}/xml" />
+        </junit>
+        <antcall target="junitreport" />
+    </target>
+</project>

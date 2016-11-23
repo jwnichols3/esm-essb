@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/suppression
+END
+SuppressionEmailConsumerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/suppression/SuppressionEmailConsumerBean.java
+END
+SuppressionConsumerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/suppression/SuppressionConsumerBean.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/175/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/suppression/package.html
+END

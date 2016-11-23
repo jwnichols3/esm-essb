@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+    -->
+  </head>
+
+  <body bgcolor="white">
+    OVI message driven beans.
+
+    <p>
+    All of these MDB read from JMS topics 
+  </body>
+</html>

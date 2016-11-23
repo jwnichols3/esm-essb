@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/438/trunk/Platform/Monitoring2/trunk/bin
+END
+RawOvi2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm-platform/!svn/ver/140/trunk/Platform/Monitoring2/trunk/bin/RawOvi2a.bat
+END
+DataMap2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/140/trunk/Platform/Monitoring2/trunk/bin/DataMap2a.bat
+END
+OviSimulator.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/438/trunk/Platform/Monitoring2/trunk/bin/OviSimulator.bat
+END
+Suppression2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/bin/Suppression2a.bat
+END
+PingClient1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/bin/PingClient1.bat
+END
+Spool2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/156/trunk/Platform/Monitoring2/trunk/bin/Spool2a.bat
+END
+OviDump.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/224/trunk/Platform/Monitoring2/trunk/bin/OviDump.bat
+END
+StormCalc.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/bin/StormCalc.bat
+END
+Throttle2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/140/trunk/Platform/Monitoring2/trunk/bin/Throttle2a.bat
+END
+Audit2a.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/183/trunk/Platform/Monitoring2/trunk/bin/Audit2a.bat
+END

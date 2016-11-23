@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<project name="Suppression Portlet" default="help" basedir=".">
+    <property file="./build.properties"/>
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+    <!--
+    <import file="../build-portlets-common.xml"/>
+    -->
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Library directory settings
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <path id="project.classpath">
+        <!--  Check for existence of directories -->
+        <pathelement path="${classpath}"/>
+		<pathelement path="classes"/>
+		<pathelement path="WEB-INF/classes"/>
+
+        <fileset dir="${local.lib.path}" includes="**/*.jar" />
+        <fileset dir="../../../CommonLibraries" includes="**/*.jar" />
+
+        <!--  Include Liferay jars -->
+        <fileset dir="${liferay.home.path}/common/lib"               includes="**/*.jar" />
+        <fileset dir="${liferay.home.path}/webapps/ROOT/WEB-INF/lib" includes="**/*.jar" />
+    </path>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+        <mkdir dir="logs" />
+        <mkdir dir="${local.build.path}" />
+        <javac srcdir="${local.src.path}" destdir="${local.build.path}" debug="true" debuglevel="lines,vars,source" fork="true" memoryInitialSize="512m" memoryMaximumSize="1024m">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <target name="build" depends="compile">
+        <echo>Building deployable .war file...</echo>
+        <jar destfile="struts-suppression.war">
+            <zipfileset dir="html"                  includes="**/*"         prefix="html"               />
+            <zipfileset dir="${local.build.path}"   includes="**/*"         prefix="WEB-INF/classes"    />
+            <zipfileset dir="${local.lib.path}"     includes="**/*"         prefix="WEB-INF/lib"        />
+            <zipfileset dir="WEB-INF"               includes="*.xml"        prefix="WEB-INF"            />
+            <zipfileset dir="WEB-INF/tld"           includes="*.tld"        prefix="WEB-INF/tld"        />
+        </jar>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${local.build.path}" includeEmptyDirs="no">
+            <fileset dir="${local.src.path}">
+            <patternset>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files in build path: ${local.build.path}</echo>
+            
+        <delete>
+            <fileset dir="${local.build.path}" includes="**/*.class"/>
+            <fileset dir="." includes="${portlet-name}.war"/>
+            <fileset dir=".." includes="${portlet-name}.war"/>
+        </delete>
+        <delete dir="${local.build.path}" />
+    </target>
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Test various parts of the portlet creator utility
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="info">
+        <echo>User name: ${user.name}</echo>
+    </target>
+
+    <target name="export_entry" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.ExportEntry" fork="true">
+            <arg line="${entry_num} ${output_file}" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="test-toolkit" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.Toolkit" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="test-create" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="tools.databases.Database" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+	<target name="test-html-forms" depends="compile">
+		<echo>Test creating the html forms</echo>
+        <java classname="tools.struts.view.HTMLForm" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="test-struts-config" depends="compile">
+		<echo>Test creating the struts-config.xml file</echo>
+        <java classname="tools.struts.StrutsConfig" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="test-database" depends="compile">
+		<echo>Test retrieving database information</echo>
+        <java classname="tools.databases.Database" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="add-batch" depends="compile">
+		<echo>Delete database entries...</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.tools.AddSuppressionBatch" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Runs the automated test suite
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="test" depends="compile">
+        <echo>Executes test suite...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="${local.src.path}">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+    <target name="test-quick" depends="compile">
+        <echo>Executes test suite...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="${local.src.path}">
+                    <include name="**/test/TestHibernate*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+    <target name="test-user" depends="compile">
+        <echo>Starting test-suite for user experience...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="com/bgi/esm/portlets/testing/suppression/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+
+    <target name="test-failover" depends="compile">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/TestFailovers.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <target name="test-extract" depends="compile">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/TestExtractFile.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property name="portlet-name" value="struts-suppression"/>
+</project>
+

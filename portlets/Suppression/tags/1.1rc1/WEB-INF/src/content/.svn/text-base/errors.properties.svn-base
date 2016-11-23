@@ -1,0 +1,8 @@
+#########################################################################################
+#  Form Validation Errors
+#########################################################################################
+# Description string is too short
+suppression.errors.description.too_short=Your description for the suppression is too short
+suppression.errors.dates.end_date_before_start_date=The end date for this suppression needs to be after the start date
+suppression.errors.dates.end_date_before_now=The end date for this supperssion needs to be in the future
+suppression.errors.application.no_node_specified=You must specify at least the node or the application name

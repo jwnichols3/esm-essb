@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/501/trunk/Tools/OpenviewNotifierClient/trunk/src
+END
+test.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/464/trunk/Tools/OpenviewNotifierClient/trunk/src/test.bat
+END
+OpenviewNotifierClient.pl
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/501/trunk/Tools/OpenviewNotifierClient/trunk/src/OpenviewNotifierClient.pl
+END

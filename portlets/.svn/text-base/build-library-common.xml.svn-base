@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<project name="Barclays Global Investors - Portal Libraries" default="help" basedir=".">
+	<description>
+		The common build file for all of Barclays Global Investors' portlet libraries
+	</description>
+
+    <import file="build-common.xml"/>
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo> </echo>
+        <echo>Here are the following targets that this build file contains</echo>
+        <echo>    compile     compiles the entire source tree</echo>
+        <echo>    build       builds the portlet .war file</echo>
+        <echo></echo>
+        <echo>The following are targets for the automatic build process</echo>
+        <echo>    cvs-clean</echo>
+        <echo>    cvs-update</echo>
+        <echo></echo>
+    </target>
+
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles the library 
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile">
+        <echo>Compiling all source files for the library ...</echo>
+        <mkdir dir="${local.build.path}" />
+        <javac srcdir="src" destdir="${local.build.path}" debug="true" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${local.build.path}" includeEmptyDirs="no">
+            <fileset dir="src">
+            <patternset>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the library .jar file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="build" depends="compile,resources">
+        <echo>Creating library .jar file...</echo>
+        <jar destfile="../${library-name}.jar">
+            <fileset dir="${local.build.path}">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+
+    </target>
+</project>

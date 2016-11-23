@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project name="Barclays Global Investors - JSR-168 Portlets - Common" default="help" basedir=".">
+    <description>
+        Common settings for all portal/portlet-related build files
+    </description>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           The taskdef for the JSP compiler
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <taskdef classname="org.apache.jasper.JspC" name="jasper2">
+        <classpath refid="project.classpath" />
+    </taskdef>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Library directory settings
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <path id="project.classpath">
+        <!--  Check for existence of directories -->
+        <pathelement path="${classpath}"/>
+		<pathelement path="classes"/>
+		<pathelement path="WEB-INF/classes"/>
+
+        <fileset dir="${local.lib.path}" includes="**/*.jar" />
+        <fileset dir="../../../CommonLibraries" includes="**/*.jar" />
+
+        <!--  Include Liferay jars -->
+        <fileset dir="${liferay.home.path}/common/lib"               includes="**/*.jar" />
+        <fileset dir="${liferay.home.path}/webapps/ROOT/WEB-INF/lib" includes="**/*.jar" />
+    </path>
+</project>

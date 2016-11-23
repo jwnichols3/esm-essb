@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld
+END
+struts-portlet-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-portlet-html.tld
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-logic.tld
+END
+app.tld
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/app.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-tiles.tld
+END
+liferay-portlet.tld
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/liferay-portlet.tld
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-nested.tld
+END
+struts-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-html.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/struts-bean.tld
+END
+portlet.tld
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/tld/portlet.tld
+END

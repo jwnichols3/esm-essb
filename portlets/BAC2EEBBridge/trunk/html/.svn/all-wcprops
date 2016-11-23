@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/html
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/html/view.jsp
+END
+RecordHTTPRequestActionFailure.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/html/RecordHTTPRequestActionFailure.jsp
+END
+RecordHTTPRequestActionSuccess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/html/RecordHTTPRequestActionSuccess.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/html/init.jsp
+END

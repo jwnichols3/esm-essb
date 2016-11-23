@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ovMessageModifyException xmlns="http://openview.hp.com/xmlns/ico/message" version="1.0" xmlns:ovit="http://openview.hp.com/xmlns/ico/types">
+    <ovit:operationException>
+        <ovit:message>The specified message UUID does not exist. OVO API call opcanno_add() failed: -56: Invalid ID.</ovit:message>
+    </ovit:operationException>
+</ovMessageModifyException>

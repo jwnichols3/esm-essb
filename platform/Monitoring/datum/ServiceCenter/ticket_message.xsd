@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ems="http://www.bgi.com/xml/ems/xxx" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.bgi.com/xml/ems/xxx">
+  <!--  -->
+  <xs:element name="TicketMessages" type="ems:TicketMessageType">
+    <xs:annotation>
+      <xs:documentation>XML representation of a HPOV trouble ticket message</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:complexType name="TicketMessageType">
+    <xs:all>
+      <xs:element name="message_id" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Unique message identifier as a hex string</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="source_node" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message source node (i.e. host name)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="source_node_type" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message source note type (i.e. solaris)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="creation_date" type="xs:date" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message creation date (on HPOV agent)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="creation_time" type="xs:time" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message creation time (on HPOV agent)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="receive_date" type="xs:date" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message received date (on HPOV manager)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="receive_time" type="xs:time" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Message received time (on HPOV manager)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="application" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Complaining application</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="message_group" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>HPOV message group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="object" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>HPOV defined object name</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="severity" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>Event severity (i.e. normal, warning, critical, etc)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="operators" type="ems:OperatorType" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>List of interested operators</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!--  -->
+  <xs:complexType name="OperatorType">
+    <xs:sequence>
+      <xs:element name="operator" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>Individual operator entry</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

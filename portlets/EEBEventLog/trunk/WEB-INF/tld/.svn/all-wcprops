@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld
+END
+struts-portlet-html.tld
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/struts-portlet-html.tld
+END
+struts-logic.tld
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/struts-logic.tld
+END
+struts-tiles.tld
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/struts-tiles.tld
+END
+liferay-portlet.tld
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/liferay-portlet.tld
+END
+struts-nested.tld
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/struts-nested.tld
+END
+struts-bean.tld
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/422/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tld/struts-bean.tld
+END

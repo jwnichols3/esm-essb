@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/125/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/exception
+END
+BackEndFailure.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/125/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/exception/BackEndFailure.java
+END
+EmsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/125/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/exception/EmsException.java
+END
+CommandFailure.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/125/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/exception/CommandFailure.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/123/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/exception/package.html
+END

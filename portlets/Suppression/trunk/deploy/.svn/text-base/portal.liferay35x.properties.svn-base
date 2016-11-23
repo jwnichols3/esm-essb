@@ -1,0 +1,92 @@
+portal.release=professional
+
+portal.ctx=/
+
+##
+## Authentication Pipeline
+##
+
+    #
+    # Input a list of comma delimited class names that implement
+    # com.liferay.portal.auth.Authenticator. These classes will run before or
+    # after the portal authentication begins.
+    #
+    # The Authenticator class defines the constant values that should be used
+    # as return codes from the classes implementing the interface. If
+    # authentication is successful, return SUCCESS; if the user exists but the
+    # passwords do not match, return FAILURE; and if the user does not exist on
+    # the system, return DNE.
+    #
+    # Constants in Authenticator:
+    #     public static final int SUCCESS = 1;
+    #     public static final int FAILURE = -1;
+    #     public static final int DNE = 0;
+    #
+    # In case you have several classes in the authentication pipeline, all of
+    # them have to return SUCCESS if you want the user to be able to login. If
+    # one of the authenticators returns FAILURE or DNE, the login fails.
+    #
+    # Under certain circumstances, you might want to keep the information in the
+    # portal database in sync with an external database or an LDAP server. This
+    # can easily be achieved by implementing a class via LDAPAuth that updates
+    # the information stored in the portal user database whenever a user signs
+    # in.
+    #
+    # Each portal instance can be configured at run time to either authenticate
+    # based on user ids or email addresses. See the Admin portlet for more
+    # information.
+    #
+    # Available authenticators are:
+    #     com.liferay.portal.auth.ADSAuth
+    #     com.liferay.portal.auth.LDAPAuth
+    #
+    #auth.pipeline.pre=com.liferay.portal.auth.LDAPAuth
+    auth.pipeline.pre=com.bgi.esm.authentication.ldap.liferay.LDAPAuthenticator
+    #auth.pipeline.post=
+
+    #
+    # ADSAuth (Microsoft Active Directory Server)
+    #
+    auth.impl.ads.initial.context.factory=com.sun.jndi.ldap.LdapCtxFactory
+    auth.impl.ads.security.authentication=none
+    auth.impl.ads.host=10.1.1.22
+    auth.impl.ads.port=389
+    auth.impl.ads.userid=Administrator
+    auth.impl.ads.password=password
+    auth.impl.ads.domainlookup=dc=liferay,dc=com
+
+    #
+    # Input a list of comma delimited class names that implement
+    # com.liferay.portal.auth.AuthFailure. These classes will run when a user
+    # has a failed login or when a user has reached the maximum number of
+    # failed logins.
+    #
+    auth.failure=com.liferay.portal.auth.LoginFailure
+    auth.max.failures=com.liferay.portal.auth.LoginMaxFailures
+    auth.max.failures.limit=5
+
+    #
+    # Set the following to true if users are allowed to have simultaneous logins
+    # from different sessions.
+    #
+    auth.simultaneous.logins=true
+
+    #
+    # Set the following to true if users are forwarded to the last visited path
+    # upon successful login. If set to false, users will be forwarded to their
+    # default layout page.
+    #
+    auth.forward.by.last.path=true
+
+    #
+    # Enter a list of paths that do not require authentication.
+    #
+    auth.public.path.0=/blogs/find_entry
+    auth.public.path.1=/calendar/_iframe_events_public
+    auth.public.path.2=/document_library/get_file_public
+    auth.public.path.3=/document_library/get_file_version_public
+    auth.public.path.4=/journal/get_template
+    auth.public.path.5=/mail/update_receipt
+    auth.public.path.6=/random_bible_verse/iframe_verse
+    auth.public.path.7=/shopping/notify
+

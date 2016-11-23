@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm-platform/!svn/ver/533/trunk/CommonLibraries/Databases
+END
+msbase.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/msbase.jar
+END
+asm-attrs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/266/trunk/CommonLibraries/Databases/asm-attrs.jar
+END
+msutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/msutil.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/266/trunk/CommonLibraries/Databases/dom4j-1.6.1.jar
+END
+cglib-2.1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/266/trunk/CommonLibraries/Databases/cglib-2.1.3.jar
+END
+asm.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/266/trunk/CommonLibraries/Databases/asm.jar
+END
+derby-10.2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/533/trunk/CommonLibraries/Databases/derby-10.2.2.0.jar
+END
+hibernate3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/266/trunk/CommonLibraries/Databases/hibernate3.jar
+END
+mssqlserver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/mssqlserver.jar
+END
+jTDS2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/jTDS2.jar
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/ojdbc14.jar
+END
+jconn2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/jconn2.jar
+END
+postgresql-8.1-405.jdbc3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/postgresql-8.1-405.jdbc3.jar
+END
+jtds-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/jtds-1.2.jar
+END
+mysql-connector-java-3.1.13-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Databases/mysql-connector-java-3.1.13-bin.jar
+END

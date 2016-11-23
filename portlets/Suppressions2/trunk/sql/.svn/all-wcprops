@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/301/trunk/Portlets/Suppressions2/trunk/sql
+END
+suppression.sql
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/301/trunk/Portlets/Suppressions2/trunk/sql/suppression.sql
+END
+suppression_audit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/301/trunk/Portlets/Suppressions2/trunk/sql/suppression_audit.sql
+END

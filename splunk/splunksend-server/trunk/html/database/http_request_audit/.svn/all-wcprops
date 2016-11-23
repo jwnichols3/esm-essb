@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit
+END
+http_request_audit_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_add.jsp
+END
+http_request_audit_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_view.jsp
+END
+http_request_audit_edit_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_edit_success.jsp
+END
+http_request_audit_select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_select.jsp
+END
+http_request_audit_add_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_add_success.jsp
+END
+http_request_audit_form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_form.jsp
+END
+http_request_audit_display.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_display.jsp
+END
+http_request_audit_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_request_audit/http_request_audit_edit.jsp
+END

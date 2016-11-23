@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Form bean definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <form-beans>
+        <form-bean name="data_map_form"                  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.DataMapForm"                 />
+        <form-bean name="http_attribute_form"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpAttributeForm"           />
+        <form-bean name="http_cookie_form"               type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpCookieForm"              />
+        <form-bean name="http_header_form"               type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpHeaderForm"              />
+        <form-bean name="http_parameter_form"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpParameterForm"           />
+        <form-bean name="http_request_form"              type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpRequestForm"             />
+        <form-bean name="data_map_audit_form"             type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.DataMapAuditForm"            />
+        <form-bean name="http_attribute_audit_form"       type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpAttributeAuditForm"      />
+        <form-bean name="http_cookie_audit_form"          type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpCookieAuditForm"         />
+        <form-bean name="http_header_audit_form"          type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpHeaderAuditForm"         />
+        <form-bean name="http_parameter_audit_form"       type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpParameterAuditForm"      />
+        <form-bean name="http_request_audit_form"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.forms.HttpRequestAuditForm"        />
+    </form-beans>
+    <action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Action mapping definitions
+         ****************************************************************************
+         **************************************************************************** -->
+         <action path="/view"                  include="/html/view.jsp"        />
+
+        <!-- ************************************************************************
+               Mappings for the "data_map" table
+             ************************************************************************ -->
+        <action path="/data_map/audit"    include="/html/database/data_map/data_map_audit.jsp" />
+        <action path="/data_map/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapViewAction" scope="request">
+            <forward name="failure"    path="/html/database/data_map/data_map_view.jsp" />
+            <forward name="success"    path="/html/database/data_map/data_map_view.jsp" />
+        </action>
+        <action path="/data_map/add"             include="/html/database/data_map/data_map_add.jsp" />
+        <action path="/data_map/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAddAction" name="data_map_form" scope="request" validate="true" input="failure">
+            <forward name="failure"              path="/html/database/data_map/data_map_add.jsp"         />
+            <forward name="success"              path="/html/database/data_map/data_map_add_success.jsp" />
+        </action>
+
+        <action path="/data_map/delete"          include="/html/database/data_map/data_map_delete.jsp" />
+        <action path="/data_map/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapDeleteAction" name="data_map_form" scope="request" validate="true" input="failure">
+            <forward name="failure"              path="/html/database/data_map/data_map_delete.jsp"         />
+            <forward name="success"              path="/html/database/data_map/data_map_delete_success.jsp" />
+        </action>
+
+        <action path="/data_map/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapSelectAction" scope="request">
+            <forward name="success"              path="/html/database/data_map/data_map_select.jsp"      />
+        </action>
+        <action path="/data_map/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapInitEditAction" name="data_map_form" scope="request" validate="false" input="failure">
+            <forward name="success"              path="/html/database/data_map/data_map_edit.jsp"         />
+        </action>
+        <action path="/data_map/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapEditAction" name="data_map_form" scope="request" validate="true" input="failure">
+            <forward name="failure"              path="/html/database/data_map/data_map_edit.jsp"         />
+            <forward name="success"              path="/html/database/data_map/data_map_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_attribute" table
+             ************************************************************************ -->
+        <action path="/http_attribute/audit"    include="/html/database/http_attribute/http_attribute_audit.jsp" />
+        <action path="/http_attribute/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_attribute/http_attribute_view.jsp" />
+            <forward name="success"    path="/html/database/http_attribute/http_attribute_view.jsp" />
+        </action>
+        <action path="/http_attribute/add"             include="/html/database/http_attribute/http_attribute_add.jsp" />
+        <action path="/http_attribute/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAddAction" name="http_attribute_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_attribute/http_attribute_add.jsp"         />
+            <forward name="success"                    path="/html/database/http_attribute/http_attribute_add_success.jsp" />
+        </action>
+
+        <action path="/http_attribute/delete"          include="/html/database/http_attribute/http_attribute_delete.jsp" />
+        <action path="/http_attribute/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeDeleteAction" name="http_attribute_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_attribute/http_attribute_delete.jsp"         />
+            <forward name="success"                    path="/html/database/http_attribute/http_attribute_delete_success.jsp" />
+        </action>
+
+        <action path="/http_attribute/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeSelectAction" scope="request">
+            <forward name="success"                    path="/html/database/http_attribute/http_attribute_select.jsp"      />
+        </action>
+        <action path="/http_attribute/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeInitEditAction" name="http_attribute_form" scope="request" validate="false" input="failure">
+            <forward name="success"                    path="/html/database/http_attribute/http_attribute_edit.jsp"         />
+        </action>
+        <action path="/http_attribute/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeEditAction" name="http_attribute_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_attribute/http_attribute_edit.jsp"         />
+            <forward name="success"                    path="/html/database/http_attribute/http_attribute_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_cookie" table
+             ************************************************************************ -->
+        <action path="/http_cookie/audit"    include="/html/database/http_cookie/http_cookie_audit.jsp" />
+        <action path="/http_cookie/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_cookie/http_cookie_view.jsp" />
+            <forward name="success"    path="/html/database/http_cookie/http_cookie_view.jsp" />
+        </action>
+        <action path="/http_cookie/add"             include="/html/database/http_cookie/http_cookie_add.jsp" />
+        <action path="/http_cookie/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAddAction" name="http_cookie_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_cookie/http_cookie_add.jsp"         />
+            <forward name="success"                 path="/html/database/http_cookie/http_cookie_add_success.jsp" />
+        </action>
+
+        <action path="/http_cookie/delete"          include="/html/database/http_cookie/http_cookie_delete.jsp" />
+        <action path="/http_cookie/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieDeleteAction" name="http_cookie_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_cookie/http_cookie_delete.jsp"         />
+            <forward name="success"                 path="/html/database/http_cookie/http_cookie_delete_success.jsp" />
+        </action>
+
+        <action path="/http_cookie/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieSelectAction" scope="request">
+            <forward name="success"                 path="/html/database/http_cookie/http_cookie_select.jsp"      />
+        </action>
+        <action path="/http_cookie/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieInitEditAction" name="http_cookie_form" scope="request" validate="false" input="failure">
+            <forward name="success"                 path="/html/database/http_cookie/http_cookie_edit.jsp"         />
+        </action>
+        <action path="/http_cookie/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieEditAction" name="http_cookie_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_cookie/http_cookie_edit.jsp"         />
+            <forward name="success"                 path="/html/database/http_cookie/http_cookie_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_header" table
+             ************************************************************************ -->
+        <action path="/http_header/audit"    include="/html/database/http_header/http_header_audit.jsp" />
+        <action path="/http_header/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_header/http_header_view.jsp" />
+            <forward name="success"    path="/html/database/http_header/http_header_view.jsp" />
+        </action>
+        <action path="/http_header/add"             include="/html/database/http_header/http_header_add.jsp" />
+        <action path="/http_header/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAddAction" name="http_header_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_header/http_header_add.jsp"         />
+            <forward name="success"                 path="/html/database/http_header/http_header_add_success.jsp" />
+        </action>
+
+        <action path="/http_header/delete"          include="/html/database/http_header/http_header_delete.jsp" />
+        <action path="/http_header/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderDeleteAction" name="http_header_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_header/http_header_delete.jsp"         />
+            <forward name="success"                 path="/html/database/http_header/http_header_delete_success.jsp" />
+        </action>
+
+        <action path="/http_header/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderSelectAction" scope="request">
+            <forward name="success"                 path="/html/database/http_header/http_header_select.jsp"      />
+        </action>
+        <action path="/http_header/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderInitEditAction" name="http_header_form" scope="request" validate="false" input="failure">
+            <forward name="success"                 path="/html/database/http_header/http_header_edit.jsp"         />
+        </action>
+        <action path="/http_header/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderEditAction" name="http_header_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                 path="/html/database/http_header/http_header_edit.jsp"         />
+            <forward name="success"                 path="/html/database/http_header/http_header_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_parameter" table
+             ************************************************************************ -->
+        <action path="/http_parameter/audit"    include="/html/database/http_parameter/http_parameter_audit.jsp" />
+        <action path="/http_parameter/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_parameter/http_parameter_view.jsp" />
+            <forward name="success"    path="/html/database/http_parameter/http_parameter_view.jsp" />
+        </action>
+        <action path="/http_parameter/add"             include="/html/database/http_parameter/http_parameter_add.jsp" />
+        <action path="/http_parameter/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAddAction" name="http_parameter_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_parameter/http_parameter_add.jsp"         />
+            <forward name="success"                    path="/html/database/http_parameter/http_parameter_add_success.jsp" />
+        </action>
+
+        <action path="/http_parameter/delete"          include="/html/database/http_parameter/http_parameter_delete.jsp" />
+        <action path="/http_parameter/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterDeleteAction" name="http_parameter_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_parameter/http_parameter_delete.jsp"         />
+            <forward name="success"                    path="/html/database/http_parameter/http_parameter_delete_success.jsp" />
+        </action>
+
+        <action path="/http_parameter/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterSelectAction" scope="request">
+            <forward name="success"                    path="/html/database/http_parameter/http_parameter_select.jsp"      />
+        </action>
+        <action path="/http_parameter/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterInitEditAction" name="http_parameter_form" scope="request" validate="false" input="failure">
+            <forward name="success"                    path="/html/database/http_parameter/http_parameter_edit.jsp"         />
+        </action>
+        <action path="/http_parameter/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterEditAction" name="http_parameter_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/http_parameter/http_parameter_edit.jsp"         />
+            <forward name="success"                    path="/html/database/http_parameter/http_parameter_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_request" table
+             ************************************************************************ -->
+        <action path="/http_request/audit"    include="/html/database/http_request/http_request_audit.jsp" />
+        <action path="/http_request/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_request/http_request_view.jsp" />
+            <forward name="success"    path="/html/database/http_request/http_request_view.jsp" />
+        </action>
+        <action path="/http_request/add"             include="/html/database/http_request/http_request_add.jsp" />
+        <action path="/http_request/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAddAction" name="http_request_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                  path="/html/database/http_request/http_request_add.jsp"         />
+            <forward name="success"                  path="/html/database/http_request/http_request_add_success.jsp" />
+        </action>
+
+        <action path="/http_request/delete"          include="/html/database/http_request/http_request_delete.jsp" />
+        <action path="/http_request/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestDeleteAction" name="http_request_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                  path="/html/database/http_request/http_request_delete.jsp"         />
+            <forward name="success"                  path="/html/database/http_request/http_request_delete_success.jsp" />
+        </action>
+
+        <action path="/http_request/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestSelectAction" scope="request">
+            <forward name="success"                  path="/html/database/http_request/http_request_select.jsp"      />
+        </action>
+        <action path="/http_request/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestInitEditAction" name="http_request_form" scope="request" validate="false" input="failure">
+            <forward name="success"                  path="/html/database/http_request/http_request_edit.jsp"         />
+        </action>
+        <action path="/http_request/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestEditAction" name="http_request_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                  path="/html/database/http_request/http_request_edit.jsp"         />
+            <forward name="success"                  path="/html/database/http_request/http_request_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "data_map_audit" table
+             ************************************************************************ -->
+        <action path="/data_map_audit/audit"    include="/html/database/data_map_audit/data_map_audit_audit.jsp" />
+        <action path="/data_map_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/data_map_audit/data_map_audit_view.jsp" />
+            <forward name="success"    path="/html/database/data_map_audit/data_map_audit_view.jsp" />
+        </action>
+        <action path="/data_map_audit/add"             include="/html/database/data_map_audit/data_map_audit_add.jsp" />
+        <action path="/data_map_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditAddAction" name="data_map_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/data_map_audit/data_map_audit_add.jsp"         />
+            <forward name="success"                    path="/html/database/data_map_audit/data_map_audit_add_success.jsp" />
+        </action>
+
+        <action path="/data_map_audit/delete"          include="/html/database/data_map_audit/data_map_audit_delete.jsp" />
+        <action path="/data_map_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditDeleteAction" name="data_map_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/data_map_audit/data_map_audit_delete.jsp"         />
+            <forward name="success"                    path="/html/database/data_map_audit/data_map_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/data_map_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditSelectAction" scope="request">
+            <forward name="success"                    path="/html/database/data_map_audit/data_map_audit_select.jsp"      />
+        </action>
+        <action path="/data_map_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditInitEditAction" name="data_map_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                    path="/html/database/data_map_audit/data_map_audit_edit.jsp"         />
+        </action>
+        <action path="/data_map_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.DataMapAuditEditAction" name="data_map_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                    path="/html/database/data_map_audit/data_map_audit_edit.jsp"         />
+            <forward name="success"                    path="/html/database/data_map_audit/data_map_audit_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_attribute_audit" table
+             ************************************************************************ -->
+        <action path="/http_attribute_audit/audit"    include="/html/database/http_attribute_audit/http_attribute_audit_audit.jsp" />
+        <action path="/http_attribute_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_attribute_audit/http_attribute_audit_view.jsp" />
+            <forward name="success"    path="/html/database/http_attribute_audit/http_attribute_audit_view.jsp" />
+        </action>
+        <action path="/http_attribute_audit/add"             include="/html/database/http_attribute_audit/http_attribute_audit_add.jsp" />
+        <action path="/http_attribute_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditAddAction" name="http_attribute_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_attribute_audit/http_attribute_audit_add.jsp"         />
+            <forward name="success"                          path="/html/database/http_attribute_audit/http_attribute_audit_add_success.jsp" />
+        </action>
+
+        <action path="/http_attribute_audit/delete"          include="/html/database/http_attribute_audit/http_attribute_audit_delete.jsp" />
+        <action path="/http_attribute_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditDeleteAction" name="http_attribute_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_attribute_audit/http_attribute_audit_delete.jsp"         />
+            <forward name="success"                          path="/html/database/http_attribute_audit/http_attribute_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/http_attribute_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditSelectAction" scope="request">
+            <forward name="success"                          path="/html/database/http_attribute_audit/http_attribute_audit_select.jsp"      />
+        </action>
+        <action path="/http_attribute_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditInitEditAction" name="http_attribute_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                          path="/html/database/http_attribute_audit/http_attribute_audit_edit.jsp"         />
+        </action>
+        <action path="/http_attribute_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpAttributeAuditEditAction" name="http_attribute_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_attribute_audit/http_attribute_audit_edit.jsp"         />
+            <forward name="success"                          path="/html/database/http_attribute_audit/http_attribute_audit_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_cookie_audit" table
+             ************************************************************************ -->
+        <action path="/http_cookie_audit/audit"    include="/html/database/http_cookie_audit/http_cookie_audit_audit.jsp" />
+        <action path="/http_cookie_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_cookie_audit/http_cookie_audit_view.jsp" />
+            <forward name="success"    path="/html/database/http_cookie_audit/http_cookie_audit_view.jsp" />
+        </action>
+        <action path="/http_cookie_audit/add"             include="/html/database/http_cookie_audit/http_cookie_audit_add.jsp" />
+        <action path="/http_cookie_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditAddAction" name="http_cookie_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_cookie_audit/http_cookie_audit_add.jsp"         />
+            <forward name="success"                       path="/html/database/http_cookie_audit/http_cookie_audit_add_success.jsp" />
+        </action>
+
+        <action path="/http_cookie_audit/delete"          include="/html/database/http_cookie_audit/http_cookie_audit_delete.jsp" />
+        <action path="/http_cookie_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditDeleteAction" name="http_cookie_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_cookie_audit/http_cookie_audit_delete.jsp"         />
+            <forward name="success"                       path="/html/database/http_cookie_audit/http_cookie_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/http_cookie_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditSelectAction" scope="request">
+            <forward name="success"                       path="/html/database/http_cookie_audit/http_cookie_audit_select.jsp"      />
+        </action>
+        <action path="/http_cookie_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditInitEditAction" name="http_cookie_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                       path="/html/database/http_cookie_audit/http_cookie_audit_edit.jsp"         />
+        </action>
+        <action path="/http_cookie_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpCookieAuditEditAction" name="http_cookie_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_cookie_audit/http_cookie_audit_edit.jsp"         />
+            <forward name="success"                       path="/html/database/http_cookie_audit/http_cookie_audit_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_header_audit" table
+             ************************************************************************ -->
+        <action path="/http_header_audit/audit"    include="/html/database/http_header_audit/http_header_audit_audit.jsp" />
+        <action path="/http_header_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_header_audit/http_header_audit_view.jsp" />
+            <forward name="success"    path="/html/database/http_header_audit/http_header_audit_view.jsp" />
+        </action>
+        <action path="/http_header_audit/add"             include="/html/database/http_header_audit/http_header_audit_add.jsp" />
+        <action path="/http_header_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditAddAction" name="http_header_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_header_audit/http_header_audit_add.jsp"         />
+            <forward name="success"                       path="/html/database/http_header_audit/http_header_audit_add_success.jsp" />
+        </action>
+
+        <action path="/http_header_audit/delete"          include="/html/database/http_header_audit/http_header_audit_delete.jsp" />
+        <action path="/http_header_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditDeleteAction" name="http_header_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_header_audit/http_header_audit_delete.jsp"         />
+            <forward name="success"                       path="/html/database/http_header_audit/http_header_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/http_header_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditSelectAction" scope="request">
+            <forward name="success"                       path="/html/database/http_header_audit/http_header_audit_select.jsp"      />
+        </action>
+        <action path="/http_header_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditInitEditAction" name="http_header_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                       path="/html/database/http_header_audit/http_header_audit_edit.jsp"         />
+        </action>
+        <action path="/http_header_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpHeaderAuditEditAction" name="http_header_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                       path="/html/database/http_header_audit/http_header_audit_edit.jsp"         />
+            <forward name="success"                       path="/html/database/http_header_audit/http_header_audit_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_parameter_audit" table
+             ************************************************************************ -->
+        <action path="/http_parameter_audit/audit"    include="/html/database/http_parameter_audit/http_parameter_audit_audit.jsp" />
+        <action path="/http_parameter_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_parameter_audit/http_parameter_audit_view.jsp" />
+            <forward name="success"    path="/html/database/http_parameter_audit/http_parameter_audit_view.jsp" />
+        </action>
+        <action path="/http_parameter_audit/add"             include="/html/database/http_parameter_audit/http_parameter_audit_add.jsp" />
+        <action path="/http_parameter_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditAddAction" name="http_parameter_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_parameter_audit/http_parameter_audit_add.jsp"         />
+            <forward name="success"                          path="/html/database/http_parameter_audit/http_parameter_audit_add_success.jsp" />
+        </action>
+
+        <action path="/http_parameter_audit/delete"          include="/html/database/http_parameter_audit/http_parameter_audit_delete.jsp" />
+        <action path="/http_parameter_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditDeleteAction" name="http_parameter_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_parameter_audit/http_parameter_audit_delete.jsp"         />
+            <forward name="success"                          path="/html/database/http_parameter_audit/http_parameter_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/http_parameter_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditSelectAction" scope="request">
+            <forward name="success"                          path="/html/database/http_parameter_audit/http_parameter_audit_select.jsp"      />
+        </action>
+        <action path="/http_parameter_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditInitEditAction" name="http_parameter_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                          path="/html/database/http_parameter_audit/http_parameter_audit_edit.jsp"         />
+        </action>
+        <action path="/http_parameter_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpParameterAuditEditAction" name="http_parameter_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                          path="/html/database/http_parameter_audit/http_parameter_audit_edit.jsp"         />
+            <forward name="success"                          path="/html/database/http_parameter_audit/http_parameter_audit_edit_success.jsp" />
+        </action>
+
+        <!-- ************************************************************************
+               Mappings for the "http_request_audit" table
+             ************************************************************************ -->
+        <action path="/http_request_audit/audit"    include="/html/database/http_request_audit/http_request_audit_audit.jsp" />
+        <action path="/http_request_audit/view"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditViewAction" scope="request">
+            <forward name="failure"    path="/html/database/http_request_audit/http_request_audit_view.jsp" />
+            <forward name="success"    path="/html/database/http_request_audit/http_request_audit_view.jsp" />
+        </action>
+        <action path="/http_request_audit/add"             include="/html/database/http_request_audit/http_request_audit_add.jsp" />
+        <action path="/http_request_audit/add_process"     type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditAddAction" name="http_request_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                        path="/html/database/http_request_audit/http_request_audit_add.jsp"         />
+            <forward name="success"                        path="/html/database/http_request_audit/http_request_audit_add_success.jsp" />
+        </action>
+
+        <action path="/http_request_audit/delete"          include="/html/database/http_request_audit/http_request_audit_delete.jsp" />
+        <action path="/http_request_audit/delete_process"  type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditDeleteAction" name="http_request_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                        path="/html/database/http_request_audit/http_request_audit_delete.jsp"         />
+            <forward name="success"                        path="/html/database/http_request_audit/http_request_audit_delete_success.jsp" />
+        </action>
+
+        <action path="/http_request_audit/select"         type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditSelectAction" scope="request">
+            <forward name="success"                        path="/html/database/http_request_audit/http_request_audit_select.jsp"      />
+        </action>
+        <action path="/http_request_audit/edit"            type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditInitEditAction" name="http_request_audit_form" scope="request" validate="false" input="failure">
+            <forward name="success"                        path="/html/database/http_request_audit/http_request_audit_edit.jsp"         />
+        </action>
+        <action path="/http_request_audit/edit_process"    type="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.actions.HttpRequestAuditEditAction" name="http_request_audit_form" scope="request" validate="true" input="failure">
+            <forward name="failure"                        path="/html/database/http_request_audit/http_request_audit_edit.jsp"         />
+            <forward name="success"                        path="/html/database/http_request_audit/http_request_audit_edit_success.jsp" />
+        </action>
+
+    </action-mappings>
+    <!-- Custom Request Processor -->
+    <controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Message Resources
+         ****************************************************************************
+         **************************************************************************** -->
+    <message-resources key="messages"  parameter="content.Messages"  />
+    <message-resources key="databases" parameter="content.databases" />
+
+    <!-- App Server Connector Plugin -->
+    <!--  For Weblogic -->
+    <!--
+    <plug-in className="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.plugins.ApplicationPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                   />
+        <set-property property="enterprise.mode"             value="false"                                 />
+    </plug-in>
+    -->
+    <!--  For JBoss, pick one of the following java.naming.factory.url.pkgs values -->
+    <!--
+    <plug-in className="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.plugins.ApplicationPlugin" >
+        <set-property property="java.naming.factory.initial"  value="org.jnp.interfaces.NamingContextFactory" />
+        <set-property property="java.naming.provider.url"     value="jnp://localhost:7001"                    />
+        <set-property property="java.naming.factory.url.pkgs" value="org.jboss.naming:org.jnp.interfaces"     />
+        <set-property property="java.naming.factory.url.pkgs" value="org.jboss.naming.client"                 />
+        <set-property property="enterprise.mode"              value="false"                                   />
+    </plug-in>
+    -->
+    <!--  For Glassfish 2.x -->
+    <!--
+    <plug-in className="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.struts.v01_02.plugins.ApplicationPlugin" >
+        <set-property property="java.naming.factory.initial"  value="com.sun.enterprise.naming.SerialInitContextFactory" />
+        <set-property property="org.omg.CORBA.ORBInitialHost" value="localhost" />
+        <set-property property="org.omg.CORBA.ORBInitialPort" value="3700"      />
+        <set-property property="enterprise.mode"              value="false"     />
+    </plug-in>
+     -->
+
+    <!-- Tiles Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+        <set-property property="definitions-parser-validate" value="true" />
+    </plug-in>
+    -->
+
+    <!-- Validator Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+    -->
+</struts-config>

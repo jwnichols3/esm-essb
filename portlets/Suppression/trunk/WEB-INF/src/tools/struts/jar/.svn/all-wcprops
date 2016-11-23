@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/jar
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/jar/struts-config.xml
+END
+old_java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/jar/old_java.jar
+END
+tiles-def.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/jar/tiles-def.xml
+END

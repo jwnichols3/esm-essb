@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test
+END
+GSSStressTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/GSSStressTest.java
+END
+TestValidServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestValidServiceCenterTicket.java
+END
+TestToolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestToolkit.java
+END
+TestUpdateServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestUpdateServiceCenterTicket.java
+END
+TestCloseTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestCloseTicket.java
+END
+TestCreateServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestCreateServiceCenterTicket.java
+END
+TestInvalidServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestInvalidServiceCenterTicket.java
+END
+TestServiceCenterTicketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/test/TestServiceCenterTicketFactory.java
+END

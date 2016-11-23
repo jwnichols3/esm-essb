@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src
+END
+database.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/262/trunk/Platform/Notifications/trunk/src/database.properties
+END
+hibernate.notifications.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/hibernate.notifications.cfg.xml
+END
+hibernate.suppressions.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/hibernate.suppressions.cfg.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/log4j.properties
+END

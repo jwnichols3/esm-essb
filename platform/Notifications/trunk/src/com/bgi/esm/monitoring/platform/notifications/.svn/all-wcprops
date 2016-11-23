@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/HibernateUtil.java
+END
+SuppressionBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/SuppressionBean.java
+END
+NotificationBean.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/NotificationBean.hbm.xml
+END
+SuppressionBean.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/SuppressionBean.hbm.xml
+END
+NotificationBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/NotificationBean.java
+END
+Suppressions.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/265/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/Suppressions.java
+END

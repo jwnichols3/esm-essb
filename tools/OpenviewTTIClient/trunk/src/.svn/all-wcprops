@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/607/trunk/Tools/OpenviewTTIClient/trunk/src
+END
+test_netiq.bat
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/582/trunk/Tools/OpenviewTTIClient/trunk/src/test_netiq.bat
+END
+test.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/607/trunk/Tools/OpenviewTTIClient/trunk/src/test.bat
+END
+OpenviewTTIClient.pl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/501/trunk/Tools/OpenviewTTIClient/trunk/src/OpenviewTTIClient.pl
+END
+test2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm-platform/!svn/ver/607/trunk/Tools/OpenviewTTIClient/trunk/src/test2.bat
+END
+test3.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm-platform/!svn/ver/582/trunk/Tools/OpenviewTTIClient/trunk/src/test3.bat
+END
+test-throttle.bat
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/582/trunk/Tools/OpenviewTTIClient/trunk/src/test-throttle.bat
+END

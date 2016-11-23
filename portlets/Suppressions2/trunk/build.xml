@@ -1,0 +1,200 @@
+<project name="Barclays Global Investors" basedir="." default="instructions">
+    <property file="./build.properties"/>
+
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="${build.path}" />
+        <fileset dir="${lib.path}" includes="**/*.jar" />
+        <!-- EJB libraries -->
+        <fileset dir="../../../CommonLibraries/WebLogic92" includes="**/*.jar" />
+        <!-- Liferay libraries -->
+        <fileset dir="${liferay.home.path}" includes="**/*.jar" />
+    </path>
+
+    <!--
+        *********************************************************************************
+        *********************************************************************************
+        **  Default execution path.
+        **  
+        **  Lists all the possible execution options for this build
+        *********************************************************************************
+        *********************************************************************************
+    -->
+    <target name="instructions" description="List execution options">
+        <echo> Instructions:
+
+    clean   - removes the output files from previous builds
+    compile - compiles the execution suite
+    build   - builds a .jar library file
+    test    - executes the automated test suite
+
+    Make sure you specify the following properties in "build.properties" (current values are shown):
+        app name   - ${app.name}
+        build path - ${build.path}
+        lib path   - ${lib.path}
+        src path   - ${src.path}
+
+        </echo>
+    </target>
+    <!-- 
+        *********************************************************************************
+        *********************************************************************************
+        **  Removes the output files from previous builds.  
+        **  
+        **  This includes all .class files and .swp files
+        *********************************************************************************
+        *********************************************************************************
+    -->
+    <target name="clean" description="Removes the output files from previous builds">
+        <echo>Cleaning previous build...</echo>
+        <delete dir="${build.path}" includes="**/*.class"/>
+        <delete failonerror="false">
+            <fileset dir="${src.path}" includes="**/*.swp"/>
+        </delete>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+    </target>
+
+    <!--
+        *********************************************************************************
+        *********************************************************************************
+        **  Compiles all source files.
+        **
+        **  This refers to all the source code in the XITutil/ and Generators/ directories.
+        **  All output files will bein the /common/classes directory of the app server.
+        *********************************************************************************
+        *********************************************************************************
+    -->
+    <target name="compile" description="Compiles all source files" depends="resources">
+        <echo>Compiling execution source files...</echo>
+        <mkdir dir="${build.path}"/>
+        <javac srcdir="${src.path}" destdir="${build.path}" includes="**/*.java" debug="on" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${build.path}" includeEmptyDirs="no">
+            <fileset dir="${src.path}">
+            <patternset>
+                <include name="**/*.MF"/>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+                <include name="**/*.jpg"/>
+                <include name="**/*.png"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Build .jar file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="build" depends="compile,resources">
+        <echo>Creating portlet .war file without compiling...</echo>
+        <jar destfile="../${app.name}.war">
+            <fileset dir=".">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+    <!--
+    <target name="build" depends="compile">
+        <echo>Builds .jar file...</echo>
+        <jar destfile="${app.name}.war" basedir="${build.path}">
+            <manifest>
+                <attribute name="Created-By" value="Dennis Lin" />
+            </manifest>
+            <fileset dir="${build.path}">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+    -->
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Runs the automated test suite
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="test" depends="compile">
+        <echo>Executes test suite...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="${src.path}">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+    <target name="jspc">
+        <jasper2 validateXml="true" uriroot="." webXmlFragment="WEB-INF/generated_web.xml" outputDir="WEB-INF/src" />
+    </target>
+    <taskdef classname="org.apache.jasper.JspC" name="jasper2">
+        <classpath refid="project.classpath" />
+    </taskdef>
+
+
+    <target name="test-email" depends="compile">
+        <echo>Testing email component..</echo>
+        <java classname="com.bgi.esm.monitoring.portlets.Suppressions.Mailer" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property name="portlet-name" value="struts-suppression"/>
+</project>
+
+

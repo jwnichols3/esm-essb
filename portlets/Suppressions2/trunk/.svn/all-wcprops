@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/635/trunk/Portlets/Suppressions2/trunk
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/615/trunk/Portlets/Suppressions2/trunk/deploy.bat
+END
+build.properties
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/build.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/532/trunk/Portlets/Suppressions2/trunk/build.xml
+END

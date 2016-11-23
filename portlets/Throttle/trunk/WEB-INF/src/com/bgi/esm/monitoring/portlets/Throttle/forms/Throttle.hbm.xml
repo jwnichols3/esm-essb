@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.portlets.Throttle.forms.Throttle" table="throttle" >
+        <id name="RowId" column="row_id">
+            <generator class="uuid" />
+        </id>
+        <property name="RuleId"       type="long"          column="rule_id"     />
+        <property name="BgiGroup"     type="text"          column="bgi_group"    />
+        <property name="StormLevel"   type="long"          column="storm_level"  />
+        <property name="Duration"     type="long"          column="duration"     />
+        <property name="Threshold"    type="long"          column="threshold"    />
+        <property name="Action"       type="text"          column="action"       />
+        <property name="MessageFlag"  type="character"     column="message_flag" />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.Throttle.forms.ThrottleAudit" table="throttle_audit" >
+        <id name="AuditId" column="audit_id" >
+            <generator class="native" />
+        </id>
+        <property name="AuditVersionNum"   type="long"          column="audit_version_num" />
+        <property name="AuditTimestamp"    type="calendar"      column="audit_timestamp"   />
+        <property name="AuditModifiedBy"   type="text"          column="audit_modified_by" />
+        <property name="RuleId"            type="long"          column="rule_id"           />
+        <property name="RowId"             type="text"          column="row_id"            />
+        <property name="BgiGroup"          type="text"          column="bgi_group"         />
+        <property name="StormLevel"        type="long"          column="storm_level"       />
+        <property name="Duration"          type="long"          column="duration"          />
+        <property name="Threshold"         type="long"          column="threshold"         />
+        <property name="Action"            type="text"          column="action"            />
+        <property name="MessageFlag"       type="character"     column="message_flag"      />
+    </class>
+</hibernate-mapping>

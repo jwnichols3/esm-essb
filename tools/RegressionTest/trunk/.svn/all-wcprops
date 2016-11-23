@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm-platform/!svn/ver/600/trunk/Tools/RegressionTest/trunk
+END
+tti_logs_derby.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/495/trunk/Tools/RegressionTest/trunk/tti_logs_derby.jar
+END
+experiment.data.20070729.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/487/trunk/Tools/RegressionTest/trunk/experiment.data.20070729.jar
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/600/trunk/Tools/RegressionTest/trunk/build.xml
+END

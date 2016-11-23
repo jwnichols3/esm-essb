@@ -1,0 +1,12 @@
+#########################################################################################
+#  Test properties for the suppressions portlet
+#########################################################################################
+suppressions.test.username=test-suppressions
+suppressions.test.password=esmtester
+suppressions.test.hostname=localhost
+
+#########################################################################################
+#  For testing the suppression command-line utility
+#########################################################################################
+command.vpo_suppress.unix=/opt/OV/suppress/vpo_suppress2
+command.vpo_suppress.windows=vpo_suppress2.exe

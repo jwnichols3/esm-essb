@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/HibernateUtil.java
+END
+Openview.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/566/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/Openview.hbm.xml
+END
+OpenviewFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/OpenviewFinder.java
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/CommonTestCase.java
+END
+AcknowledgeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/AcknowledgeEvent.java
+END
+TestOpenviewInterconnect.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/TestOpenviewInterconnect.java
+END
+TestOpenview.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/TestOpenview.java
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/566/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/hibernate.cfg.xml
+END

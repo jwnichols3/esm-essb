@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/sql
+END
+mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/sql/mysql.sql
+END
+sql_server2000.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/sql/sql_server2000.sql
+END

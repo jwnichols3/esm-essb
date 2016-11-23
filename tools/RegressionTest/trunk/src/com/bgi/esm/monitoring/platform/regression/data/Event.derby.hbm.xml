@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.platform.regression.data.Event" table="tti_events" >
+        <id name="RowID" column="row_id" type="long" >
+            <generator class="native" />
+        </id>
+        <property name="MessageID"          type="string"  column="message_id"         />
+        <property name="NodeName"           type="string"  column="node_name"          />
+        <property name="NodeType"           type="string"  column="node_type"          /> 
+        <property name="NodeTime"           type="string"  column="node_time"          />    
+        <property name="NodeDate"           type="string"  column="node_date"          /> 
+        <property name="ServerDate"         type="string"  column="server_date"        /> 
+        <property name="ServerTime"         type="string"  column="server_time"        /> 
+        <property name="Application"        type="string"  column="application"        /> 
+        <property name="MessageGroup"       type="string"  column="message_group"      /> 
+        <property name="Severity"           type="string"  column="severity"           /> 
+        <property name="Object"             type="text"    column="object"             length="1024" /> 
+        <property name="Operators"          type="text"    column="operators"          length="1024" />
+        <property name="MessageText"        type="text"    column="message_text"       length="1024" />
+        <property name="Instructions"       type="text"    column="instructions"       length="1024" />
+        <property name="MessageAttributes"  type="text"    column="message_attributes" length="1024" />
+    </class>
+</hibernate-mapping>

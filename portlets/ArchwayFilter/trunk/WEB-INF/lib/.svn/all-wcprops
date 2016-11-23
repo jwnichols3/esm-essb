@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/struts.jar
+END
+replatform_client.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/replatform_client.jar
+END
+msbase.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/msbase.jar
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/util-taglib.jar
+END
+msutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/msutil.jar
+END
+derby-10.2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/derby-10.2.2.0.jar
+END
+mssqlserver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/mssqlserver.jar
+END
+jTDS2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/jTDS2.jar
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/ojdbc14.jar
+END
+jconn2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/jconn2.jar
+END
+util-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/util-bridges.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/util-java.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/commons-logging-1.1.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/log4j-1.2.13.jar
+END
+postgresql-8.1-405.jdbc3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/postgresql-8.1-405.jdbc3.jar
+END
+portals-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/portals-bridges.jar
+END
+jtds-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/jtds-1.2.jar
+END
+mysql-connector-java-3.1.13-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/507/trunk/Portlets/ArchwayFilter/trunk/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar
+END

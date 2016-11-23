@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Title:build.xml
+
+Description:
+  Build ESM replatform applications.  Requires XDoclet.
+
+Author:
+  G.S. Cole (guycole at gmail dot com)
+
+Development Environment:
+  Fedora 4
+  Sun Java 1.5.0_06
+  Apache Ant 1.6.2
+-->
+
+<project name="eeb-test" default="help" basedir=".">
+  <property file="./ant.properties"/>
+
+  <property name="build.dir" value="${project.dir}/build"/>
+  <property name="build.classes.dir" value="${build.dir}/classes"/>
+  <property name="build.deploy.dir" value="${build.dir}/deploy"/>
+  <property name="build.meta.dir" value="${build.dir}/META-INF"/>
+
+  <property name="etc.dir" value="${project.dir}/etc"/>
+
+  <property name="javadoc.dir" value="${project.dir}/javadoc"/>
+
+  <property name="report.dir" value="${project.dir}/report"/>
+
+  <property name="src.dir" value="${project.dir}/src"/>
+
+  <property name="src.gen.dir" value="${build.dir}/src"/>
+
+  <property name="ovidump.file"       value="OviDump.out" />
+  <property name="ovisimulator.topic" value="replatform.topic.notify" />
+  <property name="ovisimulator.file"  value="OviDump.out" />
+  <property name="storm.queue"        value="replatform.queue.storm" />
+  <property name="dispatcher.queue"   value="replatform.queue.dispatcher" />
+  <property name="ap_drain.queue"     value="replatform.queue.ap_drain" />
+  <property name="sc_drain.queue"     value="replatform.queue.sc_drain" />
+  
+  <path id="javac.path">
+    <pathelement location="${base.lib.dir}/log4j-1.2.7.jar"/>
+    <pathelement location="${base.lib.dir}/Jakarta-Commons/commons-digester-1.7.jar"/>
+    <pathelement location="${base.lib.dir}/WebLogic92/weblogic.jar"/>
+    <pathelement location="${base.lib.dir}/WebLogic92/wllog4j.jar"/>
+    <pathelement location="${base.lib.dir}/Databases/jconn.jar" />
+    <pathelement location="${base.lib.dir}/Databases/jtds-1.2.jar" />
+    <pathelement location="${base.lib.dir}/Databases/jTDS2.jar" />
+    <pathelement location="${base.lib.dir}/Databases/mysql-connector-java-3.1.13-bin.jar" />
+    <pathelement location="${build.classes.dir}" />
+    <pathelement location="${build.dir}" />
+    <pathelement location="${etc.dir}" />
+    <fileset dir="${base.lib.dir}" includes="**/*.jar" />
+    <fileset dir="${base.lib.dir}/Databases" includes="**/*.jar" />
+  	<path refid="junit.path"/>
+  </path>
+
+  <path id="junit.path">
+    <pathelement location="${base.lib.dir}/junit-3.8.1.jar"/>
+  </path>
+
+  <path id="xdoclet.path">
+    <pathelement location="${base.lib.dir}/WebLogic92/weblogic.jar"/>
+
+    <fileset dir="${xdoclet.home.dir}/lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <!-- =================================================================== -->
+  <!--   Shows all available ANT targets                                   -->
+  <!-- =================================================================== -->
+  <target name="help">
+    <echo>These are the available unit tests targets to run:</echo>
+    <echo></echo>
+    <echo>    apdrain</echo>
+    <echo>    audit2a</echo>
+    <echo>    audit-for-message-id</echo>
+    <echo>    datamap2</echo>
+    <echo>    servicecenter2</echo>
+    <echo>    pingclient1</echo>
+    <echo>    rawovi2</echo>
+    <echo>    responder2</echo>
+    <echo>    responder4</echo>
+    <echo>    spool2</echo>
+    <echo>    suppression2</echo>
+    <echo>    suppression3</echo>
+    <echo>    throttle2</echo>
+    <echo>    ovidump</echo>
+    <echo>    ovisimulator</echo>
+    <echo>    dump</echo>
+    <echo></echo>
+    <echo>These are the test available test suites:</echo>
+    <echo>    test-alarmpoint</echo>
+    <echo>    test-datamap</echo>
+    <echo>    test-dispatcher</echo>
+    <echo>    test-dispatcher-unit</echo>
+    <echo>    test-eeb-properties</echo>
+    <echo>    test-end-to-end</echo>
+    <echo>    test-events-by-group</echo>
+    <echo>    test-ldap</echo>
+    <echo>    test-responder</echo>
+    <echo>    test-servicecenter</echo>
+    <echo>    test-suppression</echo>
+    <echo>    test-throttle</echo>
+    <echo></echo>
+    <echo>To run all tests, use the 'test' target</echo>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Runs all the tests                                                -->
+  <!-- =================================================================== -->
+    <target name="test">
+        <echo>Running all test suites...</echo>
+        <antcall target="test-alarmpoint" />
+        <antcall target="test-datamap" />
+        <antcall target="test-dispatcher" />
+        <antcall target="test-dispatcher-unit" />
+        <antcall target="test-eeb-properties" />
+        <antcall target="test-end-to-end" />
+        <antcall target="test-events-by-group" />
+        <antcall target="test-ldap" />
+        <antcall target="test-responder" />
+        <antcall target="test-servicecenter" />
+        <antcall target="test-suppression" />
+        <antcall target="test-throttle" />
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for the LDAP/AD connection               -->
+  <!-- =================================================================== -->
+    <target name="test-ldap">
+        <echo>Runs the test suite for the "Dispatcher" module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/ldap/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for the Responder bus module             -->
+  <!-- =================================================================== -->
+    <target name="test-responder">
+        <echo>Runs the test suite for the "Dispatcher" module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/dispatcher/Test**.java"/>
+                    <include name="**/dispatcher/test/Test**.java"/>
+                    <include name="**/dispatcher/Alarmpoint/test/Test**.java"/>
+                    <!--
+                    <include name="**/dispatcher/ServiceCenter/test/TestCreate**.java"/>
+                    -->
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for suppressions                         -->
+  <!-- =================================================================== -->
+    <target name="test-suppression">
+        <echo>Runs the test suite for the "Suppression" buss module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/suppression/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for datamaps                             -->
+  <!-- =================================================================== -->
+    <target name="test-datamap">
+        <echo>Runs the test suite for the "DataMap" buss module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/datamap/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for EEB properties                       -->
+  <!-- =================================================================== -->
+    <target name="test-eeb-properties">
+        <echo>Runs the test suite for the "EEB Properties" entity bean</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/eeb_properties/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for Openview functionality               -->
+  <!-- =================================================================== -->
+    <target name="test-openview">
+        <echo>Runs the test suite for Openview functionality</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/openview/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for end-to-end testing                   -->
+  <!-- =================================================================== -->
+    <target name="test-end-to-end">
+        <echo>Runs the test suite for the "EEB Properties" entity bean</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/EndToEnd/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for Events By Group                      -->
+  <!-- =================================================================== -->
+    <target name="test-events-by-group">
+        <echo>Runs the test suite for the "Events-by-Group" entity bean</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/events_by_group/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for Events By Group                      -->
+  <!-- =================================================================== -->
+    <target name="test-storm">
+        <echo>Runs the test suite for the "Storm" entity bean</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/storm/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for throttles                            -->
+  <!-- =================================================================== -->
+    <target name="test-throttle">
+        <echo>Runs the test suite for the "Throttle" buss module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/throttle/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for the Dispatcher bus module            -->
+  <!-- =================================================================== -->
+    <target name="test-dispatcher-unit">
+        <echo>Runs the unit test suite for the "Dispatcher" module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/dispatcher/test/Test**.java"/>
+                    <include name="**/dispatcher/Alarmpoint/test/Test**.java"/>
+                    <!--
+                    <include name="**/dispatcher/ServiceCenter/test/TestCreate**.java"/>
+                    -->
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <target name="test-dispatcher">
+        <echo>Runs the integration test suite for the "Dispatcher" buss module</echo>
+        <echo>Library path: ${base.lib.dir}</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/dispatcher/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for Alarmpoint                           -->
+  <!-- =================================================================== -->
+    <target name="test-alarmpoint">
+        <echo>Runs the test suite for the "Dispatcher" module</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/dispatcher/Alarmpoint/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for ServiceCenter                        -->
+  <!-- =================================================================== -->
+    <target name="test-servicecenter">
+        <echo>Runs the test suite for the "Dispatcher" module</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/dispatcher/ServiceCenter/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+  <!-- =================================================================== -->
+  <!--   Executes the test script for EEB utility classes                  -->
+  <!-- =================================================================== -->
+    <target name="test-shared-utilities">
+        <echo>Runs the test suite for the EEB utility classes</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/shared/utility/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+
+  <!-- =================================================================== -->
+  <!--   Running the Audit2a script                                        -->
+  <!-- =================================================================== -->
+  <target name="audit2a">
+    <echo>Running the "audit2a" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Audit2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="audit-for-message-id">
+    <echo>Running the "audit2a" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.AuditForMessageID">
+      <arg line="${message.id}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the DataMap2 script                                       -->
+  <!-- =================================================================== -->
+  <target name="datamap2">
+    <echo>Running the "datamap2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.DataMap2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the Alarmpoint2 script                                    -->
+  <!-- =================================================================== -->
+  <target name="alarmpoint2">
+    <echo>Running the "alarmpoint2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Alarmpoint2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the ServiceCenter2 script                                 -->
+  <!-- =================================================================== -->
+  <target name="servicecenter2">
+    <echo>Running the "servicecenter2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.ServiceCenter2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the PingClient1                                           -->
+  <!-- =================================================================== -->
+  <target name="pingclient1">
+    <echo>Running the "pingclient1" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.PingClient1">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the RawOvi2                                               -->
+  <!-- =================================================================== -->
+  <target name="rawovi2">
+    <echo>Running the "RawOvi2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.RawOvi2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the Responder2                                            -->
+  <!-- =================================================================== -->
+  <target name="responder2">
+    <echo>Running the "Responder2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Responder2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="responder3">
+    <echo>Running the "Responder3" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Responder3">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="responder4">
+    <echo>Running the "Responder4" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Responder4">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="responder4_1">
+    <echo>Running the "Responder4" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Responder4_1">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="responder5">
+    <echo>Running the "Responder5" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Responder5">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the ApDrain                                               -->
+  <!-- =================================================================== -->
+  <target name="apdrain">
+    <echo>Running the "ApDrain" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.ApDrain">
+      <arg line="${ap_drain.queue}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the SCDrain                                               -->
+  <!-- =================================================================== -->
+  <target name="scdrain">
+    <echo>Running the "SCDrain" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.SCDrain">
+      <arg line="${sc_drain.queue}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the spool2                                                -->
+  <!-- =================================================================== -->
+  <target name="spool2">
+    <echo>Running the "RawOvi2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Spool2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the Suppression2                                          -->
+  <!-- =================================================================== -->
+  <target name="suppression2">
+    <echo>Running the "Suppression2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Suppression2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="suppression3">
+    <echo>Running the "Suppression3" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Suppression3">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="suppression4">
+    <echo>Running the "Suppression4" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Suppression4">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="suppression-audit">
+    <echo>Running the "Suppression-Audit" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.suppression.SuppressionAudit">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the throttle2                                             -->
+  <!-- =================================================================== -->
+  <target name="throttle2">
+    <echo>Running the "Throttle2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Throttle2">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the dispatcher                                            -->
+  <!-- =================================================================== -->
+  <target name="dispatcher">
+    <echo>Running the "Dispatcher" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.Dispatcher">
+      <arg line="${dispatcher.queue}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the dispatcher-update                                     -->
+  <!-- =================================================================== -->
+  <target name="dispatcher-update-ticket">
+    <echo>Running the "DispatcherUpdateTicket" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.DispatcherUpdateTicket">
+      <arg line="${dispatcher.queue}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the OviDump                                               -->
+  <!-- =================================================================== -->
+  <target name="ovidump">
+    <echo>Running the "RawOvi2" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviDump">
+      <arg line="${ovidump.file}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the OviSimulator                                          -->
+  <!-- =================================================================== -->
+  <target name="ovisimulator">
+    <echo>Running the "OviSimulator" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="ov-ack">
+    <echo>Acknowledging Openview MessageID=${messageId}...</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.openview.AcknowledgeEvent">
+      <arg line="${messageId}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <target name="test-performance-ovi">
+    <echo>Running the "OviSimulator" script to test performance</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+    <java classname="com.bgi.esm.monitoring.platform.test.OviSimulator">
+      <arg line="${ovisimulator.topic} ${ovisimulator.file}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the Storm                                                 -->
+  <!-- =================================================================== -->
+  <target name="storm">
+    <echo>Running the "Storm" script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.StormCalculator">
+      <arg line="${storm.queue}" />
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+
+  <!-- =================================================================== -->
+  <!--   Running the sequence generators                                   -->
+  <!-- =================================================================== -->
+  <target name="monotonic">
+    <echo>Running the generic sequence generator test script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.monotonic.TestSequenceGenerator">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+  <target name="monotonic-datamap">
+    <echo>Running the data map sequence generator test script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.monotonic.TestSequenceGeneratorDataMap">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+  <target name="monotonic-suppression">
+    <echo>Running the suppression sequence generator test script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.monotonic.TestSequenceGeneratorSuppression">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+  <target name="monotonic-throttle">
+    <echo>Running the throttle sequence generator test script</echo>
+    <java classname="com.bgi.esm.monitoring.platform.test.monotonic.TestSequenceGeneratorThrottle">
+      <classpath refid="javac.path" />
+    </java>
+  </target>
+</project>

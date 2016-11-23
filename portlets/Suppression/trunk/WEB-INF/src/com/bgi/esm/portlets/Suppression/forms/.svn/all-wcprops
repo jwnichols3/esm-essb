@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms
+END
+EditEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/EditEntry.java
+END
+EditPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/EditPreferences.java
+END
+SuppressionDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/SuppressionDate.java
+END
+SearchParams.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/SearchParams.java
+END
+AddEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/AddEntry.java
+END
+BatchAddEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/forms/BatchAddEntry.java
+END

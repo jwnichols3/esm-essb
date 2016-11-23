@@ -1,0 +1,47 @@
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.portlets.Suppressions.forms.Suppression" table="suppression" >
+        <id name="SuppressId" column="suppress_id">
+            <generator class="native" />
+        </id>
+        <property name="RowId"            type="text"          column="row_id"           />
+        <property name="StartTime"        type="calendar"      column="start_time"       />
+        <property name="EndTime"          type="calendar"      column="end_time"         />
+        <property name="AppName"          type="text"          column="app_name"         />
+        <property name="NodeName"         type="text"          column="node_name"        />
+        <property name="GroupName"        type="text"          column="group_name"       />
+        <property name="DbServer"         type="text"          column="db_server"        />
+        <property name="NotifyFlg"        type="long"          column="notify_flg"       />
+        <property name="NotifyMinutes"    type="long"          column="notify_minutes"   />
+        <property name="RemoveOnReboot"   type="long"          column="remove_on_reboot" />
+        <property name="Description"      type="text"          column="description"      />
+        <property name="Message"          type="text"          column="message"          />
+        <property name="Owner"            type="string"        column="owner"            />
+        <property name="NotifyEmail"      type="string"        column="notify_email"     />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.Suppressions.forms.SuppressionAudit" table="suppression_audit" >
+        <id name="AuditId" column="audit_id" >
+            <generator class="native" />
+        </id>
+        <property name="AuditVersionNum"   type="long"          column="audit_version_num" />
+        <property name="AuditTimestamp"    type="calendar"      column="audit_timestamp"   />
+        <property name="AuditModifiedBy"   type="text"          column="audit_modified_by" />
+        <property name="SuppressId"        type="long"          column="suppress_id"       />
+        <property name="RowId"             type="text"          column="row_id"            />
+        <property name="StartTime"         type="calendar"      column="start_time"        />
+        <property name="EndTime"           type="calendar"      column="end_time"          />
+        <property name="AppName"           type="text"          column="app_name"          />
+        <property name="NodeName"          type="text"          column="node_name"         />
+        <property name="GroupName"         type="text"          column="group_name"        />
+        <property name="DbServer"          type="text"          column="db_server"         />
+        <property name="NotifyFlg"         type="long"          column="notify_flg"        />
+        <property name="NotifyMinutes"     type="long"          column="notify_minutes"    />
+        <property name="RemoveOnReboot"    type="long"          column="remove_on_reboot"  />
+        <property name="Description"       type="text"          column="description"       />
+        <property name="Message"           type="text"          column="message"           />
+        <property name="Owner"             type="string"        column="owner"             />
+        <property name="NotifyEmail"       type="string"        column="notify_email"      />
+    </class>
+</hibernate-mapping>

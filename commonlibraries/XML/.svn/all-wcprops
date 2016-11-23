@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/esm-platform/!svn/ver/575/trunk/CommonLibraries/XML
+END
+xmlParserAPIs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/91/trunk/CommonLibraries/XML/xmlParserAPIs.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/91/trunk/CommonLibraries/XML/xercesImpl.jar
+END
+xmlunit1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/91/trunk/CommonLibraries/XML/xmlunit1.0.jar
+END
+jsr173_1.0_api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/91/trunk/CommonLibraries/XML/jsr173_1.0_api.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/575/trunk/CommonLibraries/XML/activation.jar
+END

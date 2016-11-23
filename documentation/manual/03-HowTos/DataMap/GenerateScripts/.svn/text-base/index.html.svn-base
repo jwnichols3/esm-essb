@@ -1,0 +1,53 @@
+<html>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <td><a href="../../../index.html">Home</a></td>
+                <td><a href="../../../00-Overview/index.html">Overview</a></td>
+                <td><a href="../../../01-Deployment/index.html">How do I deploy an instance of the EEB</a></td>
+                <td><a href="../../../02-Migration/index.html">How do I add a group to the EEB?</a></td>
+                <td><a href="../../../03-HowTos/index.html">Step-by-step How-Tos</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="../../index.html">&lt;&lt; Back</a>
+        <br>
+        <br>
+        <h1>How do I dump the existing suppression rules into a Perl script?</h1>
+        <br>
+        <br>
+        Assuming that your portal server is $PORTAL_URL, visit the following URLS:
+        <br>
+        <br>
+        <center>
+            <table border="0" width="80%">
+                <tr>
+                    <td><li></li></td>
+                    <td>$PORTAL_URL/DataMap/GenerateOpenviewDataMap</td>
+                </tr>
+                <tr>
+                    <td><li></li></td>
+                    <td>$PORTAL_URL/DataMap/GenerateServiceCenterDataMap</td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        For example, if the base portal URL is http://calntalp202:5080, then the URLS would be:
+        <br>
+        <br>
+        <center>
+            <table border="0" width="80%">
+                <tr>
+                    <td><li></li></td>
+                    <td>http://calntalp202:5080/DataMap/GenerateOpenviewDataMap</td>
+                </tr>
+                <tr>
+                    <td><li></li></td>
+                    <td>http://calntalp202:5080/DataMap/GenerateServiceCenterDataMap</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data
+END
+shareit_people.sql
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/shareit_people.sql
+END
+alarmpoint3-to-ldap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/alarmpoint3-to-ldap.jar
+END
+app_people.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/app_people.txt
+END
+dump.txt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/dump.txt
+END
+peregrine_multiple_events.xml.mht
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/peregrine_multiple_events.xml.mht
+END
+peregrine_single_event.xml.mht
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/peregrine_single_event.xml.mht
+END
+people_responsibilities.txt
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/people_responsibilities.txt
+END
+shareit_db_stored_procs
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/shareit_db_stored_procs
+END
+people.out
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/people.out
+END
+dev_queries
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/dev_queries
+END
+shareit_people.sql.jar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/shareit_people.sql.jar
+END
+ldap2alarmpoint_mappings.xls
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/ldap2alarmpoint_mappings.xls
+END
+peregrine_queries
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/peregrine_queries
+END
+people_info.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/326/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/data/people_info.txt
+END

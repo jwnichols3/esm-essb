@@ -1,0 +1,290 @@
+<project name="Barclays Global Investors" basedir="." default="instructions">
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="build" />
+        <fileset dir="lib" includes="**/*.jar" />
+        <fileset dir="../../../CommonLibraries" includes="**/*.jar" />
+    </path>
+
+	<!--
+		*********************************************************************************
+		*********************************************************************************
+		**	Default execution path.
+		**	
+		**	Lists all the possible execution options for this build
+		*********************************************************************************
+		*********************************************************************************
+	-->
+	<target name="instructions" description="List execution options">
+		<echo> Instructions:
+
+	clean   - removes the output files from previous builds
+	compile - compiles the execution suite
+	data    - compiles the data suite
+	publish - creates a .war file for the production environment
+        Argument webapp: base directory of the webapp (ex: $TOMCAT_HOME/webapps/my_webapp)
+		</echo>
+	</target>
+	<!-- 
+		*********************************************************************************
+		*********************************************************************************
+		**	Removes the output files from previous builds.  
+		**	
+		**	This includes all .class files and .swp files
+		*********************************************************************************
+		*********************************************************************************
+	-->
+	<target name="clean" description="Removes the output files from previous builds">
+		<echo>Cleaning previous build...</echo>
+		<delete>
+			<fileset dir="build" includes="**/*.class"/>
+			<fileset dir="src" includes="**/*.swp"/>
+		</delete>
+	</target>
+	<!--
+		*********************************************************************************
+		*********************************************************************************
+		**	Compiles all source files.
+		*********************************************************************************
+		*********************************************************************************
+	-->
+	<target name="compile" description="Compiles all source files" depends="resources">
+		<echo>Compiling execution source files...</echo>
+        <mkdir dir="build"/>
+		<javac srcdir="src" destdir="build" includes="**/*.java" debug="on" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath"/>
+		</javac>
+	</target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="build" includeEmptyDirs="no" overwrite="true">
+            <fileset dir="src">
+            <patternset>
+                <include name="**/*.MF"/>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+                <include name="**/*.dtd"/>
+                <include name="**/*.jpg"/>
+                <include name="**/*.png"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+	<!--
+		*********************************************************************************
+		*********************************************************************************
+		**	Publishes the web application.
+		**
+		**	1.  Removes output files from all previous builds.
+		**	2.	Compiles all sources files
+		**	3.	Creates a .jar library of the 
+		*********************************************************************************
+		*********************************************************************************
+	-->
+
+    <target name="mysql" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="tools.ConvertToMySQL" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="build-data-set" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.BuildDataSet" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="test-embedded-db" depends="compile">
+        <echo>Testing embedded database data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.TestEmbeddedDatabase" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="create-embedded-db" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.CreateEmbeddedDatabase" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="eeb-stress-test" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.EEBStressTest" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-users-only" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTestExponentialOnly" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-test" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTest" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-burst" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTestBurst" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-test-exp" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTestExponential" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-test-mt" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTestMT" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="regression-test-random-exp" depends="compile">
+        <echo>Building data set...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.regression.RegressionTestMTExponential" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="run" depends="compile">
+        <echo>Dumping query...</echo>
+        <java classname="com.bgi.esm.monitoring.tools.ExportQueryToXML.MainClass" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="run2" depends="compile">
+        <echo>Dumping query...</echo>
+        <java classname="com.bgi.esm.monitoring.tools.ExportQueryToXML.ExportField" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Builds the executable .jar
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="build" depends="compile">
+        <echo>Building executable jar...</echo>
+        <unjar dest="build">
+            <fileset dir="lib">
+                <include name="antlr.jar"                           />
+                <include name="asm.jar"                             />
+                <include name="asm-attrs.jar"                       />
+                <include name="cglib-2.1.3.jar"                     />
+                <include name="commons-collections-3.2.jar"         />
+                <include name="commons-logging-1.1.jar"             />
+                <include name="derbe-10.2.2.0.jar"                  />
+                <include name="dom4j-1.6.1.jar"                     />
+                <include name="hibernate3.jar"                      />
+                <include name="jconn2.jar"                          />
+                <include name="jta.jar"                             />
+                <include name="jtds-1.2.jar"                        />
+                <include name="jTDS2.jar"                           />
+                <include name="log4j-1.2.13.jar"                    />
+                <include name="mysql-connector-java-3.1.13-bin.jar" />
+                <include name="ojdbc14.jar"                         />
+                <include name="postgresql-8.1-405.jdbc3.jar"        />
+                <include name="replatform_client.jar"               />
+                <include name="replatform_server.jar"               />
+            </fileset>
+            <!--
+            <fileset dir=".">
+                <include name="tti_logs_derby.jar" />
+            </fileset>
+            -->
+        </unjar>
+        <jar destfile="RegressionTest.jar">
+            <fileset dir="build" includes="**/*.class"/>
+            <fileset dir="build" includes="**/*.MF"/>
+            <fileset dir="build" includes="**/*.conf"/>
+            <fileset dir="build" includes="**/*.properties"/>
+            <fileset dir="build" includes="**/*.bat"/>
+            <fileset dir="build" includes="**/*.xml"/>
+            <fileset dir="build" includes="**/*.tld"/>
+            <fileset dir="build" includes="**/*.dtd"/>
+            <fileset dir="build" includes="**/*.jpg"/>
+            <fileset dir="build" includes="**/*.png"/>
+            <fileset dir="build" includes="tti_logs/**/*" />
+            <fileset dir="src"   includes="**/*.properties" />
+            <manifest>
+                <attribute name="Main-Class" value="com.bgi.esm.monitoring.platform.regression.MainClass"/>
+                <attribute name="Created-By" value="Dennis S. Lin (linden)" />
+            </manifest>
+        </jar>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Runs the test suite
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="test" depends="compile">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <mkdir dir="test-results/test-images"/>
+        <junit printsummary="yes">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+</project>
+

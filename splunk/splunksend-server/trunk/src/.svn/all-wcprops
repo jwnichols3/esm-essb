@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src
+END
+version.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/version.properties
+END
+logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/logging.properties
+END
+orm.properties
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/orm.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/log4j.properties
+END
+application.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/application.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/hibernate.cfg.xml
+END

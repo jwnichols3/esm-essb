@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Title:
+  weblogic-application.xml
+
+Description:
+  WebLogic J2EE deployment descriptor
+
+Development Environment:
+  WebLogic Application Server 9.2
+
+Author:
+  G.S. Cole (guycole at gmail dot com)
+-->
+<weblogic-application xmlns="http://www.bea.com/ns/weblogic/90" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <listener>
+    <listener-class>com.bgi.esm.monitoring.platform.weblogic.LifeCycleListener</listener-class>
+  </listener>
+</weblogic-application>

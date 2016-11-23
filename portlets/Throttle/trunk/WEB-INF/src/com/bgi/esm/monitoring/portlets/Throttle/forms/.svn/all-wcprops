@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/662/trunk/Portlets/Throttle/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Throttle/forms
+END
+Throttle.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/662/trunk/Portlets/Throttle/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Throttle/forms/Throttle.java
+END
+Throttle.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/662/trunk/Portlets/Throttle/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Throttle/forms/Throttle.hbm.xml
+END
+ThrottleAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/342/trunk/Portlets/Throttle/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Throttle/forms/ThrottleAudit.java
+END

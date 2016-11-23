@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm-platform/!svn/ver/587/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/test
+END
+TestHibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/test/TestHibernateUtil.java
+END
+TestGenerateDataMapFiles.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/esm-platform/!svn/ver/587/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/test/TestGenerateDataMapFiles.java
+END

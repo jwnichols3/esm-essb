@@ -1,0 +1,219 @@
+<html>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <td><a href="../../../index.html">Home</a></td>
+                <td><a href="../../../00-Overview/index.html">Overview</a></td>
+                <td><a href="../../../01-Deployment/index.html">How do I deploy an instance of the EEB</a></td>
+                <td><a href="../../../02-Migration/index.html">How do I add a group to the EEB?</a></td>
+                <td><a href="../../../03-HowTos/index.html">Step-by-step How-Tos</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="../../index.html">&lt;&lt; Back</a>
+        <br>
+        <br>
+        <h1>How do I maintain the data map rules with raw SQL?</h1>
+        <br>
+        <br>
+        The "data_map" table in the EEB database is made up of the following columns:
+        <br>
+        <br>
+        <center>
+            <table border="1">
+                <tr>
+                    <th>Column Name</th>
+                    <th>Data Type</td>
+                    <th>Notes</td>
+                </tr>
+                <tr>
+                    <td>bgi_group</td>
+                    <td>varchar(127)</td>
+                    <td>Openview message group.  This is the primary key for this database table.</td>
+                </tr>
+                <tr>
+                    <td>bgi_method</td>
+                    <td>varchar(127)</td>
+                    <td>Notification method, either 'ticket' or 'alarmpoint_only'</td>
+                </tr>
+                <tr>
+                    <td>ap_group</td>
+                    <td>varchar(127)</td>
+                    <td>The Alarmpoint group this alert should be sent to</td>
+                </tr>
+                <tr>
+                    <td>ap_script</td>
+                    <td>varchar(127)</td>
+                    <td>The name of the Alarmpoint script called to generate the alert</td>
+                </tr>
+                <tr>
+                    <td>per_queue</td>
+                    <td>varchar(127)</td>
+                    <td>Not used in the new Service Center 6.2 connector.</td>
+                </tr>
+                <tr>
+                    <td>per_cat</td>
+                    <td>varchar(127)</td>
+                    <td>
+                        Must be part of a valid tuple in the Service Center Foundation Data.
+                        <br>
+                        Currently needs to be 'MONITORING EVENT'
+                    </td>
+                </tr>
+                <tr>
+                    <td>per_subcat</td>
+                    <td>varchar(127)</td>
+                    <td>
+                        Must be part of a valid tuple in the Service Center Foundation Data.
+                        <br>
+                        Currently needs to be 'INCIDENT'
+                    </td>
+                </tr>
+                <tr>
+                    <td>per_product</td>
+                    <td>varchar(127)</td>
+                    <td>
+                        Must be part of a valid tuple in the Service Center Foundation Data.
+                        <br>
+                        Currently needs to be 'SYSTEM MONITORING'
+                    </td>
+                </tr>
+                <tr>
+                    <td>per_problem</td>
+                    <td>varchar(127)</td>
+                    <td>
+                        Must be part of a valid tuple in the Service Center Foundation Data.
+                        <br>
+                        Currently needs to be 'SYSTEM ALARM'
+                    </td>
+                </tr>
+                <tr>
+                    <td>per_assign</td>
+                    <td>varchar(127)</td>
+                    <td>Must be a valid assignment group in Service Center 6.2.  (Please default to 'ESM').</td>
+                </tr>
+                <tr>
+                    <td>per_location</td>
+                    <td>varchar(127)</td>
+                    <td>Must be 'GLOBAL' for the time being.</td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>text</td>
+                    <td>Freeform text field for the description of this data map rule.</td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        An example query to add a data map rule would be as follows:
+        <br>
+        <br>
+        <center>
+            <table border="0">
+                <tr>
+                    <td>
+                        INSERT INTO dbo.data_map
+                        <br>
+                        ( 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bgi_group, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;bgi_method,     
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;ap_group, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;ap_script, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_cat, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_subcat, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_product, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_problem, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_assign, 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;per_location 
+                        <br>
+                        ) 
+                        <br>
+                        VALUES 
+                        <br>
+                        (
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'sybase-test',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'ticket',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'DBA-TEST',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'BGI VPO',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'MONITORING EVENT',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'INCIDENT',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'SYSTEM MONITORING',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'SYSTEM ALARM',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'ESM',
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;'GLOBAL'
+                        <br>
+                        );
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        An example query to update a data map rule would be as follows:
+        <br>
+        <br>
+        <center>
+            <table width="80%">
+                <tr>
+                    <td>
+                        UPDATE data_map SET bgi_method='alarmpoint_only' WHERE bgi_group='sybase-test';
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        An example query to select a data map rule would be as follows:
+        <br>
+        <br>
+        <center>
+            <table width="80%">
+                <tr>
+                    <td>
+                        SELECT * FROM data_map WHERE bgi_group='sybase-test';
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        SELECT * FROM data_map <i>(when retrieving all rules)</i>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        An example query to delete a data map rule would be as follows:
+        <center>
+            <table width="80%">
+                <tr>
+                    <td>
+                        DELETE FROM data_map WHERE bgi_group='sybase-test';
+                    </td>
+                </tr>
+            </table>
+        </center>
+        
+    </body>
+</html>

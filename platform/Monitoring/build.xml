@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Title:build.xml
+
+Description:
+    Build ESM replatform applications
+
+Author:
+    G.S. Cole (guycole at gmail dot com)
+
+Development Environment:
+    Fedora 4
+    Sun Java 1.5.0_06
+    Apache Ant 1.6.2
+
+Maintenance History:
+    $Id: build.xml,v 1.1 2005/06/11 21:06:22 gsc Exp $
+
+    $Log$
+-->
+
+<project name="replatform" default="help" basedir=".">
+    <property file="./ant.properties"/>
+
+    <property name="build.dir" value="${base.dir}/build"/>
+    <property name="build.classes.dir" value="${build.dir}/classes"/>
+    <property name="build.deploy.dir" value="${build.dir}/deploy"/>
+
+    <property name="javadoc.dir" value="${base.dir}/javadoc"/>
+
+    <property name="lib.dir" value="${base.dir}/lib"/>
+
+    <property name="report.dir" value="${base.dir}/report"/>
+
+    <property name="src.dir" value="${base.dir}/src"/>
+
+    <property environment="env"/>
+    <property name="env.HOSTNAME" value="${env.COMPUTERNAME}"/>
+ 
+    <path id="javac.path">
+                <pathelement path="${classpath}"/>
+                <fileset dir="../../CommonLibraries" includes="**/*.jar" />
+                <pathelement location="${build.classes.dir}"/>
+                <pathelement location="${build.deploy.dir}"/>
+                <pathelement location="${base.dir}/etc"/>
+        <!--
+                <pathelement location="${base.dir}/etc/bgi.properties"/>
+                <pathelement location="${base.dir}/etc/jndi.properties"/>
+                <pathelement location="${base.dir}/etc/log4j.properties"/>
+        <pathelement location="${lib.dir}/jms-1.0.2a.jar"/>
+        <pathelement location="${lib.dir}/log4j-1.2.7.jar"/>
+        <pathelement location="${lib.dir}/commons-digester-1.7.jar"/>
+        <pathelement location="${lib.dir}/commons-lang-2.1.jar"/>
+        <pathelement location="${lib.dir}/commons-logging-1.0.3.jar"/>
+        <pathelement location="${lib.dir}/commons-configuration-1.2.jar"/>
+        -->
+    </path>
+
+    <target name="help">
+        <echo>Here are the available build commands:</echo>
+        <echo></echo>
+        <echo>    env_report   Shows the environment variables that the monitoring platform will execute with.</echo>
+        <echo></echo>
+        <echo>Build Options:</echo>
+        <echo>    clean                    Removes the current build</echo>
+        <echo>    compile                  Compiles the project</echo>
+        <echo>    javadoc                  Creates the Javadocs for this project</echo>
+        <echo></echo>
+        <echo>Executing the binaries:</echo>
+        <echo>    start-notifier           </echo>
+        <echo>    start-suppression-01     </echo>
+        <echo>    start-suppression-02     </echo>
+        <echo>    start-datamap            </echo>
+        <echo>    start-throttle           </echo>
+        <echo>    start-dispatcher         </echo>
+        <echo></echo>
+        <echo>Simulating environment conditions:</echo>
+        <echo>    start-ovi-simulator      </echo>
+        <echo>    start-ovi-notifier       </echo>
+        <echo></echo>
+        <echo>Test suites:</echo>
+        <echo>    test-dispatcer           </echo>
+        <echo>    test-utility             </echo>
+        <echo>    start-stormtest-01       </echo>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Initialization                                                      -->
+    <!-- =================================================================== -->
+    <target name="init" description="Perform Inititalization">
+        <echo>Building on ${env.HOSTNAME} running ${os.name} for ${user.name}...</echo>
+        <tstamp/>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Environment Report                                                  -->
+    <!-- =================================================================== -->
+    <target name="env_report" depends="init" description="Environment">
+        <echo message="base.dir = ${base.dir}"     />
+        <echo message="hostname = ${env.HOSTNAME}" />
+        <echo message="username = ${user.name}"    />
+        <echo message="OS Type  = ${os.name}"      />
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Remove The Current Build                                            -->
+    <!-- =================================================================== -->
+    <target name="clean" depends="init">
+        <delete dir="${build.dir}"/>
+        <delete dir="${javadoc.dir}"/>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Copy resources to the build directory                               -->
+    <!-- =================================================================== -->
+    <target name="copy-resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${build.classes.dir}" includeEmptyDirs="no">
+            <fileset dir="src">
+            <patternset>
+                <include name="**/*.MF"/>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+                <include name="**/*.jpg"/>
+                <include name="**/*.png"/>
+                <include name="**/*.xjb"/>
+                <include name="**/*.xsd"/>
+                <include name="**/*.stream"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Compile                                                             -->
+    <!-- =================================================================== -->
+    <target name="compile" depends="init,copy-resources" description="Compile">
+        <mkdir dir="${build.classes.dir}"/>
+        <mkdir dir="${build.deploy.dir}"/>
+ 
+        <javac destdir="${build.classes.dir}" verbose="${javac.verbose}" debug="${javac.debug}" deprecation="${javac.depreciation}" optimize="${javac.optimize}" classpathref="javac.path">
+            <src path="${src.dir}"/>
+        </javac>
+    </target>
+ 
+    <!-- =================================================================== -->
+    <!-- JavaDoc                                                             -->
+    <!-- =================================================================== -->
+    <target name="javadoc" depends="init">
+        <delete dir="${javadoc.dir}"/>
+        <mkdir dir="${javadoc.dir}"/>
+
+        <!--
+            classpath="${lib.dir}/jms-1.0.2a.jar:${lib.dir}/log4j-1.2.7.jar:${lib.dir}/commons-logging-1.0.3.jar:${lib.dir}/commons-digester-1.7.jar:${lib.dir}/commons-configuration-1.2.jar"
+         --> 
+        <javadoc sourcepath="${src.dir}"
+            destdir="${javadoc.dir}"
+            packagenames="*"
+            author="true"
+            version="true"
+            private="true"
+            windowtitle="BGI Replatform API Documentation"
+            doctitle="&lt;h1&gt;BGI Replatform API Documentation&lt;/h1&gt;">
+        </javadoc>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starting the "Suppression Module" bus module reading from the       -->
+    <!--     "primary" queue                                                 -->
+    <!-- =================================================================== -->
+    <target name="start-suppression-01" depends="compile">
+        <echo>Starting Suppression module, Scenario #01...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.suppression.Suppression" fork="true">
+            <arg line="primary" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starting the "Suppression Module" bus module reading from the       -->
+    <!--     "secondary" queue                                               -->
+    <!-- =================================================================== -->
+    <target name="start-suppression-02" depends="compile">
+        <echo>Starting Suppression module, Scenario #02...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.suppression.Suppression" fork="true">
+            <arg line="secondary" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starting the "Datamap" bus module                                   -->
+    <!-- =================================================================== -->
+    <target name="start-datamap" depends="compile">
+        <echo>Starting DataMap module...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.data_map.DataMap" fork="true">
+            <arg line="primary" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starting the "Throttle" bus module                                  -->
+    <!-- =================================================================== -->
+    <target name="start-throttle" depends="compile">
+        <echo>Starting DataMap module...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.throttle.Throttle" fork="true">
+            <arg line="primary" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Running the "Notifier" script to simulate a single event            -->
+    <!-- =================================================================== -->
+    <target name="start-notifier" depends="compile">
+        <echo>Starting Notifier module...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.notifier.Notifier" fork="true">
+            <arg line="'e3145bcc-6395-71db-1406-4534661e0000' 'rdcuxsrv217' 'Sun SPARC(HTTPS)' '10/24/2006' '12:28:54' '10/24/2006' '12:28:54' 'SSM-no-app-def' 'esm' 'SSM-no-obj-def-CLI' 'normal' 'op1 op2 op3 op4 op5' 'test message one' 'instruction message' 'key1=value1;;key2=value2' '666'" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Running the "StormTest" script to simulate Event Storm Scenario #01 -->
+    <!-- =================================================================== -->
+    <target name="start-stormtest-01" depends="compile">
+        <echo>Simulating Event Storm Scenario #1...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.notifier.StormTest1" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starts up the "OviNotifier" module                                  -->
+    <!-- =================================================================== -->
+    <target name="start-ovi-notifier" depends="compile">
+        <echo>Running the OVI Notifier...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.notifier.OviNotifier" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starts up the "OviSimulator" module                                 -->
+    <!-- =================================================================== -->
+    <target name="start-ovi-simulator" depends="compile">
+        <echo>Running the OVI Simulator...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.notifier.OviSimulator" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Starts up the "Dispatcher" module                                   -->
+    <!-- =================================================================== -->
+    <target name="start-dispatcher" depends="compile">
+        <echo>Running the test suite for Dispatcher module...</echo>
+        <java classname="com.bgi.esm.monitoring.platform.dispatcher.Dispatcher" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="javac.path"/>
+        </java>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Runs the test suite for the "Dispatcher" module                     -->
+    <!-- =================================================================== -->
+    <target name="test-dispatcher" depends="compile">
+        <echo>Runs the test suite for the "Dispatcher" module</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/dispatcher/test/Test**.java"/>
+                    <include name="**/dispatcher/ServiceCenter/test/Test**.java"/>
+                    <include name="**/dispatcher/Alarmpoint/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Runs the test suite for the utility classes                         -->
+    <!-- =================================================================== -->
+    <target name="test-utility" depends="compile">
+        <echo>Runs the test suite for the utility classes</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/utility/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Runs the test suite for the authentication classes                  -->
+    <!-- =================================================================== -->
+    <target name="test-authentication" depends="compile">
+        <echo>Runs the test suite for the authentication classes</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/authentication/test/Test**.java"/>
+                    <include name="**/authentication/ldap/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <!-- =================================================================== -->
+    <!-- Runs the entire test suite                                          -->
+    <!-- =================================================================== -->
+    <target name="test-all" depends="compile">
+        <echo>Runs the test suite for the authentication classes</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="javac.path"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/Test**.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+</project>

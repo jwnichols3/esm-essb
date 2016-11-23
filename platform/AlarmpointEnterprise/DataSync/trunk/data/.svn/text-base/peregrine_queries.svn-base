@@ -1,0 +1,3 @@
+http://peregrine-app-prod:8080/oaa/servlet/archway?P4Connect.getTickets&_return=number;assignment;user.id;status;flag;open.time;close.time;art.id;ticket.owner;first.time.fix&status=closed&_count=15
+
+http://peregrine-app-prod:8080/oaa/servlet/archway?sc.query&_table=probsummary&number=IM01006952 

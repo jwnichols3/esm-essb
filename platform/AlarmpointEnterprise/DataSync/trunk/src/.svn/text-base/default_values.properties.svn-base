@@ -1,0 +1,209 @@
+###############################################################################
+##  Default values used when synchronizing People data from LDAP 
+###############################################################################
+
+##
+##  Default values for the "DS_USERS" table
+##
+#  This is a required field, and must be a non-null value
+default_values.people.default_password=some_default_password
+
+#  This is a required field
+default_values.people.web_login_type=LDAP
+
+#  This is a required field, and must be one of the values in the
+#  "NAME" column of the "ROLE" table
+
+#  Changed to "Standard User" instead of "Full Access User" by Kris' request on 2007 Apr 12
+#default_values.people.role_list=Standard User
+default_values.people.role_list=Full Access User
+
+#  This is a required field, and must be one of the following values:
+#    "Y" to insert/update
+#    "N" to ignore
+#    "R" to remove
+default_values.people.alarmpoint_action=Y
+
+default_values.people.ldap_domain=insidelive.net
+
+##
+##  Default values for the "DS_EMAIL_DEVICES" table
+##
+default_values.email.service_provider_name=SMTP
+
+#
+default_values.email.delay=0
+
+#
+default_values.email.device_order=1
+
+#
+default_values.email.default_device=N
+
+#  This is a required field, and must be one of the values in the "NAME"
+#  column of the "DVC_NAMES" field, where the DVC_TYPE="EMAIL"
+default_values.email.device_name=Work Email
+
+#  This is a required field, and must be one of the following values:
+#    "Y" to insert/update
+#    "N" to ignore
+#    "R" to remove
+default_values.email.alarmpoint_action=Y
+default_values.email.external_key_prefix=Email
+
+##
+##  Default values for the "DS_VOICE_DEVICES" table
+##
+#  This is a required field, and must be one of the values in the "NAME"
+#  column of the "DVC_NAMES" field, where the DVC_TYPE="VOICE"
+default_values.voice.external_key_prefix=Voice
+default_values.voice.device_name=Work Phone
+
+#  All our phones aren't extensions, so we can set this to 0 if it isn't an
+#  extension, but can be a number with 10 or fewer digits (Alarmpoint Dev Guide).
+default_values.voice.extension=
+
+#  Status - must be "ACTIVE" or "INACTIVE" and is case-sensitive
+default_values.voice.status=ACTIVE
+
+#  default device
+default_values.voice.default_device=N
+
+#  default device
+default_values.voice.device_order=2
+
+#  This is a required field, and must be one of the following values:
+#    "Y" to insert/update
+#    "N" to ignore
+#    "R" to remove
+default_values.voice.alarmpoint_action=Y
+
+default_values.voice.service_provider_name=Phone Engine
+default_values.voice.delay=0
+
+
+
+##
+##  Default values for the "DS_VOICE_DEVICES" table, for mobile phones
+##
+#  This is a required field, and must be one of the values in the "NAME"
+#  column of the "DVC_NAMES" field, where the DVC_TYPE="VOICE"
+default_values.mobile.external_key_prefix=Mobile
+default_values.mobile.device_name=Mobile Phone
+
+#  All our phones aren't extensions, so we can set this to 0 if it isn't an
+#  extension, but can be a number with 10 or fewer digits (Alarmpoint Dev Guide).
+default_values.mobile.extension=
+
+#  Status - must be "ACTIVE" or "INACTIVE" and is case-sensitive
+default_values.mobile.status=ACTIVE
+
+#  default device
+default_values.mobile.default_device=N
+
+#  default device
+default_values.mobile.device_order=3
+
+#  This is a required field, and must be one of the following values:
+#    "Y" to insert/update
+#    "N" to ignore
+#    "R" to remove
+default_values.mobile.alarmpoint_action=Y
+
+default_values.mobile.service_provider_name=Phone Engine
+default_values.mobile.delay=0
+
+
+
+
+##
+##  Queries
+##
+queries.remove_existing_devices.email=\
+    SELECT  * \
+    FROM    ALARMPOINT3.EMAIL_DVC_DTL a INNER JOIN \
+                      ALARMPOINT3.RECIPIENTS b ON a.DVC_ID = b.RECIPIENT_ID \
+    WHERE   a.DVC_ID IN \
+            ( \
+                SELECT  recipient_id \
+                FROM    ALARMPOINT3.RECIPIENTS \
+                WHERE   RECIPIENT_ID IN \
+                        ( \
+                            SELECT  dvc_id \
+                            FROM    alarmpoint3.dvc \
+                        )  \
+                AND     SYNC_EXTERNAL_KEY IS NOT NULL \
+            )
+
+queries.remove_existing_devices.voice=\
+    SELECT  * \
+    FROM    ALARMPOINT3.VOC_DVC_DTL a INNER JOIN \
+                      ALARMPOINT3.RECIPIENTS b ON a.DVC_ID = b.RECIPIENT_ID \
+    WHERE   a.DVC_ID IN \
+            ( \
+                SELECT  recipient_id \
+                FROM    ALARMPOINT3.RECIPIENTS \
+                WHERE   RECIPIENT_ID IN \
+                        ( \
+                            SELECT  dvc_id \
+                            FROM    alarmpoint3.dvc \
+                        )  \
+                AND     SYNC_EXTERNAL_KEY IS NOT NULL \
+            )
+
+queries.sync_voice_devices.insert=\
+    INSERT INTO alarmpoint3.ds_voice_devices \
+    ( \
+        EXTERNAL_KEY,   AREA_CODE,      PHONE_NUMBER,           EXTENSION,      \
+        USER_KEY,       DEVICE_NAME,    SERVICE_PROVIDER_NAME,  STATUS,         DEFAULT_DEVICE, \
+        DEVICE_ORDER,   DELAY,          ALARMPOINT_ACTION, LOCK_24X7\
+    ) \
+    VALUES \
+    ( \
+        ?, ?, ?, ?, \
+        ?, ?, ?, ?, ?, \
+        ?, ?, ?, 'N' \
+    )
+
+queries.sync_voice_devices.update=\
+    UPDATE  alarmpoint3.ds_voice_devices \
+    SET     AREA_CODE=?, \
+            PHONE_NUMBER=?, \
+            EXTENSION=?, \
+            USER_KEY=?, \
+            DEVICE_NAME=?, \
+            SERVICE_PROVIDER_NAME=?, \
+            STATUS=?, \
+            DEFAULT_DEVICE=?, \
+            DEVICE_ORDER=?, \
+            DELAY=?, \
+            ALARMPOINT_ACTION=?, \
+            LOCK_24X7='N' \
+    WHERE   EXTERNAL_KEY=?
+
+queries.sync_email_devices.insert=\
+    INSERT INTO alarmpoint3.ds_email_devices \
+    ( \
+        EXTERNAL_KEY, STATUS, USER_KEY, ADDRESS, \
+        DEVICE_NAME, SERVICE_PROVIDER_NAME, DELAY, DEVICE_ORDER, DEFAULT_DEVICE, \
+        ALARMPOINT_ACTION, LOCK_24x7 \
+    ) \
+    VALUES \
+    ( \
+        ?, ?, ?, ?, ?, \
+        ?, ?, ?, ?, ?, \
+        'N' \
+    )
+
+queries.sync_email_devices.update=\
+    UPDATE  alarmpoint3.ds_email_devices \
+    SET     STATUS=?, \
+            USER_KEY=?, \
+            ADDRESS=?, \
+            DEVICE_NAME=?, \
+            SERVICE_PROVIDER_NAME=?, \
+            DELAY=?, \
+            DEVICE_ORDER=?, \
+            DEFAULT_DEVICE=?, \
+            ALARMPOINT_ACTION=? \
+    WHERE   EXTERNAL_KEY=?

@@ -1,0 +1,13 @@
+database.events.num_events.total=\
+    SELECT     destinations.name, COUNT(*) AS NumEvents \
+    FROM       messages, destinations \
+    WHERE      messages.destinationId = destinations.destinationId \
+    GROUP BY   destinations.name
+
+database.events.num_events.time_window=\
+    SELECT     COUNT(*) AS NumEvents \
+    FROM       messages, destinations \
+    WHERE      messages.destinationId = destinations.destinationId \
+      AND      destinations.name=? \
+      AND      messages.createTime >= ?  \
+      AND      messages.createTime < ?  \

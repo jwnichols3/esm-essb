@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/esm-platform/!svn/ver/628/trunk/Testing/src
+END
+alarmpoint.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/75/trunk/Testing/src/alarmpoint.properties
+END
+web_test_case.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/11/trunk/Testing/src/web_test_case.properties
+END
+textphone.bin
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/textphone.bin
+END
+pager.bin
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/pager.bin
+END
+alarmpoint_server.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/11/trunk/Testing/src/alarmpoint_server.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/438/trunk/Testing/src/log4j.properties
+END
+email.bin
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/email.bin
+END

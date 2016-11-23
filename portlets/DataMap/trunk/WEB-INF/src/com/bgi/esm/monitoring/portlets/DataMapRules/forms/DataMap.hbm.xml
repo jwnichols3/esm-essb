@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.portlets.DataMapRules.forms.DataMap" table="data_map" >
+        <id name="RuleId" column="rule_id">
+            <generator class="native" />
+        </id>
+        <property name="BgiGroup"     type="text"          column="bgi_group"    />
+        <property name="BgiMethod"    type="text"          column="bgi_method"   />
+        <property name="ApGroup"      type="text"          column="ap_group"     />
+        <property name="ApScript"     type="text"          column="ap_script"    />
+        <property name="PerCat"       type="text"          column="per_cat"      />
+        <property name="PerSubcat"    type="text"          column="per_subcat"   />
+        <property name="PerProduct"   type="text"          column="per_product"  />
+        <property name="PerProblem"   type="text"          column="per_problem"  />
+        <property name="PerAssign"    type="text"          column="per_assign"   />
+        <property name="PerLocation"  type="text"          column="per_location" />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.DataMapRules.forms.DataMapAudit" table="data_map_audit" >
+        <id name="AuditId" column="audit_id" >
+            <generator class="native" />
+        </id>
+        <property name="AuditVersionNum"   type="long"          column="audit_version_num" />
+        <property name="AuditTimestamp"    type="calendar"      column="audit_timestamp"   />
+        <property name="AuditModifiedBy"   type="text"          column="audit_modified_by" />
+        <property name="RuleId"            type="long"          column="rule_id"           />
+        <property name="BgiGroup"     type="text"          column="bgi_group"    />
+        <property name="BgiMethod"    type="text"          column="bgi_method"   />
+        <property name="ApGroup"      type="text"          column="ap_group"     />
+        <property name="ApScript"     type="text"          column="ap_script"    />
+        <property name="PerCat"       type="text"          column="per_cat"      />
+        <property name="PerSubcat"    type="text"          column="per_subcat"   />
+        <property name="PerProduct"   type="text"          column="per_product"  />
+        <property name="PerProblem"   type="text"          column="per_problem"  />
+        <property name="PerAssign"    type="text"          column="per_assign"   />
+        <property name="PerLocation"  type="text"          column="per_location" />
+    </class>
+</hibernate-mapping>

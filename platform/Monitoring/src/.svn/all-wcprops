@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm-platform/!svn/ver/580/trunk/Platform/Monitoring/src
+END
+AlarmpointJavaClient.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/333/trunk/Platform/Monitoring/src/AlarmpointJavaClient.properties
+END
+ldap.properties
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/108/trunk/Platform/Monitoring/src/ldap.properties
+END
+ServiceCenter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/207/trunk/Platform/Monitoring/src/ServiceCenter.properties
+END

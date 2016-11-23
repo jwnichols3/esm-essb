@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail
+END
+dsn.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail/dsn.jar
+END
+dumbster.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/623/trunk/CommonLibraries/Mail/dumbster.jar
+END
+imap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail/imap.jar
+END
+mailapi.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail/mailapi.jar
+END
+pop3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail/pop3.jar
+END
+smtp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries/Mail/smtp.jar
+END

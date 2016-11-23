@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/resources
+END
+ServiceCenterTicket.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/resources/ServiceCenterTicket.xsd
+END
+OvMessage.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/resources/OvMessage.xsd
+END
+ServiceCenterTicket.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/resources/ServiceCenterTicket.xjb
+END
+OvMessage.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/resources/OvMessage.xjb
+END

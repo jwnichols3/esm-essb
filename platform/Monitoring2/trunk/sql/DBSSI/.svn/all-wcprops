@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/660/trunk/Platform/Monitoring2/trunk/sql/DBSSI
+END
+dbssi-mssql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/232/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi-mssql.sql
+END
+dbssi-sybase.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/656/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi-sybase.sql
+END
+GCM082153.sql
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/654/trunk/Platform/Monitoring2/trunk/sql/DBSSI/GCM082153.sql
+END
+dbssi-createproc.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/660/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi-createproc.sql
+END
+dbssi-sybase-insert.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/654/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi-sybase-insert.sql
+END
+dbssi.bat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/394/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi.bat
+END
+dbssi-ESMP52.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/654/trunk/Platform/Monitoring2/trunk/sql/DBSSI/dbssi-ESMP52.sql
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/222/trunk/Platform/Monitoring2/trunk/sql/DBSSI/README.txt
+END

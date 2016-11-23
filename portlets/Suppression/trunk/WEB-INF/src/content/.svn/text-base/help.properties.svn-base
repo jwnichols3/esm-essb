@@ -1,0 +1,9 @@
+suppressions.help.description=Enter a description for the suppression.
+suppressions.help.application=Suppress by application name based on the VPO application name.  NOTE: you can narrow the list by typing the beginning of the application name in the field to the right of the drop down box.
+suppressions.help.node=Suppress by node name based on the VPO node name.  NOTE: you can narrow the list by typing the beginning of the node name in the field to the right of the drop down box.
+suppressions.help.databases=Suppress based on the database instance name (primarily used by the DBA team).
+suppressions.help.message_text=Narrow the suppression criteria by suppressing based on text within the message. 
+suppressions.help.reboot=If you would like to have the suppression automatically removed when the node is restarted.
+suppressions.help.start_time=When to start the suppression.  This can be based on the time now or can be a specific date and time.
+suppressions.help.end_time=When to start the suppression.  This can be based on time relative to the start time or can be a specific date and time.
+suppressions.help.notify_before_expire=If you would like an email sent prior to the suppression ending. Please specify the number of minutes prior to the suppression ending and the SMTP email address to notify.

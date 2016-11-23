@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/common/logging
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/common/logging/commons-logging-1.1.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/common/logging/log4j-1.2.13.jar
+END

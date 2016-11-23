@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/esm-platform/!svn/ver/664/trunk/Portlets
+END
+build-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm-platform/!svn/ver/430/trunk/Portlets/build-common.xml
+END
+build-library-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/444/trunk/Portlets/build-library-common.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/esm-platform/!svn/ver/15/trunk/Portlets/build.xml
+END
+build-portlets-common.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/357/trunk/Portlets/build-portlets-common.xml
+END

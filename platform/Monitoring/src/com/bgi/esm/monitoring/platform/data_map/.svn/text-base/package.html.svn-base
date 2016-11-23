@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+
+      Maintenance History:
+        $Id$
+
+        $Log$
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Data Map Buss Module.
+
+    <p>
+    The data map buss module is the second module (from OVO).  
+    This module awaits messages from the suppression module and 
+    usually forwards messages to the throttle module.
+
+    <p>
+    Based upon the message group field within the OVO ticket message,
+    the data map selects the supporting alarm point/peregrine rule
+    and forwards this information to the throttle module.
+
+    <p>
+    Messages which fail to match a data map rule are logged as errors
+    and not forwarded to throttle.
+
+    <p>
+    Kill messages are forwarded to throttle and then cause the
+    data map buss module to exit.
+
+    <p>
+    Data map rules are kept in a file specified within the system
+    configuration.  There is a thread (RuleManager) which polls
+    the rule file and reloads when updated.  
+  </body>
+</html>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/test
+END
+TestHibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/test/TestHibernateUtil.java
+END
+TestRMIClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/test/TestRMIClient.java
+END
+TestMailer.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/546/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/test/TestMailer.java
+END

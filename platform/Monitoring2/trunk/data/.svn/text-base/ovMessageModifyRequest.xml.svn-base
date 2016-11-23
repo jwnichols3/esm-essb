@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ovMessageModifyRequest xmlns="http://openview.hp.com/xmlns/ico/message" xmlns:ovit="http://openview.hp.com/xmlns/ico/types" version="1.0">
+  <messageUUID>262cfd60-8e78-71dd-0f54-4534361c0000</messageUUID>
+  <action>
+    <data>
+      <name>annotation</name>
+      <value type="string">[ESM-EnterpriseEventBus::ServiceCenterBuffer] Created Service Center Ticket #IM74549</value>
+    </data>
+  </action>
+</ovMessageModifyRequest>

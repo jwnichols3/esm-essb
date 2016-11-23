@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/579/trunk/Platform/AlarmpointEnterprise/DataSync/trunk
+END
+people.out
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/579/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/people.out
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/579/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/ant.properties
+END
+ant_sample.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/327/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/ant_sample.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/build.xml
+END

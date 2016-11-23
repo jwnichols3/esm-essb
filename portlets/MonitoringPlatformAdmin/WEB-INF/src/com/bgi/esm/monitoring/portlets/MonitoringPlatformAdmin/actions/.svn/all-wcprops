@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/actions
+END
+MessageQueueViewAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/actions/MessageQueueViewAction.java
+END
+BlankAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/actions/BlankAction.java
+END
+MessageQueueQueryAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/actions/MessageQueueQueryAction.java
+END

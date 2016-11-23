@@ -1,0 +1,38 @@
+##########################################################################################
+##########################################################################################
+#        Text properties for the Chinese (Taiwan) language
+##########################################################################################
+##########################################################################################
+##########################################################################################
+##########################################################################################
+#    Text properties for the 'test_datamap' database
+##########################################################################################
+##########################################################################################
+databases.records.edit=Edit
+databases.records.add=Add New Record
+databases.records.audit_trail=Audit Trail
+databases.records.audit_version_num=Audit Ver. #
+databases.records.audit_modified_by=Modified By
+databases.records.audit_timestamp=Timestamp
+databases.records.next=Next Set
+databases.records.prev=Prev Set
+
+
+databases.test_datamap.home.display_name=Home
+
+
+##########################################################################################
+#    Text properties for the 'data_map' table
+##########################################################################################
+databases.test_datamap.data_map.display_name=DataMap
+databases.test_datamap.data_map.rule_id.display_name=RuleId
+databases.test_datamap.data_map.bgi_group.display_name=BgiGroup
+databases.test_datamap.data_map.bgi_method.display_name=BgiMethod
+databases.test_datamap.data_map.ap_group.display_name=ApGroup
+databases.test_datamap.data_map.ap_script.display_name=ApScript
+databases.test_datamap.data_map.per_cat.display_name=PerCat
+databases.test_datamap.data_map.per_subcat.display_name=PerSubcat
+databases.test_datamap.data_map.per_product.display_name=PerProduct
+databases.test_datamap.data_map.per_problem.display_name=PerProblem
+databases.test_datamap.data_map.per_assign.display_name=PerAssign
+databases.test_datamap.data_map.per_location.display_name=PerLocation

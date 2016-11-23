@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/600/trunk/Tools/RegressionTest/trunk/src
+END
+hibernate.derby.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/494/trunk/Tools/RegressionTest/trunk/src/hibernate.derby.cfg.xml
+END
+hibernate.mysql.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/494/trunk/Tools/RegressionTest/trunk/src/hibernate.mysql.cfg.xml
+END
+hibernate.embedded.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/494/trunk/Tools/RegressionTest/trunk/src/hibernate.embedded.cfg.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/495/trunk/Tools/RegressionTest/trunk/src/log4j.properties
+END
+OpenviewTTIClient.exe
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/484/trunk/Tools/RegressionTest/trunk/src/OpenviewTTIClient.exe
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/501/trunk/Tools/RegressionTest/trunk/src/hibernate.cfg.xml
+END
+hibernate-configuration-3.0.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/491/trunk/Tools/RegressionTest/trunk/src/hibernate-configuration-3.0.dtd
+END

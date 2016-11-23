@@ -1,0 +1,1 @@
+c:/java/jdk1.5.0_09/bin/java -cp \repo1\esm-platform\Platform\Monitoring2\trunk\etc;\repo1\esm-platform\Platform\Monitoring2\trunk\build\classes;\repo1\esm-platform\CommonLibraries\log4j-1.2.7.jar;\repo1\esm-platform\CommonLibraries\WebLogic92\weblogic.jar;\repo1\esm-platform\CommonLibraries\WebLogic92\wllog4j.jar com.bgi.esm.monitoring.platform.test.Audit2

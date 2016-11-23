@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm-platform/!svn/ver/43/trunk/CommonLibraries/Alarmpoint
+END
+javax.xml.jaxp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/43/trunk/CommonLibraries/Alarmpoint/javax.xml.jaxp.jar
+END
+org.apache.crimson.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/43/trunk/CommonLibraries/Alarmpoint/org.apache.crimson.jar
+END
+com.invoqsystems.adapter.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/43/trunk/CommonLibraries/Alarmpoint/com.invoqsystems.adapter.jar
+END
+com.invoqsystems.integration.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/43/trunk/CommonLibraries/Alarmpoint/com.invoqsystems.integration.jar
+END

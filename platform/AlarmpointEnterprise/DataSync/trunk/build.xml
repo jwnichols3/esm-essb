@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<project name="Portlet - Struts Bridge Portlet Creator" default="help" basedir=".">
+    <property file="./ant.properties"/>
+    <description>
+        Runs the job to move data into from ShareIT/LDAP into the data staging tables of Alarmpoint 3 Enterprise
+    </description>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo> </echo>
+        <echo>Here are the following targets that this build file contains:</echo>
+        <echo>    compile           Compiles the entire source tree</echo>
+        <echo>    build             Compiles and uilds the portlet .war file</echo>
+        <echo>    clean             Removes all intermediate build files</echo>
+        <echo></echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="build" />
+        <fileset dir="../../../../CommonLibraries">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="build" includeEmptyDirs="no">
+            <fileset dir="src">
+                <patternset>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        <!--
+        <echo>Copying all library files to the compiled output directory...</echo>
+		<mkdir dir="build/lib"/>
+        <copy todir="build/lib" includeEmptyDirs="no">
+            <fileset dir="WEB-INF/lib">
+                <patternset>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.jar"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        <echo>Copying all tag libraries to the compiled output directory...</echo>
+		<mkdir dir="build/tld"/>
+        <copy todir="build/tld" includeEmptyDirs="no">
+            <fileset dir="WEB-INF/tld">
+                <patternset>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.jar"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        -->
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files...</echo>
+		<delete dir="test-results" />
+		<delete dir="build" />
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+		<mkdir dir="logs"/>
+		<mkdir dir="build"/>
+        <javac srcdir="src" destdir="build" debug="true" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the portlet .war file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="build" depends="compile">
+        <echo>Unpacking necessary libraries into build directory</echo>
+        <unjar dest="build">
+            <fileset dir="${base.lib.dir}">
+                <include name="log4j-1.2.7.jar" />
+            </fileset>
+            <fileset dir="${base.lib.dir}/Databases">
+                <include name="jconn2.jar" />
+                <include name="jtds-1.2.jar" />
+                <include name="jTDS2.jar" />
+                <include name="mysql-connector-java-3.1.13-bin.jar" />
+                <include name="ojdbc.jar" />
+                <include name="postgresql-8.1-405.jdbc3.jar.jar" />
+                <include name="asm.jar" />
+                <include name="asm-attrs.jar" />
+                <include name="cglib-2.1.3.jar" />
+                <include name="dom4j-1.6.1.jar" />
+                <include name="hibernate3.jar" />
+            </fileset>
+        </unjar>
+        <echo>Creating portlet .war file without compiling...</echo>
+		<delete file="alarmpoint3-to-ldap.jar"/>
+        <jar destfile="alarmpoint3-to-ldap.jar" basedir="build">
+            <manifest>
+                <attribute name="Created-By" value="Dennis S. Lin (Barclays Global Investors)" />
+                <attribute name="Main-Class" value="com.bgi.esm.monitoring.platform.alarmpoint.MainClass" />
+            </manifest>
+            <fileset dir="build">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+            <fileset dir="./">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <target name="test" depends="build">
+        <echo>Running the functional test suite...</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/Test*.java"/>
+                    <!--
+                    <include name="**/Test*People*.java"/>
+                    <exclude name="**/Test*People*.java"/>
+                    -->
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <target name="test-common" depends="build">
+        <echo>Running the functional test suite...</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/TestCommon.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <target name="clear-offending-records" depends="compile">
+        <echo>Clearing Alarmpoint 3 Enterprise data staging tables</echo>
+        <java classname="com.bgi.esm.alarmpoint.ClearOutOffendingRecords" fork="true">
+	        <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="clear-staging-tables" depends="compile">
+        <echo>Clearing Alarmpoint 3 Enterprise data staging tables</echo>
+        <java classname="com.bgi.esm.alarmpoint.ClearStagingTables" fork="true">
+	        <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="shareit" depends="compile">
+        <echo>Test retrieving data from ShareIT</echo>
+        <java classname="RetrievePeopleInfo" fork="true">
+		    <arg line="jboss"/>
+	        <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <!-- Portlet Name -->
+    <property name="portlet-name" value="portlet_creator"/>
+</project>
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/176/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test
+END
+TestAddSuppression.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/13/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/TestAddSuppression.java
+END
+TestDefaultValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/65/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/TestDefaultValues.java
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/esm-platform/!svn/ver/13/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/CommonTestCase.java
+END
+TestSuppressionRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/13/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/TestSuppressionRecord.java
+END
+TestUpdateSuppression.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/176/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/TestUpdateSuppression.java
+END
+TestDeleteSuppression.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/67/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/test/TestDeleteSuppression.java
+END

@@ -1,0 +1,42 @@
+#
+#  Retrieve all the MRCs in use
+#
+SELECT DISTINCT substring(attr_value, 5 ) AS MRC FROM people_attributes WHERE attr_nm='ldap_mrc' ORDER BY MRC
+
+#
+#  Retrieve all the attributes of a person
+#
+SELECT * FROM people_attributes WHERE people_id=425147
+
+#
+#  Select all the first names of the people on the ESM team
+#
+SELECT  * 
+FROM    people_attributes 
+WHERE   people_id IN 
+        ( 
+            SELECT  people_id 
+            FROM    people_attributes 
+            WHERE   attr_nm='ldap_mrc' 
+            AND     attr_value LIKE '%6207' 
+        ) 
+AND     attr_nm='first_name'
+
+#
+#  Number of people in each MRC/Group
+#
+SELECT  substring(attr_value,5) AS MRC, count(DISTINCT people_id)
+FROM    people_attributes
+WHERE   attr_nm='ldap_mrc'
+GROUP BY MRC
+#
+
+#
+#  Groups
+#
+SELECT * FROM people WHERE type_cd='group' LIMIT 100
+
+#
+#  Group Attributes
+#
+SELECT DISTINCT attr_nm FROM people_attributes WHERE people_id IN ( SELECT people_id FROM people WHERE type_cd='group' )

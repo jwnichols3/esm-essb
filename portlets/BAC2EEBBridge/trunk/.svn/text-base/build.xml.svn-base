@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<project name="Portlet - Struts Bridge Portlet Creator" default="help" basedir=".">
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo>Available ANT targets</echo>
+        <echo></echo>
+        <echo>    compile           Compiles the entire source tree</echo>
+        <echo>    build             Compiles and uilds the portlet .war file</echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="WEB-INF/classes" />
+        <fileset dir="WEB-INF/lib" includes="**/*.jar" />
+        <!-- Liferay libraries -->
+        <fileset dir="C:/AppServers/Liferay4.2.2/common/lib" includes="**/*.jar" />
+        <fileset dir="C:/AppServers/Liferay4.2.2/webapps/ROOT/WEB-INF/lib" includes="**/*.jar" />
+    </path>
+
+    <taskdef classname="org.apache.jasper.JspC" name="jasper2">
+        <classpath refid="project.classpath" />
+    </taskdef>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="WEB-INF/classes" includeEmptyDirs="no">
+            <fileset dir="WEB-INF/src">
+            <patternset>
+                <include name="**/*.MF"/>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files...</echo>
+		<delete dir="WEB-INF/classes" />
+        <delete file="../${portlet-name}.war"/>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+		<mkdir dir="WEB-INF/classes"/>
+        <javac srcdir="WEB-INF/src" destdir="WEB-INF/classes" debug="on">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <target name="jsp-compile">
+        <jasper2 validateXml="false" uriroot="." webXmlFragment="WEB-INF/generated_web.xml" outputDir="WEB-INF/src"/>
+    </target>
+
+    <target name="jspc" depends="jsp-compile,compile">
+        <echo>Compiling JSP pages</echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the portlet .war file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="build" depends="compile">
+        <echo>Creating portlet .war file without compiling...</echo>
+        <jar destfile="../${portlet-name}.war">
+            <fileset dir=".">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Runs the test suite
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="test" depends="compile">
+        <echo>Runs the functional test suite for the Test Prep portlet</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <!-- Portlet Name -->
+    <property name="portlet-name" value="BAC2EEBBridge"/>
+</project>
+

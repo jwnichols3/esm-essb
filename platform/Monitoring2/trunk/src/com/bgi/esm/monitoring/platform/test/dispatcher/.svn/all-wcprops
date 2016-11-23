@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher
+END
+TestServiceCenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher/TestServiceCenter.java
+END
+TestResponder.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher/TestResponder.java
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher/CommonTestCase.java
+END
+TestDispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher/TestDispatcher.java
+END
+TestServiceCenterBuffer.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/dispatcher/TestServiceCenterBuffer.java
+END

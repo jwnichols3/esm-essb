@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ems="http://www.bgi.com/ems/replatform/xml/KillMessage.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.bgi.com/ems/replatform/xml/KillMessage.xsd">
+  <!--  -->
+  <xs:annotation>
+    <xs:documentation> Command orderly shutdown $Id$ $Log$ </xs:documentation>
+  </xs:annotation>
+  <!--  -->
+  <xs:element name="KillMessage" type="ems:KillMessageType">
+    <xs:annotation>
+      <xs:documentation>
+        Command orderly shutdown
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:complexType name="KillMessageType"> 
+  </xs:complexType>
+</xs:schema>

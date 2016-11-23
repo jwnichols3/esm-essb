@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/throttle
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/throttle/CommonTestCase.java
+END
+TestThrottle.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/402/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/throttle/TestThrottle.java
+END
+TestThrottleAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/402/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/throttle/TestThrottleAudit.java
+END

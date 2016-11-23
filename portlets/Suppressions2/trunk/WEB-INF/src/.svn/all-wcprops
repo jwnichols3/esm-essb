@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/628/trunk/Portlets/Suppressions2/trunk/WEB-INF/src
+END
+jndi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/388/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/jndi.properties
+END
+quartz.properties
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/576/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/quartz.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/log4j.properties
+END
+portlet-common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/500/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/portlet-common.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/hibernate.cfg.xml
+END
+notification_emails.sql
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/546/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/notification_emails.sql
+END

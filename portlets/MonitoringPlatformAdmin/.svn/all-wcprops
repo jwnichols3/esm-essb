@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/deploy.bat
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/build.xml
+END

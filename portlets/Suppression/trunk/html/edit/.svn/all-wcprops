@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit
+END
+nav.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/nav.jsp
+END
+edit_settings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/edit_settings.jsp
+END
+edit_database_settings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/edit_database_settings.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/view.jsp
+END
+edit_settings_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/edit_settings_success.jsp
+END
+edit_database_settings_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/562/trunk/Portlets/Suppression/trunk/html/edit/edit_database_settings_success.jsp
+END

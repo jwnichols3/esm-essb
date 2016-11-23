@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ems="http://www.bgi.com/ems/replatform/xml/DataMap.xsd" attributeFormDefault="qualified"
+  elementFormDefault="qualified" targetNamespace="http://www.bgi.com/ems/replatform/xml/DataMap.xsd">
+  <!--  -->
+  <xs:element name="DataMaps" type="ems:DataMapListType">
+    <xs:annotation>
+      <xs:documentation>employed by the DataMap buss module to route OVO ticket notifications</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:complexType name="DataMapListType">
+    <xs:sequence>
+      <xs:element name="DataMap" type="ems:DataMapType" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>list of data maps</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--  -->
+  <xs:complexType name="DataMapType">
+    <xs:all>
+      <xs:element name="group" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>BGI group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="method" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>alert method</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alarm_point_group" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>alarm point group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alarm_point_script" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>alarm point script</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_category" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregrine category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_subcategory" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregine subcategory</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_product" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregrine product</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_problem" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregrine problem</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_assignment_group" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregrine assignment group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="peregrine_location" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>peregrine location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!--  -->
+</xs:schema>

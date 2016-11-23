@@ -1,0 +1,7 @@
+<portlet-app>
+   <portlet>
+      <portlet-name>BlankStrutsPortletDemo</portlet-name>
+      <!-- Use the specific struts container configuration -->
+      <config-name>StrutsPortlet</config-name>
+   </portlet>
+</portlet-app>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:ems="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd"
+    attributeFormDefault="qualified" elementFormDefault="qualified"
+    targetNamespace="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd">
+    <!--  -->
+    <xs:annotation>
+        <xs:documentation>
+            Schema for EMS messages.
+            
+            $Id$
+            
+            $Log$
+        </xs:documentation>
+    </xs:annotation>
+    <!--  -->
+    <!--  -->
+    <xs:element name="EmsContainer" type="ems:EmsMessageType">
+        <xs:annotation>
+            <xs:documentation>EMS Message Container</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <!--  -->
+    <!--  -->
+    <xs:complexType name="EmsMessageType">
+        <xs:annotation>
+            <xs:documentation>EMS Message Container</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="DataMapMessage" type="ems:DataMapMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by DataMap buss module</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DataMineMessage" type="ems:DataMineMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by DataMine buss module</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="DispatcherMessage" type="ems:DispatcherMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by Dispatcher buss module</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="KillMessage" type="ems:KillMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by all buss modules</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="SuppressionMessage" type="ems:SuppressionMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by Suppression buss module</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ThrottleMessage" type="ems:ThrottleMessageType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Consumed by Throttle buss module</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <!--  -->
+    <!--  -->
+    <xs:complexType name="DataMapMessageType">
+        <xs:annotation>
+            <xs:documentation>Data map messages</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:OvoTicketType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Raw OVO Ticket</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="DataMineMessageType">
+        <xs:annotation>
+            <xs:documentation>Data mine messages</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:OvoTicketType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Raw OVO Ticket</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="DispatcherMessageType">
+        <xs:annotation>
+            <xs:documentation>Dispatcher messages</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:OvoTicketType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Raw OVO Ticket</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="map" type="ems:DataMapRuleType">
+                <xs:annotation>
+                    <xs:documentation>Data Map Instructions</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="KillMessageType">
+        <xs:annotation>
+            <xs:documentation>Command orderly shutdown of buss modules</xs:documentation>
+        </xs:annotation>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="SuppressionMessageType">
+        <xs:annotation>
+            <xs:documentation>Suppression messages</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:OvoTicketType">
+                <xs:annotation>
+                    <xs:documentation>Raw OVO Ticket</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="ThrottleMessageType">
+        <xs:annotation>
+            <xs:documentation>Throttle messages</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:OvoTicketType">
+                <xs:annotation>
+                    <xs:documentation>Raw OVO Ticket</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="map" type="ems:DataMapRuleType">
+                <xs:annotation>
+                    <xs:documentation>Data Map Instructions</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <!--  -->
+    <xs:complexType name="DataMapRuleType">
+        <xs:annotation>
+            <xs:documentation>Data map rule element</xs:documentation>
+        </xs:annotation>
+        <xs:all>
+            <xs:element name="group" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>BGI group</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="method" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>alert method</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="alarm_point_group" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>alarm point group</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="alarm_point_script" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>alarm point script</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_category" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregrine category</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_subcategory" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregine subcategory</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_product" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregrine product</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_problem" type="xs:string" minOccurs="0" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregrine problem</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_assignment_group" type="xs:string" minOccurs="1"
+                maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregrine assignment group</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="peregrine_location" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>peregrine location</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="OvoTicketType">
+        <xs:annotation>
+            <xs:documentation>Raw OVO message as generated by notification
+            interface</xs:documentation>
+        </xs:annotation>
+        <xs:all>
+            <xs:element name="message_id" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Unique message identifier as a hex string</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="source_node" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message source node (i.e. host name)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="source_node_type" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message source note type (i.e. solaris)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="creation_date" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message creation date (on HPOV agent)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="creation_time" type="xs:time" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message creation time (on HPOV agent)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="receive_date" type="xs:date" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message received date (on HPOV manager)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="receive_time" type="xs:time" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message received time (on HPOV manager)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="application" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Complaining application</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="message_group" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>HPOV message group</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="object" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>HPOV defined object name</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="severity" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Event severity (i.e. normal, warning, etc)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="operators" type="ems:OvoOperatorType" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>List of interested operators</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="message_text" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Message text</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="instruction_text" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Instruction text</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="message_attributes" type="ems:OvoAttributeTypes" minOccurs="1"
+                maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Custom message attributes as key/value
+                    pairs</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="suppress_count" type="xs:decimal" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Quantity of duplicate messages</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="OvoOperatorType">
+        <xs:annotation>
+            <xs:documentation>Operator list from ticket message</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="operator" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Individual operator entry</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="OvoAttributeTypes">
+        <xs:annotation>
+            <xs:documentation>Attribute list from ticket message</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="attribute" type="ems:OvoAttributeType" minOccurs="1"
+                maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Collection of attributes (for
+                    TicketMessageType)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!--  -->
+    <xs:complexType name="OvoAttributeType">
+        <xs:annotation>
+            <xs:documentation>Attribute list element from ticket message</xs:documentation>
+        </xs:annotation>
+        <xs:all>
+            <xs:element name="key" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Attribute key</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1">
+                <xs:annotation>
+                    <xs:documentation>Attribute value</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:all>
+    </xs:complexType>
+    <!--  -->
+</xs:schema>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm-platform/!svn/ver/204/trunk/Platform/Monitoring/etc
+END
+jndi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/23/trunk/Platform/Monitoring/etc/jndi.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/204/trunk/Platform/Monitoring/etc/log4j.properties
+END
+bgi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/84/trunk/Platform/Monitoring/etc/bgi.properties
+END

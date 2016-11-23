@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/607/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/HibernateUtil.java
+END
+Notifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/593/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/Notifier.java
+END
+ExportEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/ExportEntry.java
+END
+EEBConnectorPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/EEBConnectorPlugin.java
+END
+DatabaseUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/DatabaseUtils.java
+END
+Toolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm-platform/!svn/ver/593/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/Toolkit.java
+END
+Mailer.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/593/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/Mailer.java
+END
+ExtractFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/ExtractFile.java
+END

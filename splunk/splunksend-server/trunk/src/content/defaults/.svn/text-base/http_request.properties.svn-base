@@ -1,0 +1,157 @@
+################################################################################
+#   Default values for the 'http_request' table
+################################################################################
+##  Default values for the 'request_id' column.  This column is of type String
+#database.http_request.request_id.default_value.01=
+#database.http_request.request_id.default_value.02=
+#database.http_request.request_id.default_value.03=
+
+
+##  Default values for the 'auth_type' column.  This column is of type String
+#database.http_request.auth_type.default_value.01=
+#database.http_request.auth_type.default_value.02=
+#database.http_request.auth_type.default_value.03=
+
+
+##  Default values for the 'context_path' column.  This column is of type String
+#database.http_request.context_path.default_value.01=
+#database.http_request.context_path.default_value.02=
+#database.http_request.context_path.default_value.03=
+
+
+##  Default values for the 'method' column.  This column is of type String
+#database.http_request.method.default_value.01=
+#database.http_request.method.default_value.02=
+#database.http_request.method.default_value.03=
+
+
+##  Default values for the 'path_info' column.  This column is of type String
+#database.http_request.path_info.default_value.01=
+#database.http_request.path_info.default_value.02=
+#database.http_request.path_info.default_value.03=
+
+
+##  Default values for the 'path_info_translated' column.  This column is of type String
+#database.http_request.path_info_translated.default_value.01=
+#database.http_request.path_info_translated.default_value.02=
+#database.http_request.path_info_translated.default_value.03=
+
+
+##  Default values for the 'remote_user' column.  This column is of type String
+#database.http_request.remote_user.default_value.01=
+#database.http_request.remote_user.default_value.02=
+#database.http_request.remote_user.default_value.03=
+
+
+##  Default values for the 'requested_session_id' column.  This column is of type String
+#database.http_request.requested_session_id.default_value.01=
+#database.http_request.requested_session_id.default_value.02=
+#database.http_request.requested_session_id.default_value.03=
+
+
+##  Default values for the 'request_uri' column.  This column is of type String
+#database.http_request.request_uri.default_value.01=
+#database.http_request.request_uri.default_value.02=
+#database.http_request.request_uri.default_value.03=
+
+
+##  Default values for the 'request_url' column.  This column is of type String
+#database.http_request.request_url.default_value.01=
+#database.http_request.request_url.default_value.02=
+#database.http_request.request_url.default_value.03=
+
+
+##  Default values for the 'servlet_path' column.  This column is of type String
+#database.http_request.servlet_path.default_value.01=
+#database.http_request.servlet_path.default_value.02=
+#database.http_request.servlet_path.default_value.03=
+
+
+##  Default values for the 'user_principal' column.  This column is of type String
+#database.http_request.user_principal.default_value.01=
+#database.http_request.user_principal.default_value.02=
+#database.http_request.user_principal.default_value.03=
+
+
+##  Default values for the 'character_encoding' column.  This column is of type String
+#database.http_request.character_encoding.default_value.01=
+#database.http_request.character_encoding.default_value.02=
+#database.http_request.character_encoding.default_value.03=
+
+
+##  Default values for the 'content_type' column.  This column is of type String
+#database.http_request.content_type.default_value.01=
+#database.http_request.content_type.default_value.02=
+#database.http_request.content_type.default_value.03=
+
+
+##  Default values for the 'local_address' column.  This column is of type String
+#database.http_request.local_address.default_value.01=
+#database.http_request.local_address.default_value.02=
+#database.http_request.local_address.default_value.03=
+
+
+##  Default values for the 'protocol' column.  This column is of type String
+#database.http_request.protocol.default_value.01=
+#database.http_request.protocol.default_value.02=
+#database.http_request.protocol.default_value.03=
+
+
+##  Default values for the 'remote_address' column.  This column is of type String
+#database.http_request.remote_address.default_value.01=
+#database.http_request.remote_address.default_value.02=
+#database.http_request.remote_address.default_value.03=
+
+
+##  Default values for the 'remote_host' column.  This column is of type String
+#database.http_request.remote_host.default_value.01=
+#database.http_request.remote_host.default_value.02=
+#database.http_request.remote_host.default_value.03=
+
+
+##  Default values for the 'scheme' column.  This column is of type String
+#database.http_request.scheme.default_value.01=
+#database.http_request.scheme.default_value.02=
+#database.http_request.scheme.default_value.03=
+
+
+##  Default values for the 'server_name' column.  This column is of type String
+#database.http_request.server_name.default_value.01=
+#database.http_request.server_name.default_value.02=
+#database.http_request.server_name.default_value.03=
+
+
+##  Default values for the 'content_length' column.  This column is of type long
+#database.http_request.content_length.default_value.01=
+#database.http_request.content_length.default_value.02=
+#database.http_request.content_length.default_value.03=
+
+
+##  Default values for the 'local_port' column.  This column is of type long
+#database.http_request.local_port.default_value.01=
+#database.http_request.local_port.default_value.02=
+#database.http_request.local_port.default_value.03=
+
+
+##  Default values for the 'remote_port' column.  This column is of type long
+#database.http_request.remote_port.default_value.01=
+#database.http_request.remote_port.default_value.02=
+#database.http_request.remote_port.default_value.03=
+
+
+##  Default values for the 'server_port' column.  This column is of type long
+#database.http_request.server_port.default_value.01=
+#database.http_request.server_port.default_value.02=
+#database.http_request.server_port.default_value.03=
+
+
+##  Default values for the 'was_successful' column.  This column is of type long
+#database.http_request.was_successful.default_value.01=
+#database.http_request.was_successful.default_value.02=
+#database.http_request.was_successful.default_value.03=
+
+
+##  Default values for the 'return_code' column.  This column is of type long
+#database.http_request.return_code.default_value.01=
+#database.http_request.return_code.default_value.02=
+#database.http_request.return_code.default_value.03=

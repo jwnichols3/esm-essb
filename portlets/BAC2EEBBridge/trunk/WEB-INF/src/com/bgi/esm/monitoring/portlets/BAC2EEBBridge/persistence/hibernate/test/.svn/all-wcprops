@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/test
+END
+TestHibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/test/TestHibernateUtil.java
+END
+CommonBaseTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/test/CommonBaseTestCase.java
+END
+TestHibernateFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/test/TestHibernateFinder.java
+END

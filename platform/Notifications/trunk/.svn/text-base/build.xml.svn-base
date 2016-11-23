@@ -1,0 +1,105 @@
+<project name="Replatforming" basedir="." default="help">
+    <property file="./build.properties"/>
+ 
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <pathelement path="${java.class.path}" />
+        <pathelement path="${build.path}" />
+        <fileset dir="${lib.path}" includes="**/*.jar" />
+        <fileset dir="../../../CommonLibraries" includes="**/*.jar" />
+    </path>
+
+    <target name="help">
+    </target>
+
+	<!-- 
+		*********************************************************************************
+		*********************************************************************************
+		**	Removes the output files from previous builds.  
+		**	
+		**	This includes all .class files and .swp files
+		*********************************************************************************
+		*********************************************************************************
+	-->
+	<target name="clean" description="Removes the output files from previous builds">
+		<echo>Cleaning previous build...</echo>
+        <delete dir="logs" />
+        <delete dir="${build.path}" />
+		<delete>
+			<fileset dir="${src.path}" includes="**/*.swp"/>
+		</delete>
+	</target>
+
+
+	<!--
+		*********************************************************************************
+		*********************************************************************************
+		**	Compiles all source files.
+		**
+		**	This refers to all the source code in the XITutil/ and Generators/ directories.
+		**	All output files will bein the /common/classes directory of the app server.
+		*********************************************************************************
+		*********************************************************************************
+	-->
+    <target name="compile" depends="resources">
+        <mkdir dir="logs" />
+        <mkdir dir="${build.path}" />
+        <javac srcdir="${src.path}" destdir="${build.path}" includes="**/*.java" debug="on" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath" />
+        </javac>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${build.path}" includeEmptyDirs="no">
+            <fileset dir="${src.path}">
+            <patternset>
+                <include name="**/*.MF"/>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+                <include name="**/*.jpg"/>
+                <include name="**/*.png"/>
+            </patternset>
+            </fileset>
+        </copy>
+	</target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Runs the test suite
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="test" depends="compile">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <mkdir dir="test-results/test-images"/>
+        <junit printsummary="yes">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/TestSup*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+</project>

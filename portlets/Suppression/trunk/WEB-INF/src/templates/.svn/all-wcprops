@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/templates
+END
+jboss_vals.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/templates/jboss_vals.properties
+END
+liferay_keys.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/templates/liferay_keys.properties
+END
+jboss_keys.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/templates/jboss_keys.properties
+END
+liferay_vals.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/templates/liferay_vals.properties
+END

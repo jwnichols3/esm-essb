@@ -1,0 +1,18 @@
+CREATE TABLE data_map_audit ( 
+    audit_id          bigint identity,
+    audit_version_num bigint,
+    audit_timestamp   datetime,
+    audit_modified_by varchar(127),
+    rule_id           bigint,
+    bgi_group         varchar(127),
+    bgi_method        varchar(127),
+    ap_group          varchar(127),
+    ap_script         varchar(127),
+    per_queue         varchar(127),
+    per_cat           varchar(127),
+    per_subcat        varchar(127),
+    per_product       varchar(127),
+    per_problem       varchar(127),
+    per_assign        varchar(127),
+    per_location      varchar(127),
+    PRIMARY KEY ( audit_id ) );

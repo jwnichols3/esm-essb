@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1
+END
+jaxb1-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/jaxb1-impl.jar
+END
+jaxb-xjc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/jaxb-xjc.jar
+END
+jaxb-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/jaxb-api.jar
+END
+jsr173_1.0_api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/jsr173_1.0_api.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/activation.jar
+END
+jaxb-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/248/trunk/CommonLibraries/JAXB2.1/jaxb-impl.jar
+END

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmsContainer xmlns="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd file:/home/gsc/bgi_ems/replatform/xml/Replatform1.xsd">
+    <SuppressionMessage>
+        <ticket>
+            <message_id>1</message_id>
+            <source_node>node</source_node>
+            <source_node_type>node type</source_node_type>
+            <creation_date>2006-12-31</creation_date>
+            <creation_time>12:34:56</creation_time>
+            <receive_date>2006-11-22</receive_date>
+            <receive_time>23:45:12</receive_time>
+            <application>application</application>
+            <message_group>esm</message_group>
+            <object>object</object>
+            <severity>severity</severity>
+            <operators>
+                <operator>op1</operator>
+                <operator>op2</operator>
+            </operators>
+            <message_text>message</message_text>
+            <instruction_text>instruction</instruction_text>
+            <message_attributes>
+                <attribute>
+                    <key>key1</key>
+                    <value>value1</value>
+                </attribute>
+                <attribute>
+                    <key>key2</key>
+                    <value>value2</value>
+                </attribute>     
+            </message_attributes>
+            <suppress_count>123</suppress_count>
+        </ticket>
+    </SuppressionMessage> 
+</EmsContainer>

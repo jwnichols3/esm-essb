@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.hibernate.HttpCookie" table="http_cookie" >
+        <id name="RowID" column="row_id" type="text"          >
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"          type="text"         column="request_id"         />
+        <property name="CookieComment"      type="text"         column="cookie_comment"     />
+        <property name="Domain"             type="text"         column="domain"             />
+        <property name="Path"               type="text"         column="path"               />
+        <property name="CookieName"         type="text"         column="cookie_name"        />
+        <property name="CookiePersistence"  type="text"         column="cookie_persistence" />
+        <property name="IsSecure"           type="boolean"      column="is_secure"          />
+        <property name="MaxAge"             type="long"         column="max_age"            />
+        <property name="Version"            type="long"         column="version"            />
+    </class>
+</hibernate-mapping>

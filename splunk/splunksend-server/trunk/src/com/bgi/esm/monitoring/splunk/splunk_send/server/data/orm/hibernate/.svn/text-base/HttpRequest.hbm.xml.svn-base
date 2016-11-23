@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.hibernate.HttpRequest" table="http_request" >
+        <id name="RequestID" column="request_id" type="text"          >
+            <generator class="uuid" />
+        </id>
+        <property name="AuthType"             type="text"         column="auth_type"            />
+        <property name="ContextPath"          type="text"         column="context_path"         />
+        <property name="Method"               type="text"         column="method"               />
+        <property name="PathInfo"             type="text"         column="path_info"            />
+        <property name="PathInfoTranslated"   type="text"         column="path_info_translated" />
+        <property name="RemoteUser"           type="text"         column="remote_user"          />
+        <property name="RequestedSessionID"   type="text"         column="requested_session_id" />
+        <property name="RequestUri"           type="text"         column="request_uri"          />
+        <property name="RequestUrl"           type="text"         column="request_url"          />
+        <property name="ServletPath"          type="text"         column="servlet_path"         />
+        <property name="UserPrincipal"        type="text"         column="user_principal"       />
+        <property name="CharacterEncoding"    type="text"         column="character_encoding"   />
+        <property name="ContentType"          type="text"         column="content_type"         />
+        <property name="LocalAddress"         type="text"         column="local_address"        />
+        <property name="Protocol"             type="text"         column="protocol"             />
+        <property name="RemoteAddress"        type="text"         column="remote_address"       />
+        <property name="RemoteHost"           type="text"         column="remote_host"          />
+        <property name="Scheme"               type="text"         column="scheme"               />
+        <property name="ServerName"           type="text"         column="server_name"          />
+        <property name="RequestTime"          type="calendar"     column="request_time"         />
+        <property name="ProcessTime"          type="calendar"     column="process_time"         />
+        <property name="ContentLength"        type="long"         column="content_length"       />
+        <property name="LocalPort"            type="long"         column="local_port"           />
+        <property name="RemotePort"           type="long"         column="remote_port"          />
+        <property name="ServerPort"           type="long"         column="server_port"          />
+        <property name="IsProcessed"          type="boolean"      column="is_processed"         />
+        <property name="WasSuccessful"        type="long"         column="was_successful"       />
+        <property name="ReturnCode"           type="long"         column="return_code"          />
+    </class>
+</hibernate-mapping>

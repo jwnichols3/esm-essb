@@ -1,0 +1,30 @@
+    <servlet-mapping>
+        <servlet-name>DataMapWebService</servlet-name>
+        <url-pattern>/DataMapWebService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HttpAttributeWebService</servlet-name>
+        <url-pattern>/HttpAttributeWebService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HttpCookieWebService</servlet-name>
+        <url-pattern>/HttpCookieWebService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HttpHeaderWebService</servlet-name>
+        <url-pattern>/HttpHeaderWebService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HttpParameterWebService</servlet-name>
+        <url-pattern>/HttpParameterWebService</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>HttpRequestWebService</servlet-name>
+        <url-pattern>/HttpRequestWebService</url-pattern>
+    </servlet-mapping>
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/tools/SourceCodeManagement
+END
+GenerateSerialVersionUID.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/tools/SourceCodeManagement/GenerateSerialVersionUID.java
+END
+RemoveTrailingSpaces.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/tools/SourceCodeManagement/RemoveTrailingSpaces.java
+END

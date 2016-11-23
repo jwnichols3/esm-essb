@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!--
+    <data-sources>
+        <data-source key="courseware" type="org.apache.commons.dbcp.BasicDataSource">
+            <set-property property="driverClassName"   value="com.mysql.jdbc.Driver"                  />
+            <set-property property="url"               value="jdbc:mysql://localhost:3306/courseware" />
+            <set-property property="username"          value="root"                                   />
+            <set-property property="password"          value="apogee"                                 />
+            <set-property property="maxActive"         value="10"                                     />
+            <set-property property="maxWait"           value="5000"                                   />
+            <set-property property="defaultAutoCommit" value="false"                                  />
+            <set-property property="defaultReadOnly"   value="false"                                  />
+            <set-property property="validationQuery"   value="SELECT COUNT(*) FROM " />
+        </data-source>
+    </data-sources>
+    -->
+
+    <!-- ********** Action Mapping Definitions ****************************** -->
+    <action-mappings>
+        <action path="/RecordHTTPRequest"         type="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.actions.RecordHTTPRequestAction">
+            <forward name="success"               path="/html/RecordHTTPRequestActionSuccess.jsp" />
+            <forward name="failure"               path="/html/RecordHTTPRequestActionFailure.jsp" />
+        </action>
+        
+    </action-mappings>
+    
+	<!-- Custom Request Processor -->
+    <!--
+	<controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+    -->
+
+	<!-- Message Resources -->
+	<message-resources parameter="content.test.Language" />
+
+	<!-- Tiles Plugin -->
+    <!--
+	<plug-in className="org.apache.struts.tiles.TilesPlugin" >
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+		<set-property property="definitions-parser-validate" value="true" />
+	</plug-in>
+    -->
+
+	<!-- Validator Plugin -->
+    <!--
+    <plug-in className="com.bgi.esm.monitoring.portlets.Openview2EEBBridge.EEBConnectorPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                 />
+    </plug-in>
+    -->
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+</struts-config>

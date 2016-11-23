@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/WEB-INF
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/liferay-portlet.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/WEB-INF/struts-config.xml
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/392/trunk/Portlets/DataMap/trunk/WEB-INF/portlet.xml
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/validation.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/web.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/validator-rules.xml
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/liferay-display.xml
+END
+tiles-defs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/tiles-defs.xml
+END

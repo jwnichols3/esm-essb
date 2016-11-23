@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/html
+END
+nav.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm-platform/!svn/ver/430/trunk/Portlets/EEBConfigurator/trunk/html/nav.jsp
+END
+edit_property.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/html/edit_property.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/506/trunk/Portlets/EEBConfigurator/trunk/html/view.jsp
+END
+edit_property_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/html/edit_property_success.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/430/trunk/Portlets/EEBConfigurator/trunk/html/init.jsp
+END

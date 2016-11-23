@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<instances>
+   <instance>
+      <instance-name>{2}</instance-name>
+      <component-ref>{1}</component-ref>
+   </instance>
+</instances>

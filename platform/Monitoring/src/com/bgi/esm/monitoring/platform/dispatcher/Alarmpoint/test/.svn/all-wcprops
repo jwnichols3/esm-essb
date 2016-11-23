@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/333/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/Alarmpoint/test
+END
+TestConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/206/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/Alarmpoint/test/TestConfiguration.java
+END
+TestAlarmpointJavaClientConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/333/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/Alarmpoint/test/TestAlarmpointJavaClientConnection.java
+END
+TestQueueDrainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/206/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/Alarmpoint/test/TestQueueDrainer.java
+END

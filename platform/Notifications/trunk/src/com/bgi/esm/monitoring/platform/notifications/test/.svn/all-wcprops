@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/test
+END
+TestHibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/test/TestHibernateUtil.java
+END
+TestNotifications.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/test/TestNotifications.java
+END
+TestSuppressions.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/332/trunk/Platform/Notifications/trunk/src/com/bgi/esm/monitoring/platform/notifications/test/TestSuppressions.java
+END

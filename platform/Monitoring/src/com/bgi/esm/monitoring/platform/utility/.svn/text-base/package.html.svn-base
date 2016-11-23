@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+
+      Maintenance History:
+        $Id$
+
+        $Log$
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Shared utility classes.
+
+    <p>
+    Shared utility classes.
+  </body>
+</html>

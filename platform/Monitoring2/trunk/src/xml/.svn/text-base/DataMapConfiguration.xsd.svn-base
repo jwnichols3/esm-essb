@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ems="http://www.bgi.com/ems/replatform/xml/DataMapConfiguration.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.bgi.com/ems/replatform/xml/DataMapConfiguration.xsd">
+  <!--  -->
+   <xs:annotation>
+     <xs:documentation>xxxx</xs:documentation>
+   </xs:annotation>
+   <!--  -->
+  <xs:complexType name="DataMapConfigurationType">
+    <xs:all>
+      <xs:element name="group" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="method" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="ap_group" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="ap_script" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_category" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_subcat" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_product" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_problem" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_asg_grp" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+      <xs:element name="p_location" type="xs:string">
+        <xs:annotation><xs:documentation>xxx</xs:documentation></xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!--  -->
+</xs:schema>

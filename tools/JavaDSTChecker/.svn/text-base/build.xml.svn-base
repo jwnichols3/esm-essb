@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<project name="JVM DST Checker" default="help" basedir=".">
+    <description>
+        The build file for the Daylight Savings Time checker.
+    </description>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo> </echo>
+        <echo>Here are the following targets that this build file contains:</echo>
+        <echo>    compile           Compiles the entire source tree</echo>
+        <echo>    build             Compiles and uilds the portlet .war file</echo>
+        <echo>    clean             Removes all intermediate build files</echo>
+        <echo></echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="build" />
+    </path>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="build" includeEmptyDirs="no">
+            <fileset dir="src">
+                <patternset>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        <!--
+        <echo>Copying all library files to the compiled output directory...</echo>
+		<mkdir dir="build/lib"/>
+        <copy todir="build/lib" includeEmptyDirs="no">
+            <fileset dir="WEB-INF/lib">
+                <patternset>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.jar"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        <echo>Copying all tag libraries to the compiled output directory...</echo>
+		<mkdir dir="build/tld"/>
+        <copy todir="build/tld" includeEmptyDirs="no">
+            <fileset dir="WEB-INF/tld">
+                <patternset>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.jar"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+        -->
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files...</echo>
+		<delete dir="build" />
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+		<mkdir dir="build"/>
+        <javac srcdir="src" destdir="build" debug="true" debuglevel="lines,vars,source" target="1.1" source="1.2">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the portlet .war file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="build" depends="compile">
+        <echo>Creating portlet .war file without compiling...</echo>
+		<delete file="CheckDST.jar"/>
+        <jar destfile="CheckDST.jar" basedir="build">
+            <manifest>
+                <attribute name="Created-By" value="Dennis S. Lin (Barclays Global Investors)" />
+                <attribute name="Main-Class" value="CheckDST" />
+            </manifest>
+            <fileset dir="build">
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+</project>

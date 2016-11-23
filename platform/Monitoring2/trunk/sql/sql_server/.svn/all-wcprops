@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/623/trunk/Platform/Monitoring2/trunk/sql/sql_server
+END
+audit2.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/573/trunk/Platform/Monitoring2/trunk/sql/sql_server/audit2.sql
+END
+suppression.sql
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/616/trunk/Platform/Monitoring2/trunk/sql/sql_server/suppression.sql
+END
+test-data-map-group.sql
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/573/trunk/Platform/Monitoring2/trunk/sql/sql_server/test-data-map-group.sql
+END
+data_map_data.csv
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/520/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map_data.csv
+END
+throttle_audit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/367/trunk/Platform/Monitoring2/trunk/sql/sql_server/throttle_audit.sql
+END
+data_map_audit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/616/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map_audit.sql
+END
+spool.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/231/trunk/Platform/Monitoring2/trunk/sql/sql_server/spool.sql
+END
+data_map_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/516/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map_data.sql
+END
+peregrine_groups.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/573/trunk/Platform/Monitoring2/trunk/sql/sql_server/peregrine_groups.txt
+END
+service_center.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/483/trunk/Platform/Monitoring2/trunk/sql/sql_server/service_center.sql
+END
+census.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/230/trunk/Platform/Monitoring2/trunk/sql/sql_server/census.sql
+END
+responder.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/604/trunk/Platform/Monitoring2/trunk/sql/sql_server/responder.sql
+END
+storm.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/190/trunk/Platform/Monitoring2/trunk/sql/sql_server/storm.sql
+END
+throttle.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/566/trunk/Platform/Monitoring2/trunk/sql/sql_server/throttle.sql
+END
+monotonic.sql
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/378/trunk/Platform/Monitoring2/trunk/sql/sql_server/monotonic.sql
+END
+alarmpoint.sql
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/498/trunk/Platform/Monitoring2/trunk/sql/sql_server/alarmpoint.sql
+END
+raw_ovi.sql
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/135/trunk/Platform/Monitoring2/trunk/sql/sql_server/raw_ovi.sql
+END
+audit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/135/trunk/Platform/Monitoring2/trunk/sql/sql_server/audit.sql
+END
+data_map.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/610/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map.sql
+END
+data_map_data.xls
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/516/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map_data.xls
+END
+eeb_properties.sql
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/623/trunk/Platform/Monitoring2/trunk/sql/sql_server/eeb_properties.sql
+END
+complete.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/623/trunk/Platform/Monitoring2/trunk/sql/sql_server/complete.sql
+END
+guydb.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/135/trunk/Platform/Monitoring2/trunk/sql/sql_server/guydb.sql
+END
+events_by_group.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/504/trunk/Platform/Monitoring2/trunk/sql/sql_server/events_by_group.sql
+END
+data_map_missing.txt
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/573/trunk/Platform/Monitoring2/trunk/sql/sql_server/data_map_missing.txt
+END
+suppression_audit.sql
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/616/trunk/Platform/Monitoring2/trunk/sql/sql_server/suppression_audit.sql
+END

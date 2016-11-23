@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/xml
+END
+ServiceCenterTicket.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/xml/ServiceCenterTicket.xsd
+END
+ServiceCenterTicket.xjb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/xml/ServiceCenterTicket.xjb
+END

@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <td><a href="../index.html">Home</a></td>
+                <td><a href="../00-Overview/index.html">Overview</a></td>
+                <td><a href="../01-Deployment/index.html">How do I deploy an instance of the EEB</a></td>
+                <td><a href="../02-Migration/index.html">How do I add a group to the EEB?</a></td>
+                <td><a href="../03-HowTos/index.html">Step-by-step How-Tos</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <h1>Overview</h1>
+        <br>
+        Here is an overview of how events are processed by the EEB.
+        <br>
+        <center>
+            <table border="0" width="80%">
+                <tr>
+                    <td valign="top">1.</td>
+                    <td>
+                        Receive monitoring events from: 
+                        <table border="0">
+                            <tr>
+                                <td><li></li></td>
+                                <td>Openview
+                            </tr>
+                            <tr>
+                                <td><li></li></td>
+                                <td>External sources</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">2.</td>
+                    <td>Determine if the event needs to be suppressed.</td>
+                </tr>
+                <tr>
+                    <td valign="top">3.</td>
+                    <td>Determine the ticket/notification method.</td>
+                </tr>
+                <tr>
+                    <td valign="top">4.</td>
+                    <td>
+                        Determine if the event if a particular operations or 
+                        applications group is receiving a large number of events 
+                        within a short amount of time.
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">5.</td>
+                    <td>Send the event off for ticketing and/or notification.</td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+table.nav 
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	border-collapse: separate;
+	background-color: white;
+}
+table.nav th 
+{
+	border-width: 0px;
+	padding: 0px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.nav td 
+{
+	border-width: 0px;
+	padding: 0px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: white;
+	-moz-border-radius: ;
+}
+
+table.suppressions 
+{
+	border-width: 1px;
+	border-spacing: ;
+	border-style: solid;
+	border-color: #cccccc;
+	border-collapse: separate;
+	background-color: white;
+}
+table.suppressions th 
+{
+	border-width: 1px;
+	padding: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.suppressions td 
+{
+	border-width: 1px;
+	padding: 1px;
+	border-style: solid;
+	border-color: #cccccc;
+	background-color: white;
+	-moz-border-radius: ;
+}
+
+A.suppression:link    { text-decoration: none; color: blue; }
+A.suppression:visited { text-decoration: none; color: blue; }
+A.suppression:active  { text-decoration: none; color: blue; }
+A.suppression:hover   { text-decoration: underline; color: red;}

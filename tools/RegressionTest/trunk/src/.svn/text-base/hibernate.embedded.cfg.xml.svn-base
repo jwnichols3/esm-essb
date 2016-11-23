@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "jar:file:RegressionTest.jar!/hibernate-configuration-3.0.dtd">
+<!--
+jar:file:!/hibernate-configuration-3.0.dtd">
+    http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd
+-->
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.apache.derby.jdbc.EmbeddedDriver</property>
+        <property name="connection.url">jdbc:derby:jar:(RegressionTest.jar)tti_logs;create=true</property>
+        <property name="connection.username">user1</property>
+        <property name="connection.password">user</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <!--
+            Possible values:
+                DB2	                    org.hibernate.dialect.DB2Dialect
+                DB2 AS/400	            org.hibernate.dialect.DB2400Dialect
+                DB2 OS390	            org.hibernate.dialect.DB2390Dialect
+                PostgreSQL	            org.hibernate.dialect.PostgreSQLDialect
+                MySQL	                org.hibernate.dialect.MySQLDialect
+                MySQL with InnoDB	    org.hibernate.dialect.MySQLInnoDBDialect
+                MySQL with MyISAM	    org.hibernate.dialect.MySQLMyISAMDialect
+                Oracle (any version)	org.hibernate.dialect.OracleDialect
+                Oracle 9i/10g	        org.hibernate.dialect.Oracle9Dialect
+                Sybase	                org.hibernate.dialect.SybaseDialect
+                Sybase Anywhere	        org.hibernate.dialect.SybaseAnywhereDialect
+                Microsoft SQL Server	org.hibernate.dialect.SQLServerDialect
+                SAP DB	                org.hibernate.dialect.SAPDBDialect
+                Informix	            org.hibernate.dialect.InformixDialect
+                HypersonicSQL	        org.hibernate.dialect.HSQLDialect
+                Ingres	                org.hibernate.dialect.IngresDialect
+                Progress	            org.hibernate.dialect.ProgressDialect
+                Mckoi SQL	            org.hibernate.dialect.MckoiDialect
+                Interbase	            org.hibernate.dialect.InterbaseDialect
+                Pointbase	            org.hibernate.dialect.PointbaseDialect
+                Derby                   org.hibernate.dialect.DerbyDialect
+                FrontBase	            org.hibernate.dialect.FrontbaseDialect
+                Firebird	            org.hibernate.dialect.FirebirdDialect
+        -->
+        <property name="dialect">org.hibernate.dialect.DerbyDialect</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+
+        <!-- Disable the second-level cache  -->
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+        <!-- Drop and re-create the database schema on startup -->
+        <!--
+            create        the database schema is re-created every time the SessionFactory is started
+            create-drop   the database schema is re-created every time the SessionFactory is explicitly clsoed
+            update        checks and updates the database schema
+            validate      only checks the database schema
+        -->
+        <!--
+        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">create-drop</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">validate</property>
+        -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Include mapping files for database tables -->
+        <!--
+        <mapping resource="com/bgi/esm/monitoring/platform/regression/data/Event.hbm.xml" />
+        <mapping resource="com/bgi/esm/monitoring/platform/regression/data/DataMap.hbm.xml" />
+        -->
+    </session-factory>
+</hibernate-configuration>

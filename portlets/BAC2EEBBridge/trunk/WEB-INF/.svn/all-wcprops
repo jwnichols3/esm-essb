@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/liferay-portlet.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/struts-config.xml
+END
+web.xml.portlets
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/web.xml.portlets
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/portlet.xml
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/validation.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/web.xml
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/liferay-display.xml
+END
+tiles-defs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/tiles-defs.xml
+END

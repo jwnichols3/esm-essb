@@ -1,0 +1,12 @@
+<pages>
+   <portal-name>default</portal-name>
+   <page>
+      <page-name>struts</page-name>
+      <window>
+         <window-name>StrutsPortletWindow</window-name>
+         <instance-ref>/struts-demo.StrutsPortletDemo.StrutsPortletDemoInstance</instance-ref>
+         <region>center</region>
+         <height>0</height>
+      </window>
+   </page>
+</pages>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm
+END
+ActiveMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/ActiveMessage.java
+END
+OpenviewMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/OpenviewMessage.java
+END
+ActiveMessageText.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/ActiveMessageText.java
+END
+HistoricalMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/HistoricalMessage.java
+END
+OpenviewMessageText.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/OpenviewMessageText.java
+END
+HibernateFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/HibernateFinder.java
+END
+HistoricalMessageText.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/openview/orm/HistoricalMessageText.java
+END

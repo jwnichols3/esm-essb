@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view
+END
+HTMLView.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/HTMLView.java
+END
+FormCommons.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/FormCommons.java
+END
+TilesDefs.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/TilesDefs.java
+END
+SuccessView.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/SuccessView.java
+END
+Nav.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/Nav.java
+END
+BuildStrutsActionForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/BuildStrutsActionForm.java
+END
+HTMLForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/HTMLForm.java
+END
+FormBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/tools/struts/view/FormBean.java
+END

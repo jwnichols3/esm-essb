@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/esm-platform/!svn/ver/581/trunk/Platform/Monitoring
+END
+readme.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/esm-platform/!svn/ver/581/trunk/Platform/Monitoring/readme.html
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/18/trunk/Platform/Monitoring/ant.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/204/trunk/Platform/Monitoring/build.xml
+END

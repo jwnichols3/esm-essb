@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/struts.jar
+END
+dumbster.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/dumbster.jar
+END
+replatform_client.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/replatform_client.jar
+END
+util-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/util-bridges.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/commons-logging-1.1.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/util-java.jar
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/util-taglib.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/log4j-1.2.13.jar
+END
+derby-10.2.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/derby-10.2.2.0.jar
+END
+portals-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/lib/portals-bridges.jar
+END

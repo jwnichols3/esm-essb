@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/esm-platform/!svn/ver/632/trunk/CommonLibraries
+END
+jms-1.0.2a.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/jms-1.0.2a.jar
+END
+junit-3.8.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/esm-platform/!svn/ver/191/trunk/CommonLibraries/junit-3.8.1.jar
+END
+jndi-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/jndi-1.2.1.jar
+END
+log4j-1.2.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/log4j-1.2.7.jar
+END

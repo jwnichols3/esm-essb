@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/portlet.xml
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/validation.xml
+END
+struts-portlet-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/struts-portlet-config.xml
+END
+deploy.bat
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/deploy.bat
+END
+app.tld
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/app.tld
+END
+database.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/database.xml
+END
+jboss-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/jboss-portlet.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/struts-config.xml
+END
+server-types.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/server-types.xml
+END
+forums-pages.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/forums-pages.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/web.xml
+END
+portlet-instances.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/portlet-instances.xml
+END
+lvb-digester-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/lvb-digester-rules.xml
+END
+struts-config-registration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/templates/jboss/struts-config-registration.xml
+END

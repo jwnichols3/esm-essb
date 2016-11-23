@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    This test OVI deploy file illustrates how to publish OVO events onto the
+    JMS bus or Socket and also illustrates how to subscribe to those events.
+-->
+
+<Kernel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="/opt/OV/schema/OVI/csf/Kernel-1_0.xsd">
+
+    <!--
+        This is the JMX Agent configuration for OVI.  You should not have to change
+        this configuration!  CHANGE AT YOUR OWN RISK!!!
+    -->
+    <Agent>
+        <Configuration url="file:////var/opt/OV/conf/OVI/OviAgent.config"/>
+    </Agent>
+
+    <!--
+        Start the Publisher Pluglet
+     -->
+    <Service name="PublisherPluglet" class="com.hp.ov.ovi.inf.jms.PublisherPluglet">
+        <Configuration url="BGI-PublisherPluglet.jms.config"/>
+    </Service>
+
+    <!--
+        Start the OvoEventPluglet
+    -->
+    <Service name="OvoEventPluglet" class="com.hp.ov.ovi.app.ovo.event.OvoEventPluglet">
+        <Configuration url="BGI-OvoEventPluglet.config"/>
+    </Service>
+
+    <!--
+        Start the OvoEventChangePluglet
+    -->
+    <Service name="OvoEventChangePluglet" class="com.hp.ov.ovi.app.ovo.eventchange.OvoEventChangePluglet">
+        <Configuration url="BGI-OvoEventChangePluglet.config"/>
+    </Service>
+
+    <!--
+        Start the OvoEventModifyPluglet
+    -->
+   <Service name="OvoEventModifyPluglet" class="com.hp.ov.ovi.app.ovo.eventmodify.OvoEventModifyPluglet">
+      <Configuration url="BGI-OvoEventModifyPluglet.config"/>
+   </Service>
+
+    <!--
+        Start the OvoEventReadPluglet
+    -->
+   <Service name="OvoEventReadPluglet" class="com.hp.ov.ovi.app.ovo.eventread.OvoEventReadPluglet">
+      <Configuration url="BGI-OvoEventReadPluglet.config"/>
+   </Service>
+
+    <!--
+        Start the ResponderProxyPluglet for OvEventModify topic
+    -->
+   <Service name="ResponderProxyPluglet-Modify" class="com.hp.ov.ovi.inf.jms.ResponderProxyPluglet">
+      <Configuration url="BGI-ResponderProxyPluglet-Modify.jms.config"/>
+   </Service>
+
+    <!--
+        Start the ResponderProxyPluglet for OvEventRead topic
+    -->
+   <Service name="ResponderProxyPluglet-Read" class="com.hp.ov.ovi.inf.jms.ResponderProxyPluglet">
+      <Configuration url="BGI-ResponderProxyPluglet-Read.jms.config"/>
+   </Service>
+
+
+
+</Kernel>

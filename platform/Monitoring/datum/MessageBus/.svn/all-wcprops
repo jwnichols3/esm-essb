@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/42/trunk/Platform/Monitoring/datum/MessageBus
+END
+message_bus.xls
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/42/trunk/Platform/Monitoring/datum/MessageBus/message_bus.xls
+END
+message_bus.out
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/42/trunk/Platform/Monitoring/datum/MessageBus/message_bus.out
+END
+message_bus.csv
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/42/trunk/Platform/Monitoring/datum/MessageBus/message_bus.csv
+END

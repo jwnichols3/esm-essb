@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src
+END
+StrutsTools.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/StrutsTools.properties
+END
+Common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/Common.properties
+END
+test-suppressions.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/test-suppressions.properties
+END
+test-suppress-check.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/test-suppress-check.properties
+END
+CreatePortlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/CreatePortlet.jar
+END
+portlet-common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/portlet-common.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/log4j.properties
+END
+test-vpo.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/test-vpo.properties
+END
+GenerateFromTemplates.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/GenerateFromTemplates.java
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/565/trunk/Portlets/Suppression/tags/1.1rc1/WEB-INF/src/hibernate.cfg.xml
+END

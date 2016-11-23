@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ovoEventChangePluglet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/opt/OV/schema/OVI/OvoEventChangePluglet.xsd">
+
+    <!--
+        Specify the Pluglet that the OvoEventChangePluglet should acquire
+    -->
+    <targetPluglet>PublisherPluglet</targetPluglet>
+
+    <!--
+        This is the OVO operator user name.
+    -->
+    <ovoOperator>opc_adm</ovoOperator>
+
+    <!--
+        This is the OVO encrypted password for the operator.
+        Use the OviEncryptUtil script to encrypt the password string.
+    -->
+    <ovoOperatorEncryptedPassword>Oz00F1cQABwzdGI=</ovoOperatorEncryptedPassword>
+
+    <!--
+        This is the OVO unencrypted password for the operator. If you wish to use an
+        unencrypted password, fill in and uncomment the following XML element.
+        The ovoOperatorEncryptedPassword element must also be commented out.
+    <ovoOperatorPassword></ovoOperatorPassword>
+    -->
+
+    <!--
+        This is the MEI instance name that will be used to make the
+        connection to OVO server MEI.
+    -->
+    <meiInstanceName>OviInstance2</meiInstanceName>
+
+    <!--
+        This filter will accept all OVO message change events on the OVO Server.
+        Filters are not currently supported for this pluglet.
+    -->
+    <filter>
+        <all/>
+    </filter>
+
+    <!--
+        Switch on message trace logging
+    -->
+    <traceMessages>false</traceMessages>
+
+    <!--
+        Switch on message route logging
+    -->
+    <traceRoute>false</traceRoute>
+
+</ovoEventChangePluglet>
+
+
+

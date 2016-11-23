@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/esm-platform/!svn/ver/637/trunk/Tools/ExportQueryToXML
+END
+run.bat
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/582/trunk/Tools/ExportQueryToXML/run.bat
+END
+test_chris.bat
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/582/trunk/Tools/ExportQueryToXML/test_chris.bat
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/338/trunk/Tools/ExportQueryToXML/build.xml
+END

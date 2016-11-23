@@ -1,0 +1,11 @@
+##########################################################################################
+#  Common properties
+##########################################################################################
+
+# val #0
+struts-bridge.liferay.base-action-path=html
+# val #1
+struts-bridge.liferay.portlet-category=test
+# val #2
+struts-bridge.liferay.portlet-name=BlankStrutsPortletDemo
+

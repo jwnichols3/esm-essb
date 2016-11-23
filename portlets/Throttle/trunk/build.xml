@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="Suppression Portlet" default="help" basedir=".">
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+    <property file="./build.properties"/>
+    <import file="../../build-portlets-common.xml"/>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Test various parts of the portlet creator utility
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="info">
+        <echo>User name: ${user.name}</echo>
+    </target>
+
+    <target name="test" depends="build">
+        <echo>Starting test-suite for user experience...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/test/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property name="portlet-name" value="Throttle"/>
+</project>
+

@@ -1,0 +1,45 @@
+<epmu>
+<assignee.email></assignee.email>
+<number>IM01205787</number>
+<category>SELFSERVE</category>
+<open.time>07/02/13 20:49:30</open.time>
+<opened.by>zzito</opened.by>
+<actor>zzito</actor>
+<priority.code>3</priority.code>
+<severity.code>4</severity.code>
+<assignment>test_assignment</assignment>
+<referred.to></referred.to>
+<alert.time></alert.time>
+<status>updated</status>
+<vendor></vendor>
+<reference.no></reference.no>
+<contact.time></contact.time>
+<backup.start></backup.start>
+<cause.code></cause.code>
+<logical.name>UNKNOWN</logical.name>
+<group></group>
+<job.name></job.name>
+<location></location>
+<version></version>
+<type></type>
+<abend.code></abend.code>
+<model></model>
+<action>test_description</action>
+<key.words></key.words>
+<reference.no></reference.no>
+<id></id>
+<downtime.start></downtime.start>
+<assignee.name>test_assignee</assignee.name>
+<contact.name></contact.name>
+<caller.id></caller.id>
+<contact.phone></contact.phone>
+<network.name></network.name>
+<open.group></open.group>
+-
+	<update.action>
+07/02/13 20:51:49: updated by SCAutomate zzito|Ticket updated via test_source by test_by.||07/02/13 20:51:11: updated by SCAutomate zzito|Ticket updated via test_source by test_by.||
+</update.action>
+</epmu>
+
+
+http://peregrine-app-qa:8080/oaa/servlet/archway?P4Connect.updateIncident&number=IM01205787&src=test_source&by=test_by&assignee=test_assignee&assignment=test_assignment&action=updated

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/492/trunk/Tools/RegressionTest/trunk/sql/mysql
+END
+tti_events.sql
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/484/trunk/Tools/RegressionTest/trunk/sql/mysql/tti_events.sql
+END
+tti_logs.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/492/trunk/Tools/RegressionTest/trunk/sql/mysql/tti_logs.sql
+END
+data_map.sql
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/484/trunk/Tools/RegressionTest/trunk/sql/mysql/data_map.sql
+END
+data_map_data.sql
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/484/trunk/Tools/RegressionTest/trunk/sql/mysql/data_map_data.sql
+END

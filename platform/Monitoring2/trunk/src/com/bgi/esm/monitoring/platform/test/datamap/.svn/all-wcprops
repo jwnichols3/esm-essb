@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/datamap
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/datamap/CommonTestCase.java
+END
+TestDataMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/datamap/TestDataMap.java
+END
+TestDataMapAudit.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/test/datamap/TestDataMapAudit.java
+END

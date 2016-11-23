@@ -1,0 +1,34 @@
+##########################################################################################
+##########################################################################################
+        Text properties for the Chinese (China) language
+##########################################################################################
+##########################################################################################
+##########################################################################################
+##########################################################################################
+    Text properties for the 'test_throttle' database
+##########################################################################################
+##########################################################################################
+databases.records.edit=Edit
+databases.records.add=Add New Record
+databases.records.audit_trail=Audit Trail
+databases.records.audit_timestamp=Timestamp
+databases.records.audit_timestamp=Timestamp
+databases.records.next=Next Set
+databases.records.prev=Prev Set
+
+
+databases.test_throttle.home.display_name=Home
+
+
+##########################################################################################
+    Text properties for the 'throttle' table
+##########################################################################################
+databases.test_throttle.throttle.display_name=Throttle
+databases.test_throttle.throttle.rule_id.display_name=RuleId
+databases.test_throttle.throttle.row_id.display_name=RowId
+databases.test_throttle.throttle.bgi_group.display_name=BgiGroup
+databases.test_throttle.throttle.storm_level.display_name=StormLevel
+databases.test_throttle.throttle.duration.display_name=Duration
+databases.test_throttle.throttle.threshold.display_name=Threshold
+databases.test_throttle.throttle.action.display_name=Action
+databases.test_throttle.throttle.message_flag.display_name=MessageFlag

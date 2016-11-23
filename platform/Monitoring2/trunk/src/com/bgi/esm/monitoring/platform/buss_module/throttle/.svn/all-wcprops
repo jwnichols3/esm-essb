@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/throttle
+END
+StormConsumerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/throttle/StormConsumerBean.java
+END
+ThrottleConsumerBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/throttle/ThrottleConsumerBean.java
+END
+StormCalculator.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/throttle/StormCalculator.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/179/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/throttle/package.html
+END

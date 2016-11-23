@@ -1,0 +1,25 @@
+################################################################################
+#   Default values for the 'http_parameter' table
+################################################################################
+##  Default values for the 'row_id' column.  This column is of type String
+#database.http_parameter.row_id.default_value.01=
+#database.http_parameter.row_id.default_value.02=
+#database.http_parameter.row_id.default_value.03=
+
+
+##  Default values for the 'request_id' column.  This column is of type String
+#database.http_parameter.request_id.default_value.01=
+#database.http_parameter.request_id.default_value.02=
+#database.http_parameter.request_id.default_value.03=
+
+
+##  Default values for the 'parameter_name' column.  This column is of type String
+#database.http_parameter.parameter_name.default_value.01=
+#database.http_parameter.parameter_name.default_value.02=
+#database.http_parameter.parameter_name.default_value.03=
+
+
+##  Default values for the 'parameter_persistence' column.  This column is of type String
+#database.http_parameter.parameter_persistence.default_value.01=
+#database.http_parameter.parameter_persistence.default_value.02=
+#database.http_parameter.parameter_persistence.default_value.03=

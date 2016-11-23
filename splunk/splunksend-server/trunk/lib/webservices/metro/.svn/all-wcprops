@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/webservices/metro
+END
+webservices-rt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/webservices/metro/webservices-rt.jar
+END
+webservices-tools_l10n.jar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/webservices/metro/webservices-tools_l10n.jar
+END
+webservices-rt_l10n.jar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/webservices/metro/webservices-rt_l10n.jar
+END
+webservices-tools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/webservices/metro/webservices-tools.jar
+END

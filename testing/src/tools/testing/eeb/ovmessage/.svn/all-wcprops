@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage
+END
+OvMessageBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/OvMessageBuilder.java
+END
+OvMessageParseException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/OvMessageParseException.java
+END
+OvMessageBuilderFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/OvMessageBuilderFactory.java
+END
+OvMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/OvMessage.java
+END
+FactoryConfigurationError.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/FactoryConfigurationError.java
+END

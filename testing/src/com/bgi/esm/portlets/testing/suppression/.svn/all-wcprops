@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/com/bgi/esm/portlets/testing/suppression
+END
+TestNoSuppressionRules.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/438/trunk/Testing/src/com/bgi/esm/portlets/testing/suppression/TestNoSuppressionRules.java
+END
+TestOneSuppressionRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/438/trunk/Testing/src/com/bgi/esm/portlets/testing/suppression/TestOneSuppressionRule.java
+END
+TestTwoOverlappingSuppressionRules.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/com/bgi/esm/portlets/testing/suppression/TestTwoOverlappingSuppressionRules.java
+END
+TestSuppression.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/438/trunk/Testing/src/com/bgi/esm/portlets/testing/suppression/TestSuppression.java
+END

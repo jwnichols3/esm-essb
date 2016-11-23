@@ -1,0 +1,25 @@
+source.database.type=Sybase
+source.database.port=14110
+source.database.name=shareit_db
+source.database.hostname=rdcuxsrv038
+source.database.username=shareit_read
+source.database.password=relay8
+
+dest.database.type=SQL Server
+dest.database.port=1433
+dest.database.name=Alarmpoint3
+#dest.database.hostname=localhost
+#dest.database.hostname=calntesm201
+#dest.database.hostname=ldnntesm001
+dest.database.hostname=calntesv818
+#dest.database.hostname=calntesm503
+dest.database.owner=alarmpoint3
+dest.database.username=alarmpoint3
+dest.database.password=HYPertext01
+
+apserver.database.type=SQL Server
+apserver.database.port=1433
+apserver.database.name=NotificationServer
+apserver.database.hostname=calntesm503
+apserver.database.username=alarmpoint-db
+apserver.database.password=HYPertext01

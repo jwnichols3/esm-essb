@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+    <!--
+        ***************************************************************************
+        ***************************************************************************
+            Reference to the template
+        ***************************************************************************
+        ***************************************************************************
+     -->
+    <definition name="portlet.real_estate_manager" path="/portlet/real_estate_manager/template.jsp" />
+
+    <!--
+        ***************************************************************************
+        ***************************************************************************
+            The starting view
+        ***************************************************************************
+        ***************************************************************************
+     -->
+    <definition name="portlet.real_estate_manager.view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/view.jsp" />
+    </definition>
+
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'agreements_rentals'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.agreements_rentals_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/agreements_rentals_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.agreements_rentals_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/agreements_rentals_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.agreements_rentals_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/agreements_rentals_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.agreements_rentals_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/agreements_rentals_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.agreements_rentals_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/agreements_rentals_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'contractors'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.contractors_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/contractors_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.contractors_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/contractors_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.contractors_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/contractors_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.contractors_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/contractors_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.contractors_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/contractors_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'index_tenant_relationship_types'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.index_tenant_relationship_types_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/index_tenant_relationship_types_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.index_tenant_relationship_types_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/index_tenant_relationship_types_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.index_tenant_relationship_types_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/index_tenant_relationship_types_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.index_tenant_relationship_types_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/index_tenant_relationship_types_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.index_tenant_relationship_types_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/index_tenant_relationship_types_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'leases'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.leases_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/leases_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.leases_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/leases_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.leases_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/leases_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.leases_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/leases_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.leases_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/leases_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'owners'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.owners_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/owners_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.owners_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/owners_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.owners_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/owners_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.owners_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/owners_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.owners_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/owners_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'properties'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.properties_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/properties_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.properties_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/properties_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.properties_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/properties_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.properties_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/properties_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.properties_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/properties_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'rentals'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.rentals_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/rentals_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.rentals_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/rentals_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.rentals_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/rentals_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.rentals_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/rentals_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.rentals_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/rentals_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'tasks'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.tasks_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tasks_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tasks_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tasks_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tasks_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tasks_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tasks_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tasks_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tasks_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tasks_edit_success.jsp" />
+    </definition>
+        <!--
+            ***************************************************************************
+            ***************************************************************************
+                The views for the table 'tenants'
+            ***************************************************************************
+            ***************************************************************************
+         -->
+    <definition name="portlet.real_estate_manager.tenants_view" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tenants_view.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tenants_add" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tenants_add.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tenants_add_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tenants_add_success.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tenants_edit" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tenants_edit.jsp" />
+    </definition>
+    <definition name="portlet.real_estate_manager.tenants_edit_success" extends="portlet.real_estate_manager">
+        <put name="portlet_content" value="/portlet/real_estate_manager/tenants_edit_success.jsp" />
+    </definition>
+
+</tiles-definitions>
+
+

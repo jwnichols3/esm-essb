@@ -1,0 +1,47 @@
+<html>
+    <body>
+        <b>Platform</b>
+        <br>
+        This is the integration between HP Openview, Alarmpoint Enterprise 3, and Service Center.
+        <br>
+        <br>
+        <center><img src="overview.png" width="750"></center>
+        <br>
+        <br>
+        The ESM Monitoring Platform uses a messaging bus to facilitate persistent and asynchronous 
+        communication between the three tools.  
+        <br>
+        <br>
+        <b>Testing</b>
+        <br>
+        <center>
+            <table border="0" width="80%">
+                <tr>
+                    <td>
+                        Our entire test suite for the platform and associated front-ends.
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        <br>
+        <b>Tools</b>
+        <br>
+        <center>
+            <table border="1" width="80%">
+                <tr>
+                    <th>Sub-project</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td valign="top">CommandLineSuppression</td>
+                    <td>
+                        Command-line utility to create an alert suppression by sending a web request 
+                        to the http://suppress portal.
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

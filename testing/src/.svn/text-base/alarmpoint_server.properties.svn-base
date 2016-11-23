@@ -1,0 +1,4 @@
+alarmpoint.server.database.hostname=calntesm503
+alarmpoint.server.database.username=alarmpoint-db
+alarmpoint.server.database.password=HYPertext01
+alarmpoint.server.database.name=NotificationServer

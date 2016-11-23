@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/600/trunk/Tools/RegressionTest/trunk/src/com/bgi/esm/monitoring/platform/regression/hibernate
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/esm-platform/!svn/ver/600/trunk/Tools/RegressionTest/trunk/src/com/bgi/esm/monitoring/platform/regression/hibernate/HibernateUtil.java
+END
+EventHibernateFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/esm-platform/!svn/ver/576/trunk/Tools/RegressionTest/trunk/src/com/bgi/esm/monitoring/platform/regression/hibernate/EventHibernateFacade.java
+END

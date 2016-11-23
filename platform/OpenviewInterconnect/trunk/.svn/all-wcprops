@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk
+END
+BGI-ResponderProxyPluglet-Modify.jms.config
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-ResponderProxyPluglet-Modify.jms.config
+END
+BGI-OvoEventReadPluglet.config
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-OvoEventReadPluglet.config
+END
+BGI-ResponderProxyPluglet-Read.jms.config
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-ResponderProxyPluglet-Read.jms.config
+END
+BGI-OvoEventPluglet.config
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-OvoEventPluglet.config
+END
+BGI-PublisherPluglet.jms.config
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-PublisherPluglet.jms.config
+END
+BGI-OVI.deploy
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-OVI.deploy
+END
+BGI-OvoEventChangePluglet.config
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-OvoEventChangePluglet.config
+END
+BGI-OvoEventModifyPluglet.config
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/529/trunk/Platform/OpenviewInterconnect/trunk/BGI-OvoEventModifyPluglet.config
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint
+END
+AlertFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertFactory.java
+END
+AlertChannel.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertChannel.java
+END
+AlertReceiverServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertReceiverServer.java
+END
+AlertProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertProcessor.java
+END
+Alert.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/Alert.java
+END
+AlertsRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertsRepository.java
+END
+TestAlertFromFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/TestAlertFromFile.java
+END
+AlertReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/AlertReceiver.java
+END
+InvalidAlertException.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/tools/testing/alarmpoint/InvalidAlertException.java
+END

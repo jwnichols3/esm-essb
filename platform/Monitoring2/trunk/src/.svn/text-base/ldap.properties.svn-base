@@ -1,0 +1,11 @@
+ldap.provider_url=ldap://vdir.insidelive.net:389
+ldap.base_dn=dc=virtual,dc=net
+ldap.security_principal=CN=zzissreadldap zzissreadldap,OU=ServiceAccounts,OU=Global,ou=insidelive.net,dc=virtual,dc=net
+ldap.security_credentials=Star2001
+
+
+#ldap.provider_url=ldap://dir.insidelive.net:389
+#ldap.base_dn=dc=insidelive, dc=net
+#ldap.security_principal=cn=zzReadLDAP,ou=ServiceAccounts,ou=Global,dc=insidelive,dc=net
+#ldap.security_credentials=zzreadldap
+#ldap.security_authentication=zzreadldap

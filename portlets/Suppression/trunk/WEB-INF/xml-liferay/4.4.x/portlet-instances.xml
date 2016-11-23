@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="yes"?>
+<instances>
+   <instance>
+      <instance-name>{13}</instance-name>
+      <component-ref>AlertSuppressionPortlet</component-ref>
+   </instance>
+</instances>

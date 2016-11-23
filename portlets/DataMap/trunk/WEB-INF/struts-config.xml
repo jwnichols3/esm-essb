@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Form bean definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <form-beans>
+        <form-bean name="data_map_form"        type="com.bgi.esm.monitoring.portlets.DataMapRules.forms.DataMap"      />
+        <form-bean name="data_map_form_audit"  type="com.bgi.esm.monitoring.portlets.DataMapRules.forms.DataMapAudit" />
+    </form-beans>
+    <action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Action mapping definitions
+         ****************************************************************************
+         **************************************************************************** -->
+         <action path="/view"                  include="/html/view.jsp"        />
+
+        <!-- ************************************************************************
+               Mappings for the "data_map" table
+             ************************************************************************ -->
+        <action path="/data_map_view"            include="/html/data_map_view.jsp" />
+        <action path="/data_map_add"             include="/html/data_map_add.jsp" />
+        <action path="/data_map_add_process"     type="com.bgi.esm.monitoring.portlets.DataMapRules.actions.DataMapAction" name="data_map_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/data_map_add.jsp"         />
+            <forward name="success"              path="/html/data_map_add_success.jsp" />
+        </action>
+
+        <action path="/data_map_edit"            include="/html/data_map_edit.jsp" />
+        <action path="/data_map_edit_process"    type="com.bgi.esm.monitoring.portlets.DataMapRules.actions.DataMapAction" name="data_map_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/data_map_edit.jsp"         />
+            <forward name="success"              path="/html/data_map_edit_success.jsp" />
+        </action>
+
+        <action path="/data_map_audit"           type="com.bgi.esm.monitoring.portlets.DataMapRules.actions.DataMapAction" name="data_map_form_audit" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="success"              path="/html/data_map_audit.jsp" />
+        </action>
+
+        <action path="/data_map_delete"          include="/html/data_map_delete.jsp" />
+        <action path="/data_map_delete_process"  type="com.bgi.esm.monitoring.portlets.DataMapRules.actions.DataMapAction" name="data_map_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/data_map_delete.jsp"         />
+            <forward name="success"              path="/html/data_map_delete_success.jsp" />
+        </action>
+        
+        <action path="/data_map_search_process"  type="com.bgi.esm.monitoring.portlets.DataMapRules.actions.DataMapAction" name="data_map_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/data_map_view.jsp"         />
+            <forward name="success"              path="/html/data_map_search_result.jsp" />
+        </action>
+
+    </action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                Custom Request Processor by http://portals.apache.org to allow this
+                portlet to be deployed as either a portlet or a web application.
+         ****************************************************************************
+         **************************************************************************** -->
+    <controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Message Resources
+         ****************************************************************************
+         **************************************************************************** -->
+    <message-resources key="messages"  parameter="content.Messages"  />
+    <message-resources key="databases" parameter="content.databases" />
+
+    <!-- Plugin to connect to Enterprise Event Bus -->
+    <plug-in className="com.bgi.esm.monitoring.portlets.DataMapRules.EEBConnectorPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                   />
+    </plug-in>
+
+    <!-- Plugin to connect for Quartz -->
+    <!--
+    <plug-in className="com.bgi.esm.monitoring.portlets.DataMapRules.QuartzPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                   />
+    </plug-in>
+    -->
+
+    <!-- Tiles Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+        <set-property property="definitions-parser-validate" value="true" />
+    </plug-in>
+    -->
+
+    <!-- Validator Plugin -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+</struts-config>

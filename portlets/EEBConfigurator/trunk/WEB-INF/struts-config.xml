@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Form bean definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <form-beans>
+        <form-bean name="property_form"     type="com.bgi.esm.monitoring.portlets.EEBConfigurator.forms.EEBPropertyForm" />
+    </form-beans>
+
+    <action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Action mapping definitions
+         ****************************************************************************
+         **************************************************************************** -->
+         <action path="/view"                  include="/html/view.jsp"                />
+
+         <action path="/edit_property"         type="com.bgi.esm.monitoring.portlets.EEBConfigurator.actions.InitPropertyAction" name="property_form"  scope="request" validate="true" input="failure">
+             <forward name="success"           path="/html/edit_property.jsp"          />
+         </action>
+         <action path="/edit_property_process" type="com.bgi.esm.monitoring.portlets.EEBConfigurator.actions.EditPropertyAction" name="property_form"  scope="request" validate="true" input="failure">
+             <forward name="failure"           path="/html/edit_property.jsp" />
+             <forward name="success"           path="/html/edit_property_success.jsp"  />
+         </action>
+
+         <action path="/MessageGroup"          include="/html/MessageGroup.jsp"        />
+
+         <action path="/LastNumMinutes"        include="/html/LastNumMinutes.jsp"      />
+
+         <action path="/TraceOVOMessage"       include="/html/TraceOVOMessage.jsp"     />
+
+
+
+    </action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                Custom Request Processor by http://portals.apache.org to allow this
+                portlet to be deployed as either a portlet or a web application.
+         ****************************************************************************
+         **************************************************************************** -->
+    <controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Message Resources
+         ****************************************************************************
+         **************************************************************************** -->
+    <message-resources key="messages"  parameter="content.Messages"  />
+    <message-resources key="databases" parameter="content.databases" />
+
+    <!-- Plugin to connect to Enterprise Event Bus -->
+    <plug-in className="com.bgi.esm.monitoring.portlets.EEBConfigurator.EEBConnectorPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                   />
+    </plug-in>
+
+    <!-- Tiles Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+        <set-property property="definitions-parser-validate" value="true" />
+    </plug-in>
+    -->
+
+    <!-- Validator Plugin -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+</struts-config>

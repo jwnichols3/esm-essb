@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/580/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter
+END
+ExtractPeregrineTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ExtractPeregrineTicket.java
+END
+ServiceCenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ServiceCenter.java
+END
+Toolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/Toolkit.java
+END
+ServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/333/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ServiceCenterTicket.java
+END
+ProcessData.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ProcessData.java
+END
+ServiceCenterAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/esm-platform/!svn/ver/580/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ServiceCenterAuthenticator.java
+END
+ServiceCenterPropertiesException.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ServiceCenterPropertiesException.java
+END
+ServiceCenterProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/esm-platform/!svn/ver/90/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/ServiceCenterProperties.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/portlets/Liferay/v04_02_02
+END
+util-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/portlets/Liferay/v04_02_02/util-bridges.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/portlets/Liferay/v04_02_02/util-java.jar
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/portlets/Liferay/v04_02_02/util-taglib.jar
+END

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.hibernate.DataMap" table="data_map" >
+        <id name="RuleID" column="rule_id" type="text"          >
+            <generator class="uuid" />
+        </id>
+        <property name="ApplicationName"  type="text"         column="application_name" />
+        <property name="Hostname"         type="text"         column="hostname"         />
+        <property name="TargetPath"       type="text"         column="target_path"      />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/props
+END
+common.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/props/common.properties
+END
+database_queries.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/props/database_queries.properties
+END

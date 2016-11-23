@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/580/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/test
+END
+TestToolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/test/TestToolkit.java
+END
+TestValidServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/test/TestValidServiceCenterTicket.java
+END
+TestCreateServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/esm-platform/!svn/ver/580/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/test/TestCreateServiceCenterTicket.java
+END
+TestInvalidServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/esm-platform/!svn/ver/112/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/dispatcher/ServiceCenter/test/TestInvalidServiceCenterTicket.java
+END

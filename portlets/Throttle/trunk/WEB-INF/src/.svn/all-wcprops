@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/662/trunk/Portlets/Throttle/trunk/WEB-INF/src
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/397/trunk/Portlets/Throttle/trunk/WEB-INF/src/log4j.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/662/trunk/Portlets/Throttle/trunk/WEB-INF/src/hibernate.cfg.xml
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/581/trunk/Platform/Monitoring/datum/ServiceCenter
+END
+ticket_message.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/42/trunk/Platform/Monitoring/datum/ServiceCenter/ticket_message.xsd
+END
+update_ticket-message.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/581/trunk/Platform/Monitoring/datum/ServiceCenter/update_ticket-message.xml
+END

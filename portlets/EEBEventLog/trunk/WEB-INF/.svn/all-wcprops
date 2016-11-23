@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/635/trunk/Portlets/EEBEventLog/trunk/WEB-INF
+END
+liferay-portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/liferay-portlet.xml
+END
+struts-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/538/trunk/Portlets/EEBEventLog/trunk/WEB-INF/struts-config.xml
+END
+portlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/portlet.xml
+END
+validation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/validation.xml
+END
+validator-rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/validator-rules.xml
+END
+web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/505/trunk/Portlets/EEBEventLog/trunk/WEB-INF/web.xml
+END
+liferay-display.xml
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/liferay-display.xml
+END
+tiles-defs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/421/trunk/Portlets/EEBEventLog/trunk/WEB-INF/tiles-defs.xml
+END

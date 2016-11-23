@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Testing" default="help" basedir=".">
+  <description>
+    The build file for Testing.
+  </description>
+
+  <property file="./ant.properties"/>
+
+  <property name="build.dir" value="${project.dir}/build"/>
+  <property name="build.classes.dir" value="${build.dir}/classes"/>
+
+  <property name="logs.dir" value="{project.dir}/logs"/>
+
+  <property name="etc.dir" value="${project.dir}/etc"/>
+
+  <property name="javadoc.dir" value="${project.dir}/javadoc"/>
+
+  <property name="report.dir" value="${project.dir}/report"/>
+
+  <property name="src.dir" value="${project.dir}/src"/>
+
+  <property name="resources.dir" value="${src.dir}/resources"/>
+
+  <property name="src.gen.dir" value="${build.dir}/src"/>
+
+  <path id="xjc.path">
+    <pathelement location="${javaee.path}" />
+    <pathelement location="${base.lib.dir}/jaxb-xjc.jar" />
+    <pathelement location="${base.lib.dir}/activation-1.0.2.jar" />
+  </path>
+
+  <path id="javac.path">
+    <pathelement location="${javaee.path}" />
+    <fileset dir="lib" includes="**/*.jar" />
+    <fileset dir="../CommonLibraries" includes="**/*.jar" />
+  </path>
+
+  <taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask">
+    <classpath refid="xjc.path" />
+  </taskdef>
+
+  <patternset id="ovmessage.generated.files">
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/Adapter1.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/Adapter2.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/Data.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/MessageBody.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/MessageData.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/MessageEnvelope.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/ObjectFactory.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/OvMessage.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/package-info.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/Severity.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/State.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/TimeStamp.java"/>
+  	<include name="tools/testing/eeb/ovmessage/impl/jaxb/generated/Value.java"/>
+  </patternset>
+
+  <patternset id="service.center.ticket.generated.files">
+    <include name="tools/testing/servicecenter/ticket/generated/Action.java"/>
+  	<include name="tools/testing/servicecenter/ticket/generated/Adapter1.java"/>
+  	<include name="tools/testing/servicecenter/ticket/generated/ObjectFactory.java"/>
+  	<include name="tools/testing/servicecenter/ticket/generated/ProblemSummary.java"/>
+  	<include name="tools/testing/servicecenter/ticket/generated/Recordset.java"/>
+  </patternset>
+	
+  <target name="help">
+    <echo> </echo>
+    <echo>Here are the options that this build file contains:</echo>
+    <echo> </echo>
+    <echo>    init        creates necessary directories</echo>
+    <echo>    resources   copies resource files to build dir</echo>
+    <echo>    generate    generates source code</echo>
+    <echo>    build       compiles the entire source tree</echo>
+    <echo>    clean       removes all build artifacts</echo>
+    <echo>    javadoc     generates javadocs</echo>
+    <echo> </echo>
+  </target>
+
+  <target name="init" description="Perform Initialization">
+    <tstamp/>
+    <mkdir dir="${src.gen.dir}"/>
+    <mkdir dir="${build.classes.dir}"/>
+    <mkdir dir="${logs.dir}"/>
+  </target>
+
+  <!--
+      ********************************************************************************
+      ********************************************************************************
+      Copy any resource or configuration files
+      ********************************************************************************
+      ********************************************************************************
+  -->
+  <target name="resources" depends="init">
+    <echo>Copying all resource files to the compiled output directory...</echo>
+    <copy todir="${build.dir}" includeEmptyDirs="no">
+      <fileset dir="${src.dir}">
+        <patternset>
+          <include name="**/*.conf"/>
+          <include name="**/*.properties"/>
+          <include name="**/*.bat"/>
+          <include name="**/*.xml"/>
+          <include name="**/*.tld"/>
+          <include name="**/*.bin"/>
+        </patternset>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+    <delete dir="${javadoc.dir}"/>
+  </target>
+
+  <target name="generate" depends="init" description="Generate source">
+  	
+  	<echo>Generating OvMessage code.</echo>
+    <echo>Using lib path: ${base.lib.dir}</echo>
+    <echo>Using Java EE:  ${javaee.path}</echo>
+    <!-- Capture the path as a delimited property using the refid attribute -->
+	<property name="myclasspath" refid="xjc.path"/>
+	<!-- Emit the property to the ant console -->
+	<echo message="Classpath = ${myclasspath}"/>
+
+    <xjc schema="${resources.dir}/OvMessage.xsd" 
+         binding="${resources.dir}/OvMessage.xjb" 
+         package="tools.testing.eeb.ovmessage.impl.jaxb.generated" 
+         destdir="${src.gen.dir}" 
+         removeOldOutput="yes">
+      <classpath refid="xjc.path" />
+      <produces dir="${src.gen.dir}">
+      	<patternset refid="ovmessage.generated.files"/>
+      </produces>
+    </xjc>
+  	
+  	<echo>Generating Service Center Ticket code.</echo>
+  	<xjc schema="${resources.dir}/ServiceCenterTicket.xsd"
+  	     binding="${resources.dir}/ServiceCenterTicket.xjb"
+  	     package="tools.testing.servicecenter.ticket.generated"
+  	     destdir="${src.gen.dir}"
+  	     removeOldOutput="yes">
+  		
+  	  <classpath refid="xjc.path" />
+  	  <produces dir="${src.gen.dir}">
+  	  	<patternset refid="service.center.ticket.generated.files"/>
+  	  </produces>
+  	</xjc>
+  </target>
+
+  <target name="build" depends="generate,resources" description="Build">
+    <javac destdir="${build.classes.dir}" classpathref="javac.path">
+      <src path="${src.gen.dir}"/>
+      <src path="${src.dir}"/>
+    </javac>
+  </target>
+
+<!--
+  <target name="run" depends="build" description="Run">
+    <java classname="Main3">
+      <classpath>
+        <pathelement location="${build.classes.dir}" />
+        <path refid="javac.path" />
+        <pathelement location="C:/Program Files/apache-ant-1.7.0/lib/xercesImpl.jar" />
+      </classpath>
+      <sysproperty key="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+      <sysproperty key="java.naming.provider.url" value="t3://localhost:7001" />
+    </java>
+  </target>
+-->
+
+  <target name="javadoc" depends="init">
+    <delete dir="${javadoc.dir}"/>
+    <mkdir dir="${javadoc.dir}"/>
+
+    <javadoc sourcepath="${src.dir}"
+             destdir="${javadoc.dir}"
+             classpathref="javac.path"
+             packagenames="*"
+             author="true"
+             version="true"
+             private="true"
+             windowtitle="BGI OvMessage API Documentation"
+             doctitle="&lt;h1&gt;BGI OvMessage API Documentation&lt;/h1&gt;">
+      <sourcepath>
+        <pathelement path="${src.dir}" />
+        <pathelement path="${src.gen.dir}" />
+      </sourcepath>
+    </javadoc>
+
+  </target>
+
+  <!-- 
+       ********************************************************************************
+       ********************************************************************************
+       Starts a run of a testcase
+       ********************************************************************************
+       ********************************************************************************
+  -->
+  <target name="test-eeb">
+  	<echo>Run the EEB tests</echo>
+  	<mkdir dir="test-results/xml"/>
+  	<mkdir dir="test-results/html"/>
+    <junit printsummary="yes">
+  	  <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="javac.path"/>
+      <classpath path="${build.classes.dir}"/>
+      <classpath path="${etc.dir}"/>
+      <formatter type="xml"/>
+      <batchtest fork="yes" todir="test-results/xml">
+        <fileset dir="src">
+      	  <include name="com/bgi/esm/portlets/testing/eeb/Test**.java"/>
+          <include name="com/bgi/esm/portlets/testing/suppression/Test**.java"/>
+        </fileset>
+      </batchtest>
+     </junit>
+  	<junitreport todir="test-results">
+  		<fileset dir="test-results/xml">
+  		  <include name="TEST-*.xml"/>
+  		</fileset>
+  		<report todir="test-results/html"/>
+  	</junitreport>
+  </target>
+	
+  <target name="vpo" depends="build">
+    <echo>Starting VPO testcase...</echo>
+    <java classname="com.bgi.esm.portlets.testing.VPOTestcase" fork="true">
+      <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target>
+  <target name="liferay" depends="build">
+    <echo>Starting LiferayTestcase...</echo>
+    <java classname="com.bgi.esm.portlets.testing.LiferayTestcase" fork="true">
+      <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target> 
+  <target name="alarmpoint" depends="build">
+    <echo>Starting LiferayTestcase...</echo>
+    <java classname="com.bgi.esm.portlets.testing.AlarmpointTestcase" fork="true">
+      <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target> 
+  <target name="test" depends="build">
+    <echo>Starting test-suite...</echo>
+    <mkdir dir="test-results/xml"/>
+    <mkdir dir="test-results/html"/>
+    <junit printsummary="yes">
+      <classpath refid="project.classpath"/>
+      <formatter type="xml"/>
+      <batchtest fork="yes" todir="test-results/xml">
+        <fileset dir="src">
+          <include name="**/Test*.java"/>
+          <exclude name="**/TestLdapMonitor.java"/>
+          <exclude name="**/TestMonitor.java"/>
+          <exclude name="**/TestServer.java"/>
+          <exclude name="**/TestSybase.java"/>
+        </fileset>
+      </batchtest>
+    </junit>
+    <junitreport todir="test-results">
+      <fileset dir="test-results/xml">
+        <include name="TEST-*.xml"/>
+      </fileset>
+      <report todir="test-results/html"/>
+    </junitreport>
+  </target> 
+  <target name="test-alarmpoint" depends="build">
+    <echo>Starting test-suite...</echo>
+    <mkdir dir="test-results/xml"/>
+    <mkdir dir="test-results/html"/>
+    <junit printsummary="yes">
+      <classpath refid="project.classpath"/>
+      <formatter type="xml"/>
+      <batchtest fork="yes" todir="test-results/xml">
+        <fileset dir="src">
+          <include name="com/bgi/esm/portlets/testing/alarmpoint/Test*.java" />
+        </fileset>
+      </batchtest>
+    </junit>
+    <junitreport todir="test-results">
+      <fileset dir="test-results/xml">
+        <include name="TEST-*.xml"/>
+      </fileset>
+      <report todir="test-results/html"/>
+    </junitreport>
+  </target> 
+
+  <target name="populate-groups-teams" depends="build">
+    <java classname="com.bgi.esm.portlets.testing.alarmpoint.PopulateGroupsTeams" fork="true">
+      <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target>
+
+  <target name="liferay-user" depends="build">
+    <echo>Testing Liferay users...</echo>
+    <java classname="tools.testing.CreateLiferayUser" fork="true">
+      <jvmarg line="-Xms512M -Xmx1024M"/>
+      <classpath refid="project.classpath"/>
+    </java>
+  </target>
+
+</project>

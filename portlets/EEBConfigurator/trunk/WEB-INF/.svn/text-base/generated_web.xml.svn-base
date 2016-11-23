@@ -1,0 +1,72 @@
+
+<!--
+Automatically created by Apache Jakarta Tomcat JspC.
+Place this fragment in the web.xml before all icon, display-name,
+description, distributable, and context-param elements.
+-->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.init_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.init_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.LastNumMinutes_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.LastNumMinutes_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.MessageGroup_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.MessageGroup_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.nav_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.nav_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.TraceOVOMessage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.TraceOVOMessage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.view_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.view_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.init_jsp</servlet-name>
+        <url-pattern>/html/init.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.LastNumMinutes_jsp</servlet-name>
+        <url-pattern>/html/LastNumMinutes.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.MessageGroup_jsp</servlet-name>
+        <url-pattern>/html/MessageGroup.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.nav_jsp</servlet-name>
+        <url-pattern>/html/nav.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.TraceOVOMessage_jsp</servlet-name>
+        <url-pattern>/html/TraceOVOMessage.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.view_jsp</servlet-name>
+        <url-pattern>/html/view.jsp</url-pattern>
+    </servlet-mapping>
+
+<!--
+All session-config, mime-mapping, welcome-file-list, error-page, taglib,
+resource-ref, security-constraint, login-config, security-role,
+env-entry, and ejb-ref elements should follow this fragment.
+-->

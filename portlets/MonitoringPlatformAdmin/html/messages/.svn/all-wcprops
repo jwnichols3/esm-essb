@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/html/messages
+END
+nav.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/107/trunk/Portlets/MonitoringPlatformAdmin/html/messages/nav.jsp
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/77/trunk/Portlets/MonitoringPlatformAdmin/html/messages/edit.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/77/trunk/Portlets/MonitoringPlatformAdmin/html/messages/view.jsp
+END
+queue_stats.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/107/trunk/Portlets/MonitoringPlatformAdmin/html/messages/queue_stats.jsp
+END
+QueueActivityGraph.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/570/trunk/Portlets/MonitoringPlatformAdmin/html/messages/QueueActivityGraph.jsp
+END

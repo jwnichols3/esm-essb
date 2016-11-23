@@ -1,0 +1,2945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataMaps xmlns="http://www.bgi.com/ems/replatform/xml/DataMap.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.bgi.com/ems/replatform/xml/DataMap.xsd file:/home/gsc/bgi_ems/replatform/xml/DataMap.xsd">
+  <DataMap>
+    <group>accounts-barclaysglobal</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-accounts-barclaysglobal</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ACCOUNTS.BARCLAYSGLOBAL.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>administration</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-administration</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>advantage</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-advantage</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ADVANTAGE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ais</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ais</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ais_inception</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>alarmpoint</group>
+    <method>ticket</method>
+    <alarm_point_group>ESM</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>amsx</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>amsx_load</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ap1</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>AppManager</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_application</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_backupexec</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>BACKUPS</peregrine_subcategory>
+    <peregrine_product>BACKUPEXEC</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_cim</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_exchange</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>MESSAGING</peregrine_category>
+    <peregrine_subcategory>EXCHANGE SERVER</peregrine_subcategory>
+    <peregrine_product>EXCHANGE SERVER</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_helpdesk</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_iis</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_isa</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_nt</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_ntadmin</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SECURITY</peregrine_category>
+    <peregrine_subcategory>ACCOUNT ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>ACCOUNT ADMINISTRATION</peregrine_product>
+    <peregrine_problem>CHANGE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_sql</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>appmanager_wts</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>art</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ART (ACCESS REQUEST TOOL)</peregrine_product>
+    <peregrine_problem>APPLICATION ACCESS PEREGRINE_PROBLEM</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ascot</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ascot</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>asi</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ASI (APPLICATION SYSTEM INVENTORY)</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>asi-network</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-asi network</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ASI (GLOBAL)</peregrine_product>
+    <peregrine_problem>FILE MISSING NETWORK</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>asm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ASM (APPLICATION SECURITY MODEL)</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>aust_ftinteractive</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-aust_ftinteractive</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>autosys</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GMD</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>JOB PROCESSING</peregrine_subcategory>
+    <peregrine_product>AUTOSYS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>backup</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>barclaysglobal</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-barclaysglobal</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bep</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bep</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>BEP</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bg-aria</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bg-aria</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT-ARIA</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bg_aus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bg_aus</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT-AUSTRALIA</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bg_can</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bg_can</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT-CANADA</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgicash</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bgicash</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgicashfunds</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bgicashfunds</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>BGICASHFUNDS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgiconnect_aus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-BGICONNECT AUS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>BGICONNECT AUS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgifunds</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-bgifunds.com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>BGIFUNDS.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgis_uk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-orbis-uk</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgis_uk_qa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-orbis-uk_qa</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bgis_uk_dev</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-orbis-uk_dev</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bidbook</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bidbook</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>BID BOOK</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bip</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bip</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>bms</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-bms</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>FACILITIES</peregrine_category>
+    <peregrine_subcategory>HVAC</peregrine_subcategory>
+    <peregrine_product>HVAC</peregrine_product>
+    <peregrine_problem>REPAIR</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>RAC1</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>candevemail</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-candevemail</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CAN INFRASTRUCTURE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>cem</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-cem</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>checkpoint</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-checkpoint</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>citrix</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-citrix</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>client_applications</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-client applications</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>com</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ORDERS ONLINE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>compact</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-compact</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>COMPACT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>concert</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-concert</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CONCERT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>cp_ms_uk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-cp_ms_uk</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CP_MS_UK</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>cpdl</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-cpdl</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>COMMON PLATFORM DATA LOADER</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>cr_uk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-cr_uk</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>crs</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>crm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-crs</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CRM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>crystal_enterprise</group>
+    <method>ticket</method>
+    <alarm_point_group>Client Technology-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>csm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-csm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CSM (CLIENT SERVICES MANAGEMENT)</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>datacenter</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-datacenter</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>dbspi</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-dbspi</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>delta_uk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-delta_uk</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>DELTA_UK</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>desktop_antivirus</group>
+    <method>ticket</method>
+    <alarm_point_group>Tech Team-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ANTIVIRUS</peregrine_product>
+    <peregrine_problem>REPAIR</peregrine_problem>
+    <peregrine_assignment_group>5000TECH TEAM-FTS</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>dev_rpt</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>devicequery</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-devicequery</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>DEVICEQUERY</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>devnet</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-devnet</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>DEVNET</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>documentum</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-documentum</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>DOCUMENTUM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>dynamo</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-dynamo</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ATG DYNAMO</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>eat</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-eat</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>EAT (EMERGENCY ACCESS TOOL)</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>emc_alarms</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-emc_alarms</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>equilend</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-equilend</alarm_point_group>
+    <alarm_point_script>BGI Equilend</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>equilend_b</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-equilend_b</alarm_point_group>
+    <alarm_point_script>BGI Equilend</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>esm</group>
+    <method>ticket</method>
+    <alarm_point_group>z_ESM</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>ENTERPRISE SYSTEMS MANAGEMENT</peregrine_subcategory>
+    <peregrine_product>VPO</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>esm-notify</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>z_ESM</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>eshed_uk</group>
+    <method>ticket</method>
+    <alarm_point_group/>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>etf</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-etf</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ETF</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>fids</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-fids</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>FIDS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>flextrade</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-flextrade</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>FLEXTRADE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_aasg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_aasg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA AASG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_acm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_acm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ACM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_adg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_adg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ADG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_aig</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_aig</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA AIG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_amg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_amg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA AMG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_aplus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_aplus</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA APLUS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_asgintl</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_asgintl</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ASGINTL</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_asgus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_asgus</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ASGUS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_atg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_atg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ATG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_aurg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_aurg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA AURG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_cnrg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_cnrg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA CNRG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_etg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_etg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA ETG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_faser</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_faser</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA FASER</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_gaepm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_gaepm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA GAEPM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_gaepm_uk_aa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_gaepm_uk_aa</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA GAEPM_UK AA</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_gaepm_uk_alphagen</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_gaepm_uk_alphagen</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA GAEPM_UK ALPHAGEN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_growtheq</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_growtheq</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA GROWTHEQ</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_gtaa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_gtaa</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA GTAA</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_intellis</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_intellis</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA INTELLIS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_neualpha</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_neualpha</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA NEUALPHA</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_otg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_otg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA OTG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_tpg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_tpg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA TPG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_trg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_trg</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA TRG</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_ukpm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_ukpm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA UKPM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_usafi</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_usafi</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA USAFI</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gaa_usss</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gaa_usss</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GAA USSS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gate</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gate</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gcmform</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gcmform</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GCMFORM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gcom</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GCOM</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GCOM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000SUPPORT-GCOM</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gds</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gem</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gem</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gfit</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gfit</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GFIT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gio</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gio</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GIO</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gio-unix</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gio-unix</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GIO-UNIX</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gitap</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gitap</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SHAREIT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gladis</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gladis</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GLADIS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>glm</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-glm2</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GLM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>glm2</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-glm2</alarm_point_group>
+    <alarm_point_script>BGI Equilend</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GLM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gls_gate</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gls_gate</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gmd</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gmd</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SUMS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gmsg</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-mqseries</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gos</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gos</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GOS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gps</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gps</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GPS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gss</group>
+    <method>ticket</method>
+    <alarm_point_group>unknown</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gss_cfmail</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gss_cfmail</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>GSS_CFMAIL</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>gsurveyor</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-gsurveyor</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ha</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ha</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>hardware</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-hardware</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>helpme</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-helpme</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>HELPME</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ibt_gateway</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ibt_gateway</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>IBT GATEWAY</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>icore</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-icore</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>idl</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-idl</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>imm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-imm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>IMM (INTERNET MEETING MANAGER)</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ims</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ims</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>indices</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-indices</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>internet_infrastructure</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-internet_infrastructure</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>NETWORK</peregrine_category>
+    <peregrine_subcategory>INTERNET ACCESS</peregrine_subcategory>
+    <peregrine_product>OTHER</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>intlpm</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-intlpm</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>intraspect</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-intraspect</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>INTRASPECT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>iplanet</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-iplanet</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>IPLANET</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ishares</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ishares.com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ishares_dynamo</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ishares.com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ishares_inktomi</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ishares.com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ishares_fi_bus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ishares-fi</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ishares_fi_dev</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ishares-fi</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ISHARES.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>issue_price</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>iunits</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-iunits.com</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>IUNITS.COM</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>iweb</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-iweb</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>IWEB</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>job</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-job</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>jrun</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-jrun</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>k2desk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-k2desk</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>K2DESK</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>marshall</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-marshall</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MARSHALL ISLANDS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>misc</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-misc</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mqadmin</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-mqseries</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>MQSERIES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mss_admin</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-mss_admin</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mss_conf</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-mss_conf</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mss_fault</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-mss_fault</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mss_perf</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-mss_perf</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mssql-amr</group>
+    <method>ticket</method>
+    <alarm_point_group>DBA-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>DATABASE</peregrine_category>
+    <peregrine_subcategory>DATABASE ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>MICROSOFT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mssql</group>
+    <method>ticket</method>
+    <alarm_point_group>DBA-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>DATABASE</peregrine_category>
+    <peregrine_subcategory>DATABASE ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>MICROSOFT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>mssql-test</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-mssql-test</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>DATABASE</peregrine_category>
+    <peregrine_subcategory>DATABASE ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>MSSQL-TEST</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>multi_curr</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>nas</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>NAS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>nas_email</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-EMAIL</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>NAS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>netapps</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>netbackup</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>DATA PROTECTION</peregrine_subcategory>
+    <peregrine_product>BACKUPS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>netbackup_email</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-EMAIL</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>DATA PROTECTION</peregrine_subcategory>
+    <peregrine_product>BACKUPS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>network</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>network-fts</alarm_point_group>
+    <alarm_point_script>BGI NETWORK</alarm_point_script>
+    <peregrine_category>NETWORK</peregrine_category>
+    <peregrine_subcategory>LAN</peregrine_subcategory>
+    <peregrine_product>LAN</peregrine_product>
+    <peregrine_problem>REPAIR/REPLACE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>nodestatus</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-nodestatus</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>notification</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-notification</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>MESSAGING</peregrine_category>
+    <peregrine_subcategory>END-TO-END</peregrine_subcategory>
+    <peregrine_product>VPO-SERVICECENTER-ALARMPOINT</peregrine_product>
+    <peregrine_problem>MESSAGE CHECKER</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ofa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>opc</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-opc</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>opendeploy</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-opendeploy</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>OPEN DEPLOY</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_b</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ORBIS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_escalate</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_escalate</alarm_point_group>
+    <alarm_point_script>BGI ORBIS ESCALATE</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_trd_japan_escalate</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_trd_japan_escalate</alarm_point_group>
+    <alarm_point_script>BGI ORBIS ESCALATE</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_aus_escalate</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_aus_escalate</alarm_point_group>
+    <alarm_point_script>BGI ORBIS ESCALATE</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_can_escalate</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_can_escalate</alarm_point_group>
+    <alarm_point_script>BGI ORBIS ESCALATE</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_europe_escalate</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_europe_escalate</alarm_point_group>
+    <alarm_point_script>BGI ORBIS ESCALATE</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_aus</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-orbis-aus</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_aus_risk</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-ORBIS-RISK</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_aus_trd</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-orbis-aus-trd</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_can</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-orbis-can</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_can_risk</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-ORBIS-RISK</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_can_trd</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUPPORT-orbis-can-trd</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_crossing</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-cross</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_cst</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-cst</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_equity</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis_equity</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_rm</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-rm</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_trd</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-trd_b</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_trd_japan</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis japan_b</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_trd_japan</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis japan_b</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_uk</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-uk</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>orbis_usidxpm</group>
+    <method>alarmpoint_only</method>
+    <alarm_point_group>SUP-orbis-usidxpm_b</alarm_point_group>
+    <alarm_point_script>BGI ORBIS</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ordersonline</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ordersonline</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ORDERS ONLINE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>os</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-os</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>UNIX</peregrine_subcategory>
+    <peregrine_product>OPERATING SYSTEM</peregrine_product>
+    <peregrine_problem>REPAIR/REPLACE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ovis</group>
+    <method>ticket</method>
+    <alarm_point_group>ESM</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>pars</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-pars</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>PARS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>pb_rpt</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>performance</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-performance</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>pims</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-pims</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>prep</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>proa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>pst</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>purchasing_web</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>rk</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-rk</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>rkp</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-rkp</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>san</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>san_email</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-EMAIL</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>security</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-security</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SECURITY</peregrine_category>
+    <peregrine_subcategory>SERVER SECURITY</peregrine_subcategory>
+    <peregrine_product>UNIX</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>servicecenter</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SERVICECENTER</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>shareit</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SHAREIT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>shareit-test</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-GSS_TEST</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SHAREIT-TEST</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>solaris</group>
+    <method>ticket</method>
+    <alarm_point_group>FTS-UNIX</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>UNIX</peregrine_subcategory>
+    <peregrine_product>OPERATING SYSTEM</peregrine_product>
+    <peregrine_problem>REPAIR/REPLACE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>snmp</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-snmp</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>spi_svcdisc</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-spi_svcdisc</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ssp</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-ssp</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>statement</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-statement</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>storage_apac</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-APAC</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>storage_ldn</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-LDN</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>storage_rdc</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-RDC</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>storage_sfo</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-STORAGE-SFO</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>STORAGE</peregrine_category>
+    <peregrine_subcategory>CAPACITY EXPANSION</peregrine_subcategory>
+    <peregrine_product>SAN</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>sums</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-sums</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>SUMS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>sybase</group>
+    <method>ticket</method>
+    <alarm_point_group>DBA SYBASE SERVER-FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>DATABASE</peregrine_category>
+    <peregrine_subcategory>DATABASE ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>SYBASE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>sybase-test</group>
+    <method>ticket</method>
+    <alarm_point_group>DBA-TEST</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>DATABASE</peregrine_category>
+    <peregrine_subcategory>DATABASE ADMINISTRATION</peregrine_subcategory>
+    <peregrine_product>SYBASE-TEST</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>tar</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-tar</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TAR</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>teledirect</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-teledirect</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TELEDIRECT</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>torapps</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-torapps</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CAN APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>torinfra</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-torinfra</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CAN INFRASTRUCTURE</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>tradefloor</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-tradefloor</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>TRADE FLOOR</peregrine_subcategory>
+    <peregrine_product>APPLICATION RELATED</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>transfer</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-transfer</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>transvc</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-transvc</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TRANSITION SERVICES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>triplea</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-triplea</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>TBD APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>uk-it-dev</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-uk-it-dev</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>UK-IT DEV</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>uk-unixtest</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-uk-unixtest</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>UNIX-TEST</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>uktest</group>
+    <method>ticket</method>
+    <alarm_point_group>uktest</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>ultraseek</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-ULTRASEEK</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ULTRASEEK</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>unix</group>
+    <method>ticket</method>
+    <alarm_point_group>FTS-UNIX</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>UNIX</peregrine_subcategory>
+    <peregrine_product>OPERATING SYSTEM</peregrine_product>
+    <peregrine_problem>REPAIR/REPLACE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>usoe</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-US ORDER ENTRY</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>ORDER ENTRY</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>vpo-servicecenter-alarmpoint</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-VPOSCAP</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>webadmin</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-webadmin</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>weblogic</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-weblogic</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>WEBLOGIC</peregrine_product>
+    <peregrine_problem>ADVICE/GUIDANCE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>windows</group>
+    <method>ticket</method>
+    <alarm_point_group>Windows On-Call FTS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SERVERS</peregrine_category>
+    <peregrine_subcategory>WINDOWS 2000</peregrine_subcategory>
+    <peregrine_product>RESOURCES</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>wl_prd</group>
+    <method>ticket</method>
+    <alarm_point_group>SUP-WEBLOGIC</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>WEBLOGIC</peregrine_product>
+    <peregrine_problem>ADVICE/GUIDANCE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>wl_qa</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-wl_qa</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>WEBLOGIC</peregrine_product>
+    <peregrine_problem>ADVICE/GUIDANCE</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>x_stats</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-CLIENT APPLICATIONS</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category>SOFTWARE</peregrine_category>
+    <peregrine_subcategory>SOFTWARE</peregrine_subcategory>
+    <peregrine_product>CLIENT APPLICATIONS</peregrine_product>
+    <peregrine_problem>FAULT</peregrine_problem>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+  <DataMap>
+    <group>z-spreads</group>
+    <method>ticket</method>
+    <alarm_point_group>SUPPORT-zspreads</alarm_point_group>
+    <alarm_point_script>BGI VPO</alarm_point_script>
+    <peregrine_category/>
+    <peregrine_subcategory/>
+    <peregrine_product/>
+    <peregrine_problem/>
+    <peregrine_assignment_group>5000</peregrine_assignment_group>
+    <peregrine_location>GLOBAL</peregrine_location>
+  </DataMap>
+</DataMaps>

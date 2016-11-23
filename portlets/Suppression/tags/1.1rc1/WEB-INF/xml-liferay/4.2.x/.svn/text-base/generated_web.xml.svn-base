@@ -1,0 +1,552 @@
+
+<!--
+Automatically created by Apache Jakarta Tomcat JspC.
+Place this fragment in the web.xml before all icon, display-name,
+description, distributable, and context-param elements.
+-->
+
+    <servlet>
+        <servlet-name>org.apache.jsp.staticJavascript_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.staticJavascript_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.add_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.add_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fajax_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.add_005fentry_005fajax_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsimple_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.add_005fentry_005fsimple_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.add_005fentry_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsuccess_005fperl_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.add_005fentry_005fsuccess_005fperl_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.batch_005fadd_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.batch_005fadd_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.batch_005fadd_005fentry_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.batch_005fadd_005fentry_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.current_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.current_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.delete_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.delete_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.delete_005ffailure_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.delete_005ffailure_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.delete_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.delete_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.delete_005fsuccess_005fperl_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.delete_005fsuccess_005fperl_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_005fentry_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_005fsuccess_005fperl_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_005fentry_005fsuccess_005fperl_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_005foriginal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_005foriginal_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.footer_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.footer_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.form_005fadd_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.form_005fadd_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.form_005fdelete_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.form_005fdelete_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.form_005fedit_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.form_005fedit_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.help_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.help_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.historical_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.historical_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.init_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.init_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.my_005fcurrent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.my_005fcurrent_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.my_005fhistory_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.my_005fhistory_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.nav_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.nav_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fcurrent_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_005fagain_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fcurrent_005fagain_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fcurrent_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fhistorical_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_005fagain_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fhistorical_005fagain_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fhistorical_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fmy_005fhistory_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_005fagain_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fmy_005fhistory_005fagain_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.search_005fmy_005fhistory_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.suppressions_005ftable_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.suppressions_005ftable_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.template_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.template_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.test_005fajax_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.test_005fajax_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.view_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.view_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.view_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.view_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.view_005foriginal_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.view_005foriginal_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.view_005funavailable_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.view_005funavailable_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.help.add_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.help.add_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.help.edit_005fentry_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.help.edit_005fentry_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.help.my_005fcurrent_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.help.my_005fcurrent_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fsettings_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.edit_005fsettings_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fsettings_005fsuccess_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.edit_005fsettings_005fsuccess_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.nav_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.nav_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.html.edit.view_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.html.edit.view_jsp</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.staticJavascript_jsp</servlet-name>
+        <url-pattern>/staticJavascript.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.add_005fentry_jsp</servlet-name>
+        <url-pattern>/html/add_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fajax_jsp</servlet-name>
+        <url-pattern>/html/add_entry_ajax.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsimple_jsp</servlet-name>
+        <url-pattern>/html/add_entry_simple.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/add_entry_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.add_005fentry_005fsuccess_005fperl_jsp</servlet-name>
+        <url-pattern>/html/add_entry_success_perl.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.batch_005fadd_005fentry_jsp</servlet-name>
+        <url-pattern>/html/batch_add_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.batch_005fadd_005fentry_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/batch_add_entry_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.current_jsp</servlet-name>
+        <url-pattern>/html/current.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.delete_005fentry_jsp</servlet-name>
+        <url-pattern>/html/delete_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.delete_005ffailure_jsp</servlet-name>
+        <url-pattern>/html/delete_failure.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.delete_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/delete_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.delete_005fsuccess_005fperl_jsp</servlet-name>
+        <url-pattern>/html/delete_success_perl.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_jsp</servlet-name>
+        <url-pattern>/html/edit.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_jsp</servlet-name>
+        <url-pattern>/html/edit_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/edit_entry_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_005fentry_005fsuccess_005fperl_jsp</servlet-name>
+        <url-pattern>/html/edit_entry_success_perl.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_005foriginal_jsp</servlet-name>
+        <url-pattern>/html/edit_original.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/edit_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.footer_jsp</servlet-name>
+        <url-pattern>/html/footer.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.form_005fadd_005fentry_jsp</servlet-name>
+        <url-pattern>/html/form_add_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.form_005fdelete_005fentry_jsp</servlet-name>
+        <url-pattern>/html/form_delete_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.form_005fedit_005fentry_jsp</servlet-name>
+        <url-pattern>/html/form_edit_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.help_jsp</servlet-name>
+        <url-pattern>/html/help.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.historical_jsp</servlet-name>
+        <url-pattern>/html/historical.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.init_jsp</servlet-name>
+        <url-pattern>/html/init.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.my_005fcurrent_jsp</servlet-name>
+        <url-pattern>/html/my_current.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.my_005fhistory_jsp</servlet-name>
+        <url-pattern>/html/my_history.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.nav_jsp</servlet-name>
+        <url-pattern>/html/nav.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_jsp</servlet-name>
+        <url-pattern>/html/search_current.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_005fagain_jsp</servlet-name>
+        <url-pattern>/html/search_current_again.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fcurrent_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/search_current_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_jsp</servlet-name>
+        <url-pattern>/html/search_historical.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_005fagain_jsp</servlet-name>
+        <url-pattern>/html/search_historical_again.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fhistorical_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/search_historical_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_jsp</servlet-name>
+        <url-pattern>/html/search_my_history.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_005fagain_jsp</servlet-name>
+        <url-pattern>/html/search_my_history_again.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.search_005fmy_005fhistory_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/search_my_history_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.suppressions_005ftable_jsp</servlet-name>
+        <url-pattern>/html/suppressions_table.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.template_jsp</servlet-name>
+        <url-pattern>/html/template.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.test_005fajax_jsp</servlet-name>
+        <url-pattern>/html/test_ajax.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.view_jsp</servlet-name>
+        <url-pattern>/html/view.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.view_005fentry_jsp</servlet-name>
+        <url-pattern>/html/view_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.view_005foriginal_jsp</servlet-name>
+        <url-pattern>/html/view_original.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.view_005funavailable_jsp</servlet-name>
+        <url-pattern>/html/view_unavailable.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.help.add_005fentry_jsp</servlet-name>
+        <url-pattern>/html/help/add_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.help.edit_005fentry_jsp</servlet-name>
+        <url-pattern>/html/help/edit_entry.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.help.my_005fcurrent_jsp</servlet-name>
+        <url-pattern>/html/help/my_current.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_jsp</servlet-name>
+        <url-pattern>/html/edit/edit_database_settings.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fdatabase_005fsettings_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/edit/edit_database_settings_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fsettings_jsp</servlet-name>
+        <url-pattern>/html/edit/edit_settings.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.edit_005fsettings_005fsuccess_jsp</servlet-name>
+        <url-pattern>/html/edit/edit_settings_success.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.nav_jsp</servlet-name>
+        <url-pattern>/html/edit/nav.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.html.edit.view_jsp</servlet-name>
+        <url-pattern>/html/edit/view.jsp</url-pattern>
+    </servlet-mapping>
+
+<!--
+All session-config, mime-mapping, welcome-file-list, error-page, taglib,
+resource-ref, security-constraint, login-config, security-role,
+env-entry, and ejb-ref elements should follow this fragment.
+-->

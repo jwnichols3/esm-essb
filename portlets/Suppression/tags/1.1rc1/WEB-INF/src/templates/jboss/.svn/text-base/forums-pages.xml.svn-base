@@ -1,0 +1,12 @@
+<pages>
+   <portal-name>default</portal-name>
+   <page>
+      <page-name>{3}</page-name>
+      <window>
+         <window-name>{7}</window-name>
+         <instance-ref>/{4}.{1}.{2}</instance-ref>
+         <region>center</region>
+         <height>0</height>
+      </window>
+   </page>
+</pages>

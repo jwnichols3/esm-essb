@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Form bean definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <form-beans>
+        <form-bean name="throttle_form"       type="com.bgi.esm.monitoring.portlets.Throttle.forms.Throttle"      />
+        <form-bean name="throttle_form_audit" type="com.bgi.esm.monitoring.portlets.Throttle.forms.ThrottleAudit" />
+    </form-beans>
+    <action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Action mapping definitions
+         ****************************************************************************
+         **************************************************************************** -->
+         <action path="/view"                  include="/html/view.jsp"        />
+
+        <!-- ************************************************************************
+               Mappings for the "throttle" table
+             ************************************************************************ -->
+        <action path="/throttle_view"            include="/html/throttle_view.jsp" />
+        <action path="/throttle_add"             include="/html/throttle_add.jsp" />
+        <action path="/throttle_add_process"     type="com.bgi.esm.monitoring.portlets.Throttle.actions.ThrottleAction" name="throttle_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/throttle_add.jsp"         />
+            <forward name="success"              path="/html/throttle_add_success.jsp" />
+        </action>
+
+        <action path="/throttle_edit"            include="/html/throttle_edit.jsp" />
+        <action path="/throttle_edit_process"    type="com.bgi.esm.monitoring.portlets.Throttle.actions.ThrottleAction" name="throttle_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/throttle_edit.jsp"         />
+            <forward name="success"              path="/html/throttle_edit_success.jsp" />
+        </action>
+
+        <action path="/throttle_audit"           type="com.bgi.esm.monitoring.portlets.Throttle.actions.ThrottleAction" name="throttle_form_audit" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="success"              path="/html/throttle_audit.jsp" />
+        </action>
+
+        <action path="/throttle_delete"          include="/html/throttle_delete.jsp" />
+        <action path="/throttle_delete_process"  type="com.bgi.esm.monitoring.portlets.Throttle.actions.ThrottleAction" name="throttle_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="failure"              path="/html/throttle_delete.jsp"         />
+            <forward name="success"              path="/html/throttle_delete_success.jsp" />
+        </action>
+
+    </action-mappings>
+    <!-- Custom Request Processor -->
+    <controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Message Resources
+         ****************************************************************************
+         **************************************************************************** -->
+    <message-resources key="messages"  parameter="content.Messages"  />
+    <message-resources key="databases" parameter="content.databases" />
+
+    <!-- Plugin to connect to Enterprise Event Bus -->
+    <plug-in className="com.bgi.esm.monitoring.portlets.Throttle.EEBConnectorPlugIn" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                    />
+    </plug-in>
+
+    <!-- Tiles Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+        <set-property property="definitions-parser-validate" value="true" />
+    </plug-in>
+    -->
+
+    <!-- Validator Plugin -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+</struts-config>

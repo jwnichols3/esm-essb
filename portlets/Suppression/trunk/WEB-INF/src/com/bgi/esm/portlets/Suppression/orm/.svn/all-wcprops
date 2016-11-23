@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/607/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm
+END
+ExpirationNotifications.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm/ExpirationNotifications.hbm.xml
+END
+HibernateFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/607/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm/HibernateFacade.java
+END
+SuppressionRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm/SuppressionRecord.java
+END
+ExpirationNotification.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm/ExpirationNotification.java
+END
+SuppressionRecord.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/orm/SuppressionRecord.hbm.xml
+END

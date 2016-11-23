@@ -1,0 +1,46 @@
+#
+# Title:
+#   log4j.properties
+#
+# Description:
+#   Configure logger support
+#
+# Development Environment:
+#   Fedora Core 4
+#   Jakarta Commons log4j-1.2.7
+#
+# Author:
+#   G.S. Cole (guycole at gmail dot com)
+#
+# Maintenance History:
+#   $Id$
+#
+#   $Log$
+#
+log4j.rootLogger=DEBUG, A1, R
+#log4j.rootLogger=INFO, A1
+#
+log4j.appender.A1=org.apache.log4j.ConsoleAppender
+#
+#log4j.appender.A1=org.apache.log4j.net.SyslogAppender
+#log4j.appender.A1.SyslogHost=localhost
+#log4j.appender.A1.Facility=local3
+#
+log4j.appender.A1.layout=org.apache.log4j.PatternLayout
+#
+#log4j.appender.A1.layout.ConversionPattern=%-4r %-5p [%t] %37c %3x - %m%n
+log4j.appender.A1.layout.ConversionPattern=%5p [%t] %c{3} - %m%n
+#
+log4j.logger.org.apache.commons.digester.Digester=info
+log4j.logger.org.apache.commons.beanutils.MethodUtils=info
+log4j.logger.org.apache.commons.digester.Digester.sax=info
+#
+log4j.logger.com.bgi.esm.monitoring.platform.utility.AbstractQueue=info
+log4j.logger.com.bgi.esm.monitoring.platform.utility.ThrottleQueue=info
+#
+log4j.appender.R=org.apache.log4j.RollingFileAppender
+log4j.appender.R.File=c:/test/JMS-Replatform.txt
+log4j.appender.R.MaxFileSize=2048KB
+log4j.appender.R.MaxBackupIndex=1
+log4j.appender.R.layout=org.apache.log4j.PatternLayout
+log4j.appender.R.layout.ConversionPattern=%p %t %c - %m%n

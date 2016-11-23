@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle
+END
+HistoBin.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/62/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/HistoBin.java
+END
+RuleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/62/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/RuleManager.java
+END
+HistoMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/62/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/HistoMap.java
+END
+Throttle.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/Throttle.java
+END
+OutputQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/62/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/OutputQueue.java
+END
+Inspector.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/62/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/Inspector.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/24/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/throttle/package.html
+END

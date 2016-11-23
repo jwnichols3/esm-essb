@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test
+END
+TestSyncPeople.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncPeople.java
+END
+TestSyncEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncEmail.java
+END
+TestSyncVoiceDevices.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncVoiceDevices.java
+END
+TestSyncGroupsTeams.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncGroupsTeams.java
+END
+TestCommon.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestCommon.java
+END
+TestSyncCellPhones.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncCellPhones.java
+END
+TestSyncGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/test/TestSyncGroups.java
+END

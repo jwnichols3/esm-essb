@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmsContainer xmlns="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd file:/home/gsc/bgi_ems/replatform/xml/Replatform1.xsd">
+    <DispatcherMessage>
+        <ticket>
+            <message_id></message_id>
+            <source_node></source_node>
+            <source_node_type></source_node_type>
+            <creation_date></creation_date>
+            <creation_time></creation_time>
+            <receive_date></receive_date>
+            <receive_time></receive_time>
+            <application></application>
+            <message_group></message_group>
+            <object></object>
+            <severity></severity>
+            <operators>
+                <operator></operator>
+            </operators>
+            <message_text></message_text>
+            <instruction_text></instruction_text>
+            <message_attributes>
+                <attribute>
+                    <key></key>
+                    <value></value>
+                </attribute>
+            </message_attributes>
+            <suppress_count></suppress_count>
+        </ticket>
+        <map>
+            <group></group>
+            <method></method>
+            <alarm_point_script></alarm_point_script>
+            <peregrine_assignment_group></peregrine_assignment_group>
+            <peregrine_location></peregrine_location>
+        </map>
+    </DispatcherMessage>
+    
+</EmsContainer>

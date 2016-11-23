@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<!--
+
+ Copyright 2000-2004 Apache Software Foundation
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<struts-config>
+    <display-name><![CDATA[
+         account maintenance
+    ]]>
+    </display-name>
+    <description><![CDATA[
+         Allows the updating of users accounts and subscriptions.
+    ]]>
+    </description>
+    <!--
+    <data-sources>
+		<data-source key="sybase" type="org.apache.commons.dbcp.BasicDataSource">
+			<set-property property="driverClassName" value="com.sybase.jdbc2.jdbc.SybDriver"/>
+			<set-property property="url"             value="jdbc:sybase:Tds:rdcuxsrv039:14113/vpo_support_db" />
+			<set-property property="username"        value="vpo_suppress_web" />
+			<set-property property="password"        value="thyroiditis" />
+    		<set-property property="maxActive"       value="10" />
+    		<set-property property="maxWait"         value="5000" />
+    		<set-property property="defaultAutoCommit" value="false" />
+    		<set-property property="defaultReadOnly" value="false" />
+    		<set-property property="validationQuery" value="SELECT COUNT(suppress_id) FROM t_vpo_suppress" />
+		</data-source>
+	</data-sources>
+    -->
+
+    <!-- ========== Form Bean Definitions =================================== -->
+    <form-beans>
+		<form-bean name="suppression_portlet_prefs"   type="com.bgi.esm.portlets.Suppression.forms.EditPreferences" />
+        <form-bean name="suppression_add_entry"       type="com.bgi.esm.portlets.Suppression.forms.AddEntry"        />
+        <form-bean name="suppression_batch_add_entry" type="com.bgi.esm.portlets.Suppression.forms.BatchAddEntry"   />
+        <form-bean name="suppression_edit_entry"      type="com.bgi.esm.portlets.Suppression.forms.EditEntry"       />
+        <form-bean name="suppression_search_params"   type="com.bgi.esm.portlets.Suppression.forms.SearchParams"    />
+    </form-beans>
+
+
+    <!-- ========== Global Forward Definitions ============================== -->
+    <global-forwards>
+    </global-forwards>
+
+
+    <!-- ========== Action Mapping Definitions ============================== -->
+    <action-mappings>
+		<action path="/ajax_get_servers"          type="com.bgi.esm.portlets.Suppression.actions.GetDataServers"/>
+        <action path="/view"                      include="/html/view.jsp"              />
+
+        <action path="/edit"                      include="/html/edit.jsp"              />
+        <action path="/edit_process"              type="com.bgi.esm.portlets.Suppression.actions.EditPreferencesAction" name="suppression_portlet_prefs" scope="request" input="edit_prefs">
+            <forward name="edit_prefs"            path="/html/edit.jsp"/>
+            <forward name="success"               path="/html/edit_success.jsp" redirect="true"/>
+        </action>
+        <action path="/edit_success"              include="/html/edit_success.jsp"      />
+        <action path="/view_entry"                include="/html/view_entry.jsp"        />
+        <action path="/delete_entry"              include="/html/delete_entry.jsp"      />
+        <action path="/confirm_delete"            type="com.bgi.esm.portlets.Suppression.actions.DeleteEntryAction">
+            <forward name="success"               path="/html/delete_success_perl.jsp"/>
+            <forward name="success"               path="/html/delete_success.jsp"/>
+            <forward name="failure"               path="/html/delete_failure.jsp"/>
+		</action>
+        <!--
+        <action path="/current"                   include="/html/current.jsp"           />
+        -->
+        <action path="/current"                   type="com.bgi.esm.portlets.Suppression.actions.CurrentAction">
+            <forward name="success"               path="/html/current.jsp"/>
+        </action>
+        <action path="/my_current"                include="/html/my_current.jsp"        />
+        <action path="/search_historical_process" type="com.bgi.esm.portlets.Suppression.actions.SearchParamsAction" name="suppression_search_params" scope="request" input="search_params">
+            <forward name="search_params"         path="/html/search_historical.jsp"    />
+            <forward name="success"               path="/html/search_historical_success.jsp" redirect="true"/>
+        </action>
+        <action path="/search_historical_again"   type="com.bgi.esm.portlets.Suppression.actions.SearchHistorical">
+			<forward name="success"               path="/html/search_historical_again.jsp" />
+		</action>
+        <action path="/search_historical_success" include="/search_historical_success.jsp" />
+        <action path="/my_history"                include="/html/my_history.jsp"        />
+        <action path="/search_historical"         include="/html/search_historical.jsp" />
+        <action path="/historical"                include="/html/historical.jsp"        />
+        <action path="/help"                      include="/html/help.jsp"              />
+
+        <action path="/search_my_history"         include="/html/search_my_history.jsp" name="suppression_search_params" scope="request" input="search_params"/>
+        <action path="/search_my_history_process" type="com.bgi.esm.portlets.Suppression.actions.SearchParamsAction" name="suppression_search_params" scope="request" input="search_params">
+            <forward name="search_params"         path="/html/search_my_history.jsp"/>
+            <forward name="success"               path="/html/search_my_history_success.jsp" redirect="true"/>
+        </action>
+        <action path="/search_my_history_success" include="/search_my_history_success.jsp" />
+        <action path="/search_my_history_again"   type="com.bgi.esm.portlets.Suppression.actions.SearchHistorical">
+			<forward name="success"               path="/html/search_my_history_again.jsp" />
+		</action>
+
+        <action path="/search_current"         include="/html/search_current.jsp" name="suppression_search_params" scope="request" input="search_params"/>
+        <action path="/search_current_process" type="com.bgi.esm.portlets.Suppression.actions.SearchParamsAction" name="suppression_search_params" scope="request" input="search_params">
+            <forward name="search_params"         path="/html/search_current.jsp"/>
+            <forward name="success"               path="/html/search_current_success.jsp" redirect="true"/>
+        </action>
+        <action path="/search_current_success" include="/search_current_success.jsp" />
+        <action path="/search_current_again"   type="com.bgi.esm.portlets.Suppression.actions.SearchHistorical">
+			<forward name="success"               path="/html/search_current_again.jsp" />
+		</action>
+
+
+		<!--
+        <action path="/add_entry"                 include="/html/add_entry.jsp"/>
+        <action path="/add_entry"                 type="com.bgi.esm.portlets.Suppression.actions.AddEntry" name="suppression_add_entry" scope="request" input="success">
+			<forward name="success"               path="/html/add_entry.jsp"/>
+		</action>
+        <action path="/add_entry_process"         type="com.bgi.esm.portlets.Suppression.actions.AddEntryAction" name="suppression_add_entry" scope="request">
+		-->
+        <action path="/test_ajax"                 include="/html/test_ajax.jsp"/>
+        <action path="/add_entry_simple"          include="/html/add_entry_simple.jsp"/>
+        <action path="/add_entry"                 include="/html/add_entry.jsp"/>
+        <action path="/add_entry_process"         type="com.bgi.esm.portlets.Suppression.actions.AddEntryAction" name="suppression_add_entry" scope="request" validate="true" input="failure">
+			<forward name="failure"               path="/html/add_entry.jsp"/>
+            <forward name="success"               path="/html/add_entry_success.jsp"/>
+            <forward name="success-perl"          path="/html/add_entry_success_perl.jsp"/>
+        </action>
+
+        <action path="/batch_add_entry"                 include="/html/batch_add_entry.jsp"/>
+        <action path="/batch_add_entry_process"         type="com.bgi.esm.portlets.Suppression.actions.BatchAddEntryAction" name="suppression_batch_add_entry" scope="request" validate="true" input="failure">
+			<forward name="failure"               path="/html/batch_add_entry.jsp"/>
+            <forward name="success"               path="/html/batch_add_entry_success.jsp"/>
+        </action>
+
+
+        <action path="/add_entry_success"         include="/add_entry_success.jsp"  />
+
+        <action path="/edit_entry"                type="com.bgi.esm.portlets.Suppression.actions.InitEditEntryAction" name="suppression_edit_entry" scope="request" validate="false" input="success">
+			<forward name="success"               path="/html/edit_entry.jsp"/>
+        </action>
+        <action path="/edit_entry_process"        type="com.bgi.esm.portlets.Suppression.actions.EditEntryAction" name="suppression_edit_entry" validate="true" input="failure">
+			<forward name="failure"               path="/html/edit_entry.jsp"/>
+            <forward name="success"               path="/html/edit_entry_success.jsp"/>
+            <forward name="success-perl"          path="/html/edit_entry_success_perl.jsp"/>
+        </action>
+        <action path="/edit_entry_success"        include="/html/edit_entry_success.jsp"  />
+    </action-mappings>
+
+    <!-- ========== Controller Configuration ================================ -->
+
+    <controller pagePattern="$M$P" inputForward="true" processorClass="org.apache.portals.bridges.struts.PortletRequestProcessor"/>
+        <!-- pagePattern: use this pattern when creating URIs to resources.
+                $M=module, $P=path -->
+        <!-- inputForward: The "input" parameter on "action" elements is the name of a
+                 local or global "forward" rather than a module-relative path -->
+
+
+    <!-- ========== Message Resources Definitions =========================== -->
+    <message-resources parameter="org.apache.struts.webapp.example.ApplicationResources"/>
+    <message-resources parameter="org.apache.struts.webapp.example.AlternateApplicationResources" key="alternate"/>
+    <message-resources parameter="content.help"         key="help"/>
+    <message-resources parameter="content.errors"       key="errors"/>
+    <message-resources parameter="content.suppressions" key="suppressions" />
+    <message-resources parameter="content.databases" key="databases" />
+
+    <!-- ========== Plug Ins Configuration ================================== -->
+
+    <plug-in className="org.apache.struts.plugins.ModuleConfigVerifier"/>
+
+	<!-- Tiles Plugin -->
+    <!--
+	<plug-in className="org.apache.struts.tiles.TilesPlugin" >
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+		<set-property property="definitions-parser-validate" value="true" />
+	</plug-in>
+    -->
+
+    <!--
+    <plug-in className="org.apache.struts.webapp.example.memory.MemoryDatabasePlugIn">
+        <set-property property="pathname" value="/WEB-INF/database.xml"/>
+    </plug-in>
+    -->
+
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml, /WEB-INF/validation.xml"/>
+    </plug-in>
+
+    <!-- Plugin to connect to Enterprise Event Bus -->
+    <plug-in className="com.bgi.esm.portlets.Suppression.EEBConnectorPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                 />
+        <set-property property="mail-server-us"              value="calnte2k044.insidelive.net"          />
+        <set-property property="mail-server-uk"              value="ldnnte2k030.insidelive.net"          />
+        <set-property property="mail-server-au"              value="sydnte2k032.insidelive.net"          />
+        <set-property property="mail-server-jp"              value="tokyomailserver01.insidelive.net"    />
+    </plug-in>
+
+    <!--
+    <plug-in className="org.apache.struts.plugins.DigestingPlugIn">
+        <set-property property="key" value="serverTypes"/>
+        <set-property property="configPath" value="/WEB-INF/server-types.xml"/>
+        <set-property property="digesterPath" value="/WEB-INF/lvb-digester-rules.xml"/>
+    </plug-in>
+    -->
+</struts-config>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults
+END
+data_map.properties
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/data_map.properties
+END
+http_header.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/http_header.properties
+END
+http_request.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/http_request.properties
+END
+http_cookie.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/http_cookie.properties
+END
+http_parameter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/http_parameter.properties
+END
+http_attribute.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/defaults/http_attribute.properties
+END

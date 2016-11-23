@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility
+END
+EventMineQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/EventMineQueue.java
+END
+SuppressionQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/SuppressionQueue.java
+END
+OviRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/OviRuleSet.java
+END
+AbstractQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/AbstractQueue.java
+END
+ThrottleRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/ThrottleRuleSet.java
+END
+ThrottleQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/ThrottleQueue.java
+END
+OviPublisher.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/68/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/OviPublisher.java
+END
+DataMapRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/DataMapRuleSet.java
+END
+DataMapQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/DataMapQueue.java
+END
+XmlParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/83/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/XmlParser.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/13/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/package.html
+END
+StaticConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm-platform/!svn/ver/53/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/StaticConfiguration.java
+END
+DispatcherRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/13/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/DispatcherRuleSet.java
+END
+DispatcherQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/DispatcherQueue.java
+END
+EventMineRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm-platform/!svn/ver/83/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/EventMineRuleSet.java
+END
+SuppressionRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm-platform/!svn/ver/71/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/utility/SuppressionRuleSet.java
+END

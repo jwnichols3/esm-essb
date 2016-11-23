@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ovoEventPluglet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/opt/OV/schema/OVI/OvoEventPluglet.xsd">
+
+    <!--
+        Specify the Pluglet that the OvoEventPluglet should acquire
+    -->
+    <targetPluglet>PublisherPluglet</targetPluglet>
+
+    <!--
+        This is the MSI instance name that will be used to make the
+        connection to OVO server MSI.
+    -->
+    <msiInstanceName>OviInstance1</msiInstanceName>
+
+    <!--
+        This filter will accept all OVO messages on the OVO Server MSI
+    -->
+    <filter>
+        <all/>
+    </filter>
+
+    <!--
+        Switch on message trace logging
+    -->
+    <traceMessages>false</traceMessages>
+
+    <!--
+        Switch on message route logging
+    -->
+    <traceRoute>false</traceRoute>
+
+</ovoEventPluglet>

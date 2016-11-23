@@ -1,0 +1,87 @@
+#
+# Title:
+#   bgi.properties
+#
+# Description:
+#   Configure BGI properties
+#
+# Development Environment:
+#   Fedora Core 4
+#   Jakarta Commons log4j-1.2.7
+#
+# Author:
+#   G.S. Cole (guycole at gmail dot com)
+#
+# JMS Queue Factory for OpenJMS
+jms.queue.factory=JmsQueueConnectionFactory
+#
+# JMS Topic Factory for OpenJMS
+jms.topic.factory=JmsTopicConnectionFactory
+#
+# Suppression input queue name
+queue.suppression.name=suppress1
+#
+# Data Map input queue name
+queue.data_map.name=dataMap1
+#
+# Throttle input queue name
+queue.throttle.name=throttle1
+#
+# Dispatcher input queue name
+queue.dispatcher.name=dispatcher1
+#
+# Event Mine input queue name
+queue.event_mine.name=eventMine1
+#
+# OVI MEI topic
+topic.mei.name=OvEventModify
+#
+# OVI MSI topic
+topic.msi.name=OvEventNotify
+#
+# OVI MSI durable subscription name
+topic.msi.subscription=notifier
+#
+# OVI reply topic
+topic.reply=OvReply
+#
+# fully qualified file name of DataMap rule file
+data_map.rule.file=/home/gsc/bgi_ems/replatform/datum/DataMap.xml
+#
+# duration of sleep in seconds between polling rule file
+data_map.rule.sleep=21
+#
+# URL of Event Mine database
+event_mine.jdbc.url=jdbc:jtds:sqlserver://calntesm201:1433/event_mine
+#
+# Event Mine JDBC driver
+event_mine.jdbc.driver=net.sourceforge.jtds.jdbc.Driver
+#
+# Event Mine JDBC user (to negotiate login)
+event_mine.jdbc.user=openjms
+#
+# Event Mine JDBC password (to negotiate login)
+event_mine.jdbc.password=HYPertext01
+#
+# enable dump file option
+#notifier.dump.enable=false
+notifier.dump.enable=true
+#
+# fully qualified file name of notifier dump file (writes raw XML from OVI)
+notifier.dump.file=/temp/notifier.dump
+#
+# duration of sleep in seconds between polling rule (extract) file
+suppression.rule.sleep=61
+#
+# fully qualified file name of rule (extract) file
+suppression.rule.file=/home/gsc/bgi_ems/replatform/datum/suppress.data
+#
+# duration of sleep in seconds between storm level inspections
+throttle.inspector.sleep=15
+#
+# fully qualified file name of Throttle rule file
+throttle.rule.file=/home/gsc/bgi_ems/replatform/datum/Throttle.xml
+#
+# duration of sleep in seconds between polling rule file
+throttle.rule.sleep=21
+#

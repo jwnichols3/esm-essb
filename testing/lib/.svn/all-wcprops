@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/esm-platform/!svn/ver/576/trunk/Testing/lib
+END
+jtds.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/esm-platform/!svn/ver/87/trunk/Testing/lib/jtds.jar
+END
+jaxb-xjc.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/jaxb-xjc.jar
+END
+Tidy.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/Tidy.jar
+END
+replatform_client.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/replatform_client.jar
+END
+xercesImpl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/xercesImpl.jar
+END
+log4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/log4j.jar
+END
+rhino.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/rhino.jar
+END
+httpunit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/httpunit.jar
+END
+nekohtml.jar
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/nekohtml.jar
+END
+jaxb-impl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/jaxb-impl.jar
+END
+servlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/servlet.jar
+END
+commons-httpclient-3.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/commons-httpclient-3.0.1.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/commons-codec-1.3.jar
+END
+junit.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/junit.jar
+END
+xmlParserAPIs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/11/trunk/Testing/lib/xmlParserAPIs.jar
+END
+jaxb-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/jaxb-api.jar
+END
+commons-logging-1.0.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/commons-logging-1.0.3.jar
+END
+activation-1.0.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/esm-platform/!svn/ver/576/trunk/Testing/lib/activation-1.0.2.jar
+END
+jsr173_1.0_api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/439/trunk/Testing/lib/jsr173_1.0_api.jar
+END
+activation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm-platform/!svn/ver/576/trunk/Testing/lib/activation.jar
+END

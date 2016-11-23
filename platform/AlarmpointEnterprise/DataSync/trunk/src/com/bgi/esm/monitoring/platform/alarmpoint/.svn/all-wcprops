@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint
+END
+ClearOutOffendingRecords.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/ClearOutOffendingRecords.java
+END
+SyncPeople.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncPeople.java
+END
+SyncEmail.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncEmail.java
+END
+SyncVoiceDevices.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncVoiceDevices.java
+END
+SyncTeams.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncTeams.java
+END
+Common.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/325/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/Common.java
+END
+SyncCellPhones.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncCellPhones.java
+END
+MainClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/MainClass.java
+END
+SyncGroups.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/SyncGroups.java
+END
+ClearStagingTables.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/esm-platform/!svn/ver/330/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/com/bgi/esm/monitoring/platform/alarmpoint/ClearStagingTables.java
+END

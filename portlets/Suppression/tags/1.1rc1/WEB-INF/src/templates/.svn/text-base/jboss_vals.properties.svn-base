@@ -1,0 +1,26 @@
+##########################################################################################
+#  Common properties
+##########################################################################################
+
+# val #0
+struts-bridge.jboss.base-action-path=html
+# val #1
+struts-bridge.jboss.jboss-portlet.portlet-name=BlankStrutsPortletDemo
+# val #2
+struts-bridge.jboss.portlet-instances.instance-name=StrutsPortletDemoInstance
+# val #3
+struts-bridge.jboss.forums-pages.page-name=blank-struts
+# val #4
+struts-bridge.jboss.jboss-portlet.portlet-app-id=blank-struts-demo
+# val #5
+struts-bridge.jboss.portlet.display-name=Blank Struts Portlet Demo
+# val #6
+struts-bridge.jboss.web.display-name=Blank Struts Example Portlet Application
+# val #7
+struts-bridge.jboss.forum-pages.window-name=StrutsPortletWindow
+# val #8
+struts-bridge.jboss.portlet.portlet-info.title=Blank Struts Mail Reader Demo
+# val #9
+struts-bridge.jboss.portlet.portlet-info.short-title=Blank Struts Portlet Demo
+# val #10
+struts-bridge.jboss.portlet.portlet-info.keywords=Struts, Mailer, Blank

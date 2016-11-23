@@ -1,0 +1,94 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:om="http://openview.hp.com/xmlns/ico/message"
+           targetNamespace="http://openview.hp.com/xmlns/ico/message"
+           elementFormDefault="qualified">
+
+  <xs:element name="ovMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="messageEnvelope" type="om:MessageEnvelope" />
+        <xs:element name="messageBody"     type="om:MessageBody" />
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="MessageEnvelope">
+    <xs:sequence>
+      <xs:element name="messageUUID"               type="om:MessageUUID" />
+      <xs:element name="timeStamp"                 type="om:TimeStamp" />
+      <xs:element name="severity"                  type="om:Severity" />
+
+      <xs:element name="messageSource"             type="xs:string" />
+      <xs:element name="eventSource"               type="xs:string" />
+      <xs:element name="primaryMessageRepository"  type="xs:string" />
+
+      <xs:element name="messageMetadataIdentifier" type="xs:string" />
+      <xs:element name="managedEntityReference"    type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MessageBody">
+    <xs:sequence>
+      <xs:element name="owner"                     type="xs:string" />
+      <xs:element name="numberOfDuplicates"        type="xs:int" />
+      <xs:element name="state"                     type="om:State" />
+      <xs:element name="creatingCondition"         type="xs:string" />
+      <xs:element name="messageData"               type="om:MessageData" />
+      <xs:element name="actionResult"              type="xs:string" />
+      <xs:element name="messageMetadataAnnotation" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="MessageUUID">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="TimeStamp">
+    <xs:sequence>
+      <xs:element name="seconds"  type="xs:long" />
+      <xs:element name="dateTime" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="Severity">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Warning" />
+      <xs:enumeration value="Normal" />
+      <xs:enumeration value="Major" />
+      <xs:enumeration value="Minor" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="State">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PENDING" />
+      <xs:enumeration value="ACKNOWLEDGED" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="MessageData">
+    <xs:sequence>
+      <xs:element name="data" type="om:Data" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="application" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="Data">
+    <xs:sequence>
+      <xs:element name="name"  type="xs:string" />
+      <xs:element name="value" type="om:Value" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Value">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" type="xs:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+</xs:schema>

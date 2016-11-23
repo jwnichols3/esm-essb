@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/628/trunk/Portlets/Suppressions2/trunk/html
+END
+nav.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/html/nav.jsp
+END
+suppression_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/615/trunk/Portlets/Suppressions2/trunk/html/suppression_view.jsp
+END
+edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/html/edit.jsp
+END
+suppression_edit_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/300/trunk/Portlets/Suppressions2/trunk/html/suppression_edit_success.jsp
+END
+suppression_add_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/300/trunk/Portlets/Suppressions2/trunk/html/suppression_add_success.jsp
+END
+suppression_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/594/trunk/Portlets/Suppressions2/trunk/html/suppression_edit.jsp
+END
+add_entry_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/594/trunk/Portlets/Suppressions2/trunk/html/add_entry_success.jsp
+END
+suppression_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/500/trunk/Portlets/Suppressions2/trunk/html/suppression_add.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/449/trunk/Portlets/Suppressions2/trunk/html/init.jsp
+END
+add_entry_errors.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/html/add_entry_errors.jsp
+END
+edit_entry.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/html/edit_entry.jsp
+END
+form_delete_entry.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/615/trunk/Portlets/Suppressions2/trunk/html/form_delete_entry.jsp
+END
+add_entry.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/html/add_entry.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/430/trunk/Portlets/Suppressions2/trunk/html/view.jsp
+END
+view_current.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/628/trunk/Portlets/Suppressions2/trunk/html/view_current.jsp
+END
+edit_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/html/edit_success.jsp
+END
+test.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/433/trunk/Portlets/Suppressions2/trunk/html/test.jsp
+END
+please_sign_in.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/591/trunk/Portlets/Suppressions2/trunk/html/please_sign_in.jsp
+END
+edit_entry_success_perl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/436/trunk/Portlets/Suppressions2/trunk/html/edit_entry_success_perl.jsp
+END
+suppression_audit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/html/suppression_audit.jsp
+END
+add_entry_success_perl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/443/trunk/Portlets/Suppressions2/trunk/html/add_entry_success_perl.jsp
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd
+END
+struts-config_1_0.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/struts-config_1_0.dtd
+END
+struts-config_1_1.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/struts-config_1_1.dtd
+END
+struts-config_1_2.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/struts-config_1_2.dtd
+END
+web-app_2_2.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/web-app_2_2.dtd
+END
+web-app_2_3.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/web-app_2_3.dtd
+END
+tiles-config_1_1.dtd
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/struts/v01_02_07/dtd/tiles-config_1_1.dtd
+END

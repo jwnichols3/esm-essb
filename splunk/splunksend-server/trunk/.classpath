@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/common/logging/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/common/logging/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="lib/databases/mysql/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="lib/portlets/jsr168/portlet-jsr168-lib.jar"/>
+	<classpathentry kind="lib" path="lib/portlets/Liferay/v04_02_02/util-bridges.jar"/>
+	<classpathentry kind="lib" path="lib/portlets/Liferay/v04_02_02/util-java.jar"/>
+	<classpathentry kind="lib" path="lib/portlets/Liferay/v04_02_02/util-taglib.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/antlr.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/commons-digester.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/commons-validator.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/portals-bridges-common-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/portals-bridges-struts-1.2.7-1.0.4.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/struts.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/util-bridges.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/util-java.jar"/>
+	<classpathentry kind="lib" path="lib/struts/v01_02_07/util-taglib.jar"/>
+	<classpathentry kind="lib" path="lib/webservices/metro/webservices-rt_l10n.jar"/>
+	<classpathentry kind="lib" path="lib/webservices/metro/webservices-rt.jar"/>
+	<classpathentry kind="lib" path="lib/webservices/metro/webservices-tools_l10n.jar"/>
+	<classpathentry kind="lib" path="lib/webservices/metro/webservices-tools.jar"/>
+	<classpathentry kind="lib" path="splunksend_server-ejb-3.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Liferay 4.2.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Glassfish 2.1"/>
+	<classpathentry kind="output" path="build"/>
+</classpath>

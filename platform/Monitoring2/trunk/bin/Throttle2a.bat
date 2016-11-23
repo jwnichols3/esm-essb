@@ -1,0 +1,1 @@
+c:/java/jdk1.5.0_09/bin/java -cp \repo1\esm-platform\Platform\Monitoring2\trunk\etc;\repo1\esm-platform\Platform\Monitoring2\trunk\build\classes;\repo1\esm-platform\CommonLibraries\Jakarta-Commons\commons-logging-1.0.3.jar;\repo1\esm-platform\CommonLibraries\WebLogic92\weblogic.jar com.bgi.esm.monitoring.platform.test.Throttle2

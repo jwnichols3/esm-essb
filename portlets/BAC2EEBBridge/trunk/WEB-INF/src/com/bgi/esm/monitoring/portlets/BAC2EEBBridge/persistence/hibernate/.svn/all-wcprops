@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate
+END
+HttpRequests.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HttpRequests.hbm.xml
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateUtil.java
+END
+IHibernateTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/IHibernateTable.java
+END
+HibernateHttpParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpParameter.java
+END
+HibernateHttpAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpAttribute.java
+END
+HibernateHttpFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpFinder.java
+END
+HibernateHttpHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpHeader.java
+END
+HibernateHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpRequest.java
+END
+HibernateHttpCookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/hibernate/HibernateHttpCookie.java
+END

@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<project name="Suppression Portlet" default="help" basedir=".">
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+    <import file="../build-portlets-common.xml"/>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Test various parts of the portlet creator utility
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="info">
+        <echo>User name: ${user.name}</echo>
+    </target>
+
+    <target name="export_entry" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.ExportEntry" fork="true">
+            <arg line="${entry_num} ${output_file}" />
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="test-toolkit" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.Toolkit" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <target name="test-create" depends="compile">
+        <echo>Testing database component..</echo>
+        <java classname="tools.databases.Database" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+	<target name="test-html-forms" depends="compile">
+		<echo>Test creating the html forms</echo>
+        <java classname="tools.struts.view.HTMLForm" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="test-struts-config" depends="compile">
+		<echo>Test creating the struts-config.xml file</echo>
+        <java classname="tools.struts.StrutsConfig" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="test-database" depends="compile">
+		<echo>Test retrieving database information</echo>
+        <java classname="tools.databases.Database" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+	<target name="add-batch" depends="compile">
+		<echo>Delete database entries...</echo>
+        <java classname="com.bgi.esm.portlets.Suppression.tools.AddSuppressionBatch" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+	</target>
+
+    <target name="test-user" depends="build">
+        <echo>Starting test-suite for user experience...</echo>
+        <delete dir="test-results/xml"/>
+        <delete dir="test-results/html"/>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes" fork="true" maxmemory="512M">
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="com/bgi/esm/portlets/testing/suppression/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target> 
+
+
+    <target name="test-failover" depends="build">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/TestFailovers.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <target name="test-extract" depends="build">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/TestExtractFile.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property name="portlet-name" value="MonitoringPlatformAdmin"/>
+</project>
+

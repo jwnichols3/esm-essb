@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Dispatcher is the bridge between JMS and Alarm Point/Service Center.
+
+    <p>
+    Dispatcher is the bridge between JMS and Alarm Point/Service Center.
+  </body>
+</html>

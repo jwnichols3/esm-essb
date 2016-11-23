@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.platform.test.openview.orm.ActiveMessage" table="opc_op.opc_act_messages" >
+        <id name="MessageNumber" column="message_number" length="36">
+            <generator class="uuid" />
+        </id>
+        <property name="ConditionID"                        type="string"        column="condition_id"              length="36"   />
+        <property name="InstructionID"                      type="string"        column="instruction_id"            length="36"   />
+        <property name="NodeID"                             type="string"        column="node_id"                   length="36"   />
+        <property name="NetworkType"                        type="int"           column="network_type"              length="5"    />
+        <property name="MessageGenNodeID"                   type="string"        column="msg_gen_node_id"           length="36"   /> 
+        <property name="LogOnlyFlag"                        type="int"           column="log_only_flag"             length="3"    />
+        <property name="UnmatchedFlag"                      type="int"           column="unmatched_flag"            length="3"    />
+        <property name="MessageSourceType"                  type="long"          column="msg_source_type"           length="12"   />
+        <property name="NotificationFlag"                   type="int"           column="notification_flag"         length="3"    />
+        <property name="TroubleTicketFlag"                  type="int"           column="trouble_tick_flag"         length="3"    />
+        <property name="AcknowledgeAfterTroubleTicketFlag"  type="int"           column="ackn_after_tt_flag"        length="3"    />
+        <property name="MessageGroupMiscFlag"               type="int"           column="msggrp_misc_flag"          length="3"    />
+        <property name="CreationTime"                       type="long"          column="creation_time"             length="12"   />
+        <property name="LocalCreationTime"                  type="calendar"      column="local_creation_time"                     />
+        <property name="ReceivingTime"                      type="long"          column="receiving_time"            length="12"   />
+        <property name="LocalReceivingTime"                 type="calendar"      column="local_receiving_time"                    />
+        <property name="Severity"                           type="int"           column="severity"                  length="3"    />
+        <property name="AutoStatus"                         type="int"           column="auto_status"               length="3"    />
+        <property name="AutoAnnotationFlag"                 type="int"           column="auto_anno_flag"            length="3"    />
+        <property name="AutoAcknowledgeFlag"                type="int"           column="auto_ackn_flag"            length="3"    />
+        <property name="AutoNodeID"                         type="string"        column="noauto_de_id"              length="36"   />
+        <property name="OperationsInitStatus"               type="int"           column="op_init_status"            length="3"    />
+        <property name="OperationsInitNodeID"               type="string"        column="op_init_node_id"           length="36"   />
+        <property name="OperationsInitAnnotationFlag"       type="int"           column="op_init_anno_flag"         length="3"    />
+        <property name="OperationsInitAcknowledgeFlag"      type="int"           column="op_init_ackn_flag"         length="3"    />
+        <property name="EscalateFlag"                       type="int"           column="escalate_flag"             length="3"    /> 
+        <property name="AssignFlag"                         type="int"           column="assign_flag"               length="3"    /> 
+        <property name="InstructionType"                    type="int"           column="instruction_type"          length="3"    /> 
+        <property name="Forward"                            type="int"           column="forward"                   length="3"    /> 
+        <property name="ReadOnly"                           type="int"           column="readonly"                  length="3"    /> 
+        <property name="OriginalMessageID"                  type="string"        column="original_msgid"            length="12"   />
+        <property name="BufferFlag"                         type="int"           column="buffer_flag"               length="3"    />
+        <property name="UnbufferTime"                       type="long"          column="unbuffer_time"             length="12"   />
+        <property name="LocalUnbufferTime"                  type="calendar"      column="local_unbuffer_time"                     />
+        <property name="TimeDiff"                           type="long"          column="time_diff"                 length="12"   />
+        <property name="LocalAgtCreationTime"               type="calendar"      column="local_agt_creation_time"                 />
+        <property name="AcknowledgeFlag"                    type="int"           column="ackn_flag"                 length="3"    />
+        <property name="AcknowledgeTime"                    type="long"          column="ackn_time"                 length="12"   />
+        <property name="LocalAcknowledgeTime"               type="calendar"      column="local_ackn_time"                         />
+        <property name="AcknowledgeUser"                    type="string"        column="ackn_user"                 length="20"   />
+        <property name="MessageSourceName"                  type="string"        column="msg_source_name"           length="32"   />
+        <property name="Application"                        type="string"        column="application"               length="254"  />
+        <property name="MessageGroup"                       type="string"        column="message_group"             length="32"   />
+        <property name="Object"                             type="string"        column="object"                    length="254"  />
+        <property name="NotifyServices"                     type="string"        column="notify_services"           length="254"  />
+        <property name="AutoCall"                           type="text"          column="auto_call"                 length="2000" />
+        <property name="OperationsInitCall"                 type="text"          column="op_init_call"              length="2000" />
+        <property name="MessageType"                        type="string"        column="message_type"              length="32"   />
+        <property name="ResolvedInstructionsParameter"      type="string"        column="resolved_instr_par"        length="254"  />
+        <property name="ServiceName"                        type="text"          column="service_name"              length="2048" />
+        <property name="MessageKey"                         type="text"          column="msg_key"                   length="2048" />
+        <property name="DuplicateCount"                     type="long"          column="dupl_count"                length="12"   />
+        <property name="LastTimeReceived"                   type="long"          column="last_time_received"        length="12"   />
+        <property name="LocalLastTimeReceived"              type="calendar"      column="local_last_time_received"                />
+        <property name="CMAFlag"                            type="int"           column="cma_flag"                  length="3"    />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.platform.test.openview.orm.HistoricalMessage" table="opc_op.opc_hist_messages" >
+        <id name="MessageNumber" column="message_number" length="36">
+            <generator class="uuid" />
+        </id>
+        <property name="ConditionID"                        type="string"        column="condition_id"              length="36"   />
+        <property name="InstructionID"                      type="string"        column="instruction_id"            length="36"   />
+        <property name="NodeID"                             type="string"        column="node_id"                   length="36"   />
+        <property name="NetworkType"                        type="int"           column="network_type"              length="5"    />
+        <property name="MessageGenNodeID"                   type="string"        column="msg_gen_node_id"           length="36"   /> 
+        <property name="LogOnlyFlag"                        type="int"           column="log_only_flag"             length="3"    />
+        <property name="UnmatchedFlag"                      type="int"           column="unmatched_flag"            length="3"    />
+        <property name="MessageSourceType"                  type="long"          column="msg_source_type"           length="12"   />
+        <property name="NotificationFlag"                   type="int"           column="notification_flag"         length="3"    />
+        <property name="TroubleTicketFlag"                  type="int"           column="trouble_tick_flag"         length="3"    />
+        <property name="AcknowledgeAfterTroubleTicketFlag"  type="int"           column="ackn_after_tt_flag"        length="3"    />
+        <property name="MessageGroupMiscFlag"               type="int"           column="msggrp_misc_flag"          length="3"    />
+        <property name="CreationTime"                       type="long"          column="creation_time"             length="12"   />
+        <property name="LocalCreationTime"                  type="calendar"      column="local_creation_time"                     />
+        <property name="ReceivingTime"                      type="long"          column="receiving_time"            length="12"   />
+        <property name="LocalReceivingTime"                 type="calendar"      column="local_receiving_time"                    />
+        <property name="Severity"                           type="int"           column="severity"                  length="3"    />
+        <property name="AutoStatus"                         type="int"           column="auto_status"               length="3"    />
+        <property name="AutoAnnotationFlag"                 type="int"           column="auto_anno_flag"            length="3"    />
+        <property name="AutoAcknowledgeFlag"                type="int"           column="auto_ackn_flag"            length="3"    />
+        <property name="AutoNodeID"                         type="string"        column="noauto_de_id"              length="36"   />
+        <property name="OperationsInitStatus"               type="int"           column="op_init_status"            length="3"    />
+        <property name="OperationsInitNodeID"               type="string"        column="op_init_node_id"           length="36"   />
+        <property name="OperationsInitAnnotationFlag"       type="int"           column="op_init_anno_flag"         length="3"    />
+        <property name="OperationsInitAcknowledgeFlag"      type="int"           column="op_init_ackn_flag"         length="3"    />
+        <property name="EscalateFlag"                       type="int"           column="escalate_flag"             length="3"    /> 
+        <property name="AssignFlag"                         type="int"           column="assign_flag"               length="3"    /> 
+        <property name="InstructionType"                    type="int"           column="instruction_type"          length="3"    /> 
+        <property name="Forward"                            type="int"           column="forward"                   length="3"    /> 
+        <property name="ReadOnly"                           type="int"           column="readonly"                  length="3"    /> 
+        <property name="OriginalMessageID"                  type="string"        column="original_msgid"            length="12"   />
+        <property name="BufferFlag"                         type="int"           column="buffer_flag"               length="3"    />
+        <property name="UnbufferTime"                       type="long"          column="unbuffer_time"             length="12"   />
+        <property name="LocalUnbufferTime"                  type="calendar"      column="local_unbuffer_time"                     />
+        <property name="TimeDiff"                           type="long"          column="time_diff"                 length="12"   />
+        <property name="LocalAgtCreationTime"               type="calendar"      column="local_agt_creation_time"                 />
+        <property name="AcknowledgeFlag"                    type="int"           column="ackn_flag"                 length="3"    />
+        <property name="AcknowledgeTime"                    type="long"          column="ackn_time"                 length="12"   />
+        <property name="LocalAcknowledgeTime"               type="calendar"      column="local_ackn_time"                         />
+        <property name="AcknowledgeUser"                    type="string"        column="ackn_user"                 length="20"   />
+        <property name="MessageSourceName"                  type="string"        column="msg_source_name"           length="32"   />
+        <property name="Application"                        type="string"        column="application"               length="254"  />
+        <property name="MessageGroup"                       type="string"        column="message_group"             length="32"   />
+        <property name="Object"                             type="string"        column="object"                    length="254"  />
+        <property name="NotifyServices"                     type="string"        column="notify_services"           length="254"  />
+        <property name="AutoCall"                           type="text"          column="auto_call"                 length="2000" />
+        <property name="OperationsInitCall"                 type="text"          column="op_init_call"              length="2000" />
+        <property name="MessageType"                        type="string"        column="message_type"              length="32"   />
+        <property name="ResolvedInstructionsParameter"      type="string"        column="resolved_instr_par"        length="254"  />
+        <property name="ServiceName"                        type="text"          column="service_name"              length="2048" />
+        <property name="MessageKey"                         type="text"          column="msg_key"                   length="2048" />
+        <property name="DuplicateCount"                     type="long"          column="dupl_count"                length="12"   />
+        <property name="LastTimeReceived"                   type="long"          column="last_time_received"        length="12"   />
+        <property name="LocalLastTimeReceived"              type="calendar"      column="local_last_time_received"                />
+        <property name="CMAFlag"                            type="int"           column="cma_flag"                  length="3"    />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.platform.test.openview.orm.HistoricalMessageText" table="opc_op.opc_hist_msg_text" >
+        <id name="MessageNumber" column="message_number" length="36">
+            <generator class="uuid" />
+        </id>
+        <property name="OrderNumber"                        type="int"           column="order_number"              length="5"   />
+        <property name="TextPart"                           type="string"        column="text_part"                 length="254" />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.platform.test.openview.orm.ActiveMessageText" table="opc_op.opc_msg_text" >
+        <id name="MessageNumber" column="message_number" length="36">
+            <generator class="uuid" />
+        </id>
+        <property name="OrderNumber"                        type="int"           column="order_number"              length="5"   />
+        <property name="TextPart"                           type="string"        column="text_part"                 length="254" />
+    </class>
+</hibernate-mapping>

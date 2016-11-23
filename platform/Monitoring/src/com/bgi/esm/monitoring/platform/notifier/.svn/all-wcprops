@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier
+END
+Notifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/13/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/Notifier.java
+END
+StormTest1.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/55/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/StormTest1.java
+END
+OviReply.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/68/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/OviReply.java
+END
+OviSimulator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm-platform/!svn/ver/68/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/OviSimulator.java
+END
+OviNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/85/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/OviNotifier.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/13/trunk/Platform/Monitoring/src/com/bgi/esm/monitoring/platform/notifier/package.html
+END

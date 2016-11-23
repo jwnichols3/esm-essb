@@ -1,0 +1,55 @@
+10
+
+dir
+681
+https://esm-platform.bgidev.net/svn/esm-platform/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform
+https://esm-platform.bgidev.net/svn/esm-platform
+
+
+
+2009-11-16T17:32:29.470389Z
+642
+linden
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+156ed970-d521-0410-a1b0-ceaf6fcb4052
+
+entrance
+dir
+
+test
+dir
+
+authentication
+dir
+
+buss_module
+dir
+
+shared
+dir
+
+junit
+dir
+
+weblogic
+dir
+
+orm
+dir
+
+client
+dir
+

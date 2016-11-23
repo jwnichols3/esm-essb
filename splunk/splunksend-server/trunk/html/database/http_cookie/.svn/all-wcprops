@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie
+END
+http_cookie_edit_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_edit_success.jsp
+END
+http_cookie_select.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_select.jsp
+END
+http_cookie_add_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_add_success.jsp
+END
+http_cookie_form.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_form.jsp
+END
+http_cookie_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_edit.jsp
+END
+http_cookie_display.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_display.jsp
+END
+http_cookie_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_add.jsp
+END
+http_cookie_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/html/database/http_cookie/http_cookie_view.jsp
+END

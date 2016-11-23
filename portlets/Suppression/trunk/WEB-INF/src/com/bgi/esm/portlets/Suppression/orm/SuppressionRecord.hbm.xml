@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.portlets.Suppression.orm.SuppressionRecord" table="suppressions" >
+        <id name="RowID" column="row_id">
+            <generator class="native" />
+        </id>
+        <property name="SuppressionID"          type="long"         column="suppress_id"        />
+        <property name="NodeName"               type="string"       column="node_nm"            />
+        <property name="GroupName"              type="string"       column="group_nm"           />
+        <property name="StartTime"              type="calendar"     column="start_utc_tms"      />
+        <property name="EndTime"                type="calendar"     column="end_utc_tms"        />
+        <property name="NotificationFlag"       type="boolean"      column="notify_flg"         />
+        <property name="NotificationMinutes"    type="int"          column="notify_minutes"     />
+        <property name="Description"            type="text"         column="suppress_desc_txt"  />
+        <property name="DeletedFlag"            type="boolean"      column="deleted_flg"        />
+        <property name="CreatorName"            type="string"       column="create_nm"          />
+        <property name="CreationTime"           type="calendar"     column="create_tms"         />
+        <property name="LastUpdateName"         type="string"       column="last_update_nm"     />
+        <property name="LastUpdateTime"         type="calendar"     column="last_update_tms"    />
+        <property name="DatabaseInstance"       type="string"       column="instance"           />
+        <property name="Message"                type="string"       column="message"            />
+        <property name="RemoveOnReboot"         type="boolean"      column="remove_on_reboot"   />
+    </class>
+</hibernate-mapping>

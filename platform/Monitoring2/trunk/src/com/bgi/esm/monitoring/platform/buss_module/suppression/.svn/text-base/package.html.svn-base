@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Suppression Buss Module.
+
+    <p>
+    The suppression buss module is the first module (from OVO).
+    This module awais messages from OVO and takes the "first cut" 
+    at deciding if the message should be suppressed or processed
+    by downstream modules.
+
+    <p>
+    Suppression decisions are based upon rules contained in a DB
+    table.
+
+    <p>
+    Messages which should be suppressed are written back to OVO
+    for acknowledgement.
+
+    <p>
+    Messages which should not be suppressed are forwarded to the
+    data map module.
+  </body>
+</html>

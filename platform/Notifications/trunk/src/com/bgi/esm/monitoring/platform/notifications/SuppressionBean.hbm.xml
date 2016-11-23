@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.platform.notifications.SuppressionBean" table="t_vpo_suppress" >
+        <id name="SuppressId" column="suppress_id">
+            <generator class="native" />
+        </id>
+        <property name="StartTime"        type="calendar" column="start_utc_tms"     />
+        <property name="EndTime"          type="calendar" column="end_utc_tms"       />
+        <property name="NodeName"         type="text"     column="node_nm"           />
+        <property name="GroupName"        type="text"     column="group_nm"          />
+        <property name="DbServer"         type="text"     column="instance"          />
+        <property name="NotifyFlg"        type="boolean"  column="notify_flg"        />
+        <property name="NotifyMinutes"    type="long"     column="notify_minutes"    />
+        <property name="RemoveOnReboot"   type="boolean"  column="remove_on_reboot"  />
+        <property name="Description"      type="text"     column="suppress_desc_txt" />
+        <property name="Message"          type="text"     column="message"           />
+    </class>
+</hibernate-mapping>
+

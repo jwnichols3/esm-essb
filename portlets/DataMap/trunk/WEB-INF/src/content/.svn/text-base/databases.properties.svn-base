@@ -1,0 +1,120 @@
+##########################################################################################
+##########################################################################################
+#    Text properties for the 'test_datamap' database
+##########################################################################################
+##########################################################################################
+databases.records.edit=Edit
+databases.records.add=Add New Record
+databases.records.audit_trail=Audit Trail
+databases.records.audit_version_num=Audit Ver. #
+databases.records.audit_modified_by=Modified By
+databases.records.audit_timestamp=Timestamp
+databases.records.next=Next Set
+databases.records.prev=Prev Set
+
+
+databases.test_datamap.home.display_name=Home
+
+
+##########################################################################################
+#    Text properties for the 'data_map' table
+##########################################################################################
+databases.test_datamap.data_map.display_name.data_map_overview=\
+This is where you set up the associations of an Openview event with:\
+<center>\
+    <table border="1" width="80%">\
+        <tr><td><li></li></td><td>Service Center queue</td></tr>\
+        <tr><td><li></li></td><td>Alarmpoint group</td></tr>\
+    </table>\
+</center>\
+
+databases.test_datamap.data_map.display_name.data_map_view=\
+<b>Getting Started</b>\
+<br>\
+<br>\
+<center>\
+    <table border="1" width="80%">\
+        <tr>\
+            <th valign="top">Add a Rule</th>\
+            <td>\
+                Click on the "Add New Record" link right beneath this table.  More \
+                instructions will follow.\
+            </td>\
+        </tr>\
+        <tr>\
+            <th valign="top">Edit an Existing Rule</th>\
+            <td>\
+                Click on the "Edit" link to the left of the rule that you want to edit.  You \
+                can also scroll through the pages of rules by using the Next Set" and "Prev Set" \
+                links located right above the table.\
+            </td>\
+        </tr>\
+    </table>\
+</center>
+
+databases.test_datamap.data_map.display_name.data_map_add=\
+<b>Adding a Rule</b>\
+<br>\
+<br>\
+Please fill in the following fields.  All fields are required.
+
+databases.test_datamap.data_map.display_name.data_map_edit=\
+<b>Editing a Rule</b>\
+<br>\
+<br>\
+Please change the values as you deem necessary.\
+<br>\
+<b>NOTE:</b> All fields are required.\
+<br>\
+<b>NOTE:</b> Records of past changes are listed below the form.
+
+
+
+databases.test_datamap.data_map.display_name=Data Map
+
+databases.test_datamap.data_map.rule_id.display_name=Rule #
+
+databases.test_datamap.data_map.bgi_group.display_name=Message Group
+databases.test_datamap.data_map.bgi_group.instructions=The name of the Message group that this data map is for.  (EX: ESM, GSS, etc.)
+
+databases.test_datamap.data_map.bgi_method.display_name=Notification Method
+databases.test_datamap.data_map.bgi_method.instructions=\
+The method of notification.\
+<br>\
+<br>\
+<center>\
+    <table border="1" width="80%">\
+        <tr>\
+            <th valign="top" nowrap>Ticket + Notification</th>\
+            <td>Generate a Service Center ticket along with an Alarmpoint notification</td>\
+        </tr>\
+        <tr>\
+            <th valign="top" nowrap>Notification Only</th>\
+            <td>Only generate an Alarmponit notification; no Service Center ticket will be created</td>\
+        </tr>\
+    </table>\
+<center>\
+
+databases.test_datamap.data_map.ap_group.display_name=Alarmpoint Group
+databases.test_datamap.data_map.ap_group.instructions=The name of the Alarmpoint group or the person to route the notification to
+
+databases.test_datamap.data_map.ap_script.display_name=Alarmpoint Script
+databases.test_datamap.data_map.ap_script.instructions=The name of the Alarmpoint script used to generate the notification
+
+databases.test_datamap.data_map.per_cat.display_name=Service Center Category
+databases.test_datamap.data_map.per_cat.instructions=The name of the Service Center ticket category
+
+databases.test_datamap.data_map.per_subcat.display_name=Service Center Sub-Category
+databases.test_datamap.data_map.per_subcat.instructions=The name of the Service Center ticket sub-category 
+
+databases.test_datamap.data_map.per_product.display_name=Service Center Product
+databases.test_datamap.data_map.per_product.instructions=The Service Center name of the product that the notification is about.
+
+databases.test_datamap.data_map.per_problem.display_name=Service Center Problem
+databases.test_datamap.data_map.per_problem.instructions=The type of problem as defined in Service Center.
+
+databases.test_datamap.data_map.per_assign.display_name=Assignment Group
+databases.test_datamap.data_map.per_assign.instructions=The group that will own the Service Center ticket
+
+databases.test_datamap.data_map.per_location.display_name=Location
+databases.test_datamap.data_map.per_location.instructions=Is this a GLOBAL issue, or is it related to the Rancho Cordova data center?

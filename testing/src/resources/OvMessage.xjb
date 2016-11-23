@@ -1,0 +1,31 @@
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" 
+                            xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                            xmlns:om="http://openview.hp.com/xmlns/ico/message">
+
+  <jxb:bindings schemaLocation="OvMessage.xsd" node="/xs:schema">
+
+    <jxb:globalBindings>
+
+      <jxb:javaType name="java.util.Calendar" xmlType="xs:dateTime"
+                    parseMethod="tools.testing.eeb.ovmessage.impl.jaxb.OvMessageDatatypeConverter.parseDateTime"
+                    printMethod="tools.testing.eeb.ovmessage.impl.jaxb.OvMessageDatatypeConverter.printDateTime"
+      />
+
+      <jxb:javaType name="java.util.UUID" xmlType="om:MessageUUID"
+                    parseMethod="tools.testing.eeb.ovmessage.impl.jaxb.OvMessageDatatypeConverter.parseMessageUUID"
+                    printMethod="tools.testing.eeb.ovmessage.impl.jaxb.OvMessageDatatypeConverter.printMessageUUID"
+      />
+
+    </jxb:globalBindings>
+
+    <jxb:bindings node="//xs:complexType[@name='MessageData']//xs:element[@name='data']">
+      <jxb:property name="dataList" />
+    </jxb:bindings>
+
+    <jxb:bindings node="//xs:complexType[@name='Value']">
+      <jxb:property name="content" />
+    </jxb:bindings>
+
+  </jxb:bindings>
+
+</jxb:bindings>

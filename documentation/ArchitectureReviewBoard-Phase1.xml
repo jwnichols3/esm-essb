@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><?mso-infoPathSolution solutionVersion="1.0.0.122" PIVersion="1.0.0.0" href="http://iq.barclaysglobal.com/gm/document-1.9.1512448/ARBForm.xsn" name="urn:schemas-microsoft-com:office:infopath:ARBForm:-myXSD-2006-05-26T20-53-03" productVersion="11.0.6565" ?><?mso-application progid="InfoPath.Document"?><my:ARBProjectForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2006-05-26T20:53:03" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" xml:lang="en-us">
+	<my:Introduction>
+		<my:Project>Enterprise Systems Management - ESM Development Replatforming Phase I</my:Project>
+		<my:TechLead>Dennis Lin</my:TechLead>
+		<my:TechLeadNumber>415-908-7706</my:TechLeadNumber>
+		<my:SystemArchitect>John Nichols</my:SystemArchitect>
+		<my:SystemArchitectNumber>415-908-7432</my:SystemArchitectNumber>
+		<my:ApplicationsAffected>
+			<my:Application my:Grandfathered="">
+				<my:ApplicationName>ESM Development Replatforming - Phase I</my:ApplicationName>
+				<my:ToBeDecommisioned>no</my:ToBeDecommisioned>
+			</my:Application>
+		</my:ApplicationsAffected>
+		<my:WIDLink><a xmlns="http://www.w3.org/1999/xhtml" href="http://iq/gm/folder-1.11.429640">http://iq/gm/folder-1.11.429640</a></my:WIDLink>
+		<my:ArchitectureDiagramLink></my:ArchitectureDiagramLink>
+		<my:ProjectProblemStatement></my:ProjectProblemStatement>
+	</my:Introduction>
+	<my:ReviewOutcomes>
+		<my:ProjectDate xsi:nil="true"></my:ProjectDate>
+		<my:ReviewText></my:ReviewText>
+		<my:ProjectStatus>Select project status...</my:ProjectStatus>
+	</my:ReviewOutcomes>
+	<my:Questions1-5>
+		<my:ApplicationPattern>Other</my:ApplicationPattern>
+		<my:ApplicationPatternText>This is an integration effort and deals primarily with system to system communication.</my:ApplicationPatternText>
+		<my:InterApplicationIntegrationPatterns>Messaging Publish (Default)</my:InterApplicationIntegrationPatterns>
+		<my:InterapplicationPatternAndApplication>
+			<my:InterapplicationApplication>HP Openview</my:InterapplicationApplication>
+			<my:InterapplicationPattern>Messaging Publish</my:InterapplicationPattern>
+		</my:InterapplicationPatternAndApplication>
+		<my:InterapplicationPatternAndApplication>
+									<my:InterapplicationApplication>Service Center (Peregrine)</my:InterapplicationApplication>
+									<my:InterapplicationPattern>Messaging Request/Response</my:InterapplicationPattern>
+								</my:InterapplicationPatternAndApplication><my:InterapplicationPatternAndApplication>
+									<my:InterapplicationApplication>Alarmpoint Enterprise</my:InterapplicationApplication>
+									<my:InterapplicationPattern>Messaging Request/Response</my:InterapplicationPattern>
+								</my:InterapplicationPatternAndApplication><my:InterApplicationPatternText>If any interfaces use non Default patterns, please explain here.</my:InterApplicationPatternText>
+		<my:GlobalShareMessagingCheck>true</my:GlobalShareMessagingCheck>
+		<my:GlobalizationPracticesCheck>true</my:GlobalizationPracticesCheck>
+		<my:Components>
+			<my:Component>
+				<my:ComponentName>HP Openview</my:ComponentName>
+				<my:BHSStatus>Buy</my:BHSStatus>
+			</my:Component>
+		<my:Component>
+									<my:ComponentName>Service Center</my:ComponentName>
+									<my:BHSStatus>Hold</my:BHSStatus>
+								</my:Component><my:Component>
+									<my:ComponentName>Alarmpoint</my:ComponentName>
+									<my:BHSStatus>Buy</my:BHSStatus>
+								</my:Component><my:Component>
+									<my:ComponentName>Java JDK 1.5</my:ComponentName>
+									<my:BHSStatus>Buy</my:BHSStatus>
+								</my:Component><my:Component>
+									<my:ComponentName>Weblogic 8.1 or later</my:ComponentName>
+									<my:BHSStatus>Buy</my:BHSStatus>
+								</my:Component></my:Components>
+	</my:Questions1-5>
+	<my:Questions6-10>
+		<my:ReusableComponents></my:ReusableComponents>
+		<my:BuildRationaleForComponents>
+			<my:ComponentNameText>ESM Event Transport and Bus (leveraging Weblogic)</my:ComponentNameText>
+			<my:BuildRationaleText>Increased throughput of notification / ticketing interface for the ESM framework</my:BuildRationaleText>
+		</my:BuildRationaleForComponents>
+		<my:BuildRationaleForComponents>
+									<my:ComponentNameText>ESM Event Throttling</my:ComponentNameText>
+									<my:BuildRationaleText>Logic to protect the ESM monitoring environment from event storms.</my:BuildRationaleText>
+								</my:BuildRationaleForComponents><my:BuildRationaleForComponents>
+									<my:ComponentNameText>ESM Event Database Interface</my:ComponentNameText>
+									<my:BuildRationaleText>Increases the audit ability for incident management</my:BuildRationaleText>
+								</my:BuildRationaleForComponents><my:BuildRationaleForComponents>
+									<my:ComponentNameText>ESM Datamap Administration</my:ComponentNameText>
+									<my:BuildRationaleText><div xmlns="http://www.w3.org/1999/xhtml">- Increased throughput of notification / ticketing interface for the ESM framework</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Increased reporting capabilities</div></my:BuildRationaleText>
+								</my:BuildRationaleForComponents><my:BuildRationaleForComponents>
+									<my:ComponentNameText>Alert Suppressions</my:ComponentNameText>
+									<my:BuildRationaleText>To augment alert suppression capabilities within HP Openview and Alarmpoint</my:BuildRationaleText>
+								</my:BuildRationaleForComponents><my:TechnologyStack>Java (Default)</my:TechnologyStack>
+		<my:StackReasonText></my:StackReasonText>
+		<my:ApplicationPlatformBGIStandards>Yes</my:ApplicationPlatformBGIStandards>
+		<my:ApplicationPlatform>
+			<my:ApplicationPlatformClientPlatform>Browser</my:ApplicationPlatformClientPlatform>
+			<my:ApplicationPlatformClientLocation>Desktops</my:ApplicationPlatformClientLocation>
+			<my:ApplicationPlatformServerPlatform>UNIX and Windows</my:ApplicationPlatformServerPlatform>
+			<my:ApplicationPlatformServerPlatformLocation>RDC and LDN</my:ApplicationPlatformServerPlatformLocation>
+			<my:ApplicationPlatformLocation></my:ApplicationPlatformLocation>
+			<my:ApplicationPlatformApplicationServer>Tomcat/JBoss</my:ApplicationPlatformApplicationServer>
+			<my:ApplicationPlatformDatabaseServerPlatform>Sybase and MS-SQL</my:ApplicationPlatformDatabaseServerPlatform>
+			<my:ApplicationPlatformDatabaseServerLocation>RDC and LDN</my:ApplicationPlatformDatabaseServerLocation>
+			<my:ApplicationPlatformFileServerPlatform>n/a</my:ApplicationPlatformFileServerPlatform>
+			<my:ApplicationPlatformFileServerLocation></my:ApplicationPlatformFileServerLocation>
+		</my:ApplicationPlatform>
+		<my:ComponentFailure>High Availability Cluster, near real-time recovery</my:ComponentFailure>
+		<my:ComponentFailureText>This is a systems monitoring system</my:ComponentFailureText>
+		<my:ReuseComponents>
+			<my:AdditionalReuseComponents>an ESM version of log4j to enable applications to seamlessly plug into the monitoring framework</my:AdditionalReuseComponents>
+			<my:ServicesFramework>false</my:ServicesFramework>
+			<my:JavaCommons>true</my:JavaCommons>
+			<my:WebFramework>false</my:WebFramework>
+			<my:GUIFramework>false</my:GUIFramework>
+			<my:Jumpstart>true</my:Jumpstart>
+		</my:ReuseComponents>
+	</my:Questions6-10>
+	<my:Questions11-15>
+		<my:SiteFailureBusinessContinutityText>We need near real-time recovery.  All the different components will be individually </my:SiteFailureBusinessContinutityText>
+		<my:SystemPerformanceText>We need events/incidents delivered quickly and reliably.  Hence, we are looking to use a high-speed, low-latency messaging bus for message delivery.  </my:SystemPerformanceText>
+		<my:InteractiveUsersAuthentication>Using Active Directory (Default) - if web app., is username/password sent over https?</my:InteractiveUsersAuthentication>
+		<my:InteractiveUsersAuthenticationText>There are no interactive users</my:InteractiveUsersAuthenticationText>
+		<my:AccessRightsManagement><div xmlns="http://www.w3.org/1999/xhtml">- No write access to any information, only read access will be provided.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Read-access to information will be open to all members of the IT organization</div></my:AccessRightsManagement>
+		<my:PasswordStorage>Using an ASM mechanism (Default) *</my:PasswordStorage>
+		<my:PasswordStorageText></my:PasswordStorageText>
+	</my:Questions11-15>
+	<my:Questions16-20>
+		<my:MonitoringSystemsManagement>Other</my:MonitoringSystemsManagement>
+		<my:MonitoringSystemsManagementText>This is an upgrade to the current ESM platform and will have monitoring implemented independent of that environment.</my:MonitoringSystemsManagementText>
+		<my:CoreBusinessEntitiesText>No</my:CoreBusinessEntitiesText>
+		<my:AnalyticalPurposes>No</my:AnalyticalPurposes>
+		<my:AnalyticalPurposesText>Not applicable</my:AnalyticalPurposesText>
+		<my:EnhanceFlexibilityText><div xmlns="http://www.w3.org/1999/xhtml">- Message bus with XML messages is much more configurable than today's direct communication links.</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Each individual part of the architecture is now cluster-ready</div></my:EnhanceFlexibilityText>
+		<my:ChangesInNextThreeYearsText><div xmlns="http://www.w3.org/1999/xhtml">Expected changes</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Increased number of servers in each app cluster</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Slightly altered message schemas</div></my:ChangesInNextThreeYearsText>
+	</my:Questions16-20>
+	<my:Questions21-25>
+		<my:RegionalDifferencesText>No</my:RegionalDifferencesText>
+		<my:ComponentCustomization>No</my:ComponentCustomization>
+		<my:ComponentCustomizationText></my:ComponentCustomizationText>
+		<my:NetworkLatencyText>Communication is asynchronous</my:NetworkLatencyText>
+		<my:BusinessProcessChangesText><div xmlns="http://www.w3.org/1999/xhtml">- Increased throughput of notification / ticketing interface for the ESM framework (John Nichols)</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Increased reliability in the communications link between HP Openview and Alarmpoint/Service Center</div>
+<div xmlns="http://www.w3.org/1999/xhtml">- Increased audit ability for incident management</div></my:BusinessProcessChangesText>
+		<my:ChangesToInfrastructure>No</my:ChangesToInfrastructure>
+		<my:ChangesToInfrastructureText>No changes expected.</my:ChangesToInfrastructureText>
+	</my:Questions21-25>
+	<my:Questions26-29>
+		<my:DatabaseUsagePattern>Data Access Layer with all data access via stored procedures (Default)</my:DatabaseUsagePattern>
+		<my:DatabaseUsagePatternText></my:DatabaseUsagePatternText>
+		<my:PartitioningPattern>Business Logic in Application Server (Default)</my:PartitioningPattern>
+		<my:PartitioningPatternText></my:PartitioningPatternText>
+		<my:PhysicalTiers>Message based</my:PhysicalTiers>
+		<my:PhysicalTiersText></my:PhysicalTiersText>
+		<my:DeploymentPattern>Local Application Server, Local Database</my:DeploymentPattern>
+		<my:DeploymentPatternText></my:DeploymentPatternText>
+	</my:Questions26-29>
+</my:ARBProjectForm>

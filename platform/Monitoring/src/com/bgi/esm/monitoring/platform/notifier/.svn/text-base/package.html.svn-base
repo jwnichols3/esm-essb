@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+
+      Maintenance History:
+        $Id$
+
+        $Log$
+    -->
+  </head>
+
+  <body bgcolor="white">
+    Notifier is the bridge between OVO manager and JMS.
+
+    <p>
+    Notifier is invoked by OVO manager notification service and converts
+    the 16 parameter OVO message into a XML message that is fed to a JMS
+    queue.
+  </body>
+</html>

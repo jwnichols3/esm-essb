@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Form bean definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <form-beans>
+        <form-bean name="edit_database_settings" type="com.bgi.esm.monitoring.portlets.EEBEventLog.forms.edit.DatabaseSettingsForm" />
+        <form-bean name="search_form"            type="com.bgi.esm.monitoring.portlets.EEBEventLog.forms.SearchForm" />
+    </form-beans>
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Action mapping definitions
+         ****************************************************************************
+         **************************************************************************** -->
+    <action-mappings>
+        <action path="/view"                          include="/html/view.jsp"                    />
+        <action path="/MessageGroup"                  include="/html/MessageGroup.jsp"            />
+        <action path="/MessageGroupEvents"            include="/html/MessageGroupEvents.jsp"      />
+        <action path="/LastNumMinutes"                include="/html/LastNumMinutes.jsp"          />
+        <action path="/TraceOVOMessage"               include="/html/TraceOVOMessage.jsp"         />
+        <action path="/AJAXSearchFormGroup"           type="com.bgi.esm.monitoring.portlets.EEBEventLog.actions.ajax.SearchFormGroupAction">
+            <forward name="success"                   path="/html/AJAXSearchFormGroupSuccess.jsp" />
+            <forward name="failure"                   path="/html/AJAXSearchFormGroupFailure.jsp" />
+        </action>
+        <action path="/AJAXSearchFormNode"            type="com.bgi.esm.monitoring.portlets.EEBEventLog.actions.ajax.SearchFormNodeAction">
+            <forward name="success"                   path="/html/AJAXSearchFormNodeSuccess.jsp"  />
+            <forward name="failure"                   path="/html/AJAXSearchFormNodeFailure.jsp"  />
+        </action>
+        <action path="/SearchForm"                    include="/html/SearchForm.jsp"              />
+        <action path="/SearchFormProcess"             type="com.bgi.esm.monitoring.portlets.EEBEventLog.actions.SearchAction" name="search_form" scope="request" validate="true" input="failure" parameter="method">
+            <forward name="success"                   path="/html/SearchResultsNavigate.jsp"      />
+            <forward name="failure"                   path="/html/SearchForm.jsp"                 />
+            <forward name="unknown"                   path="/html/SearchForm.jsp"                 />
+            <forward name="exception"                 path="/html/SearchForm.jsp"                 />
+            <forward name="failure"                   path="/html/SearchForm.jsp"                 />
+            <forward name="init"                      path="/html/SearchForm.jsp"                 />
+            <forward name="edit"                      path="/html/SearchForm.jsp"                 />
+            <forward name="add"                       path="/html/SearchForm.jsp"                 />
+        </action> 
+        <action path="/SearchResultsNavigate"         type="com.bgi.esm.monitoring.portlets.EEBEventLog.actions.SearchResultsNavigateAction" parameter="method">
+            <forward name="success"                   path="/html/SearchResultsNavigate.jsp"      />
+            <forward name="exception"                 path="/html/SearchForm.jsp"                 />
+        </action>
+        <action path="/edit"                          include="/html/edit/view.jsp"               />
+        <action path="/edit/view"                     include="/html/edit/view.jsp"               />
+        <action path="/edit/DatabaseSettings"         include="/html/edit/DatabaseSettings.jsp"   />
+        <action path="/edit/DatabaseSettingsProcess"  include="/html/edit/DatabaseSettings.jsp"   />
+
+    </action-mappings>
+    <!-- ****************************************************************************
+         ****************************************************************************
+                Custom Request Processor by http://portals.apache.org to allow this
+                portlet to be deployed as either a portlet or a web application.
+         ****************************************************************************
+         **************************************************************************** -->
+    <controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+    <!-- ****************************************************************************
+         ****************************************************************************
+                 Message Resources
+         ****************************************************************************
+         **************************************************************************** -->
+    <message-resources                  parameter="content.Errors"     />  <!-- Default bundle to compensate for ActionErrors inability
+                                                                                to process multiple resource bundles -->
+    <message-resources key="messages"   parameter="content.Messages"   />
+    <message-resources key="databases"  parameter="content.databases"  />
+    <message-resources key="SearchForm" parameter="content.SearchForm" />
+
+    <!-- Plugin to connect to Enterprise Event Bus -->
+    <plug-in className="com.bgi.esm.monitoring.portlets.EEBEventLog.EEBConnectorPlugin" >
+        <set-property property="java.naming.factory.initial" value="weblogic.jndi.WLInitialContextFactory" />
+        <set-property property="java.naming.provider.url"    value="t3://localhost:7001"                   />
+    </plug-in>
+
+    <!-- Tiles Plugin -->
+    <!--
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+        <set-property property="moduleAware" value="true" />
+        <set-property property="definitions-parser-validate" value="true" />
+    </plug-in>
+    -->
+
+    <!-- Validator Plugin -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+    </plug-in>
+</struts-config>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src
+END
+databases.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/databases.properties
+END
+RetrievePeopleInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/325/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/RetrievePeopleInfo.java
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/325/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/log4j.properties
+END
+RebuildShareITDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/325/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/RebuildShareITDatabase.java
+END
+default_values.properties
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm-platform/!svn/ver/398/trunk/Platform/AlarmpointEnterprise/DataSync/trunk/src/default_values.properties
+END

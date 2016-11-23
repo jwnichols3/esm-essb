@@ -1,0 +1,55 @@
+################################################################################
+#   Default values for the 'http_cookie' table
+################################################################################
+##  Default values for the 'row_id' column.  This column is of type String
+#database.http_cookie.row_id.default_value.01=
+#database.http_cookie.row_id.default_value.02=
+#database.http_cookie.row_id.default_value.03=
+
+
+##  Default values for the 'request_id' column.  This column is of type String
+#database.http_cookie.request_id.default_value.01=
+#database.http_cookie.request_id.default_value.02=
+#database.http_cookie.request_id.default_value.03=
+
+
+##  Default values for the 'cookie_comment' column.  This column is of type String
+#database.http_cookie.cookie_comment.default_value.01=
+#database.http_cookie.cookie_comment.default_value.02=
+#database.http_cookie.cookie_comment.default_value.03=
+
+
+##  Default values for the 'domain' column.  This column is of type String
+#database.http_cookie.domain.default_value.01=
+#database.http_cookie.domain.default_value.02=
+#database.http_cookie.domain.default_value.03=
+
+
+##  Default values for the 'path' column.  This column is of type String
+#database.http_cookie.path.default_value.01=
+#database.http_cookie.path.default_value.02=
+#database.http_cookie.path.default_value.03=
+
+
+##  Default values for the 'cookie_name' column.  This column is of type String
+#database.http_cookie.cookie_name.default_value.01=
+#database.http_cookie.cookie_name.default_value.02=
+#database.http_cookie.cookie_name.default_value.03=
+
+
+##  Default values for the 'cookie_persistence' column.  This column is of type String
+#database.http_cookie.cookie_persistence.default_value.01=
+#database.http_cookie.cookie_persistence.default_value.02=
+#database.http_cookie.cookie_persistence.default_value.03=
+
+
+##  Default values for the 'max_age' column.  This column is of type long
+#database.http_cookie.max_age.default_value.01=
+#database.http_cookie.max_age.default_value.02=
+#database.http_cookie.max_age.default_value.03=
+
+
+##  Default values for the 'version' column.  This column is of type long
+#database.http_cookie.version.default_value.01=
+#database.http_cookie.version.default_value.02=
+#database.http_cookie.version.default_value.03=

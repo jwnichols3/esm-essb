@@ -1,0 +1,7 @@
+errors.DatabaseSettings.DatebaseType.missing=Please specify the database type.
+errors.DatabaseSettings.DatebaseServer.missing=Please specify the database server.
+errors.DatabaseSettings.DatebaseName.missing=Please specify the name of the database.
+errors.DatabaseSettings.DatebasePort.missing=Please specify the port to connect to the database on.
+errors.DatabaseSettings.DatebaseUsername.missing=Please specify the database username.
+errors.DatabaseSettings.DatebasePassword.missing=Please re-enter the database password.
+errors.DatabaseSettings.InvalidParameters=Could not connect to the database with the parameters you specified.

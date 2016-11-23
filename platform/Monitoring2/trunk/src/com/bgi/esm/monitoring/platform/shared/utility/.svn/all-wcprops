@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/614/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility
+END
+EventMineQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/167/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/EventMineQueue.java
+END
+SuppressionQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/SuppressionQueue.java
+END
+OviRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/452/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/OviRuleSet.java
+END
+AbstractTopic.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/604/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/AbstractTopic.java
+END
+DrainQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/DrainQueue.java
+END
+AbstractQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/438/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/AbstractQueue.java
+END
+StormQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/esm-platform/!svn/ver/227/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/StormQueue.java
+END
+ThrottleQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/178/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/ThrottleQueue.java
+END
+OviPublisher.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/161/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/OviPublisher.java
+END
+DataMapQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/178/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/DataMapQueue.java
+END
+OviChangedEventRuleSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/esm-platform/!svn/ver/467/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/OviChangedEventRuleSet.java
+END
+XmlParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/604/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/XmlParser.java
+END
+JmsFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/614/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/JmsFacade.java
+END
+Base64.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/esm-platform/!svn/ver/241/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/Base64.java
+END
+DispatcherQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/178/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/shared/utility/DispatcherQueue.java
+END

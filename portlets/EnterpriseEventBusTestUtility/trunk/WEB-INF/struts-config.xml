@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<!-- Forms Beans -->
+
+	<form-beans>
+		<form-bean name="subscribeForm" type="com.liferay.struts.struts.form.SubscribeForm" />
+		<form-bean name="unsubscribeForm" type="com.liferay.struts.struts.form.UnsubscribeForm" />
+		<form-bean name="uploadForm" type="com.liferay.struts.struts.form.UploadForm" />
+	</form-beans>
+
+	<!-- Action Mappings -->
+
+	<action-mappings>
+         <action path="/view"                  include="/html/view.jsp"        />
+	</action-mappings>
+
+	<!-- Custom Request Processor -->
+
+	<controller processorClass="org.apache.portals.bridges.struts.PortletTilesRequestProcessor" />
+
+	<!-- Message Resources -->
+
+	<message-resources parameter="content.test.Language" />
+
+	<!-- Tiles Plugin -->
+
+	<plug-in className="org.apache.struts.tiles.TilesPlugin" >
+		<set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="moduleAware" value="true" />
+		<set-property property="definitions-parser-validate" value="true" />
+	</plug-in>
+
+	<!-- Validator Plugin -->
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+</struts-config>

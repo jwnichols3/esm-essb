@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/577/trunk/Portlets/PortalAuthentication/trunk/src/com/bgi/esm/authentication/ldap/liferay
+END
+LDAPAuthenticator4_1_x.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/430/trunk/Portlets/PortalAuthentication/trunk/src/com/bgi/esm/authentication/ldap/liferay/LDAPAuthenticator4_1_x.java
+END
+LDAPAuthenticator4_2_x.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/577/trunk/Portlets/PortalAuthentication/trunk/src/com/bgi/esm/authentication/ldap/liferay/LDAPAuthenticator4_2_x.java
+END
+LDAPAuthenticator3_6_x.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/esm-platform/!svn/ver/577/trunk/Portlets/PortalAuthentication/trunk/src/com/bgi/esm/authentication/ldap/liferay/LDAPAuthenticator3_6_x.java
+END

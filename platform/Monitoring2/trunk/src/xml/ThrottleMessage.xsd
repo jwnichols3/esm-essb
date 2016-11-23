@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tm="http://www.bgi.com/ems/replatform/xml/ThrottleMessage.xsd"
+    attributeFormDefault="qualified" elementFormDefault="qualified">
+    <!--  -->
+    <xs:include schemaLocation="file:/home/gsc/bgi_ems/replatform/xml/TicketMessage.xsd"/>
+    <!--  -->
+    <xs:complexType name="ThrottleMessageType">
+        <xs:sequence>
+            <xs:element name="ticket" type="ems:TicketMessageType">
+                <xs:annotation>
+                    <xs:documentation>zzz</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="map" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>zzz</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

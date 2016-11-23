@@ -1,0 +1,64 @@
+#
+# Title:
+#   ant.properties
+#
+# Description:
+#   Local ant configuration file.
+#
+# Development Environment:
+#   Fedora Core 4
+#   Sun Java 1.5.0_06
+#   Apache Ant 1.6.5
+#
+# Author:
+#   G.S. Cole (guycole at gmail dot com)
+#
+# ---Project Name---
+#
+project_name=replatform2
+#
+###############################################
+# ---Compiler---
+###############################################
+javac.debug=on
+javac.deprecation=on
+javac.optimize=off
+javac.verbose=off
+###############################################
+# ---Base Directory---
+###############################################
+#base.dir=/home/gsc/bgi_ems/replatform2
+base.dir=c:/repo1/esm-platform
+base.lib.dir=${base.dir}/CommonLibraries
+project.dir=${base.dir}/platform/monitoring2/trunk
+#
+client.jar=replatform_client.jar
+ear.jar=replatform.ear
+server.jar=replatform_server.jar
+###############################################
+# ---JavaDoc---
+###############################################
+javadoc.dir=${base.dir}/javadoc
+###############################################
+# ---JNDI---
+###############################################
+jndi.base=replatform
+###############################################
+# ---WebLogic---
+###############################################
+weblogic.dir=c:/bea9.2/weblogic92
+###############################################
+# ---XDoclet---
+###############################################
+#xdoclet.home.dir=/usr/local/java/xdoclet-1.2.3
+xdoclet.home.dir=c:/java/xdoclet-1.2.3
+xdoclet.force=false
+xdoclet.verbose=true
+xdoclet.ejb.version=2.0
+xdoclet.jboss.version=4.0
+#xdoclet.type.mapping=PostgreSQL 7.2
+xdoclet.type.mapping=SQL_SERVER
+#xdoclet.datasource=java:/ReplatformDS
+xdoclet.datasource=ReplatformDS
+xdoclet.weblogic.version=8.1
+#

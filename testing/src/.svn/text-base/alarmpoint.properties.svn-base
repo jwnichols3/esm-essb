@@ -1,0 +1,29 @@
+#
+#  The login and connection information to the alarmpoint server to test
+#
+#alarmpoint.testcase.hostname=calntesv818
+alarmpoint.testcase.hostname=ldnntalp004
+alarmpoint.testcase.port_num=8888
+alarmpoint.testcase.username=admin
+alarmpoint.testcase.password=HYPertext01
+
+#
+#  Alarmpoint database connection information
+#
+alarmpoint.database.driver=net.sourceforge.jtds.jdbc.Driver
+alarmpoint.database.connection_url=jdbc:jtds:sqlserver://calntesv818:1433/alarmpoint3
+alarmpoint.database.username=alarmpoint3
+alarmpoint.database.password=HYPertext01
+
+
+#
+#  Alarmpoint username to test
+#
+alarmpoint.testcase.web_login.username=linden
+alarmpoint.testcase.web_login.first_name=Dennis
+alarmpoint.testcase.web_login.last_name=Lin
+alarmpoint.testcase.web_login.email=dennis.s.lin@barclaysglobal.com
+alarmpoint.testcase.web_login.phone_work=(415)908-7706
+alarmpoint.testcase.web_login.phone_mobile=(415)260-5461
+
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/623/trunk/Portlets/EEBEventLog/trunk/WEB-INF/src
+END
+jndi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/531/trunk/Portlets/EEBEventLog/trunk/WEB-INF/src/jndi.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/428/trunk/Portlets/EEBEventLog/trunk/WEB-INF/src/log4j.properties
+END

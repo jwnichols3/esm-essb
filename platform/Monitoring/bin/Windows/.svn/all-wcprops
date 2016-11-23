@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/esm-platform/!svn/ver/22/trunk/Platform/Monitoring/bin/Windows
+END
+EventMine1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/EventMine1.bat
+END
+Suppression1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Suppression1.bat
+END
+Suppression2.bat
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Suppression2.bat
+END
+Notifier1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Notifier1.bat
+END
+Killer1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Killer1.bat
+END
+environment.bat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/22/trunk/Platform/Monitoring/bin/Windows/environment.bat
+END
+StormTest1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/StormTest1.bat
+END
+Throttle1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Throttle1.bat
+END
+Dispatcher1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/21/trunk/Platform/Monitoring/bin/Windows/Dispatcher1.bat
+END
+DataMap1.bat
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/esm-platform/!svn/ver/22/trunk/Platform/Monitoring/bin/Windows/DataMap1.bat
+END

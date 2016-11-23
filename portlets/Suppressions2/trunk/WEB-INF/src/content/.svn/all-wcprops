@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content
+END
+databases.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/499/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases.properties
+END
+databases_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_zh.properties
+END
+help.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/442/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/help.properties
+END
+databases_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_de.properties
+END
+databases_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/433/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_ja.properties
+END
+help_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/442/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/help_ja.properties
+END
+databases_zh_tw.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_zh_tw.properties
+END
+databases_zh_cn.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_zh_cn.properties
+END
+databases_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/590/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_en.properties
+END
+databases_zh_hk.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_zh_hk.properties
+END
+errors.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/442/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/errors.properties
+END
+suppressions.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/500/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/suppressions.properties
+END
+databases_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_fr.properties
+END
+databases_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_es.properties
+END
+databases_ko.properties
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/content/databases_ko.properties
+END

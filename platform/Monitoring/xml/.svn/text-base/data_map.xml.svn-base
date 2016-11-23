@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmsContainer xmlns="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.bgi.com/ems/replatform/xml/Replatform1.xsd file:/home/gsc/bgi_ems/replatform/xml/Replatform1.xsd">
+   <DataMapMessage>
+       <ticket>
+           <message_id>3456</message_id>
+           <source_node>source node</source_node>
+           <source_node_type>node type</source_node_type>
+           <creation_date>2006-12-31</creation_date>
+           <creation_time>12:34:45</creation_time>
+           <receive_date>2006-11-23</receive_date>
+           <receive_time>09:12:34</receive_time>
+           <application>app</application>
+           <message_group>group</message_group>
+           <object>object</object>
+           <severity>severity</severity>
+           <operators>
+               <operator>op1</operator>
+               <operator>op2</operator>
+           </operators>
+           <message_text>test1</message_text>
+           <instruction_text>test2</instruction_text>
+           <message_attributes>
+               <attribute>
+                   <key>key3</key>
+                   <value>val3</value>
+               </attribute>
+           </message_attributes>
+           <suppress_count>12</suppress_count>
+       </ticket>
+   </DataMapMessage>
+</EmsContainer>

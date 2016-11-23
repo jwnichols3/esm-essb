@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/struts.jar
+END
+msbase.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/msbase.jar
+END
+msutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/msutil.jar
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/util-taglib.jar
+END
+httpunit-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/httpunit-1.6.2.jar
+END
+mssqlserver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/mssqlserver.jar
+END
+jTDS2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/jTDS2.jar
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/ojdbc14.jar
+END
+jconn2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/jconn2.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/util-java.jar
+END
+util-jsf.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/util-jsf.jar
+END
+oro.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/oro.jar
+END
+portals-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/portals-bridges.jar
+END
+postgresql-8.1-405.jdbc3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/postgresql-8.1-405.jdbc3.jar
+END
+jtds-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/jtds-1.2.jar
+END
+jcommon.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/esm-platform/!svn/ver/74/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/jcommon.jar
+END
+mysql-connector-java-3.1.13-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/esm-platform/!svn/ver/569/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/lib/mysql-connector-java-3.1.13-bin.jar
+END

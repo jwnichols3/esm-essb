@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/176/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress
+END
+TestHarness.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm-platform/!svn/ver/67/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/TestHarness.java
+END
+BuildHarness.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/esm-platform/!svn/ver/13/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/BuildHarness.java
+END
+SuppressionRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/esm-platform/!svn/ver/67/trunk/Tools/CommandLineSuppression/src/com/bgi/esm/platform/VpoSuppress/SuppressionRecord.java
+END

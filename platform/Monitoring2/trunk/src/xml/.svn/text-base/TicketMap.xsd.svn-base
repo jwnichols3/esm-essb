@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ems="http://www.bgi.com/ems/replatform/xml/TicketMap.xsd" attributeFormDefault="qualified"
+  elementFormDefault="qualified"
+  targetNamespace="http://www.bgi.com/ems/replatform/xml/TicketMap.xsd">
+  <!--  -->
+  <xs:annotation>
+    <xs:documentation>TicketMap is employed by the DataMap buss module to route OVO ticket notifications</xs:documentation>
+  </xs:annotation>
+  <!--  -->
+  <xs:element name="TicketMapList" type="ems:TicketMapListType">
+    <xs:annotation>
+      <xs:documentation>list of TicketMap</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <!--  -->
+  <xs:complexType name="TicketMapListType">
+    <xs:sequence>
+      <xs:element name="TicketMap" type="ems:TicketMapType" minOccurs="1" maxOccurs="unbounded">
+        <xs:annotation>
+          <xs:documentation>list of ticket maps</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <!--  -->
+  <xs:complexType name="TicketMapType">
+    <xs:all>
+      <xs:element name="group" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>BGI business group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="method" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>alert method</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="support_group" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>support group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="support_script" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>support script</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem_category" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>problem category</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem_subcategory" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>problem subcategory</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem_product" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>problem product</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem" type="xs:string" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>problem type</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem_assignment_group" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>problem assignment group</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="problem_location" type="xs:string" minOccurs="1" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation>site location</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  <!--  -->
+</xs:schema>

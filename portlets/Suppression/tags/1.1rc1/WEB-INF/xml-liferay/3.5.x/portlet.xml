@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app id="blank-struts-demo" version="1.0">
+  <portlet id="BlankStrutsPortletDemo">
+    <init-param>
+      <name>ServletContextProvider</name>
+      <value>com.liferay.portal.apache.bridges.LiferayServletContextProvider</value>
+    </init-param>
+    <init-param>
+      <name>ViewPage</name>
+      <value>/Welcome.do</value>
+    </init-param>
+    <init-param>
+      <name>HelpPage</name>
+      <value>/Tour.do</value>
+    </init-param>
+    <portlet-name>BlankStrutsPortletDemo</portlet-name>
+    <display-name>Blank Struts Portlet Demo</display-name>
+    <description>This is the struts MailReader portlet demo</description>
+    <portlet-class>com.liferay.portal.apache.bridges.LiferayStrutsPortlet</portlet-class>
+    <expiration-cache>-1</expiration-cache>
+    <supports>
+      <mime-type>text/html</mime-type>
+      <portlet-mode>VIEW</portlet-mode>
+      <portlet-mode>HELP</portlet-mode>
+    </supports>
+    <portlet-info>
+      <title>Blank Struts Mail Reader Demo</title>
+      <short-title>Blank Struts Portlet Demo</short-title>
+      <keywords>Struts, Mailer, Blank</keywords>
+    </portlet-info>
+  </portlet>
+</portlet-app>
+

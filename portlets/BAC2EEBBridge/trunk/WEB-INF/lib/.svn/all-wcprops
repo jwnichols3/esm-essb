@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib
+END
+struts.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/struts.jar
+END
+replatform_client.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/replatform_client.jar
+END
+util-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/util-taglib.jar
+END
+commons-digester.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-digester.jar
+END
+derbyclient-10.3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/derbyclient-10.3.2.1.jar
+END
+derby-10.3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/derby-10.3.2.1.jar
+END
+liferay-struts-portlet.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/liferay-struts-portlet.jar
+END
+util-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/util-bridges.jar
+END
+util-java.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/util-java.jar
+END
+commons-logging-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-logging-1.1.jar
+END
+commons-fileupload.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-fileupload.jar
+END
+commons-validator.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-validator.jar
+END
+commons-beanutils.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-beanutils.jar
+END
+log4j-1.2.13.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/log4j-1.2.13.jar
+END
+commons-logging.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/commons-logging.jar
+END
+portals-bridges.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/portals-bridges.jar
+END
+portals-bridges-struts-1.2.7-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/esm-platform/!svn/ver/595/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/lib/portals-bridges-struts-1.2.7-1.0.jar
+END

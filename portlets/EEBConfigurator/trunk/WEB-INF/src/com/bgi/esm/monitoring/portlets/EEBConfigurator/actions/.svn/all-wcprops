@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/EEBConfigurator/actions
+END
+InitPropertyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/EEBConfigurator/actions/InitPropertyAction.java
+END
+EditPropertyAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/540/trunk/Portlets/EEBConfigurator/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/EEBConfigurator/actions/EditPropertyAction.java
+END

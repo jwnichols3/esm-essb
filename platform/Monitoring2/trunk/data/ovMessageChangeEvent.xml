@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ovMessageChangeEvent xmlns="http://openview.hp.com/xmlns/ico/message" version="1.0">
+    <changeEventTypeList>
+        <changeEventType>AnnotationChange</changeEventType>
+    </changeEventTypeList>
+    <changeEventData application="OVO">
+        <timeStamp>
+            <seconds>1222792942</seconds>
+            <dateTime>2008-09-30T09:42:22-07:00</dateTime>
+        </timeStamp>
+        <dataList/>
+    </changeEventData>
+    <ovMessage v/rsion="1.0">
+        <messageEnvelope>
+            <messageUUID>ede05fbe-8f09-71dd-0f54-4534361c0000</messageUUID>
+            <timeStamp>
+            <seconds>1222790869</seconds>
+            <dateTime>2008-09-30T09:07:49-07:00</dateTime>
+            </timeStamp>
+            <severity>Minor</severity>
+            <messageSource>sfouxsrv180.insidelive.net</messageSource>
+            <eventSource>sfouxsrv180.insidelive.net</eventSource>
+            <primaryMessageRepository/>
+            <messageMetadataIdentifier/>
+            <managedEntityReference/>
+        </messageEnvelope>
+        <messageBody>
+            <owner/>
+            <numberOfDuplicates>0</numberOfDuplicates>
+            <messageKey></messageKey>
+            <messageKeyRelation></messageKeyRelation>
+            <state>ACTIVE</state>
+            <creatingCondition/>
+            <messageData application="OVO">
+                <data>
+                    <name>INSTANCE</name>
+                    <value type="string">&lt;$OPTION(instance)&gt;</value>
+                </data>
+                <data>
+                    <name>application</name>
+                    <value type="string">SSM-no-app-def</value>
+                </data>
+                <data>
+                    <name>group</name>
+                    <value type="string">eeb</value>
+                </data>
+                <data>
+                    <name>lastReceiveTimeSeconds</name>
+                    <value type="long">1222790871</value>
+                </data>
+                <data>
+                    <name>object</name>
+                    <value type="string">SSM-no-obj-def-CLI</value>
+                </data>
+                <data>
+                    <name>originalText</name>
+                    <value type="string">Node:          
+                    Message group: eeb
+                    Application:   SSM-no-app-def
+                    Object:        SSM-no-obj-def-CLI
+                    Severity:      Minor
+                    Text:          CLI-test eeb - alarmpoint script - 001
+                    </value>
+                </data>
+                <data>
+                    <name>receiveTimeSeconds</name>
+                    <value type="long">1222790871</value>
+                </data>
+                <data>
+                    <name>serviceName</name>
+                    <value type="string">INFRA@@sfouxsrv180.insidelive.net</value>
+                </data>
+                <data>
+                    <name>source</name>
+                    <value type="string">SSM - opcmsg</value>
+                </data>
+                <data>
+                    <name>text</name>
+                    <value type="string">test eeb - alarmpoint script - 001</value>
+                </data>
+                <data>
+                    <name>type</name>
+                    <value type="string"></value>
+                </data>
+                <data sequenceNumber="1">
+                    <name>annotation</name>
+                    <value type="string">[ESM-EnterpriseEventBus::ServiceCenterBuffer] Created Service Center Ticket #IM74573</value>
+                </data>
+                <data sequenceNumber="2">
+                    <name>annotation</name>
+                    <value type="string">[ESM-EnterpriseEventBus::ServiceCenterBuffer] Created Service Center Ticket #IM74573</value>
+                </data>
+            </messageData>
+            <actionResult/>
+            <messageMetadataAnnotation/>
+        </messageBody>
+    </ovMessage>
+</ovMessageChangeEvent>> 

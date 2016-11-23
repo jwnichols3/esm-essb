@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat
+END
+naming-factory-dbcp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/naming-factory-dbcp.jar
+END
+jasper-runtime.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/jasper-runtime.jar
+END
+commons-el.jar
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/commons-el.jar
+END
+jasper-compiler-jdt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/jasper-compiler-jdt.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/servlet-api.jar
+END
+jasper-compiler.jar
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/jasper-compiler.jar
+END
+naming-factory.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/naming-factory.jar
+END
+naming-resources.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/naming-resources.jar
+END
+jsp-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/esm-platform/!svn/ver/18/trunk/CommonLibraries/Tomcat/jsp-api.jar
+END

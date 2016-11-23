@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project name="Library - Starter" default="help" basedir=".">
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+    <property file="./build.properties"/>
+    <import file="../../build-library-common.xml"/>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property name="library-name" value="bgi-authentication"/>
+
+	<target name="test-imap" depends="compile">
+		<echo>Testing authenticating against IMAP servers...</echo>
+		<echo></echo>
+		<java classname="com.bgi.esm.authentication.imap.IMAPConnection" fork="true">
+			<classpath refid="project.classpath"/>
+		</java>
+	</target>
+
+	<target name="test-ldap" depends="compile">
+		<echo>Testing authenticating against LDAP servers...</echo>
+		<echo></echo>
+		<java classname="com.bgi.esm.authentication.ldap.LDAPConnection" fork="true">
+			<classpath refid="project.classpath"/>
+		</java>
+	</target>
+
+	<target name="test-ldap2" depends="compile">
+		<echo>Testing authenticating against LDAP servers with BGI library...</echo>
+		<echo></echo>
+		<java classname="test_ldap" fork="true">
+			<classpath refid="project.classpath"/>
+		</java>
+	</target>
+</project>
+

@@ -1,0 +1,97 @@
+##########################################################################################
+##########################################################################################
+    Text properties for the 'test_throttle' database
+##########################################################################################
+##########################################################################################
+databases.records.edit=Edit
+databases.records.add=Add New Record
+databases.records.audit_trail=Audit Trail
+databases.records.audit_timestamp=Timestamp
+databases.records.audit_version_num=Version Num.
+databases.records.audit_modified_by=Modified By
+
+databases.records.next=Next Set
+databases.records.prev=Prev Set
+
+
+databases.test_throttle.home.display_name=Home
+
+databases.test_throttle.throttle.display_name.throttle_overview=\
+A "throttle" rule will batch up several notifications to the same group into a single action.\
+<br>\
+<br>\
+Actions can be associated with various "storm" levels.\  The handling of a relatively infrequent \
+stream of events (say 1 event every minute) should be different from a very large stream of events \
+(20 events per second).  \
+<br>\
+<br>\
+There are three levels of storms that can be specified at the current time. and there three different \
+types of actions that can be associated with each storm level.
+
+
+databases.test_throttle.throttle.display_name.throttle_view=\
+<b>Getting Started</b>\
+<br>\
+<br>\
+<center>\
+    <table border="1" width="80%">\
+        <tr>\
+            <th valign="top">Add a Rule</th>\
+            <td>\
+                Click on the "Add New Record" link right beneath this table.  More \
+                instructions will follow.\
+            </td>\
+        </tr>\
+        <tr>\
+            <th valign="top">Edit an Existing Rule</th>\
+            <td>\
+                Click on the "Edit" link to the left of the rule that you want to edit.  You \
+                can also scroll through the pages of rules by using the Next Set" and "Prev Set" \
+                links located right above the table.\
+            </td>\
+        </tr>\
+    </table>\
+</center>
+
+databases.test_throttle.throttle.display_name.throttle_add=\
+<b>Adding a Throttle Rule</b>\
+<br>\
+<br>\
+Please fill in the following fields.  All fields are required.
+
+
+databases.test_throttle.throttle.display_name.throttle_edit=\
+<b>Editing a Rule</b>\
+<br>\
+<br>\
+Please change the values as you deem necessary.\
+<br>\
+<b>NOTE:</b> All fields are required.\
+<br>\
+<b>NOTE:</b> Records of past changes are listed below the form.
+
+
+##########################################################################################
+    Text properties for the 'throttle' table
+##########################################################################################
+databases.test_throttle.throttle.display_name=Throttle
+databases.test_throttle.throttle.rule_id.display_name=Rule ID
+databases.test_throttle.throttle.row_id.display_name=Row ID
+
+databases.test_throttle.throttle.bgi_group.display_name=BGI Group
+databases.test_throttle.throttle.bgi_group.instructions=BGI Group
+
+databases.test_throttle.throttle.storm_level.display_name=StormLevel
+databases.test_throttle.throttle.storm_level.instructions=StormLevel
+
+databases.test_throttle.throttle.duration.display_name=Duration
+databases.test_throttle.throttle.duration.instructions=Duration
+
+databases.test_throttle.throttle.threshold.display_name=Threshold
+databases.test_throttle.throttle.threshold.instructions=Threshold
+
+databases.test_throttle.throttle.action.display_name=Action
+databases.test_throttle.throttle.action.instructions=Action
+
+databases.test_throttle.throttle.message_flag.display_name=MessageFlag
+databases.test_throttle.throttle.message_flag.instructions=Messaging Flag

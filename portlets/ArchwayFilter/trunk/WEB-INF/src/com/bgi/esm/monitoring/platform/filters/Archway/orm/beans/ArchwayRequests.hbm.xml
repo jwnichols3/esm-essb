@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.platform.filters.Archway.orm.beans.ArchwayRequestBean" table="archway_requests" >
+        <id name="RequestID" column="request_id">
+            <generator class="native" />
+        </id>
+        <property name="ServerName"       type="string"       column="server_name"       />
+        <property name="ServerPort"       type="int"          column="server_port"       />
+        <property name="RequestTime"      type="calendar"     column="request_time"      />
+        <property name="ProcessedTime"    type="calendar"     column="processed_time"    />
+        <property name="StringAttributes" type="string"       column="string_attributes" />
+        <property name="StringParameters" type="string"       column="string_parameters" />
+        <property name="StringCookies"    type="string"       column="string_cookies"    />
+        <property name="QueryString"      type="string"       column="query_string"      />
+        <property name="Method"           type="string"       column="method"            />
+        <property name="RemoteUser"       type="string"       column="remote_user"       />
+    </class>
+</hibernate-mapping>
+

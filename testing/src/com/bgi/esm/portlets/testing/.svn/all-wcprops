@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/esm-platform/!svn/ver/628/trunk/Testing/src/com/bgi/esm/portlets/testing
+END
+VPOTestcase.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/11/trunk/Testing/src/com/bgi/esm/portlets/testing/VPOTestcase.java
+END
+AlarmpointTestcase.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/esm-platform/!svn/ver/438/trunk/Testing/src/com/bgi/esm/portlets/testing/AlarmpointTestcase.java
+END
+SuppressionTestcase.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/esm-platform/!svn/ver/220/trunk/Testing/src/com/bgi/esm/portlets/testing/SuppressionTestcase.java
+END
+EEBTestcase.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/com/bgi/esm/portlets/testing/EEBTestcase.java
+END
+LiferayTestcase.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/628/trunk/Testing/src/com/bgi/esm/portlets/testing/LiferayTestcase.java
+END
+WebTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/esm-platform/!svn/ver/87/trunk/Testing/src/com/bgi/esm/portlets/testing/WebTestCase.java
+END

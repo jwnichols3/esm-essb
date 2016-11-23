@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.hibernate.HttpHeader" table="http_header" >
+        <id name="RowID" column="row_id" type="text"          >
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"          type="text"         column="request_id"         />
+        <property name="HeaderName"         type="text"         column="header_name"        />
+        <property name="HeaderPersistence"  type="text"         column="header_persistence" />
+    </class>
+</hibernate-mapping>

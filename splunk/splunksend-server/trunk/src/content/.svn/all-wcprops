@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content
+END
+databases.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases.properties
+END
+databases_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_zh.properties
+END
+databases_zh_cn.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_zh_cn.properties
+END
+databases_en.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_en.properties
+END
+databases_zh_hk.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_zh_hk.properties
+END
+databases_es.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_es.properties
+END
+databases_fr.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_fr.properties
+END
+databases_de.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_de.properties
+END
+databases_ko.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_ko.properties
+END
+databases_ja.properties
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_ja.properties
+END
+databases_zh_tw.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/src/content/databases_zh_tw.properties
+END

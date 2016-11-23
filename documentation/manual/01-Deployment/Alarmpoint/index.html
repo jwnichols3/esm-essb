@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <td><a href="../../../index.html">Home</a></td>
+                <td><a href="../../../00-Overview/index.html">Overview</a></td>
+                <td><a href="../../../01-Deployment/index.html">How do I deploy an instance of the EEB</a></td>
+                <td><a href="../../../02-Migration/index.html">How do I add a group to the EEB?</a></td>
+                <td><a href="../../../03-HowTos/index.html">Step-by-step How-Tos</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="../index.html">&lt;&lt; Back</a>
+        <br>
+        <br>
+        <h1>Setting up the Alarmpoint Integration client.</h1>
+        <br>
+        <br>
+        <center>
+            <table border="0" width="80%">
+                <tr>
+                    <td valign="top">1.</td>
+                    <td>
+                        Make sure that the Service Center integration binary is 
+                        in the Alarmpoint Java Client directory.
+                        <br>
+                        <br>
+                        The name of this binary is <b><i>scgateway_ws_client.exe</i></b>.
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">2.</td>
+                    <td>
+                        Change the "APAgent.xml" file under the "etc" directory 
+                        in the Alarmpoint Java Client directory.
+                        <br>
+                        <br>
+                        There will be a line that looks like the following:
+                        <br>
+                        <br>
+                        <center>
+                            <table border="0" width="80%">
+                                <tr>
+                                    <td>
+                                        eebUpdateCommand.append ( "cmd /c c:\\APAgent\\scgateway_ws_client.exe -mode=<b><i>qa</i></b> -command=updateIncident -incidentID=" );
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                        <br>
+                        <br>
+                        Make sure that the only one of the following lines (
+                        dev, qa, ppc, prod) is uncommented.  There are two 
+                        places in the APAgent.xml file that needs to be changed.
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">3.</td>
+                    <td>
+                        Restart the Alarmpoint Java Client.
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

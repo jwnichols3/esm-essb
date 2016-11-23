@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/79/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/test
+END
+TestDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/79/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/test/TestDatabase.java
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/esm-platform/!svn/ver/76/trunk/Portlets/MonitoringPlatformAdmin/WEB-INF/src/com/bgi/esm/monitoring/portlets/MonitoringPlatformAdmin/test/CommonTestCase.java
+END

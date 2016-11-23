@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/html
+END
+nav.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/esm-platform/!svn/ver/310/trunk/Portlets/DataMap/trunk/html/nav.jsp
+END
+data_map_add_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/310/trunk/Portlets/DataMap/trunk/html/data_map_add_success.jsp
+END
+data_map_search_result.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/html/data_map_search_result.jsp
+END
+view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/403/trunk/Portlets/DataMap/trunk/html/view.jsp
+END
+data_map_edit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/628/trunk/Portlets/DataMap/trunk/html/data_map_edit.jsp
+END
+data_map_audit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/572/trunk/Portlets/DataMap/trunk/html/data_map_audit.jsp
+END
+data_map_add.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/esm-platform/!svn/ver/623/trunk/Portlets/DataMap/trunk/html/data_map_add.jsp
+END
+data_map_view.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/html/data_map_view.jsp
+END
+data_map_edit_success.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/esm-platform/!svn/ver/310/trunk/Portlets/DataMap/trunk/html/data_map_edit_success.jsp
+END
+init.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/esm-platform/!svn/ver/392/trunk/Portlets/DataMap/trunk/html/init.jsp
+END

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<publisherPluglet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="/opt/OV/schema/OVI/jms/PublisherPluglet.xsd">
+    <topicConnection>
+
+        <connectionFactory>
+            <!--
+                Get the JMS topic connection factory using reflection
+                given the JMS TopicConnectionFactory class
+            -->
+            <!-- Commented out - Currently using JNDI
+            <reflection>
+                <className>progress.message.jclient.TopicConnectionFactory</className>
+                <parameter>
+                    <name>broker</name>
+                    <type>java.lang.String</type>
+                    <value>jmsserver.mycompany.com:2506</value>
+                </parameter>
+            </reflection>
+            -->
+
+            <!--
+                Get the JMS topic connection factory using JNDI
+            -->
+            
+            <jndi>
+                <initialContextFactory>weblogic.jndi.WLInitialContextFactory</initialContextFactory>
+                <providerUrl>t3://caldtw9pc30227:7001</providerUrl>
+                <jndiName>weblogic.jms.ConnectionFactory</jndiName>
+            </jndi>
+            <!--
+            <jndi>
+                <initialContextFactory>weblogic.jndi.WLInitialContextFactory</initialContextFactory>
+                <providerUrl>t3://calntesm201:7001</providerUrl>
+                <jndiName>weblogic.jms.ConnectionFactory</jndiName>
+            </jndi>
+            -->
+            
+        </connectionFactory>
+
+        <!--
+            Specify the JMS connection information
+        -->
+        <connection>
+            <userName>weblogic</userName>
+            <!--
+                If you wish to not use encrypted passwords use the following
+                XML tag.
+            <password>pass</password>
+            -->
+            <!--
+                Use the OviEncryptUtil script to encrypt the password string.
+            -->
+            <encryptedPassword>BAEGHkoDDAc=</encryptedPassword>
+
+            <!--
+                If the <clientID> tag is present then a clientID will be set
+                for the connection. Otherwise no clientID will be set.
+                Some JMS implementations (e.g. by Tibco) need a clientID to be
+                set, e.g. when dealing with durable subscriptions. The IDs
+                should be unique for each JMS connection.
+            -->
+            <!-- Currently commented out - no clientID will be set
+            <clientID>client0</clientID>
+            -->
+        </connection>
+
+    </topicConnection>
+
+    <!--
+        Specify the publisher JMS properties
+    -->
+    <jmsSettings>
+        <!--
+            Specify the JMS Topic to publish to
+        -->
+        <topic>EsmJmsServer/EsmJmsModule!OvMsgEventNotify</topic>
+        <!--
+        <topic>EsmJmsServer/EsmSystemModule!OvMsgEventNotify</topic>
+        -->
+
+        <persistent>true</persistent>
+        <priority>4</priority>
+        <timeToLive>30000</timeToLive>
+    </jmsSettings>
+
+    <!--
+        Switch on message trace logging
+    -->
+    <traceMessages>false</traceMessages>
+
+    <!--
+        Switch on message route logging
+    -->
+    <traceRoute>false</traceRoute>
+
+</publisherPluglet>

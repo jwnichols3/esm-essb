@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb
+END
+OvMessageBuilderFactoryJAXBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb/OvMessageBuilderFactoryJAXBImpl.java
+END
+OvMessageJAXBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb/OvMessageJAXBImpl.java
+END
+OvMessageBuilderJAXBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb/OvMessageBuilderJAXBImpl.java
+END
+OvMessageNamespacePrefixMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb/OvMessageNamespacePrefixMapper.java
+END
+OvMessageDatatypeConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/esm-platform/!svn/ver/439/trunk/Testing/src/tools/testing/eeb/ovmessage/impl/jaxb/OvMessageDatatypeConverter.java
+END

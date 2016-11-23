@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+  <head>
+    <!--
+      Title:package.html
+
+      Description:JavaDoc package file
+
+      Development Environment:Fedora 4
+
+      Author:G.S. Cole (guycole at gmail dot com)
+    -->
+  </head>
+
+  <body bgcolor="white">
+    <b>Overview of Problem:</b>
+    <center>
+        <table border="1" width="80%">
+            <tr>
+                <td>
+                    In the original system, each discrete OVO event is processed atomically, in periods of peak
+                    activity the responsible administrator may receive literally thousands 
+                    of trouble tickets all with the same root cause (such as a file system
+                    failure, which causes all dependent applications to generate alarms).
+                </td>
+            </tr>
+        </table>
+    </center>
+    <center>
+        <table border="1" width="80%">
+            <tr>
+                <th>Use Case</th> 
+                <th>Description</th> 
+                <th>Use Case</th> 
+            </tr>
+            <tr>
+                <td valign="top">Simple Throttling</td>
+                <td>
+                    The goal of simple throttling is to modulate the OVO event stream and ensure 
+                    that in situations of peak alert activity system monitoring is assisting rather 
+                    than distracting the infrastructure team.
+                    <br>
+                    <br>
+                    Throttling monitors the activity level and determines the appropriate 
+                    action based upon user defined rules.  In the above scenario, after 
+                    certain conditions were satisfied, the alarms could be collected in a
+                    database whose contents could be accessed using a web browser.  Rather
+                    than dismiss each redundant message individually, the operator can
+                    concentrate on damage control.  The database hosted trouble log would
+                    also be available for post mortem analysis.  
+                    <br>
+                    <br>
+                    Simple throttling classifies activity into "storm levels" by user defined
+                    rules.  Each storm level can have multiple rules ("rule set") specifying 
+                    behavior and rules can specify overlapping behavior.  Conditions which 
+                    match multiple rules are arbitrated by consulting the rule priority.  
+                    <br>
+                    <br>
+                    "Storm Levels" is user defined by the following parameters:
+                    1) message group (joins w/OVO message and data map rule)
+                    2) priority (AKA "storm level", tie breaker, must be unique integer)
+                    3) duration (window in seconds)
+                    4) threshold (message count)
+                    5) action (passthru, spool, discard)
+                    <br>
+                    <br>
+                    Use case:
+                    Consider the message group "test group" which has the following rules:
+                    Storm Level:0, Duration:30 seconds, Threshold:0   messages, Action:PassThru
+                    Storm Level:1, Duration:90 seconds, Threshold:100 messages, Action:Spool
+                    Storm Level:2, Duration:90 seconds, Threshold:300 messages, Action:Discard
+                    <br>
+                    <br>
+                    This says for calm weather (level 0) messages are simply forwarded to the 
+                    dispatcher module (current OVO/AP/SC behavior).  Every rule set has at 
+                    least a level zero rule as default.
+                    <br>
+                    <br>
+                    If there are over 100 messages observed in any 90 second window, then a
+                    storm level 1 is declared and messages are now written to a database.
+                    Dispatcher will be sent summary messages that the storm has started, 
+                    when it has ended and periodic notices that a storm is still in progress.
+                    The summary messages will contain the URL where storm messages can be
+                    accessed.
+                    <br>
+                    <br>
+                    If there are over 300 messages in 90 seconds, then a storm level 2 is 
+                    declared.  OVO messages are discarded and, but dispatcher will still
+                    receive summary messages regarding storm start, storm end and storm in
+                    progress.
+                    <br>
+                    <br>
+                    Implementation:
+                    Throttle retains a hashmap which contains an object for each message group.
+                    As each message arrives, the supporting object is retrieved and the message
+                    processed according to the last calculated storm level.  Note that message
+                    arrival does not cause any storm calculations.
+                </td>
+                <td>
+                </td>
+            </tr>
+        </table>
+    </center>
+  </body>
+</html>

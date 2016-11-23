@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+   <endpoint
+      name="DataMapWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.DataMapWebService"
+      url-pattern="/DataMapWebService"/>
+   <endpoint
+      name="HttpAttributeWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.HttpAttributeWebService"
+      url-pattern="/HttpAttributeWebService"/>
+   <endpoint
+      name="HttpCookieWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.HttpCookieWebService"
+      url-pattern="/HttpCookieWebService"/>
+   <endpoint
+      name="HttpHeaderWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.HttpHeaderWebService"
+      url-pattern="/HttpHeaderWebService"/>
+   <endpoint
+      name="HttpParameterWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.HttpParameterWebService"
+      url-pattern="/HttpParameterWebService"/>
+   <endpoint
+      name="HttpRequestWebService"
+      implementation="com.bgi.esm.monitoring.splunk.splunk_send.server.apps.webservices.metro.HttpRequestWebService"
+      url-pattern="/HttpRequestWebService"/>
+</endpoints>

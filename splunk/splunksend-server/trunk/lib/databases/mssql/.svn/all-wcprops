@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql
+END
+jTDS2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/jTDS2.jar
+END
+mssqlserver.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/mssqlserver.jar
+END
+jconn2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/jconn2.jar
+END
+msbase.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/msbase.jar
+END
+msutil.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/msutil.jar
+END
+jtds-1.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/lib/databases/mssql/jtds-1.2.jar
+END

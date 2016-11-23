@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/256/trunk/Platform/Notifications/trunk/src/test
+END
+secondary-only.properties
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/esm-platform/!svn/ver/256/trunk/Platform/Notifications/trunk/src/test/secondary-only.properties
+END
+primary-only.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/256/trunk/Platform/Notifications/trunk/src/test/primary-only.properties
+END

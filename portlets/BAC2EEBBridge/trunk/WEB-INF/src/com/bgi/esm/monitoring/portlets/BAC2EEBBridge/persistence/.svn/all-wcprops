@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence
+END
+AbstractHttpParameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpParameter.java
+END
+AbstractHttpAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpAttribute.java
+END
+AbstractHttpFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpFinder.java
+END
+AbstractHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpRequest.java
+END
+AbstractHttpHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpHeader.java
+END
+AbstractHttpCookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/esm-platform/!svn/ver/599/trunk/Portlets/BAC2EEBBridge/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/BAC2EEBBridge/persistence/AbstractHttpCookie.java
+END

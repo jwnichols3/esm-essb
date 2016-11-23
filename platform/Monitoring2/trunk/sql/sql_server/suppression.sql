@@ -1,0 +1,20 @@
+create table suppression (
+  row_id            varchar(47)  primary key,
+  suppress_id       bigint       default 0,
+  start_time        datetime     not null,
+  notification_time datetime,
+  end_time          datetime     not null,
+  app_name          varchar(127) not null,
+  node_name         varchar(127) not null,
+  group_name        varchar(127) not null,
+  db_server         varchar(127) not null,
+  owner             varchar(127) not null,
+  deleted_flg       integer      default 0,
+  notify_flg        integer      default 0,
+  notify_email      varchar(255) not null,
+  is_notified       integer      default 0,
+  notify_minutes    integer      default 0,
+  remove_on_reboot  integer      default 0,
+  description       text         not null,
+  message           text         not null)
+

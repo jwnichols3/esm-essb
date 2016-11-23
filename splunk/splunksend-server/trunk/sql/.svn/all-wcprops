@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/sql
+END
+splunk_support_db.mysql.sql
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/sql/splunk_support_db.mysql.sql
+END
+splunk_support_db.mssql.create.sql
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/sql/splunk_support_db.mssql.create.sql
+END
+splunk_support_db.mssql.drop.sql
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/esm-platform/!svn/ver/635/trunk/Splunk/splunksend-server/trunk/sql/splunk_support_db.mssql.drop.sql
+END

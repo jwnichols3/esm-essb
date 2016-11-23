@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.persistence.hibernate.HibernateHttpRequest" table="http_requests" >
+        <id name="RowID" column="request_id" type="string">
+            <generator class="uuid" />
+        </id>
+        <property name="AuthType"              type="string"        column="auth_type"             />
+        <property name="ContextPath"           type="string"        column="context_path"          />
+        <property name="Method"                type="string"        column="method"                />
+        <property name="PathInfo"              type="string"        column="path_info"             />
+        <property name="PathInfoTranslated"    type="string"        column="path_info_translated"  />
+        <property name="RemoteUser"            type="string"        column="remote_user"           />
+        <property name="RequestedSessionID"    type="string"        column="requested_session_id"  />
+        <property name="RequestURI"            type="string"        column="request_uri"           />
+        <property name="RequestURL"            type="string"        column="request_url"           />
+        <property name="ServletPath"           type="string"        column="servlet_path"          />
+        <property name="UserPrincipal"         type="string"        column="user_principal"        />
+        <property name="CharacterEncoding"     type="string"        column="character_encoding"    />
+        <property name="ContentType"           type="string"        column="content_type"          />
+        <property name="LocalAddress"          type="string"        column="local_address"         />
+        <property name="Protocol"              type="string"        column="protocol"              />
+        <property name="RemoteAddress"         type="string"        column="remote_address"        />
+        <property name="RemoteHost"            type="string"        column="remote_host"           />
+        <property name="Scheme"                type="string"        column="scheme"                />
+        <property name="ServerName"            type="string"        column="server_name"           />
+        <property name="RequestTime"           type="calendar"      column="request_time"          />
+        <property name="ContentLength"         type="int"           column="content_length"        />
+        <property name="LocalPort"             type="int"           column="local_port"            />
+        <property name="RemotePort"            type="int"           column="remote_port"           />
+        <property name="ServerPort"            type="int"           column="server_port"           />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.persistence.hibernate.HibernateHttpParameter" table="http_request_parameters" >
+        <id name="RowID" column="row_id" type="string">
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"             type="string"        column="request_id"            />
+        <property name="ParameterName"         type="string"        column="parameter_name"        />
+        <property name="ParameterValue"        type="string"        column="parameter_persistence"       />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.persistence.hibernate.HibernateHttpAttribute" table="http_request_attributes" >
+        <id name="RowID" column="row_id" type="string">
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"             type="string"        column="request_id"            />
+        <property name="AttributeName"         type="string"        column="attribute_name"        />
+        <property name="AttributeValue"        type="string"        column="attribute_persistence"       />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.persistence.hibernate.HibernateHttpHeader" table="http_request_headers" >
+        <id name="RowID" column="row_id" type="string">
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"             type="string"        column="request_id"            />
+        <property name="HeaderName"            type="string"        column="header_name"           />
+        <property name="HeaderValue"           type="string"        column="header_persistence"          />
+    </class>
+
+    <class name="com.bgi.esm.monitoring.portlets.BAC2EEBBridge.persistence.hibernate.HibernateHttpCookie" table="http_request_cookies">
+        <id name="RowID" column="row_id" type="string">
+            <generator class="uuid" />
+        </id>
+        <property name="RequestID"             type="string"        column="request_id"            />
+        <property name="Comment"               type="string"        column="comment"               />
+        <property name="Domain"                type="string"        column="domain"                />
+        <property name="Path"                  type="string"        column="path"                  />
+        <property name="CookieName"            type="string"        column="cookie_name"           />
+        <property name="CookieValue"           type="string"        column="cookie_persistence"          />
+        <property name="Secure"                type="boolean"       column="is_secure"             />
+        <property name="MaxAge"                type="int"           column="max_age"               />
+        <property name="Version"               type="int"           column="version"               />
+    </class>
+</hibernate-mapping>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app id="blank-struts-demo" version="1.0">
+    <portlet id="BlankStrutsPortletDemo">
+        <!--  Liferay 4.2.x -->
+        <!--
+        <init-param>
+            <name>ServletContextProvider</name>
+            <value>com.liferay.portal.apache.bridges.LiferayServletContextProvider</value>
+        </init-param>
+        -->
+        <!--  Liferay 4.4.x -->
+		<init-param>
+			<name>ServletContextProvider</name>
+			<value>com.liferay.util.bridges.struts.LiferayServletContextProviderWrapper</value>
+		</init-param>
+        <init-param>
+            <name>ViewPage</name>
+            <value>/view.do</value>
+        </init-param>
+        <init-param>
+            <name>EditPage</name>
+            <value>/edit.do</value>
+        </init-param>
+        <init-param>
+            <name>HelpPage</name>
+            <value>/Tour.do</value>
+        </init-param>
+        <portlet-name>AlertSuppressionPortlet</portlet-name>
+        <display-name>Alert Suppressions Portlet</display-name>
+        <description></description>
+        <portlet-class>com.liferay.portal.apache.bridges.LiferayStrutsPortlet</portlet-class>
+        <expiration-cache>-1</expiration-cache>
+        <supports>
+            <mime-type>text/html</mime-type>
+            <portlet-mode>VIEW</portlet-mode>
+            <portlet-mode>EDIT</portlet-mode>
+            <portlet-mode>HELP</portlet-mode>
+        </supports>
+        <portlet-info>
+            <title>Alert Suppressions Portlet</title>
+            <short-title>Alert Suppressions Portlet</short-title>
+            <keywords>Struts, Mailer, Blank</keywords>
+        </portlet-info>
+    </portlet>
+</portlet-app>

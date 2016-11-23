@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<project name="Barclays Global Investors - JSR-168 Portlets" default="help" basedir=".">
+    <description>
+        The common build file for all of Barclays Global Investors' JSR-168 portlets
+    </description>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <import file="build-common.xml"/>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo> </echo>
+        <echo>Here are the following targets that this build file contains</echo>
+        <echo>    compile     compiles the entire source tree</echo>
+        <echo>    build       builds the portlet .war file</echo>
+        <echo>    clean       removes all intermediate build files</echo>
+        <echo>    hot-deploy  hot-deploys this portlet into Liferay</echo>
+        <echo></echo>
+        <echo>The following are targets to generate the portal server configuration files</echo>
+        <echo>    portlet-jboss</echo>
+        <echo></echo>
+        <echo>The following are targets for the automatic build process</echo>
+        <echo>    cvs-clean</echo>
+        <echo>    cvs-update</echo>
+        <echo></echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the portlet from the database schema
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="create_portlet" depends="compile">
+        <echo>Preparing necessary directories</echo>
+        <mkdir dir="WEB-INF/classes/content"/>
+        <mkdir dir="html/portlet/${portlet-name}" />
+        <echo>Creating all form beans and portlet actions from the database</echo>
+        <java classname="CreatePortlet" fork="true">
+            <jvmarg line="-Xms256M -Xmx512M"/>
+            <classpath refid="project.classpath"/>
+        </java>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="${local.build.path}" includeEmptyDirs="no">
+            <fileset dir="${local.src.path}">
+            <patternset>
+                <include name="**/*.conf"/>
+                <include name="**/*.properties"/>
+                <include name="**/*.bat"/>
+                <include name="**/*.xml"/>
+                <include name="**/*.tld"/>
+            </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files in build path: ${local.build.path}</echo>
+            
+        <delete>
+            <fileset dir="${local.build.path}" includes="**/*.class"/>
+            <fileset dir="." includes="${portlet-name}.war"/>
+            <fileset dir=".." includes="${portlet-name}.war"/>
+        </delete>
+        <delete dir="${local.build.path}" />
+    </target>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+        <mkdir dir="logs" />
+        <mkdir dir="${local.build.path}" />
+        <javac srcdir="${local.src.path}" destdir="${local.build.path}" debug="true" debuglevel="lines,vars,source" fork="true" memoryInitialSize="512m" memoryMaximumSize="1024m">
+            <classpath refid="project.classpath"/>
+        </javac>
+    </target>
+
+    <target name="test" depends="build">
+        <echo>Runs the functional test suite for the Ping Monitor</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="WEB-INF/src">
+                    <include name="**/Test*.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Publishes the portlet .war file from the compiled output
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="publish" depends="compile">
+        <echo>Creating portlet file ${portlet-name}.war...</echo>
+        <jar destfile="${portlet-name}.war">
+            <fileset dir="WEB-INF/classes" includes="**/*.class"/>
+            <fileset dir="WEB-INF/lib" includes="**/*.jar"/>
+            <fileset dir="WEB-INF/tld" includes="**/*.tld"/>
+            <fileset dir="WEB-INF" includes="**/*.xml"/>
+            <fileset dir="html" includes="**/*"/>
+        </jar>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Generate configuration templates for the JBoss Portal Server
+        ********************************************************************************
+        ********************************************************************************
+     -->
+	<target name="portlet-jboss">
+		<echo>Generating configuration files for the JBoss Portal Server...</echo>
+		<echo></echo>
+		<java classname="GenerateFromTemplates" fork="true">
+			<classpath refid="project.classpath"/>
+		</java>
+	</target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Creates the portlet .war file
+        ********************************************************************************
+        ********************************************************************************
+     -->
+
+    <target name="javadocs" depends="compile">
+        <mkdir dir="docs"/>
+        <javadoc sourcepath="${local.src.path}" destdir="docs" packagenames="com.bgi.esm.*" linksource="yes">
+            <classpath refid="project.classpath"/>
+        </javadoc>
+    </target>
+
+
+    <target name="build" depends="compile,resources,javadocs">
+        <echo>Creating portlet .war file without compiling...</echo>
+        <jar destfile="../${portlet-name}.war">
+            <fileset dir=".">
+                <exclude name="portlet-creator.jar"/>
+                <exclude name="src"/>
+                <exclude name="CVS"/>
+                <exclude name="temp"/>
+                <exclude name="**/*.java"/>
+                <exclude name="**/*.war"/>
+                <exclude name="**/*.swp"/>
+            </fileset>
+        </jar>
+    </target>
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Builds the portlet .war file and 
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="hot-deploy" depends="compile,publish">
+        <echo>Hot deploying portlet...</echo>
+        <copy file="${portlet-name}.war" todir=".." overwrite="true"/>
+    </target>
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Converts JSP files into .java files to detect compile-time errors
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="jspc">
+        <mkdir dir="jspsrc" />
+        <jasper2 validateXml="true" uriroot="." webXmlFragment="WEB-INF/generated_web.xml" outputDir="WEB-INF/src" />
+    </target>
+
+</project>
+

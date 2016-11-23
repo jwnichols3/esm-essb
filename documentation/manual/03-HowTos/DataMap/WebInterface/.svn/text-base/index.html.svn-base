@@ -1,0 +1,62 @@
+<html>
+    <body>
+        <table border="1" width="100%">
+            <tr>
+                <td><a href="../../../index.html">Home</a></td>
+                <td><a href="../../../00-Overview/index.html">Overview</a></td>
+                <td><a href="../../../01-Deployment/index.html">How do I deploy an instance of the EEB</a></td>
+                <td><a href="../../../02-Migration/index.html">How do I add a group to the EEB?</a></td>
+                <td><a href="../../../03-HowTos/index.html">Step-by-step How-Tos</a></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="../../index.html">&lt;&lt; Back</a>
+        <br>
+        <br>
+        <h1>How do I create a suppression rule from the web interface?</h1>
+        <br>
+        <br>
+        <center>
+            <table border="1" width="80%">
+                <tr>
+                    <td valign="top">1.</td>
+                    <td>
+                        Go the the EEB portal and login.  You should be able to login with your Windows username/password.
+                        <br>
+                        <br>
+                        <img src="../../login.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">2.</td>
+                    <td>
+                        Navigate to the Data Map page.
+                        <br>
+                        <br>
+                        <img src="../../navigate_datamap.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">3.</td>
+                    <td>
+                        Click on the "Add New Record" link.
+                        <br>
+                        <br>
+                        <img src="add_rule.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">4.</td>
+                    <td>
+                        Fill in the following form with the pertinent information.  You can hover over the "Help" link
+                        to get more information.
+                        <br>
+                        <br>
+                        <img src="data_map_rule_form.png">
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

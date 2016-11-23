@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.portlets.Suppressions.orm.ExpirationNotification" table="expiration_notification" >
+        <id name="RowId" column="row_id">
+            <generator class="native" />
+        </id>
+        <property name="SuppressionID"         type="long"          column="suppression_id"         />
+        <property name="NotificationEmails"    type="string"        column="notification_emails"    />
+        <property name="NotificationTime"      type="calendar"      column="notification_time"      />
+        <property name="NotificationTimestamp" type="calendar"      column="notification_timestamp" />
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/esm-platform/!svn/ver/661/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/307/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/HibernateUtil.java
+END
+Toolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/395/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/Toolkit.java
+END
+EEBConnectorPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/441/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/EEBConnectorPlugin.java
+END
+DataMapGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/esm-platform/!svn/ver/588/trunk/Portlets/DataMap/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/DataMapRules/DataMapGenerator.java
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local
+END
+DataMapRuleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/DataMapRuleTest.java
+END
+SuppressionRuleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/SuppressionRuleTest.java
+END
+AuditTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/AuditTest.java
+END
+RawOviTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/RawOviTest.java
+END
+AuditMessageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/AuditMessageTest.java
+END
+RawOviMessageTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/RawOviMessageTest.java
+END
+SpoolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/SpoolTest.java
+END
+ThrottleRuleTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/junit/local/ThrottleRuleTest.java
+END

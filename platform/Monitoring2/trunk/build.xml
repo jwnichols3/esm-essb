@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Title:build.xml
+
+Description:
+  Build ESM replatform applications.  Requires XDoclet.
+
+Author:
+  G.S. Cole (guycole at gmail dot com)
+
+Development Environment:
+  Fedora 4
+  Sun Java 1.5.0_06
+  Apache Ant 1.6.2
+-->
+
+<project name="replatform2" default="compile" basedir=".">
+  <property file="./ant.properties"/>
+
+  <property name="build.dir" value="${project.dir}/build"/>
+  <property name="build.classes.dir" value="${build.dir}/classes"/>
+  <property name="build.deploy.dir" value="${build.dir}/deploy"/>
+  <property name="build.meta.dir" value="${build.dir}/META-INF"/>
+
+  <property name="etc.dir" value="${project.dir}/etc"/>
+
+  <property name="javadoc.dir" value="${project.dir}/javadoc"/>
+
+  <property name="report.dir" value="${project.dir}/report"/>
+
+  <property name="src.dir" value="${project.dir}/src"/>
+
+  <property name="src.gen.dir" value="${build.dir}/src"/>
+  
+  <path id="javac.path">
+    <!--
+    <pathelement location="${base.lib.dir}/log4j-1.2.7.jar"/>
+    <pathelement location="${base.lib.dir}/Jakarta-Commons/commons-digester-1.7.jar"/>
+    <pathelement location="${base.lib.dir}/WebLogic92/weblogic.jar"/>
+    <pathelement location="${base.lib.dir}/WebLogic92/wllog4j.jar"/>
+     -->
+    <fileset dir="${base.lib.dir}" includes="**/*.jar" />
+  	<path refid="junit.path"/>
+    <fileset dir="${xdoclet.home.dir}/lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <path id="junit.path">
+    <pathelement location="${base.lib.dir}/junit-3.8.1.jar"/>
+  </path>
+
+  <path id="xdoclet.path">
+    <pathelement location="${base.lib.dir}/WebLogic92/weblogic.jar"/>
+    <pathelement location="${base.lib.dir}/WebLogic92/wllog4j.jar"/>
+    <fileset dir="${base.lib.dir}" includes="**/*.jar" />
+    <fileset dir="${xdoclet.home.dir}/lib">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <!-- =================================================================== -->
+  <!-- Initialization                                                      -->
+  <!-- =================================================================== -->
+  <target name="init" description="Perform Inititalization">
+    <tstamp/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Environment Report                                                  -->
+  <!-- =================================================================== -->
+  <target name="env_report" depends="init" description="Environment">
+    <echo message="project.dir = ${project.dir}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Remove The Current Build                                            -->
+  <!-- =================================================================== -->
+  <target name="clean" depends="init">
+    <delete dir="${build.dir}"/>
+    <delete dir="${javadoc.dir}"/>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Invoke EjbDoclet                                                    -->
+  <!-- =================================================================== -->
+  <target name="ejbdoclet" depends="init" description="Run EjbDoclet">
+    <echo>xdoclet.home.dir=${xdoclet.home.dir}</echo>
+    <!--
+    <taskdef name="ejbdoclet" classname="xdoclet.modules.ejb.EjbDocletTask" classpathref="xdoclet.path"/>
+     -->
+    <taskdef name="ejbdoclet" classname="xdoclet.modules.ejb.EjbDocletTask">
+        <classpath refid="javac.path" />
+    </taskdef>
+
+    <tstamp>
+      <format property="TODAY" pattern="yyyy-MM-dd"/>
+    </tstamp>
+
+    <ejbdoclet destdir="${src.gen.dir}" excludedtags="@version,@author" addedtags="@xdoclet-generated at ${TODAY}" ejbspec="${xdoclet.ejb.version}" force="${xdoclet.force}" verbose="${xdoclet.verbose}">
+      <packageSubstitution packages="entrance" substituteWith="client"/>
+
+      <fileset dir="${src.dir}">
+        <include name="**/*Bean.java"/>
+      </fileset>
+
+      <remoteinterface pattern="{0}Remote"/>
+      <localinterface pattern="{0}Local"/>
+
+      <homeinterface pattern="{0}HomeRemote"/>
+      <localhomeinterface pattern="{0}LocalHome"/>
+
+      <entitypk/>
+      <entitycmp/>
+
+      <session/>
+
+      <mdb/>
+
+      <utilobject kind="physical" cacheHomes="true" includeGUID="true">
+        <packageSubstitution packages="entrance" substituteWith="client"/>
+      </utilobject>
+
+      <deploymentdescriptor destdir="${build.dir}/META-INF"/>
+
+      <weblogic version="${xdoclet.weblogic.version}" datasource="${xdoclet.datasource}" createTables="Disabled" validateXml="false" xmlencoding="UTF-8" destdir="${build.meta.dir}"/>
+    </ejbdoclet>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Compile                                                             -->
+  <!-- =================================================================== -->
+  <target name="compile" depends="ejbdoclet" description="Compile">
+    <mkdir dir="${build.classes.dir}"/>
+    <mkdir dir="${build.deploy.dir}"/>
+
+    <copy todir="${build.classes.dir}" includeEmptyDirs="no">
+        <fileset dir="${src.dir}">
+            <patternset>
+                <include name="**/*.xml"        />
+                <include name="**/*.xsd"        />
+                <include name="**/*.properties" />
+            </patternset>
+        </fileset>
+    </copy>
+    <copy todir="${build.deploy.dir}" includeEmptyDirs="no">
+        <fileset dir="${src.dir}">
+            <patternset>
+                <include name="**/*.xml"        />
+                <include name="**/*.xsd"        />
+                <include name="**/*.properties" />
+            </patternset>
+        </fileset>
+    </copy>
+ 
+    <javac destdir="${build.classes.dir}" verbose="${javac.verbose}" debug="${javac.debug}" deprecation="${javac.deprecation}" optimize="${javac.optimize}" source="1.5" target="1.5">
+      <compilerarg value="-Xlint:unchecked"/>
+      <src path="${src.gen.dir}"/>
+      <src path="${src.dir}"/>
+      <classpath refid="javac.path"/>
+    </javac>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Package application JAR                                             -->
+  <!-- =================================================================== -->
+  <target name="jar" depends="compile" description="Application JAR">
+    <mkdir dir="${build.deploy.dir}"/>
+
+    <tstamp>
+      <format property="TIME_NOW" pattern="yyyy-MM-dd HH:mm"/>
+    </tstamp>
+
+    <!-- server classes -->
+    <jar jarfile="${build.deploy.dir}/${server.jar}" index="true">
+      <manifest>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Build-On" value="${TIME_NOW}"/>
+      </manifest>
+
+      <fileset dir="${build.classes.dir}"/>
+
+      <metainf dir="${build.meta.dir}">
+        <include name="ejb-jar.xml"/>
+        <include name="weblogic-ejb-jar.xml"/>
+        <include name="weblogic-cmp-rdbms-jar.xml"/>
+      </metainf>
+    </jar>
+
+    <!-- clients get interfaces and utilities only -->
+    <jar jarfile="${build.deploy.dir}/${client.jar}" index="true">
+      <manifest>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Build-On" value="${TIME_NOW}"/>
+      </manifest>
+
+      <fileset dir="${build.classes.dir}" includes="com/bgi/esm/monitoring/platform/shared/**"/>
+      <fileset dir="${build.classes.dir}" includes="com/bgi/esm/monitoring/platform/client/**"/>
+      <fileset dir="${build.classes.dir}" includes="com/bgi/esm/monitoring/platform/test/**"/>
+    </jar>
+
+    <!-- authenticatino classes -->
+    <jar jarfile="${build.deploy.dir}/ESM-Authentication.jar" index="true">
+      <manifest>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Build-On" value="${TIME_NOW}"/>
+      </manifest>
+
+      <fileset dir="${build.classes.dir}" includes="com/bgi/esm/monitoring/platform/authentication/**/*"/>
+    </jar>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Package EAR                                                         -->
+  <!-- =================================================================== -->
+  <target name="ear" depends="jar">
+    <tstamp>
+      <format property="TIME_NOW" pattern="yyyy-MM-dd HH:mm"/>
+    </tstamp>
+
+    <mkdir dir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/GSS.ServiceCenter.TicketSvcMgrSvc.v01-000-v01-000.jar" todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/bgi-esm-LDAP-authentication.jar"          todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/SCGateway-1.0.2.jar"                      todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/axis-1.2.jar"                             todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/wsdl4j-1.6.1.jar"                         todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/commons-servicecenter6.2-1.0.3.jar"       todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/GSS/commons-discovery-0.2.jar"                todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/ant-antlr-1.6.5.jar"                todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/antlr-2.7.6.jar"                    todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/asm.jar"                            todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/asm-attrs.jar"                      todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/cglib-2.1.3.jar"                    todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/dom4j-1.6.1.jar"                    todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Hibernate/hibernate3.2.6.jar"                 todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Jakarta-Commons/commons-digester-1.7.jar"     todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Jakarta-Commons/commons-collections-3.1.jar"  todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Jakarta-Commons/commons-beanutils.jar"        todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Jakarta-Commons/commons-httpclient-3.0.1.jar" todir="${build.deploy.dir}/APP-INF/lib"/>
+    <!--
+    <copy file="${base.lib.dir}/Mail/mail.jar"                                todir="${build.deploy.dir}/APP-INF/lib"/>
+     -->
+    <!--
+    <copy file="${base.lib.dir}/Mail/dsn.jar"                                 todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Mail/imap.jar"                                todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Mail/mailapi.jar"                             todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Mail/pop3.jar"                                todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Mail/smtp.jar"                                todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Mail/dumbster.jar"                            todir="${build.deploy.dir}/APP-INF/lib"/>
+     -->
+
+    <copy file="${base.lib.dir}/Weblogic92/wllog4j.jar"                       todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/Jakarta-Commons/commons-logging-1.0.3.jar"    todir="${build.deploy.dir}/APP-INF/lib"/>
+    <copy file="${base.lib.dir}/log4j-1.2.7.jar"                              todir="${build.deploy.dir}/APP-INF/lib"/>
+
+    <delete file="${build.deploy.dir}/${ear.jar}" />
+
+    <jar jarfile="${build.deploy.dir}/${ear.jar}" index="true">
+      <manifest>
+        <attribute name="Built-By" value="${user.name}"/>
+        <attribute name="Build-On" value="${TIME_NOW}"/>
+      </manifest>
+
+      <fileset dir="${build.deploy.dir}" excludes="*client.jar"/>
+
+      <metainf dir="${etc.dir}">
+        <include name="application.xml"/>
+        <include name="weblogic-application.xml"/>
+      </metainf>
+    </jar>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Deploy EAR                                                          -->
+  <!-- =================================================================== -->
+  <target name="deploy" depends="ear" description="Deploy To JBoss">
+    <copy file="${build.deploy.dir}/${ear.jar}" todir="${jboss.deploy.dir}"/>
+  </target>
+
+
+  <!-- =================================================================== -->
+  <!-- Run JUnit (Local) Tests                                             -->
+  <!-- =================================================================== -->
+  <target name="junit-local" depends="compile" description="Test (Local)">
+    <mkdir dir="${report.dir}"/>
+
+    <junit printsummary="yes" haltonfailure="yes" fork="yes">
+      <classpath refid="junit.path"/>
+      <formatter type="plain"/>
+      <batchtest fork="yes" todir="${report.dir}">
+        <fileset dir="${src.dir}">
+          <include name="${junit.local.dir}"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+
+  <!-- =================================================================== -->
+  <!-- Run JUnit (Remote) Tests                                            -->
+  <!-- =================================================================== -->
+  <target name="junit-remote" depends="compile" description="Test (Remote)">
+    <mkdir dir="${report.dir}"/>
+
+    <junit printsummary="yes" haltonfailure="yes" fork="yes">
+      <classpath refid="junit.path"/>
+      <formatter type="plain"/>
+      <batchtest fork="yes" todir="${bt.report.dir}">
+        <fileset dir="${bt.src.dir}">
+          <include name="${junit.remote.dir}"/>
+        </fileset>
+      </batchtest>
+    </junit>
+  </target>
+ 
+  <!-- =================================================================== -->
+  <!-- JavaDoc                                                             -->
+  <!-- =================================================================== -->
+  <target name="javadoc" depends="init">
+    <delete dir="${javadoc.dir}"/>
+    <mkdir dir="${javadoc.dir}"/>
+ 
+    <javadoc sourcepath="${src.dir}"
+      destdir="${javadoc.dir}"
+      classpath="${base.lib.dir}/jms-1.0.2a.jar:${base.lib.dir}/log4j-1.2.7.jar:${base.lib.dir}/commons-logging-1.0.3.jar:${base.lib.dir}/commons-digester-1.7.jar:${base.lib.dir}/commons-configuration-1.2.jar"
+      packagenames="*"
+      author="true"
+      version="true"
+      private="true"
+      windowtitle="BGI Replatform API Documentation"
+      doctitle="&lt;h1&gt;BGI Replatform API Documentation&lt;/h1&gt;">
+    </javadoc>
+  </target>
+</project>

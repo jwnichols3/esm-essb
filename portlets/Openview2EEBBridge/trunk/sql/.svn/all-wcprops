@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/esm-platform/!svn/ver/473/trunk/Portlets/Openview2EEBBridge/trunk/sql
+END
+events_tti.sql
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/esm-platform/!svn/ver/473/trunk/Portlets/Openview2EEBBridge/trunk/sql/events_tti.sql
+END
+events_notification.sql
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/esm-platform/!svn/ver/473/trunk/Portlets/Openview2EEBBridge/trunk/sql/events_notification.sql
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/esm-platform/!svn/ver/628/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/esm-platform/!svn/ver/304/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/HibernateUtil.java
+END
+Toolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/esm-platform/!svn/ver/621/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/Toolkit.java
+END
+EEBConnectorPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/esm-platform/!svn/ver/546/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/EEBConnectorPlugin.java
+END
+QuartzPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/esm-platform/!svn/ver/615/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/QuartzPlugin.java
+END
+Mailer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/546/trunk/Portlets/Suppressions2/trunk/WEB-INF/src/com/bgi/esm/monitoring/portlets/Suppressions/Mailer.java
+END

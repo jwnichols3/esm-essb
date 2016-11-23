@@ -1,0 +1,1763 @@
+DOWNLOAD_DATA MESSAGE_GROUP
+SYNTAX_VERSION 1
+
+MESSAGE_GROUP "bg_aus"
+	SYMBOL "Software:File System"
+	DESCRIPTION "Australian Business Group"
+	LABEL "bg_aus"
+;
+MESSAGE_GROUP "bg-aria"
+	SYMBOL "Software:File System"
+	DESCRIPTION "London Business Group"
+	LABEL "bg_aria"
+;
+MESSAGE_GROUP "orbis_cst"
+	SYMBOL ""
+	DESCRIPTION "orbis_cst"
+	LABEL "orbis_cst"
+;
+MESSAGE_GROUP "sybase-test"
+	SYMBOL ""
+	DESCRIPTION "Sybase QA, Test and Dev events"
+	LABEL "sybase-test"
+;
+MESSAGE_GROUP "asi"
+	SYMBOL ""
+	DESCRIPTION "asi messages"
+	LABEL "asi"
+;
+MESSAGE_GROUP "pims"
+	SYMBOL ""
+	DESCRIPTION "pims messages"
+	LABEL "pims"
+;
+MESSAGE_GROUP "orbis_rm"
+	SYMBOL ""
+	DESCRIPTION "Orbis Risk Management"
+	LABEL "orbis_rm"
+;
+MESSAGE_GROUP "com"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "com"
+;
+MESSAGE_GROUP "mssql-amr"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "mssql-amr"
+;
+MESSAGE_GROUP "iplanet"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "iplanet"
+;
+MESSAGE_GROUP "purchasing_web"
+	SYMBOL ""
+	DESCRIPTION "purchasing_web"
+	LABEL "purchasing_web"
+;
+MESSAGE_GROUP "bgiconnect_aus"
+	SYMBOL ""
+	DESCRIPTION "bgiconnect_aus"
+	LABEL "bgiconnect_aus"
+;
+MESSAGE_GROUP "windows"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "windows"
+;
+MESSAGE_GROUP "ordersonline"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ordersonline"
+;
+MESSAGE_GROUP "gladis"
+	SYMBOL ""
+	DESCRIPTION "GLADIS"
+	LABEL "gladis"
+;
+MESSAGE_GROUP "gcmform"
+	SYMBOL ""
+	DESCRIPTION "GCM Form Messages"
+	LABEL "gcmform"
+;
+MESSAGE_GROUP "ibt_gateway"
+	SYMBOL ""
+	DESCRIPTION "ibt_gateway"
+	LABEL "ibt_gateway"
+;
+MESSAGE_GROUP "client_applications"
+	SYMBOL ""
+	DESCRIPTION "client_applications"
+	LABEL "client_applications"
+;
+MESSAGE_GROUP "teledirect"
+	SYMBOL ""
+	DESCRIPTION "teledirect - HelpDesk outsourcing firm"
+	LABEL "teledirect"
+;
+MESSAGE_GROUP "asi-network"
+	SYMBOL ""
+	DESCRIPTION "asi-network for missing ASI Files"
+	LABEL "asi-network"
+;
+MESSAGE_GROUP "ovis"
+	SYMBOL ""
+	DESCRIPTION "OVIS Messages"
+	LABEL "ovis"
+;
+MESSAGE_GROUP "iweb"
+	SYMBOL ""
+	DESCRIPTION "I-Web"
+	LABEL "iweb"
+;
+MESSAGE_GROUP "imm"
+	SYMBOL ""
+	DESCRIPTION "Internet Meeting Manager"
+	LABEL "imm"
+;
+MESSAGE_GROUP "helpme"
+	SYMBOL ""
+	DESCRIPTION "HelpMe"
+	LABEL "helpme"
+;
+MESSAGE_GROUP "k2desk"
+	SYMBOL ""
+	DESCRIPTION "K2Desk"
+	LABEL "k2desk"
+;
+MESSAGE_GROUP "asm"
+	SYMBOL ""
+	DESCRIPTION "Application Security Model"
+	LABEL "asm"
+;
+MESSAGE_GROUP "eat"
+	SYMBOL ""
+	DESCRIPTION "Emergency Access Tool"
+	LABEL "eat"
+;
+MESSAGE_GROUP "unix"
+	SYMBOL ""
+	DESCRIPTION "unix"
+	LABEL "unix"
+;
+MESSAGE_GROUP "opendeploy"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "opendeploy"
+;
+MESSAGE_GROUP "dynamo"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "dynamo"
+;
+MESSAGE_GROUP "devicequery"
+	SYMBOL ""
+	DESCRIPTION "Marimba Device Query"
+	LABEL "devicequery"
+;
+MESSAGE_GROUP "tradefloor"
+	SYMBOL ""
+	DESCRIPTION "tradefloor"
+	LABEL "tradefloor"
+;
+MESSAGE_GROUP "internet_infrastructure"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "internet_infrastructure"
+;
+MESSAGE_GROUP "etf"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "etf"
+;
+MESSAGE_GROUP "bms"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "bms"
+;
+MESSAGE_GROUP "transvc"
+	SYMBOL ""
+	DESCRIPTION "TranSvc"
+	LABEL "transvc"
+;
+MESSAGE_GROUP "bgifunds"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "bgifunds"
+;
+MESSAGE_GROUP "barclaysglobal"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "barclaysglobal"
+;
+MESSAGE_GROUP "sybase"
+	SYMBOL ""
+	DESCRIPTION "Production and BCP Sybase events"
+	LABEL "sybase"
+;
+MESSAGE_GROUP "netbackup"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "netbackup"
+;
+MESSAGE_GROUP "orbis_usidxpm"
+	SYMBOL ""
+	DESCRIPTION "Orbis US Index PM Group"
+	LABEL "orbis_usidxpm"
+;
+MESSAGE_GROUP "orbis_trd"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "orbis traders"
+;
+MESSAGE_GROUP "orbis"
+	SYMBOL ""
+	DESCRIPTION "Orbis Message group"
+	LABEL "orbis"
+;
+MESSAGE_GROUP "jrun"
+	SYMBOL ""
+	DESCRIPTION "JRun message group"
+	LABEL "jrun"
+;
+MESSAGE_GROUP "intlpm"
+	SYMBOL ""
+	DESCRIPTION "International Portfolio Management"
+	LABEL "intlpm"
+;
+MESSAGE_GROUP "intraspect"
+	SYMBOL ""
+	DESCRIPTION "All Intraspect Messages"
+	LABEL "intraspect"
+;
+MESSAGE_GROUP "gio-unix"
+	SYMBOL ""
+	DESCRIPTION "Global Index Optimization - Unix"
+	LABEL "gio-unix"
+;
+MESSAGE_GROUP "gio"
+	SYMBOL ""
+	DESCRIPTION "Global Index Optimization"
+	LABEL "gio"
+;
+MESSAGE_GROUP "equilend_b"
+	SYMBOL ""
+	DESCRIPTION "Equilend_B"
+	LABEL "equilend_b"
+;
+MESSAGE_GROUP "equilend"
+	SYMBOL ""
+	DESCRIPTION "Equilend"
+	LABEL "equilend"
+;
+MESSAGE_GROUP "documentum"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "documentum"
+;
+MESSAGE_GROUP "cpdl"
+	SYMBOL ""
+	DESCRIPTION "Common Platform Data Loaders"
+	LABEL "cpdl"
+;
+MESSAGE_GROUP "bidbook"
+	SYMBOL ""
+	DESCRIPTION "Bidbook Messages"
+	LABEL "bidbook"
+;
+MESSAGE_GROUP "alarmpoint"
+	SYMBOL ""
+	DESCRIPTION "AlarmPoint Production Messages"
+	LABEL "alarmpoint"
+;
+MESSAGE_GROUP "AppManager_Application"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - applications (not used)"
+	LABEL "AppManager_Application"
+;
+MESSAGE_GROUP "AppManager_NTAdmin"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Windows NT Administrative"
+	LABEL "AppManager_NTAdmin"
+;
+MESSAGE_GROUP "AppManager_ISA"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - ISA server"
+	LABEL "AppManager_ISA"
+;
+MESSAGE_GROUP "gaa_aig"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_aig"
+;
+MESSAGE_GROUP "gaa_amg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_amg"
+;
+MESSAGE_GROUP "gaa_aplus"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_aplus"
+;
+MESSAGE_GROUP "gaa_asgintl"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_asgintl"
+;
+MESSAGE_GROUP "gaa_asgus"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_asgus"
+;
+MESSAGE_GROUP "gaa_atg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_atg"
+;
+MESSAGE_GROUP "gaa_aurg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_aurg"
+;
+MESSAGE_GROUP "gaa_cnrg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_cnrg"
+;
+MESSAGE_GROUP "gaa_etg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_etg"
+;
+MESSAGE_GROUP "Transfer"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "Transfer"
+;
+MESSAGE_GROUP "gaa_growtheq"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_growtheq"
+;
+MESSAGE_GROUP "gaa_gtaa"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_gtaa"
+;
+MESSAGE_GROUP "gaa_intellis"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_intellis"
+;
+MESSAGE_GROUP "gaa_neualpha"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_neualpha"
+;
+MESSAGE_GROUP "gaa_otg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_otg"
+;
+MESSAGE_GROUP "gaa_tpg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_tpg"
+;
+MESSAGE_GROUP "gaa_trg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_trg"
+;
+MESSAGE_GROUP "gaa_ukpm"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_ukpm"
+;
+MESSAGE_GROUP "gaa_usafi"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_usafi"
+;
+MESSAGE_GROUP "gaa_usss"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_usss"
+;
+MESSAGE_GROUP "gaa_faser"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_faser"
+;
+MESSAGE_GROUP "gaa_gaepm"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_gaepm"
+;
+MESSAGE_GROUP "mssql-test"
+	SYMBOL ""
+	DESCRIPTION "ms-sql test group"
+	LABEL "mssql-test"
+;
+MESSAGE_GROUP "tar"
+	SYMBOL ""
+	DESCRIPTION "trading analysis report"
+	LABEL "tar"
+;
+MESSAGE_GROUP "bgicash"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "bgicash"
+;
+MESSAGE_GROUP "gem"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gem"
+;
+MESSAGE_GROUP "ais"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ais"
+;
+MESSAGE_GROUP "gss_cfmail"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gss_cfmail"
+;
+MESSAGE_GROUP "bgis_uk"
+	SYMBOL ""
+	DESCRIPTION "bgis_uk"
+	LABEL "bgis_uk"
+;
+MESSAGE_GROUP "csm"
+	SYMBOL ""
+	DESCRIPTION "csm"
+	LABEL "csm"
+;
+MESSAGE_GROUP "bgis_uk_qa"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "bgis_uk_qa"
+;
+MESSAGE_GROUP "flextrade"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "flextrade"
+;
+MESSAGE_GROUP "gls_gate"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gls_gate"
+;
+MESSAGE_GROUP "iunits"
+	SYMBOL ""
+	DESCRIPTION "iunits.com"
+	LABEL "iunits"
+;
+MESSAGE_GROUP "ims"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ims"
+;
+MESSAGE_GROUP "idl"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "idl"
+;
+MESSAGE_GROUP "gos"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gos"
+;
+MESSAGE_GROUP "gate"
+	SYMBOL ""
+	DESCRIPTION "gate"
+	LABEL "gate"
+;
+MESSAGE_GROUP "webadmin"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "webadmin"
+;
+MESSAGE_GROUP "OSSPI-Kernel"
+	SYMBOL "Software:OSSPI-Kernel"
+	DESCRIPTION "OSSPI Kernel specific messages"
+	LABEL "OSSPI-Kernel"
+;
+MESSAGE_GROUP "bgis_fi_prod"
+	SYMBOL ""
+	DESCRIPTION "bgis_fi_prod"
+	LABEL "bgis_fi_prod"
+;
+MESSAGE_GROUP "AppManager_IIS"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Internet Information Server"
+	LABEL "AppManager_IIS"
+;
+MESSAGE_GROUP "AppManager_WTS"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Windows Terminal Server"
+	LABEL "AppManager_WTS"
+;
+MESSAGE_GROUP "AppManager_SQL"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - MS-SQL messages (not used)"
+	LABEL "AppManager_SQL"
+;
+MESSAGE_GROUP "AppManager_BackupExec"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - backupexec"
+	LABEL "AppManager_BackupExec"
+;
+MESSAGE_GROUP "AppManager_Exchange"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Exchange messages"
+	LABEL "AppManager_Exchange"
+;
+MESSAGE_GROUP "AppManager_CIM"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Compaq Insight Manager"
+	LABEL "AppManager_CIM"
+;
+MESSAGE_GROUP "AppManager_NT"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Windows NT"
+	LABEL "AppManager_NT"
+;
+MESSAGE_GROUP "bip"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "bip"
+;
+MESSAGE_GROUP "ishares"
+	SYMBOL ""
+	DESCRIPTION "iShares.com messages"
+	LABEL "ishares"
+;
+MESSAGE_GROUP "AppManager_HelpDesk"
+	SYMBOL ""
+	DESCRIPTION "netIQ messages - Help Desk related"
+	LABEL "AppManager_HelpDesk"
+;
+MESSAGE_GROUP "Notification"
+	SYMBOL ""
+	DESCRIPTION "end to end test"
+	LABEL "Notification"
+;
+MESSAGE_GROUP "AppManager"
+	SYMBOL "Software:Software"
+	DESCRIPTION "NetIQ AppManager Events"
+	LABEL "AppManager"
+;
+MESSAGE_GROUP "esm"
+	SYMBOL "Software:Customer"
+	DESCRIPTION "enterprise systems management related messages"
+	LABEL "esm"
+;
+MESSAGE_GROUP "autosys"
+	SYMBOL "AS:AS"
+	DESCRIPTION "AutoSys Message Group"
+	LABEL "autosys"
+;
+MESSAGE_GROUP "gsurveyor"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gsurveyor"
+;
+MESSAGE_GROUP "citrix"
+	SYMBOL ""
+	DESCRIPTION "Citrix Messages"
+	LABEL "citrix"
+;
+MESSAGE_GROUP "glm2"
+	SYMBOL ""
+	DESCRIPTION "glm2"
+	LABEL "glm2"
+;
+MESSAGE_GROUP "ishares_fi_bus"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ishares_fi_bus"
+;
+MESSAGE_GROUP "triplea"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "triplea"
+;
+MESSAGE_GROUP "ishares_fi_dev"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ishares_fi_dev"
+;
+MESSAGE_GROUP "indices"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "indices"
+;
+MESSAGE_GROUP "cr_uk"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "cr_uk"
+;
+MESSAGE_GROUP "rk"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "rk"
+;
+MESSAGE_GROUP "rkp"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "rkp"
+;
+MESSAGE_GROUP "ais_inception"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ais_inception"
+;
+MESSAGE_GROUP "amsx"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "amsx"
+;
+MESSAGE_GROUP "ap1"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ap1"
+;
+MESSAGE_GROUP "amsx_load"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "amsx_load"
+;
+MESSAGE_GROUP "crs"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "crs"
+;
+MESSAGE_GROUP "x_stats"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "x_stats"
+;
+MESSAGE_GROUP "dev_rpt"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "dev_rpt"
+;
+MESSAGE_GROUP "gds"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gds"
+;
+MESSAGE_GROUP "issue_price"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "issue_price"
+;
+MESSAGE_GROUP "multi_curr"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "multi_curr"
+;
+MESSAGE_GROUP "pb_rpt"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "pb_rpt"
+;
+MESSAGE_GROUP "prep"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "prep"
+;
+MESSAGE_GROUP "statement"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "statement"
+;
+MESSAGE_GROUP "checkpoint"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "checkpoint"
+;
+MESSAGE_GROUP "Administration"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "Administration"
+;
+MESSAGE_GROUP "ascot"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "ascot"
+;
+MESSAGE_GROUP "netapps"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "netapps"
+;
+MESSAGE_GROUP "sums"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "sums"
+;
+MESSAGE_GROUP "shareit-test"
+	SYMBOL ""
+	DESCRIPTION "ShareIT Test Messages"
+	LABEL "shareit-test"
+;
+MESSAGE_GROUP "orbis_trd_japan"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "orbis trade japan"
+;
+MESSAGE_GROUP "gitap"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gitap"
+;
+MESSAGE_GROUP "orbis_crossing"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "orbis crossing"
+;
+MESSAGE_GROUP "torapps"
+	SYMBOL ""
+	DESCRIPTION "torapps"
+	LABEL "torapps"
+;
+MESSAGE_GROUP "orbis_equity"
+	SYMBOL ""
+	DESCRIPTION "orbis_equity"
+	LABEL "orbis_equity"
+;
+MESSAGE_GROUP "torinfra"
+	SYMBOL ""
+	DESCRIPTION "torinfra"
+	LABEL "torinfra"
+;
+MESSAGE_GROUP "uk-unixtest"
+	SYMBOL ""
+	DESCRIPTION "uk-unixtest"
+	LABEL "uk-unixtest"
+;
+MESSAGE_GROUP "bep"
+	SYMBOL ""
+	DESCRIPTION "bep"
+	LABEL "bep"
+;
+MESSAGE_GROUP "devnet"
+	SYMBOL ""
+	DESCRIPTION "devnet"
+	LABEL "devnet"
+;
+MESSAGE_GROUP "candevemail"
+	SYMBOL ""
+	DESCRIPTION "Canada Developers Email only"
+	LABEL "candevemail"
+;
+MESSAGE_GROUP "advantage"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "advantage"
+;
+MESSAGE_GROUP "uktest"
+	SYMBOL ""
+	DESCRIPTION "uktest"
+	LABEL "uktest"
+;
+MESSAGE_GROUP "art"
+	SYMBOL ""
+	DESCRIPTION "art"
+	LABEL "art"
+;
+MESSAGE_GROUP "gmd"
+	SYMBOL ""
+	DESCRIPTION "Global Market Data"
+	LABEL "gmd"
+;
+MESSAGE_GROUP "shareit"
+	SYMBOL ""
+	DESCRIPTION "ShareIT Messages"
+	LABEL "shareit"
+;
+MESSAGE_GROUP "notification"
+	SYMBOL ""
+	DESCRIPTION "notification messages"
+	LABEL "notification"
+;
+MESSAGE_GROUP "gfit"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gfit"
+;
+MESSAGE_GROUP "orbis_uk"
+	SYMBOL ""
+	DESCRIPTION "Orbis UK messages"
+	LABEL "orbis_uk"
+;
+MESSAGE_GROUP "gaa_gaepm_uk_alphagen"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_gaepm_uk_alphagen"
+;
+MESSAGE_GROUP "gaa_gaepm_uk_aa"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_gaepm_uk_aa"
+;
+MESSAGE_GROUP "gaa_acm"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_acm"
+;
+MESSAGE_GROUP "delta_uk"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "delta_uk"
+;
+MESSAGE_GROUP "gaa_aasg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_aasg"
+;
+MESSAGE_GROUP "gaa_adg"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gaa_adg"
+;
+MESSAGE_GROUP "SNMP"
+	SYMBOL "Software:SNMP"
+	DESCRIPTION "Messages generated by SNMP traps."
+	LABEL "SNMP"
+;
+MESSAGE_GROUP "Network"
+	SYMBOL "Software:Network"
+	DESCRIPTION "Messages related to network/ connectivity problems."
+	LABEL "Network"
+;
+MESSAGE_GROUP "Backup"
+	SYMBOL "Software:Tape"
+	DESCRIPTION "Messages related to backup/ restore/ archiving functionality."
+	LABEL "Backup"
+;
+MESSAGE_GROUP "Performance"
+	SYMBOL "Software:Performance"
+	DESCRIPTION "Messages related to Hardware/ Software malfunctions."
+	LABEL "Performance"
+;
+MESSAGE_GROUP "Job"
+	SYMBOL "Software:Applic."
+	DESCRIPTION "Messages related to job streaming."
+	LABEL "Job"
+;
+MESSAGE_GROUP "OS"
+	SYMBOL "Software:Oper. System"
+	DESCRIPTION "UNIX operating system related messages."
+	LABEL "OS"
+;
+MESSAGE_GROUP "Security"
+	SYMBOL "Software:Users"
+	DESCRIPTION "Messages related to security violations or attempts to intrude a system."
+	LABEL "Security"
+;
+MESSAGE_GROUP "Database"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Messages related to database problems."
+	LABEL "Database"
+;
+MESSAGE_GROUP "OpC"
+	SYMBOL "Software:OpCAlarm"
+	DESCRIPTION "Messages generated by VPO."
+	LABEL "OpC"
+;
+MESSAGE_GROUP "Misc"
+	SYMBOL "Software:Misc"
+	DESCRIPTION "Messages which cannot be matched with any Message Group."
+	LABEL "Misc"
+;
+MESSAGE_GROUP "Hardware"
+	SYMBOL "Software:Mini"
+	DESCRIPTION "Messages related to Hardware."
+	LABEL "Hardware"
+;
+MESSAGE_GROUP "HA"
+	SYMBOL "Software:Poll Conf"
+	DESCRIPTION "Messages related to High Availability."
+	LABEL "HA"
+;
+MESSAGE_GROUP "network"
+	SYMBOL "Software:Network"
+	DESCRIPTION "Messages related to network/ connectivity problems."
+	LABEL "network"
+;
+MESSAGE_GROUP "servicecenter"
+	SYMBOL "Software:Applic."
+	DESCRIPTION "Messages generated by Peregrine ServiceCenter."
+	LABEL "servicecenter"
+;
+MESSAGE_GROUP "oracle"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Oracle Message Group"
+	LABEL "oracle"
+;
+MESSAGE_GROUP "database"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Messages related to database problems."
+	LABEL "database"
+;
+MESSAGE_GROUP "dbspi"
+	SYMBOL "Software:Database"
+	DESCRIPTION "DB-SPI Events"
+	LABEL "dbspi"
+;
+MESSAGE_GROUP "icore"
+	SYMBOL "Software:File System"
+	DESCRIPTION "iCore Messages"
+	LABEL "icore"
+;
+MESSAGE_GROUP "wl_qa"
+	SYMBOL "Software:File System"
+	DESCRIPTION ""
+	LABEL "weblogic qa"
+;
+MESSAGE_GROUP "wl_prd"
+	SYMBOL "Software:File System"
+	DESCRIPTION ""
+	LABEL "weblogic prd"
+;
+MESSAGE_GROUP "usoe"
+	SYMBOL "Software:File System"
+	DESCRIPTION ""
+	LABEL "us order entry "
+;
+MESSAGE_GROUP "mqadmin"
+	SYMBOL "Software:File System"
+	DESCRIPTION ""
+	LABEL "mqadmin"
+;
+MESSAGE_GROUP "bg_can"
+	SYMBOL "Software:File System"
+	DESCRIPTION "Canada Business group"
+	LABEL "bg_can"
+;
+MESSAGE_GROUP "delta"
+	SYMBOL ""
+	DESCRIPTION "delta"
+	LABEL "delta"
+;
+MESSAGE_GROUP "orbis_us_index"
+	SYMBOL ""
+	DESCRIPTION "orbis_us_index"
+	LABEL "orbis_us_index"
+;
+MESSAGE_GROUP "orbis_us_breach"
+	SYMBOL ""
+	DESCRIPTION "orbis_us_breach"
+	LABEL "orbis_us_breach"
+;
+MESSAGE_GROUP "unix_security_monitoring"
+	SYMBOL ""
+	DESCRIPTION "unix_security_monitoring"
+	LABEL "unix_security_monitoring"
+;
+MESSAGE_GROUP "orbis_us_auto"
+	SYMBOL ""
+	DESCRIPTION "orbis_us_auto"
+	LABEL "orbis_us_auto"
+;
+MESSAGE_GROUP "orbis_us_equity"
+	SYMBOL ""
+	DESCRIPTION "orbis_us_equity"
+	LABEL "orbis_us_equity"
+;
+MESSAGE_GROUP "unix_security"
+	SYMBOL ""
+	DESCRIPTION "unix_security"
+	LABEL "unix_security"
+;
+MESSAGE_GROUP "unix_servers"
+	SYMBOL ""
+	DESCRIPTION "unix_servers"
+	LABEL "unix_servers"
+;
+MESSAGE_GROUP "unix_servers_autogen"
+	SYMBOL ""
+	DESCRIPTION "unix_servers_autogen"
+	LABEL "unix_servers_autogen"
+;
+MESSAGE_GROUP "unix_servers_work_in_progress"
+	SYMBOL ""
+	DESCRIPTION "unix_servers_work_in_progress"
+	LABEL "unix_servers_work_in_progress"
+;
+MESSAGE_GROUP "ia-us"
+	SYMBOL ""
+	DESCRIPTION "ia-us"
+	LABEL "ia-us"
+;
+MESSAGE_GROUP "orbis-disk-monitoring"
+	SYMBOL ""
+	DESCRIPTION "orbis-disk-monitoring"
+	LABEL "orbis-disk-monitoring"
+;
+MESSAGE_GROUP "gaa_unix"
+	SYMBOL ""
+	DESCRIPTION "gaa_unix"
+	LABEL "gaa_unix"
+;
+MESSAGE_GROUP "gaa_unix_autogen"
+	SYMBOL ""
+	DESCRIPTION "gaa_unix_autogen"
+	LABEL "gaa_unix_autogen"
+;
+MESSAGE_GROUP "gaa_unix_work_in_progress"
+	SYMBOL ""
+	DESCRIPTION "gaa_unix_work_in_progress"
+	LABEL "gaa_unix_work_in_progress"
+;
+MESSAGE_GROUP "ia_us"
+	SYMBOL ""
+	DESCRIPTION "ia_us"
+	LABEL "ia_us"
+;
+MESSAGE_GROUP "orbis_qa_uk"
+	SYMBOL ""
+	DESCRIPTION "orbis_qa_uk"
+	LABEL "orbis_qa_uk"
+;
+MESSAGE_GROUP "orbis_disk_monitoring"
+	SYMBOL ""
+	DESCRIPTION "orbis_disk_monitoring"
+	LABEL "orbis_disk_monitoring"
+;
+MESSAGE_GROUP "orbis_qa"
+	SYMBOL ""
+	DESCRIPTION "orbis_qa"
+	LABEL "orbis_qa"
+;
+MESSAGE_GROUP "orbis_uk_equity"
+	SYMBOL ""
+	DESCRIPTION "orbis_uk_equity"
+	LABEL "orbis_uk_equity"
+;
+MESSAGE_GROUP "ozone"
+	SYMBOL ""
+	DESCRIPTION "ozone"
+	LABEL "ozone"
+;
+MESSAGE_GROUP "km_it_ps"
+	SYMBOL ""
+	DESCRIPTION "km_it_ps"
+	LABEL "km_it_ps"
+;
+MESSAGE_GROUP "charles_river"
+	SYMBOL ""
+	DESCRIPTION "charles_river"
+	LABEL "charles_river"
+;
+MESSAGE_GROUP "tky_it_bo"
+	SYMBOL ""
+	DESCRIPTION "tky_it_bo"
+	LABEL "tky_it_bo"
+;
+MESSAGE_GROUP "tky_cdb"
+	SYMBOL ""
+	DESCRIPTION "tky_cdb"
+	LABEL "tky_cdb"
+;
+MESSAGE_GROUP "tky_pas"
+	SYMBOL ""
+	DESCRIPTION "tky_pas"
+	LABEL "tky_pas"
+;
+MESSAGE_GROUP "OSSPI-FS"
+	SYMBOL "Software:OSSPI-FS"
+	DESCRIPTION "Filesystem related messages go here (e.g. DiskSpace)"
+	LABEL "OSSPI-FS"
+;
+MESSAGE_GROUP "OSSPI-Services"
+	SYMBOL "Software:OSSPI-Services"
+	DESCRIPTION "OS service related messages"
+	LABEL "OSSPI-Services"
+;
+MESSAGE_GROUP "OSSPI-Internal"
+	SYMBOL "Software:OSSPI-Internal"
+	DESCRIPTION "All OSSPI internal messages will go here"
+	LABEL "OSSPI-Internal"
+;
+MESSAGE_GROUP "OSSPI-Clusters"
+	SYMBOL "Software:OSSPI-Clusters"
+	DESCRIPTION "All OSSPI Cluster messages will go here"
+	LABEL "OSSPI-Clusters"
+;
+MESSAGE_GROUP "ofa"
+	SYMBOL ""
+	DESCRIPTION "Oracle Financials"
+	LABEL "ofa"
+;
+MESSAGE_GROUP "uk-it-dev"
+	SYMBOL ""
+	DESCRIPTION "UK IT Development (temporary). Peregrine queue: UK-IT Dev, Alarmpoint: UK-IT Dev"
+	LABEL "uk-it-dev"
+;
+MESSAGE_GROUP "datacenter"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "datacenter"
+;
+MESSAGE_GROUP "nodestatus"
+	SYMBOL ""
+	DESCRIPTION "node status messages for reboot, down, agent problems."
+	LABEL "nodestatus"
+;
+MESSAGE_GROUP "accounts-barclaysglobal"
+	SYMBOL ""
+	DESCRIPTION "accounts.barclaysglobal.com"
+	LABEL "accounts-barclaysglobal"
+;
+MESSAGE_GROUP "aust_ftinteractive"
+	SYMBOL ""
+	DESCRIPTION "Australia FT Interactive"
+	LABEL "aust_ftinteractive"
+;
+MESSAGE_GROUP "cp_ms_uk"
+	SYMBOL ""
+	DESCRIPTION "cp_ms_uk"
+	LABEL "cp_ms_uk"
+;
+MESSAGE_GROUP "compact"
+	SYMBOL ""
+	DESCRIPTION "CompACT Web Page"
+	LABEL "compact"
+;
+MESSAGE_GROUP "san"
+	SYMBOL ""
+	DESCRIPTION "storage area network messages"
+	LABEL "san"
+;
+MESSAGE_GROUP "nas"
+	SYMBOL ""
+	DESCRIPTION "network attached storage"
+	LABEL "nas"
+;
+MESSAGE_GROUP "gps"
+	SYMBOL ""
+	DESCRIPTION "gps"
+	LABEL "gps"
+;
+MESSAGE_GROUP "SPI_SVCDISC"
+	SYMBOL ""
+	DESCRIPTION "Message group for receiving SPI Service Discovery Messages"
+	LABEL "SPI Discovery"
+;
+MESSAGE_GROUP "DBSPI"
+	SYMBOL "Software:Database"
+	DESCRIPTION "DB-SPI Events"
+	LABEL "DBSPI"
+;
+MESSAGE_GROUP "MSS_Perf"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Microsoft SQL Server Performance Events"
+	LABEL "MSS_Perf"
+;
+MESSAGE_GROUP "orbis_can"
+	SYMBOL ""
+	DESCRIPTION "orbis_can"
+	LABEL "orbis_can"
+;
+MESSAGE_GROUP "orbis_can_risk"
+	SYMBOL ""
+	DESCRIPTION "orbis_can_risk"
+	LABEL "orbis_can_risk"
+;
+MESSAGE_GROUP "orbis_can_trd"
+	SYMBOL ""
+	DESCRIPTION "orbis_can_trd"
+	LABEL "orbis_can_trd"
+;
+MESSAGE_GROUP "bgicashfunds"
+	SYMBOL ""
+	DESCRIPTION "bgicashfunds.com"
+	LABEL "bgicashfunds"
+;
+MESSAGE_GROUP "MSS_Conf"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Microsoft SQL Server Configuration Events"
+	LABEL "MSS_Conf"
+;
+MESSAGE_GROUP "MSS_Admin"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Microsoft SQL Server Administration Events"
+	LABEL "MSS_Admin"
+;
+MESSAGE_GROUP "MSS_Fault"
+	SYMBOL "Software:Database"
+	DESCRIPTION "Microsoft SQL Server Fault Events"
+	LABEL "MSS_Fault"
+;
+MESSAGE_GROUP "crystal_enterprise"
+	SYMBOL ""
+	DESCRIPTION "crystal_enterprise"
+	LABEL "crystal_enterprise"
+;
+MESSAGE_GROUP "fids"
+	SYMBOL ""
+	DESCRIPTION "Fixed Income Data Support"
+	LABEL "fids"
+;
+MESSAGE_GROUP "orbis_aus"
+	SYMBOL ""
+	DESCRIPTION "orbis_aus"
+	LABEL "orbis_aus"
+;
+MESSAGE_GROUP "orbis_aus_trd"
+	SYMBOL ""
+	DESCRIPTION "orbis_aus_trd"
+	LABEL "orbis_aus_trd"
+;
+MESSAGE_GROUP "concert"
+	SYMBOL "Software:Software"
+	DESCRIPTION "Concert Application events"
+	LABEL "concert"
+;
+MESSAGE_GROUP "tkydev"
+	SYMBOL ""
+	DESCRIPTION "tkydev"
+	LABEL "tkydev"
+;
+MESSAGE_GROUP "syddev"
+	SYMBOL ""
+	DESCRIPTION "syddev"
+	LABEL "syddev"
+;
+MESSAGE_GROUP "mqadmin_syd"
+	SYMBOL ""
+	DESCRIPTION "mqadmin_syd"
+	LABEL "mqadmin_syd"
+;
+MESSAGE_GROUP "mqadmin_tky"
+	SYMBOL ""
+	DESCRIPTION "mqadmin_tky"
+	LABEL "mqadmin_tky"
+;
+MESSAGE_GROUP "fi-sovplus"
+	SYMBOL ""
+	DESCRIPTION "fi-sovplus"
+	LABEL "fi-sovplus"
+;
+MESSAGE_GROUP "ishares_net"
+	SYMBOL ""
+	DESCRIPTION "ishares_net"
+	LABEL "ishares_net"
+;
+MESSAGE_GROUP "unix_security_env"
+	SYMBOL ""
+	DESCRIPTION "unix_security_env"
+	LABEL "unix_security_env"
+;
+MESSAGE_GROUP "orbis_escalate"
+	SYMBOL ""
+	DESCRIPTION "Orbis AP Escalation Message group"
+	LABEL "orbis_escalate"
+;
+MESSAGE_GROUP "orbis_trd_japan_escalate"
+	SYMBOL ""
+	DESCRIPTION "Orbis AP Escalation Message group"
+	LABEL "orbis_trd_japan_escalate"
+;
+MESSAGE_GROUP "orbis_aus_escalate"
+	SYMBOL ""
+	DESCRIPTION "Orbis AP Escalation Message group"
+	LABEL "orbis_aus_escalate"
+;
+MESSAGE_GROUP "orbis_can_escalate"
+	SYMBOL ""
+	DESCRIPTION "Orbis AP Escalation Message group"
+	LABEL "orbis_can_escalate"
+;
+MESSAGE_GROUP "orbis_europe_escalate"
+	SYMBOL ""
+	DESCRIPTION "Orbis AP Escalation Message group"
+	LABEL "orbis_europe_escalate"
+;
+MESSAGE_GROUP "cpdl_jp"
+	SYMBOL ""
+	DESCRIPTION "cpdl_jp"
+	LABEL "cpdl_jp"
+;
+MESSAGE_GROUP "ipc"
+	SYMBOL ""
+	DESCRIPTION "ipc"
+	LABEL "ipc"
+;
+MESSAGE_GROUP "orbis_aus_risk"
+	SYMBOL ""
+	DESCRIPTION "orbis_aus_risk"
+	LABEL "orbis_aus_risk"
+;
+MESSAGE_GROUP "gcom"
+	SYMBOL ""
+	DESCRIPTION "gcom"
+	LABEL "gcom"
+;
+MESSAGE_GROUP "uk-it-dev-alp"
+	SYMBOL ""
+	DESCRIPTION "UK IT Development (temporary). "
+	LABEL "uk-it-dev-alp"
+;
+MESSAGE_GROUP "marshall"
+	SYMBOL ""
+	DESCRIPTION "marshall"
+	LABEL "marshall"
+;
+MESSAGE_GROUP "z-spreads"
+	SYMBOL ""
+	DESCRIPTION "z-spreads"
+	LABEL "z-spreads"
+;
+MESSAGE_GROUP "orbis_europe"
+	SYMBOL ""
+	DESCRIPTION "Orbis Europe Trading group"
+	LABEL "orbis_europe"
+;
+MESSAGE_GROUP "market_data_europe"
+	SYMBOL ""
+	DESCRIPTION "market_data_europe"
+	LABEL "market_data_europe"
+;
+MESSAGE_GROUP "bgis_fi_qa"
+	SYMBOL ""
+	DESCRIPTION "bgis_fi_qa"
+	LABEL "bgis_fi_qa"
+;
+MESSAGE_GROUP "appdesk"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "appdesk"
+;
+MESSAGE_GROUP "autopackager"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "autopackager"
+;
+MESSAGE_GROUP "gift"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "gift"
+;
+MESSAGE_GROUP "hardcatweb"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "hardcatweb"
+;
+MESSAGE_GROUP "lockouts"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "lockouts"
+;
+MESSAGE_GROUP "p3"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "p3"
+;
+MESSAGE_GROUP "purchasing"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "purchasing"
+;
+MESSAGE_GROUP "tsweb"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "tsweb"
+;
+MESSAGE_GROUP "dbssi"
+	SYMBOL ""
+	DESCRIPTION "For GSS"
+	LABEL "dbssi"
+;
+MESSAGE_GROUP "kmit"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "kmit"
+;
+MESSAGE_GROUP "test_cs"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "test_cs"
+;
+MESSAGE_GROUP "kmitps"
+	SYMBOL ""
+	DESCRIPTION "Knowledge Management IT Production Systems."
+	LABEL "kmitps"
+;
+MESSAGE_GROUP "tky_it_got_jp"
+	SYMBOL ""
+	DESCRIPTION "tky_it_got_jp"
+	LABEL "tky_it_got_jp"
+;
+MESSAGE_GROUP "comm_sec"
+	SYMBOL ""
+	DESCRIPTION "comm_sec"
+	LABEL "comm_sec"
+;
+MESSAGE_GROUP "javaee_support"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "javaee_support"
+;
+MESSAGE_GROUP "fidap"
+	SYMBOL ""
+	DESCRIPTION "fidap"
+	LABEL "fidap"
+;
+MESSAGE_GROUP "mac"
+	SYMBOL ""
+	DESCRIPTION "mac"
+	LABEL "mac"
+;
+MESSAGE_GROUP "packaging"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "packaging"
+;
+MESSAGE_GROUP "infradev"
+	SYMBOL ""
+	DESCRIPTION "Infrastructure Development"
+	LABEL "infradev"
+;
+MESSAGE_GROUP "techteam"
+	SYMBOL ""
+	DESCRIPTION "Tech Team"
+	LABEL "techteam"
+;
+MESSAGE_GROUP "winfts"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "winfts"
+;
+MESSAGE_GROUP "Apex"
+	SYMBOL ""
+	DESCRIPTION "Apex - Core PM"
+	LABEL "Apex"
+;
+MESSAGE_GROUP "hfdp-di"
+	SYMBOL ""
+	DESCRIPTION "hfdp-di"
+	LABEL "hfdp-di"
+;
+MESSAGE_GROUP "spt-tky-mn"
+	SYMBOL ""
+	DESCRIPTION "Temp group - mapping is wrong for messaging alerts"
+	LABEL "spt-tky-mn"
+;
+MESSAGE_GROUP "sentinel"
+	SYMBOL ""
+	DESCRIPTION "sentinel"
+	LABEL "sentinel"
+;
+MESSAGE_GROUP "test"
+	SYMBOL ""
+	DESCRIPTION "test created on 080107 -Ashish"
+	LABEL "test"
+;
+MESSAGE_GROUP "teamsite"
+	SYMBOL ""
+	DESCRIPTION "teamsite"
+	LABEL "teamsite"
+;
+MESSAGE_GROUP "satishtest"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "satishtest"
+;
+MESSAGE_GROUP "kmdp_dmsapp"
+	SYMBOL ""
+	DESCRIPTION "kmdp_dmsapp"
+	LABEL "kmdp_dmsapp"
+;
+MESSAGE_GROUP "global_ishares"
+	SYMBOL ""
+	DESCRIPTION "global_ishares"
+	LABEL "global_ishares"
+;
+MESSAGE_GROUP "got_fts"
+	SYMBOL ""
+	DESCRIPTION "got_fts"
+	LABEL "got_fts"
+;
+MESSAGE_GROUP "got_fts_email"
+	SYMBOL ""
+	DESCRIPTION "got_fts_email"
+	LABEL "got_fts_email"
+;
+MESSAGE_GROUP "tky_tpt"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "tky_tpt"
+;
+MESSAGE_GROUP "orbis_uk_currency"
+	SYMBOL ""
+	DESCRIPTION "orbis_uk_currency"
+	LABEL "orbis_uk_currency"
+;
+MESSAGE_GROUP "orbis_us_currency"
+	SYMBOL ""
+	DESCRIPTION "orbis_us_currency"
+	LABEL "orbis_us_currency"
+;
+MESSAGE_GROUP "devtest"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "devtest"
+;
+MESSAGE_GROUP "cast"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "cast"
+;
+MESSAGE_GROUP "fi_batch"
+	SYMBOL ""
+	DESCRIPTION "fi_batch"
+	LABEL "fi_batch"
+;
+MESSAGE_GROUP "gmmt_app_server"
+	SYMBOL ""
+	DESCRIPTION "MG for GMMT Application Server Support"
+	LABEL "gmmt_app_server"
+;
+MESSAGE_GROUP "cipit"
+	SYMBOL ""
+	DESCRIPTION "BGI Europe CIPIT Business Support Group"
+	LABEL "cipit"
+;
+MESSAGE_GROUP "WINOSSPI-INSIGHT_MANAGE"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "WINOSSPI-INSIGHT_MANAGE"
+;
+MESSAGE_GROUP "sec_lending_support"
+	SYMBOL ""
+	DESCRIPTION "sec_lending_support"
+	LABEL "sec_lending_support"
+;
+MESSAGE_GROUP "swordfishwebservices"
+	SYMBOL ""
+	DESCRIPTION "swordfishwebservices"
+	LABEL "swordfishwebservices"
+;
+MESSAGE_GROUP "sapphire"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "sapphire"
+;
+MESSAGE_GROUP "secsvcs"
+	SYMBOL ""
+	DESCRIPTION "IT Secured Services"
+	LABEL "secsvcs"
+;
+MESSAGE_GROUP "swift"
+	SYMBOL ""
+	DESCRIPTION "swift"
+	LABEL "swift"
+;
+MESSAGE_GROUP "QPasa"
+	SYMBOL "Software:MQSoftware QPasa!"
+	DESCRIPTION "Q Pasa! events message group (MQSoftware)"
+	LABEL "Q Pasa!"
+;
+MESSAGE_GROUP "MQP_MQSeries"
+	SYMBOL ""
+	DESCRIPTION "WebSphere MQ events message group (MQSoftwre)"
+	LABEL "WebSphere MQ"
+;
+MESSAGE_GROUP "uk_tradefloor"
+	SYMBOL ""
+	DESCRIPTION "uk_tradefloor"
+	LABEL "uk_tradefloor"
+;
+MESSAGE_GROUP "bgis_us"
+	SYMBOL ""
+	DESCRIPTION "bgis_us"
+	LABEL "bgis_us"
+;
+MESSAGE_GROUP "sourceforge"
+	SYMBOL ""
+	DESCRIPTION "sourceforge"
+	LABEL "sourceforge"
+;
+MESSAGE_GROUP "telecom"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "telecom"
+;
+MESSAGE_GROUP "cfmail"
+	SYMBOL ""
+	DESCRIPTION "Cold Fusion Email"
+	LABEL "cfmail"
+;
+MESSAGE_GROUP "ASG"
+	SYMBOL "Software:Software"
+	DESCRIPTION "ASG Related Events"
+	LABEL "ASG"
+;
+MESSAGE_GROUP "CP"
+	SYMBOL ""
+	DESCRIPTION "Common Platform"
+	LABEL "CP"
+;
+MESSAGE_GROUP "helpdesk_uk"
+	SYMBOL ""
+	DESCRIPTION "helpdesk_uk"
+	LABEL "helpdesk_uk"
+;
+MESSAGE_GROUP "uk_helpdesk"
+	SYMBOL ""
+	DESCRIPTION "uk_helpdesk"
+	LABEL "uk_helpdesk"
+;
+MESSAGE_GROUP "orbis_support"
+	SYMBOL ""
+	DESCRIPTION "Orbis Support Group (Maps to Peregrine)"
+	LABEL "orbis_support"
+;
+MESSAGE_GROUP "gmsg"
+	SYMBOL ""
+	DESCRIPTION "gmsg"
+	LABEL "gmsg"
+;
+MESSAGE_GROUP "emx"
+	SYMBOL ""
+	DESCRIPTION "emx"
+	LABEL "emx"
+;
+MESSAGE_GROUP "san_email"
+	SYMBOL ""
+	DESCRIPTION "san_email"
+	LABEL "san_email"
+;
+MESSAGE_GROUP "nas_email"
+	SYMBOL ""
+	DESCRIPTION "nas_email"
+	LABEL "nas_email"
+;
+MESSAGE_GROUP "netbackup_email"
+	SYMBOL ""
+	DESCRIPTION "netbackup_email"
+	LABEL "netbackup_email"
+;
+MESSAGE_GROUP "ishares_ca"
+	SYMBOL ""
+	DESCRIPTION "ishares_ca"
+	LABEL "ishares_ca"
+;
+MESSAGE_GROUP "bloomberg_recon"
+	SYMBOL ""
+	DESCRIPTION "bloomberg_recon"
+	LABEL "bloomberg_recon"
+;
+MESSAGE_GROUP "brsi"
+	SYMBOL ""
+	DESCRIPTION "Message Group for BRS Integration"
+	LABEL "brsi"
+;
+MESSAGE_GROUP "aria_jap_onloanreport"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_onloanreport"
+	LABEL "aria_jap_onloanreport"
+;
+MESSAGE_GROUP "calypso"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "calypso"
+;
+MESSAGE_GROUP "Certificate"
+	SYMBOL ""
+	DESCRIPTION ""
+	LABEL "Certificate"
+;
+MESSAGE_GROUP "aria_jap_clientorder"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_clientorder"
+	LABEL "aria_jap_clientorder"
+;
+MESSAGE_GROUP "aria_jap_client"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_client"
+	LABEL "aria_jap_client"
+;
+MESSAGE_GROUP "aria_jap_execution"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_execution"
+	LABEL "aria_jap_execution"
+;
+MESSAGE_GROUP "aria_jap_canotice"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_canotice"
+	LABEL "aria_jap_canotice"
+;
+MESSAGE_GROUP "aria_jap_fxrate"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_fxrate"
+	LABEL "aria_jap_fxrate"
+;
+MESSAGE_GROUP "aria_jap_rrr"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_rrr"
+	LABEL "aria_jap_rrr"
+;
+MESSAGE_GROUP "aria_jap_unitprice"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_unitprice"
+	LABEL "aria_jap_unitprice"
+;
+MESSAGE_GROUP "aria_jap_loanquote"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_loanquote"
+	LABEL "aria_jap_loanquote"
+;
+MESSAGE_GROUP "prism"
+	SYMBOL ""
+	DESCRIPTION "prism"
+	LABEL "prism"
+;
+MESSAGE_GROUP "aria_jap_generic"
+	SYMBOL ""
+	DESCRIPTION "aria_jap_generic"
+	LABEL "aria_jap_generic"
+;
+MESSAGE_GROUP "storage_ldn"
+	SYMBOL ""
+	DESCRIPTION "storage_ldn"
+	LABEL "storage_ldn"
+;
+MESSAGE_GROUP "storage_apac"
+	SYMBOL ""
+	DESCRIPTION "storage_apac"
+	LABEL "storage_apac"
+;
+MESSAGE_GROUP "storage_sfo"
+	SYMBOL ""
+	DESCRIPTION "storage_sfo"
+	LABEL "storage_sfo"
+;
+MESSAGE_GROUP "storage_rdc"
+	SYMBOL ""
+	DESCRIPTION "storage_rdc"
+	LABEL "storage_rdc"
+;
+MESSAGE_GROUP "testcenter"
+	SYMBOL ""
+	DESCRIPTION "Message grouop fot Global Test Center"
+	LABEL "testcenter"
+;
+MESSAGE_GROUP "hdi"
+	SYMBOL ""
+	DESCRIPTION "hdi"
+	LABEL "hdi"
+;
+MESSAGE_GROUP "EMC_Alarms"
+	SYMBOL "EMC_ManagedObject:EMC_Group"
+	DESCRIPTION "EMC_Alarms"
+	LABEL "EMC_Alarms"
+;

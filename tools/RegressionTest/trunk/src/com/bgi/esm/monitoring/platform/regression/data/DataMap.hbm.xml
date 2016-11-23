@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.bgi.esm.monitoring.platform.regression.data.DataMap" table="data_map" >
+        <id name="RuleId" column="rule_id">
+            <generator class="native" />
+        </id>
+        <property name="BgiGroup"     type="string"          column="bgi_group"    />
+        <property name="BgiMethod"    type="string"          column="bgi_method"   />
+        <property name="ApGroup"      type="string"          column="ap_group"     />
+        <property name="ApScript"     type="string"          column="ap_script"    />
+        <property name="PerCat"       type="string"          column="per_cat"      />
+        <property name="PerSubcat"    type="string"          column="per_subcat"   />
+        <property name="PerProduct"   type="string"          column="per_product"  />
+        <property name="PerProblem"   type="string"          column="per_problem"  />
+        <property name="PerAssign"    type="string"          column="per_assign"   />
+        <property name="PerLocation"  type="string"          column="per_location" />
+    </class>
+</hibernate-mapping>

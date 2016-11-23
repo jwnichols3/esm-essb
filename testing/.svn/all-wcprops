@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/esm-platform/!svn/ver/628/trunk/Testing
+END
+ant.properties
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/esm-platform/!svn/ver/449/trunk/Testing/ant.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/esm-platform/!svn/ver/576/trunk/Testing/build.xml
+END

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter
+END
+ExtractPeregrineTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ExtractPeregrineTicket.java
+END
+ServiceCenterTicketNew.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterTicketNew.java
+END
+ServiceCenter.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenter.java
+END
+ServiceCenterTicket.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterTicket.java
+END
+Toolkit.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/Toolkit.java
+END
+ProcessData.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ProcessData.java
+END
+ServiceCenterTicketRulesRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterTicketRulesRequest.java
+END
+ServiceCenterAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterAuthenticator.java
+END
+ServiceCenterTicketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterTicketFactory.java
+END
+ServiceCenterTicketRulesCreateRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterTicketRulesCreateRequest.java
+END
+ServiceCenterPropertiesException.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/svn/esm-platform/!svn/ver/642/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterPropertiesException.java
+END
+ServiceCenterProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/svn/esm-platform/!svn/ver/638/trunk/Platform/Monitoring2/trunk/src/com/bgi/esm/monitoring/platform/buss_module/dispatcher/ServiceCenter/ServiceCenterProperties.java
+END

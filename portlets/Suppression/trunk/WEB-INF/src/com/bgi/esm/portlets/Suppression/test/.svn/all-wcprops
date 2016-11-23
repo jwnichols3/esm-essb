@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test
+END
+TestNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/TestNotifier.java
+END
+CommonTestCase.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/CommonTestCase.java
+END
+TestDatabase.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/TestDatabase.java
+END
+TestMailer.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/TestMailer.java
+END
+TestFailovers.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/TestFailovers.java
+END
+TestExtractFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/esm-platform/!svn/ver/561/trunk/Portlets/Suppression/trunk/WEB-INF/src/com/bgi/esm/portlets/Suppression/test/TestExtractFile.java
+END

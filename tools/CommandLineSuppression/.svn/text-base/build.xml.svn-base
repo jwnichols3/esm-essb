@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<project name="Portlet - Struts Bridge Portlet Creator" default="help" basedir=".">
+    <description>
+        The master build file the Host Status Portlet.
+    </description>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Loads user/machine-specific build properties
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <property environment="env"/>
+    <property name="env.HOSTNAME" value="${env.COMPUTERNAME}"/>
+    <property name="build_properties_file"  value="build.${env.HOSTNAME}.${user.name}.properties" />
+    <property file="src/props/${build_properties_file}" />
+    <property file="src/props/build.properties" />
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Default target.  Lists all possible targets that this build file has.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="help">
+        <echo> </echo>
+        <echo>Here are the following targets that this build file contains:</echo>
+        <echo>    compile           Compiles the entire source tree</echo>
+        <echo>    build             Compiles and uilds the portlet .war file</echo>
+        <echo>    clean             Removes all intermediate build files</echo>
+        <echo>    hot-deploy        Hot-deploys this portlet into Liferay</echo>
+        <echo>    ppe-release-notes Release notes for this utility</echo>
+        <echo> </echo>
+        <echo>The following are to configure the portlet for various portal engines:</echo>
+        <echo>    portlet-jboss     Configure the portlet to run on the JBoss portal</echo>
+        <echo>    portlet-liferay   Configure the portlet to run on the Liferay portal</echo>
+		<echo>    portlet-properties-editor</echo>
+		<echo>                      Runs the graphical editor to manage all the</echo>
+		<echo>                      properties needed to deploy to various portal engines</echo>
+        <echo> </echo>
+        <echo>The following are targets for the automatic build process:</echo>
+        <echo>    create_portlet    Rebuilds a base Liferay portlet from the</echo>
+        <echo>                      database schema. Make sure that the source </echo>
+        <echo>                      properties files have been properly defined.</echo>
+        <echo>                      !! WARNING !!</echo>
+        <echo>                      ALL changes and modifications will be lost</echo>
+        <echo></echo>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Properties to initialize the build with
+        ********************************************************************************
+        ********************************************************************************
+    -->
+    <target name="init">
+        <echo>Reading build properties file ${build_properties_file}</echo>
+        <echo>Test value: ${test.value}</echo>
+    </target>
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+           Common properties for this build file.
+        ********************************************************************************
+        ********************************************************************************
+    -->
+
+    <!-- Project Classpath -->
+    <path id="project.classpath">
+        <!-- Project source files and libraries -->
+        <pathelement path="${java.class.path}" />
+        <pathelement path="build" />
+        <fileset dir="lib">
+            <include name="**/*.jar" />
+        </fileset>
+    </path>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+    		Copy any resource or configuration files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="resources" depends="init">
+        <echo>Copying all resource files to the compiled output directory...</echo>
+        <copy todir="build" includeEmptyDirs="no">
+            <fileset dir="src">
+                <patternset>
+                    <include name="**/*.MF"/>
+                    <include name="**/*.conf"/>
+                    <include name="**/*.properties"/>
+                    <include name="**/*.bat"/>
+                    <include name="**/*.xml"/>
+                    <include name="**/*.tld"/>
+                </patternset>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Removes all intermediate build files
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="clean">
+        <echo>Removing all intermediate build files...</echo>
+		<delete dir="html" />
+		<delete dir="build" />
+		<delete dir="WEB-INF/classes" />
+        <delete file="WEB-INF/lib/${portlet-name}.jar"/>
+        <delete file="${portlet-name}.war"/>
+        <delete file="../${portlet-name}.war"/>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Compiles
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="compile" depends="resources">
+        <echo>Compiling all source files for the portlet...</echo>
+		<mkdir dir="logs"/>
+		<mkdir dir="build"/>
+        <javac srcdir="src" destdir="build" debug="true" debuglevel="lines,vars,source">
+            <classpath refid="project.classpath"/>
+        </javac>
+        <java classname="com.bgi.esm.platform.VpoSuppress.BuildHarness" fork="true">
+            <classpath refid="project.classpath" />
+        </java>
+    </target>
+
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Subversion checkout
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="svn-checkout">
+        <echo>Checking out from SVN repository...</echo>
+        <exec executable="svn">
+            <arg line="checkout https://esm-platform.bgidev.net/svn/esm-platform/trunk/Tools/CommandLineSuppression ." />
+        </exec>
+        <exec executable="svn">
+            <arg line="update" />
+        </exec>
+    </target>
+
+    <!--
+        ********************************************************************************
+        ********************************************************************************
+            Tests the vpo_suppress command-line utility
+        ********************************************************************************
+        ********************************************************************************
+     -->
+    <target name="test" depends="clean,compile">
+        <echo>Runs the test suite for "vpo_suppress"</echo>
+        <mkdir dir="test-results/xml"/>
+        <mkdir dir="test-results/html"/>
+        <junit printsummary="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="project.classpath"/>
+            <formatter type="xml"/>
+            <batchtest fork="yes" todir="test-results/xml">
+                <fileset dir="src">
+                    <include name="**/test/Test*.java"/>
+                    <!--
+                    <exclude name="**/test/TestAdd*.java"/>
+                    <exclude name="**/test/TestUpdate*.java"/>
+                    <exclude name="**/test/TestDelete*.java"/>
+                    -->
+                </fileset>
+            </batchtest>
+        </junit>
+        <junitreport todir="test-results">
+            <fileset dir="test-results/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report todir="test-results/html"/>
+        </junitreport>
+    </target>
+
+</project>
+

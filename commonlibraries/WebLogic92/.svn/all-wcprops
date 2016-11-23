@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/esm-platform/!svn/ver/166/trunk/CommonLibraries/WebLogic92
+END
+weblogic.jar
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/esm-platform/!svn/ver/103/trunk/CommonLibraries/WebLogic92/weblogic.jar
+END
+wllog4j.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/esm-platform/!svn/ver/166/trunk/CommonLibraries/WebLogic92/wllog4j.jar
+END

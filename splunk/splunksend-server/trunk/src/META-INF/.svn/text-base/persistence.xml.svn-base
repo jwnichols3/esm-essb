@@ -1,0 +1,27 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="JPAFinder">
+        <provider>oracle.toplink.essentials.ejb.cmp3.EntityManagerFactoryProvider</provider>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.DataMap</class>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.HttpAttribute</class>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.HttpCookie</class>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.HttpHeader</class>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.HttpParameter</class>
+        <class>com.bgi.esm.monitoring.splunk.splunk_send.server.data.orm.jpa.HttpRequest</class>
+        <properties>
+             <property name="toplink.jdbc.driver"   value="net.sourceforge.jtds.jdbc.Driver" />
+             <property name="toplink.jdbc.url"      value="jdbc:jtds:sqlserver://calntalp202:1433/splunk_support_db" />
+             <property name="toplink.jdbc.user"     value="monitoring" />
+             <property name="toplink.jdbc.password" value="HYPertext01" />
+             <property name="toplink.logging.level" value="INFO" />
+        </properties>
+        <!--
+        <properties>
+             <property name="toplink.jdbc.driver"   value="com.mysql.jdbc.Driver" />
+             <property name="toplink.jdbc.url"      value="jdbc:mysql://localhost:3306/splunk_support_db" />
+             <property name="toplink.jdbc.user"     value="root" />
+             <property name="toplink.jdbc.password" value="apogee" />
+             <property name="toplink.logging.level" value="INFO" />
+        </properties>
+         -->
+    </persistence-unit>
+</persistence>

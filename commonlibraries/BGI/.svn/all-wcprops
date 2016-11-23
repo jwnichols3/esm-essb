@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/esm-platform/!svn/ver/404/trunk/CommonLibraries/BGI
+END
+imap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/404/trunk/CommonLibraries/BGI/imap.jar
+END
+commons-security-1.0.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/esm-platform/!svn/ver/107/trunk/CommonLibraries/BGI/commons-security-1.0.0.jar
+END
+mailapi.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/esm-platform/!svn/ver/404/trunk/CommonLibraries/BGI/mailapi.jar
+END
+pop3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/404/trunk/CommonLibraries/BGI/pop3.jar
+END
+smtp.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/esm-platform/!svn/ver/404/trunk/CommonLibraries/BGI/smtp.jar
+END
